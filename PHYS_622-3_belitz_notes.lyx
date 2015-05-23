@@ -8411,8 +8411,8 @@ By Axiom 3,
 \begin_inset Formula 
 \begin{eqnarray*}
 S_{\textnormal{int}} & = & -\frac{1}{c}\indefint{^{4}x}J_{\mu}\left(x\right)A^{\mu}\left(x\right)\\
- & = & -\frac{1}{c}\int dt\:\int d^{3}x\:c\rho\left(\boldsymbol{x},t\right)\phi\left(\boldsymbol{x},t\right)+\frac{1}{c}\int dt\:\int d^{3}x\:\boldsymbol{j}\left(\boldsymbol{x},t\right)\cdot\boldsymbol{A}\left(\boldsymbol{x},t\right)\\
- & = & -e\int dt\:\phi\left(\boldsymbol{y},t\right)+\frac{e}{c}\int dt\:\boldsymbol{v}\left(t\right)\cdot\boldsymbol{A}\left(\boldsymbol{y},t\right).
+ & = & -\frac{1}{c}\indefint t\indefint{\boldsymbol{x}}c\rho\left(\boldsymbol{x},t\right)\phi\left(\boldsymbol{x},t\right)+\frac{1}{c}\indefint t\indefint{\boldsymbol{x}}\boldsymbol{j}\left(\boldsymbol{x},t\right)\cdot\boldsymbol{A}\left(\boldsymbol{x},t\right)\\
+ & = & -e\indefint t\phi\left(\boldsymbol{y},t\right)+\frac{e}{c}\indefint t\boldsymbol{v}\left(t\right)\cdot\boldsymbol{A}\left(\boldsymbol{y},t\right).
 \end{eqnarray*}
 
 \end_inset
@@ -8806,7 +8806,7 @@ reference "sub:ch2sec3_5Charges-in-electromagnetic"
  Integrating,
 \begin_inset Formula 
 \[
-\int d^{3}x\:\boldsymbol{j}\cdot\boldsymbol{E}=\int d^{3}x\:\left[\boldsymbol{E}\left(\boldsymbol{x},t\right)\right]\cdot\left[e\boldsymbol{v}\delta\left(\boldsymbol{x}-\boldsymbol{y}\right)\right]=e\boldsymbol{v}\cdot\boldsymbol{E}\left(\boldsymbol{y}\right),
+\indefint{\boldsymbol{x}}\boldsymbol{j}\cdot\boldsymbol{E}=\indefint{\boldsymbol{x}}\left[\boldsymbol{E}\left(\boldsymbol{x},t\right)\right]\cdot\left[e\boldsymbol{v}\delta\left(\boldsymbol{x}-\boldsymbol{y}\right)\right]=e\boldsymbol{v}\cdot\boldsymbol{E}\left(\boldsymbol{y}\right),
 \]
 
 \end_inset
@@ -8846,7 +8846,7 @@ reference "sub:ch2sec3_5Charges-in-electromagnetic"
  Now, integrating Poynting's theorem over all space,
 \begin_inset Formula 
 \[
-\frac{d}{dt}\int d^{3}x\:u\left(\boldsymbol{x},t\right)+\underset{\underset{\left(\textnormal{since }\boldsymbol{P}\rightarrow\boldsymbol{0}\textnormal{ at }\infty\right)}{=\int d\boldsymbol{S}\cdot\boldsymbol{P}=0}}{\underbrace{\int d^{3}x\:\nabla\cdot\boldsymbol{P}\left(\boldsymbol{x},t\right)}}=-\int d^{3}x\:\boldsymbol{j}\cdot\boldsymbol{E}=-e\boldsymbol{v}\cdot\boldsymbol{E}=-\frac{d}{dt}E_{kin}.
+\frac{d}{dt}\indefint{\boldsymbol{x}}u\left(\boldsymbol{x},t\right)+\underset{\underset{\left(\textnormal{since }\boldsymbol{P}\rightarrow\boldsymbol{0}\textnormal{ at }\infty\right)}{=\int d\boldsymbol{S}\cdot\boldsymbol{P}=0}}{\underbrace{\indefint{\boldsymbol{x}}\nabla\cdot\boldsymbol{P}\left(\boldsymbol{x},t\right)}}=-\indefint{\boldsymbol{x}}\boldsymbol{j}\cdot\boldsymbol{E}=-e\boldsymbol{v}\cdot\boldsymbol{E}=-\frac{d}{dt}E_{kin}.
 \]
 
 \end_inset
@@ -8858,7 +8858,7 @@ Defining the integral of
  as
 \begin_inset Formula 
 \[
-\boxed{U\left(t\right):=\int d^{3}x\:u\left(\boldsymbol{x},t\right)},
+\boxed{U\left(t\right):=\indefint{\boldsymbol{x}}u\left(\boldsymbol{x},t\right)},
 \]
 
 \end_inset
@@ -8905,7 +8905,7 @@ If we integrated over a finite volume, the energy may change due to an energy
  current across the volume boundary, and we see that, in general,
 \begin_inset Formula 
 \[
-\int d^{3}x\,\nabla\cdot\boldsymbol{P}\left(\boldsymbol{x},t\right)\neq0.
+\indefint{\boldsymbol{x}}\nabla\cdot\boldsymbol{P}\left(\boldsymbol{x},t\right)\neq0.
 \]
 
 \end_inset
@@ -9692,8 +9692,8 @@ Let
  Then
 \begin_inset Formula 
 \begin{eqnarray*}
-\boldsymbol{E}\left(x\right) & = & \int dk\:\lambda\left(k\right)\boldsymbol{E}^{\left(k\right)}\left(x\right),\\
-\boldsymbol{B}\left(x\right) & = & \int dk\:\lambda\left(k\right)\boldsymbol{B}^{\left(k\right)}\left(x\right)
+\boldsymbol{E}\left(x\right) & = & \indefint k\lambda\left(k\right)\boldsymbol{E}^{\left(k\right)}\left(x\right),\\
+\boldsymbol{B}\left(x\right) & = & \indefint k\lambda\left(k\right)\boldsymbol{B}^{\left(k\right)}\left(x\right)
 \end{eqnarray*}
 
 \end_inset
@@ -9701,8 +9701,8 @@ Let
  are solutions for
 \begin_inset Formula 
 \begin{eqnarray*}
-\rho\left(x\right) & = & \int dk\:\lambda\left(k\right)\rho^{\left(k\right)}\left(x\right),\\
-\boldsymbol{j}\left(x\right) & = & \int dk\:\lambda\left(k\right)\boldsymbol{j}^{\left(k\right)}\left(x\right).
+\rho\left(x\right) & = & \indefint k\lambda\left(k\right)\rho^{\left(k\right)}\left(x\right),\\
+\boldsymbol{j}\left(x\right) & = & \indefint k\lambda\left(k\right)\boldsymbol{j}^{\left(k\right)}\left(x\right).
 \end{eqnarray*}
 
 \end_inset
@@ -10579,7 +10579,7 @@ absolutely integrable
 :
 \begin_inset Formula 
 \[
-\int d\boldsymbol{x}\,\left|f\left(\boldsymbol{x}\right)\right|<\infty.
+\indefint{\boldsymbol{x}}\left|f\left(\boldsymbol{x}\right)\right|<\infty.
 \]
 
 \end_inset
@@ -10645,7 +10645,7 @@ Fourier transform
  is defined as
 \begin_inset Formula 
 \[
-\boxed{\hat{f}\left(\boldsymbol{k}\right):=\int d\boldsymbol{x}\:e^{-i\boldsymbol{k}\cdot\boldsymbol{x}}f\left(\boldsymbol{x}\right)=:\mathcal{F}\left[f\left(\boldsymbol{x}\right)\right]\left(\boldsymbol{k}\right)}
+\boxed{\hat{f}\left(\boldsymbol{k}\right):=\indefint{\boldsymbol{x}}e^{-i\boldsymbol{k}\cdot\boldsymbol{x}}f\left(\boldsymbol{x}\right)=:\mathcal{F}\left[f\left(\boldsymbol{x}\right)\right]\left(\boldsymbol{k}\right)}
 \]
 
 \end_inset
@@ -10714,7 +10714,7 @@ To show that
  is bounded, 
 \begin_inset Formula 
 \[
-\left|\hat{f}\left(\boldsymbol{k}\right)\right|=\left|\int d\boldsymbol{x}\:e^{-i\boldsymbol{k}\cdot\boldsymbol{x}}f\left(\boldsymbol{x}\right)\right|\leq\int d\boldsymbol{x}\:\left|e^{-i\boldsymbol{k}\cdot\boldsymbol{x}}f\left(\boldsymbol{x}\right)\right|=\int d\boldsymbol{x}\:\left|f\left(\boldsymbol{x}\right)\right|<\infty,
+\left|\hat{f}\left(\boldsymbol{k}\right)\right|=\left|\indefint{\boldsymbol{x}}e^{-i\boldsymbol{k}\cdot\boldsymbol{x}}f\left(\boldsymbol{x}\right)\right|\leq\indefint{\boldsymbol{x}}\left|e^{-i\boldsymbol{k}\cdot\boldsymbol{x}}f\left(\boldsymbol{x}\right)\right|=\indefint{\boldsymbol{x}}\left|f\left(\boldsymbol{x}\right)\right|<\infty,
 \]
 
 \end_inset
@@ -10730,7 +10730,7 @@ To show that
  is continuous, 
 \begin_inset Formula 
 \begin{eqnarray*}
-\left|\hat{f}\left(\boldsymbol{k}_{1}\right)-\hat{f}\left(\boldsymbol{k}_{2}\right)\right| & = & \left|\int d\boldsymbol{x}\:\left(e^{-i\boldsymbol{k}_{1}\cdot\boldsymbol{x}}-e^{-i\boldsymbol{k}_{2}\cdot\boldsymbol{x}}\right)f\left(\boldsymbol{x}\right)\right|\leq\int d\boldsymbol{x}\:\left|e^{-i\boldsymbol{k}_{1}\cdot\boldsymbol{x}}-e^{-i\boldsymbol{k}_{2}\cdot\boldsymbol{x}}\right|\left|f\left(\boldsymbol{x}\right)\right|\\
+\left|\hat{f}\left(\boldsymbol{k}_{1}\right)-\hat{f}\left(\boldsymbol{k}_{2}\right)\right| & = & \left|\indefint{\boldsymbol{x}}\left(e^{-i\boldsymbol{k}_{1}\cdot\boldsymbol{x}}-e^{-i\boldsymbol{k}_{2}\cdot\boldsymbol{x}}\right)f\left(\boldsymbol{x}\right)\right|\leq\indefint{\boldsymbol{x}}\left|e^{-i\boldsymbol{k}_{1}\cdot\boldsymbol{x}}-e^{-i\boldsymbol{k}_{2}\cdot\boldsymbol{x}}\right|\left|f\left(\boldsymbol{x}\right)\right|\\
  &  & \rightarrow0\quad\textnormal{for}\quad\boldsymbol{k}_{1}\rightarrow\boldsymbol{k}_{2},
 \end{eqnarray*}
 
@@ -10815,7 +10815,7 @@ For
 , 
 \begin_inset Formula 
 \[
-\int dx\:e^{-ikx}\frac{d}{dx}f\left(x\right)=\underset{=0}{\underbrace{\left.e^{-ikx}f\left(x\right)\right|_{-\infty}^{\infty}}}-\int dx\:\left(-ik\right)e^{-ikx}f\left(x\right)=ik\hat{f}\left(k\right).
+\indefint xe^{-ikx}\frac{d}{dx}f\left(x\right)=\underset{=0}{\underbrace{\left.e^{-ikx}f\left(x\right)\right|_{-\infty}^{\infty}}}-\indefint x\left(-ik\right)e^{-ikx}f\left(x\right)=ik\hat{f}\left(k\right).
 \]
 
 \end_inset
@@ -10901,7 +10901,7 @@ convolution
 , defined as 
 \begin_inset Formula 
 \[
-\boxed{\left(f_{1}\star f_{2}\right)\left(\boldsymbol{y}\right):=\int d\boldsymbol{x}\:f_{1}\left(\boldsymbol{y}-\boldsymbol{x}\right)f_{2}\left(\boldsymbol{x}\right)},
+\boxed{\left(f_{1}\star f_{2}\right)\left(\boldsymbol{y}\right):=\indefint{\boldsymbol{x}}f_{1}\left(\boldsymbol{y}-\boldsymbol{x}\right)f_{2}\left(\boldsymbol{x}\right)},
 \]
 
 \end_inset
@@ -10933,10 +10933,9 @@ convolution
 \color none
 \begin_inset Formula 
 \begin{eqnarray*}
-\mathcal{F}\left[f_{1}\star f_{2}\right]\left(\boldsymbol{k}\right) & = & \int d\boldsymbol{y}\:e^{-i\boldsymbol{k}\cdot\boldsymbol{y}}\int d\boldsymbol{x}\:f_{1}\left(\boldsymbol{y}-\boldsymbol{x}\right)f_{2}\left(\boldsymbol{x}\right)\\
- & = & \int d\boldsymbol{x}\:e^{-i\boldsymbol{k}\cdot\boldsymbol{x}}\int d\boldsymbol{y}\:e^{-i\boldsymbol{k}\cdot\left(\boldsymbol{y}-\boldsymbol{x}\right)}f_{1}\left(\boldsymbol{y}-\boldsymbol{x}\right)f_{2}\left(\boldsymbol{x}\right)\\
- & = & \int d\boldsymbol{x}\:e^{-i\boldsymbol{k}\cdot\boldsymbol{x}}f_{2}\left(\boldsymbol{x}\right)\int d\boldsymbol{z}\:e^{-i\boldsymbol{k}\cdot\boldsymbol{z}}f_{1}\left(\boldsymbol{z}\right)\\
- & = & \hat{f}_{1}\left(\boldsymbol{k}\right)\hat{f}_{2}\left(\boldsymbol{k}\right)
+\mathcal{F}\left[f_{1}\star f_{2}\right]\left(\boldsymbol{k}\right) & = & \indefint{\boldsymbol{y}}e^{-i\boldsymbol{k}\cdot\boldsymbol{y}}\indefint{\boldsymbol{x}}f_{1}\left(\boldsymbol{y}-\boldsymbol{x}\right)f_{2}\left(\boldsymbol{x}\right)\\
+ & = & \indefint{\boldsymbol{x}}e^{-i\boldsymbol{k}\cdot\boldsymbol{x}}\indefint{\boldsymbol{y}}e^{-i\boldsymbol{k}\cdot\left(\boldsymbol{y}-\boldsymbol{x}\right)}f_{1}\left(\boldsymbol{y}-\boldsymbol{x}\right)f_{2}\left(\boldsymbol{x}\right)\\
+ & = & \indefint{\boldsymbol{x}}e^{-i\boldsymbol{k}\cdot\boldsymbol{x}}f_{2}\left(\boldsymbol{x}\right)\indefint{\boldsymbol{z}e^{-i\boldsymbol{k}\cdot\boldsymbol{z}}f_{1}\left(\boldsymbol{z}\right)}
 \end{eqnarray*}
 
 \end_inset
@@ -11000,7 +10999,7 @@ name "lem:inverse_fourier"
 \end_inset
 
 
-\begin_inset Formula $\int d\boldsymbol{x}\,f_{1}\left(\boldsymbol{x}\right)\left(\hat{f}_{2}\left(\boldsymbol{x}\right)\right)^{*}=\int d\boldsymbol{y}\,\hat{f}_{1}\left(-\boldsymbol{y}\right)\left(f_{2}\left(\boldsymbol{y}\right)\right)^{*}.$
+\begin_inset Formula $\indefint{\boldsymbol{x}}f_{1}\left(\boldsymbol{x}\right)\left(\hat{f}_{2}\left(\boldsymbol{x}\right)\right)^{*}=\indefint{\boldsymbol{y}}\hat{f}_{1}\left(-\boldsymbol{y}\right)\left(f_{2}\left(\boldsymbol{y}\right)\right)^{*}.$
 \end_inset
 
 
@@ -11009,10 +11008,10 @@ name "lem:inverse_fourier"
 \begin_layout Proof
 \begin_inset Formula 
 \begin{eqnarray*}
-\int d\boldsymbol{x}\:f_{1}\left(\boldsymbol{x}\right)\left(\hat{f}_{2}\left(\boldsymbol{x}\right)\right)^{*} & = & \int d\boldsymbol{x}\:f_{1}\left(\boldsymbol{x}\right)\left(\int d\boldsymbol{y}\,e^{-i\boldsymbol{x}\cdot\boldsymbol{y}}f_{2}\left(\boldsymbol{y}\right)\right)^{*}\\
- & = & \int d\boldsymbol{x}\:f_{1}\left(\boldsymbol{x}\right)\int d\boldsymbol{y}\,e^{i\boldsymbol{x}\cdot\boldsymbol{y}}\left(f_{2}\left(\boldsymbol{y}\right)\right)^{*}\\
- & = & \int d\boldsymbol{y}\:\left(f_{2}\left(\boldsymbol{y}\right)\right)^{*}\underset{\hat{f}_{1}\left(-\boldsymbol{y}\right)}{\underbrace{\int d\boldsymbol{x}\,f_{1}\left(\boldsymbol{x}\right)e^{i\boldsymbol{x}\cdot\boldsymbol{y}}}}\\
- & = & \int d\boldsymbol{y}\:\hat{f}_{1}\left(-\boldsymbol{y}\right)\left(f_{2}\left(\boldsymbol{y}\right)\right)^{*}
+\indefint{\boldsymbol{x}}f_{1}\left(\boldsymbol{x}\right)\left(\hat{f}_{2}\left(\boldsymbol{x}\right)\right)^{*} & = & \indefint{\boldsymbol{x}}f_{1}\left(\boldsymbol{x}\right)\left(\indefint{\boldsymbol{y}}e^{-i\boldsymbol{x}\cdot\boldsymbol{y}}f_{2}\left(\boldsymbol{y}\right)\right)^{*}\\
+ & = & \indefint{\boldsymbol{x}}f_{1}\left(\boldsymbol{x}\right)\indefint{\boldsymbol{y}}e^{i\boldsymbol{x}\cdot\boldsymbol{y}}\left(f_{2}\left(\boldsymbol{y}\right)\right)^{*}\\
+ & = & \indefint{\boldsymbol{y}}\left(f_{2}\left(\boldsymbol{y}\right)\right)^{*}\underset{\hat{f}_{1}\left(-\boldsymbol{y}\right)}{\underbrace{\indefint{\boldsymbol{x}}f_{1}\left(\boldsymbol{x}\right)e^{i\boldsymbol{x}\cdot\boldsymbol{y}}}}\\
+ & = & \indefint{\boldsymbol{y}}\hat{f}_{1}\left(-\boldsymbol{y}\right)\left(f_{2}\left(\boldsymbol{y}\right)\right)^{*}
 \end{eqnarray*}
 
 \end_inset
@@ -11094,8 +11093,8 @@ reference "lem:inverse_fourier"
  
 \begin_inset Formula 
 \begin{eqnarray*}
-\implies\hat{f}_{2}\left(\boldsymbol{k}\right) & = & \int d\boldsymbol{y}\:e^{-i\boldsymbol{k}\cdot\boldsymbol{y}}e^{-\alpha\boldsymbol{y}^{2}}e^{i\boldsymbol{x}\cdot\boldsymbol{y}}\\
- & = & \int d\boldsymbol{y}\:e^{-i\boldsymbol{y}\cdot\left(\boldsymbol{k}-\boldsymbol{x}\right)}e^{-\alpha\boldsymbol{y}^{2}}\\
+\implies\hat{f}_{2}\left(\boldsymbol{k}\right) & = & \indefint{\boldsymbol{y}}e^{-i\boldsymbol{k}\cdot\boldsymbol{y}}e^{-\alpha\boldsymbol{y}^{2}}e^{i\boldsymbol{x}\cdot\boldsymbol{y}}\\
+ & = & \indefint{\boldsymbol{y}}e^{-i\boldsymbol{y}\cdot\left(\boldsymbol{k}-\boldsymbol{x}\right)}e^{-\alpha\boldsymbol{y}^{2}}\\
  & = & \left(\frac{\pi}{\alpha}\right)^{\frac{n}{2}}e^{-\frac{1}{4\alpha}\left(\boldsymbol{k}-\boldsymbol{x}\right)^{2}},
 \end{eqnarray*}
 
@@ -11106,7 +11105,7 @@ where the last step, that Fourier transform of a Gaussian is a Gaussian,
  By the Lemma, 
 \begin_inset Formula 
 \[
-\int d\boldsymbol{y}\:\hat{f}\left(-\boldsymbol{y}\right)\underset{\left(f_{2}\left(\boldsymbol{y}\right)\right)^{*}}{\underbrace{e^{-\alpha\boldsymbol{y}^{2}}e^{-i\boldsymbol{y}\cdot\boldsymbol{x}}}}=\int d\boldsymbol{k}\:f\left(\boldsymbol{k}\right)\underset{\left(\hat{f}_{2}\left(\boldsymbol{k}\right)\right)^{*}}{\underbrace{\left(\frac{\pi}{\alpha}\right)^{\frac{n}{2}}e^{-\frac{1}{4\alpha}\left(\boldsymbol{x}-\boldsymbol{k}\right)^{2}}}}.
+\indefint{\boldsymbol{y}}\hat{f}\left(-\boldsymbol{y}\right)\underset{\left(f_{2}\left(\boldsymbol{y}\right)\right)^{*}}{\underbrace{e^{-\alpha\boldsymbol{y}^{2}}e^{-i\boldsymbol{y}\cdot\boldsymbol{x}}}}=\int d\boldsymbol{k}\:f\left(\boldsymbol{k}\right)\underset{\left(\hat{f}_{2}\left(\boldsymbol{k}\right)\right)^{*}}{\underbrace{\left(\frac{\pi}{\alpha}\right)^{\frac{n}{2}}e^{-\frac{1}{4\alpha}\left(\boldsymbol{x}-\boldsymbol{k}\right)^{2}}}}.
 \]
 
 \end_inset
@@ -11123,7 +11122,7 @@ where the last step, that Fourier transform of a Gaussian is a Gaussian,
 On the left hand side,
 \begin_inset Formula 
 \[
-\lim_{\alpha\rightarrow0}\int d\boldsymbol{y}\:\hat{f}\left(-\boldsymbol{y}\right)e^{-\alpha\boldsymbol{y}^{2}}e^{-i\boldsymbol{y}\cdot\boldsymbol{x}}=\underline{\int d\boldsymbol{k}\:\hat{f}\left(\boldsymbol{k}\right)e^{i\boldsymbol{k}\cdot\boldsymbol{x}}}
+\lim_{\alpha\rightarrow0}\indefint{\boldsymbol{y}}\hat{f}\left(-\boldsymbol{y}\right)e^{-\alpha\boldsymbol{y}^{2}}e^{-i\boldsymbol{y}\cdot\boldsymbol{x}}=\underline{\int d\boldsymbol{k}\:\hat{f}\left(\boldsymbol{k}\right)e^{i\boldsymbol{k}\cdot\boldsymbol{x}}}
 \]
 
 \end_inset
@@ -11402,7 +11401,7 @@ Consider the
 :
 \begin_inset Formula 
 \[
-\hat{F}^{\left(p\right)}\left(k\right):=\frac{d^{p}}{dk^{p}}\hat{F}\left(k\right)=\left(-i\right)^{p}\int dx\:x^{p}F\left(x\right)e^{-ikx}=\left(-i\right)^{p}\mathcal{F}\left[x^{p}F\left(x\right)\right]\left(k\right)
+\hat{F}^{\left(p\right)}\left(k\right):=\frac{d^{p}}{dk^{p}}\hat{F}\left(k\right)=\left(-i\right)^{p}\indefint xx^{p}F\left(x\right)e^{-ikx}=\left(-i\right)^{p}\mathcal{F}\left[x^{p}F\left(x\right)\right]\left(k\right)
 \]
 
 \end_inset
@@ -11418,8 +11417,8 @@ Consider the
  exists.
 \begin_inset Formula 
 \begin{eqnarray*}
-\left|\hat{F}^{\left(p\right)}\left(k\right)\right| & = & \left|\int dx\:x^{p}F\left(x\right)e^{-ikx}\right|\\
- & = & \left|\int dx\:x^{p}F\left(x\right)\frac{1}{-ik}\frac{d}{dx}e^{-ikx}\right|
+\left|\hat{F}^{\left(p\right)}\left(k\right)\right| & = & \left|\indefint xx^{p}F\left(x\right)e^{-ikx}\right|\\
+ & = & \left|\indefint xx^{p}F\left(x\right)\frac{1}{-ik}\frac{d}{dx}e^{-ikx}\right|
 \end{eqnarray*}
 
 \end_inset
@@ -11431,7 +11430,7 @@ Integrating by parts (the boundary term vanishes since
  is a test function):
 \begin_inset Formula 
 \[
-\implies\left|\hat{F}^{\left(p\right)}\left(k\right)\right|=\left|\frac{1}{-ik}\int dx\:e^{-ikx}\frac{d}{dx}\left(x^{p}F\left(x\right)\right)\right|.
+\implies\left|\hat{F}^{\left(p\right)}\left(k\right)\right|=\left|\frac{1}{-ik}\indefint xe^{-ikx}\frac{d}{dx}\left(x^{p}F\left(x\right)\right)\right|.
 \]
 
 \end_inset
@@ -11480,7 +11479,7 @@ We can do this again to pile on more derivatives onto
 
 \begin_inset Formula 
 \[
-\left|\hat{F}^{\left(p\right)}\left(k\right)\right|=\left|\left(\frac{1}{-ik}\right)^{N}\int dx\:e^{-ikx}\frac{d^{N}}{dx^{N}}\left(x^{p}F\left(x\right)\right)\right|.
+\left|\hat{F}^{\left(p\right)}\left(k\right)\right|=\left|\left(\frac{1}{-ik}\right)^{N}\indefint xe^{-ikx}\frac{d^{N}}{dx^{N}}\left(x^{p}F\left(x\right)\right)\right|.
 \]
 
 \end_inset
@@ -11488,7 +11487,7 @@ We can do this again to pile on more derivatives onto
  By the triangle inequality, this becomes
 \begin_inset Formula 
 \[
-\left|\hat{F}^{\left(p\right)}\left(k\right)\right|\leq\frac{1}{\left|k\right|^{N}}\underset{<\infty\textnormal{ since }F\in\gamma}{\underbrace{\int dx\:\left|\frac{d^{N}}{dx^{N}}\left(x^{p}F\left(x\right)\right)\right|}}=O\left(\frac{1}{\left|k\right|^{N}}\right).
+\left|\hat{F}^{\left(p\right)}\left(k\right)\right|\leq\frac{1}{\left|k\right|^{N}}\underset{<\infty\textnormal{ since }F\in\gamma}{\underbrace{\indefint x\left|\frac{d^{N}}{dx^{N}}\left(x^{p}F\left(x\right)\right)\right|}}=O\left(\frac{1}{\left|k\right|^{N}}\right).
 \]
 
 \end_inset
@@ -11562,7 +11561,7 @@ Parseval's equation.
  Then
 \begin_inset Formula 
 \[
-\int\frac{dk}{2\pi}\:\hat{F}_{1}\left(k\right)\hat{F}_{2}\left(k\right)=\int dx\:F_{1}\left(x\right)F_{2}\left(-x\right).
+\int\frac{dk}{2\pi}\:\hat{F}_{1}\left(k\right)\hat{F}_{2}\left(k\right)=\indefint xF_{1}\left(x\right)F_{2}\left(-x\right).
 \]
 
 \end_inset
@@ -11571,7 +11570,7 @@ Parseval's equation.
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $\int\frac{dk}{2\pi}\:\hat{F}_{1}\left(k\right)\hat{F}_{2}\left(k\right)=\int\frac{dk}{2\pi}\:\int dx\:e^{-ikx}F_{1}\left(x\right)\hat{F}_{2}\left(k\right)=\int dx\:F_{1}\left(x\right)\int\frac{dk}{2\pi}\:\hat{F}_{2}\left(k\right)e^{-ikx}=\int dx\:F_{1}\left(x\right)F_{2}\left(-x\right).$
+\begin_inset Formula $\int\frac{dk}{2\pi}\:\hat{F}_{1}\left(k\right)\hat{F}_{2}\left(k\right)=\int\frac{dk}{2\pi}\:\indefint xe^{-ikx}F_{1}\left(x\right)\hat{F}_{2}\left(k\right)=\indefint xF_{1}\left(x\right)\int\frac{dk}{2\pi}\:\hat{F}_{2}\left(k\right)e^{-ikx}=\indefint xF_{1}\left(x\right)F_{2}\left(-x\right).$
 \end_inset
 
  
@@ -11627,7 +11626,7 @@ regular
  iff
 \begin_inset Formula 
 \begin{equation}
-\lim_{n\rightarrow\infty}\int dx\:f_{n}\left(x\right)F\left(x\right)\label{eq:regular_limit}
+\lim_{n\rightarrow\infty}\indefint xf_{n}\left(x\right)F\left(x\right)\label{eq:regular_limit}
 \end{equation}
 
 \end_inset
@@ -11744,7 +11743,7 @@ In other words, if we let
 \end_inset
 
 , then 
-\begin_inset Formula $f\left(x\right)=\left\{ \left\{ f_{n}\left(x\right)\right\} :\lim_{n\rightarrow\infty}\int dx\:f_{n}\left(x\right)F\left(x\right)=L\right\} $
+\begin_inset Formula $f\left(x\right)=\left\{ \left\{ f_{n}\left(x\right)\right\} :\lim_{n\rightarrow\infty}\indefint xf_{n}\left(x\right)F\left(x\right)=L\right\} $
 \end_inset
 
 .
@@ -11770,7 +11769,7 @@ GOTTA COME BACK TO
 , and we define the integral 
 \begin_inset Formula 
 \[
-\int dx\:f\left(x\right)F\left(x\right):=\lim_{n\rightarrow\infty}\int dx\:f_{n}\left(x\right)F\left(x\right)
+\indefint xf\left(x\right)F\left(x\right):=\lim_{n\rightarrow\infty}\indefint xf_{n}\left(x\right)F\left(x\right)
 \]
 
 \end_inset
@@ -11886,7 +11885,7 @@ Then one can construct sequences of test functions
 \end_inset
 
  such that 
-\begin_inset Formula $\lim_{n\rightarrow\infty}\int dx\:f_{n}\left(x\right)F\left(x\right)=\int dx\:f\left(x\right)F\left(x\right)$
+\begin_inset Formula $\lim_{n\rightarrow\infty}\indefint xf_{n}\left(x\right)F\left(x\right)=\indefint xf\left(x\right)F\left(x\right)$
 \end_inset
 
  for all test functions 
@@ -11981,7 +11980,7 @@ Distribution limit.
  be another generalized function such that
 \begin_inset Formula 
 \[
-\lim_{t\rightarrow c}\int dx\:f_{t}\left(x\right)F\left(x\right)=\int dx\:f\left(x\right)F\left(x\right)
+\lim_{t\rightarrow c}\indefint xf_{t}\left(x\right)F\left(x\right)=\indefint xf\left(x\right)F\left(x\right)
 \]
 
 \end_inset
@@ -12136,7 +12135,7 @@ I wrote this down but is this right?
  for which 
 \begin_inset Formula 
 \[
-\boxed{\int dx\:\delta\left(x\right)F\left(x\right)=\lim_{n\rightarrow\infty}\int dx\:f_{n}\left(x\right)F\left(x\right)=F\left(0\right)\quad\forall F\in\gamma}.
+\boxed{\indefint x\delta\left(x\right)F\left(x\right)=\lim_{n\rightarrow\infty}\indefint xf_{n}\left(x\right)F\left(x\right)=F\left(0\right)\quad\forall F\in\gamma}.
 \]
 
 \end_inset
@@ -12180,7 +12179,7 @@ reference "def:Generalized-functions,-regulariz"
  Also note that
 \begin_inset Formula 
 \[
-\int dx\:f_{n}\left(x\right)=\sqrt{\frac{n}{\pi}}\int dx\:e^{-nx^{2}}=\frac{1}{\sqrt{\pi}}\int dx\:e^{-x^{2}}=1.
+\indefint xf_{n}\left(x\right)=\sqrt{\frac{n}{\pi}}\indefint xe^{-nx^{2}}=\frac{1}{\sqrt{\pi}}\indefint xe^{-x^{2}}=1.
 \]
 
 \end_inset
@@ -12188,8 +12187,8 @@ reference "def:Generalized-functions,-regulariz"
 
 \begin_inset Formula 
 \begin{multline*}
-\implies\left|\int dx\:f_{n}\left(x\right)F\left(x\right)-F\left(0\right)\right|=\left|\int dx\:f_{n}\left(x\right)\left(F\left(x\right)-F\left(0\right)\right)\right|\\
-\leq\int dx\:f_{n}\left(x\right)\left|F\left(x\right)-F\left(0\right)\right|=\int dx\:f_{n}\left(x\right)\left|x\right|\left|\frac{F\left(x\right)-F\left(0\right)}{x}\right|\quad\\
+\implies\left|\indefint xf_{n}\left(x\right)F\left(x\right)-F\left(0\right)\right|=\left|\indefint xf_{n}\left(x\right)\left(F\left(x\right)-F\left(0\right)\right)\right|\\
+\leq\indefint xf_{n}\left(x\right)\left|F\left(x\right)-F\left(0\right)\right|=\indefint xf_{n}\left(x\right)\left|x\right|\left|\frac{F\left(x\right)-F\left(0\right)}{x}\right|\quad\\
 \begin{aligned}\leq\left(\sup F'\right)\int dx\,\left|x\right|f_{n}\left(x\right) & = & 2\left(\sup F'\right)\int_{0}^{\infty}dx\:x\sqrt{\frac{n}{\pi}}e^{-nx^{2}}\\
  & = & \frac{2}{\sqrt{n\pi}}\underset{\textnormal{const.}}{\underbrace{\left(\sup F'\right)}}\underset{\textnormal{indep. of }n}{\underbrace{\int_{0}^{\infty}dx\:xe^{-x^{2}}}}
 \end{aligned}
@@ -12340,7 +12339,7 @@ reference "def:Weakly-increasing-functions."
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $\int dx\:\delta\left(x\right)\underset{\textnormal{test fct.}}{\underbrace{\phi\left(x\right)F\left(x\right)}}=\phi\left(0\right)F\left(0\right)=\phi\left(0\right)\int dx\:\delta\left(x\right)F\left(x\right)\quad\forall F\in\gamma.$
+\begin_inset Formula $\indefint x\delta\left(x\right)\underset{\textnormal{test fct.}}{\underbrace{\phi\left(x\right)F\left(x\right)}}=\phi\left(0\right)F\left(0\right)=\phi\left(0\right)\indefint x\delta\left(x\right)F\left(x\right)\quad\forall F\in\gamma.$
 \end_inset
 
 .
@@ -12369,7 +12368,7 @@ function with weakly increasing functions!
 
 \begin_inset Formula 
 \[
-\boxed{\int dx\:\delta\left(x\right)\phi\left(x\right)=\phi\left(0\right)}.
+\boxed{\indefint x\delta\left(x\right)\phi\left(x\right)=\phi\left(0\right)}.
 \]
 
 \end_inset
@@ -12378,7 +12377,7 @@ function with weakly increasing functions!
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $\int dx\:\delta\left(x\right)\phi\left(x\right)=\phi\left(0\right)\int dx\:\delta\left(x\right)=\phi\left(0\right)\hat{\delta}\left(k=0\right)=\phi\left(0\right).$
+\begin_inset Formula $\indefint x\delta\left(x\right)\phi\left(x\right)=\phi\left(0\right)\indefint x\delta\left(x\right)=\phi\left(0\right)\hat{\delta}\left(k=0\right)=\phi\left(0\right).$
 \end_inset
 
 
@@ -12386,7 +12385,7 @@ function with weakly increasing functions!
 
 \begin_layout Remark
 This is consistent with 
-\begin_inset Formula $\hat{\delta}\left(k\right)=\int dx\:e^{-ikx}\delta\left(x\right)=1$
+\begin_inset Formula $\hat{\delta}\left(k\right)=\indefint xe^{-ikx}\delta\left(x\right)=1$
 \end_inset
 
 .
@@ -12454,7 +12453,7 @@ The
 function makes Fourier back transforms easy:
 \begin_inset Formula 
 \[
-\int\frac{dk}{2\pi}\:\hat{f}\left(k\right)e^{ikx}=\int\frac{dk}{2\pi}\:e^{ikx}\int dy\:e^{-iky}f\left(y\right)=\int dy\:\delta\left(y-x\right)f\left(y\right)=f\left(x\right).
+\int\frac{dk}{2\pi}\:\hat{f}\left(k\right)e^{ikx}=\int\frac{dk}{2\pi}\:e^{ikx}\indefint ye^{-iky}f\left(y\right)=\indefint y\delta\left(y-x\right)f\left(y\right)=f\left(x\right).
 \]
 
 \end_inset
@@ -12533,8 +12532,8 @@ I just thought of something.
 \begin_layout Proof
 \begin_inset Formula 
 \begin{eqnarray*}
-\left(\textnormal{i}\right)\quad\int dx\:F\left(x\right)\delta\left(ax\right)=\textnormal{sgn }a\int\frac{dx}{a}\:F\left(\frac{x}{a}\right)\delta\left(x\right)=\frac{\textnormal{sgn }a}{a}F\left(0\right) & = & \frac{1}{\left|a\right|}F\left(0\right)\\
- & = & \frac{1}{\left|a\right|}\int dx\:F\left(x\right)\delta\left(x\right)\quad\forall F\in\gamma.
+\left(\textnormal{i}\right)\quad\indefint xF\left(x\right)\delta\left(ax\right)=\textnormal{sgn }a\int\frac{dx}{a}\:F\left(\frac{x}{a}\right)\delta\left(x\right)=\frac{\textnormal{sgn }a}{a}F\left(0\right) & = & \frac{1}{\left|a\right|}F\left(0\right)\\
+ & = & \frac{1}{\left|a\right|}\indefint xF\left(x\right)\delta\left(x\right)\quad\forall F\in\gamma.
 \end{eqnarray*}
 
 \end_inset
@@ -12542,8 +12541,8 @@ I just thought of something.
 
 \begin_inset Formula 
 \begin{eqnarray*}
-\left(\textnormal{ii}\right)\quad\int dx\:F\left(x\right)f\left(x\right)\delta\left(x-a\right)=\int dx\:F\left(x+a\right)f\left(x+a\right)\delta\left(x\right) & = & F\left(a\right)f\left(a\right)\\
- & = & \int dx\:F\left(x\right)f\left(a\right)\delta\left(a-x\right)\quad\forall F\in\gamma.
+\left(\textnormal{ii}\right)\quad\indefint xF\left(x\right)f\left(x\right)\delta\left(x-a\right)=\indefint xF\left(x+a\right)f\left(x+a\right)\delta\left(x\right) & = & F\left(a\right)f\left(a\right)\\
+ & = & \indefint xF\left(x\right)f\left(a\right)\delta\left(a-x\right)\quad\forall F\in\gamma.
 \end{eqnarray*}
 
 \end_inset
@@ -12568,7 +12567,7 @@ I just thought of something.
  Then
 \begin_inset Formula 
 \begin{eqnarray*}
-\int dx\:F\left(x\right)\delta\left(f\left(x\right)\right)=\underset{j}{\sum}\underset{x_{j}-\varepsilon}{\overset{x_{j}+\varepsilon}{\int}}dx\:F\left(x\right)\delta\left(f\left(x\right)\right) & = & \underset{f\left(x_{j}-\varepsilon\right)}{\overset{f\left(x_{j}+\varepsilon\right)}{\int}}dy\:\frac{F\left(x=f^{-1}\left(y\right)\right)}{\left|f'\left(x=f^{-1}\left(y\right)\right)\right|}\delta\left(y\right)\\
+\indefint xF\left(x\right)\delta\left(f\left(x\right)\right)=\underset{j}{\sum}\underset{x_{j}-\varepsilon}{\overset{x_{j}+\varepsilon}{\int}}dx\:F\left(x\right)\delta\left(f\left(x\right)\right) & = & \underset{f\left(x_{j}-\varepsilon\right)}{\overset{f\left(x_{j}+\varepsilon\right)}{\int}}dy\:\frac{F\left(x=f^{-1}\left(y\right)\right)}{\left|f'\left(x=f^{-1}\left(y\right)\right)\right|}\delta\left(y\right)\\
  & = & \frac{F\left(x_{j}\right)}{\left|f'\left(x_{j}\right)\right|}\\
  & = & \underset{j}{\sum}\int dx\,F\left(x\right)\frac{\delta\left(x-x_{j}\right)}{\left|f'\left(x_{j}\right)\right|}\quad\forall F\in\gamma
 \end{eqnarray*}
@@ -12898,7 +12897,7 @@ Let
  Then 
 \begin_inset Formula 
 \[
-\boxed{\phi\left(\boldsymbol{x}\right)=\int d\boldsymbol{y}\:\frac{\rho\left(\boldsymbol{y}\right)}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}}.
+\boxed{\phi\left(\boldsymbol{x}\right)=\indefint{\boldsymbol{y}}\frac{\rho\left(\boldsymbol{y}\right)}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}}.
 \]
 
 \end_inset
@@ -12946,7 +12945,7 @@ reference "sub:ch3sec2_1The-Fourier-transform"
 \begin_inset Formula 
 \begin{eqnarray*}
 \phi\left(\boldsymbol{x}\right) & = & \left(\mathcal{F}^{-1}\left[\frac{4\pi}{\boldsymbol{k}^{2}}\right]\star\mathcal{F}^{-1}\left[\hat{\rho}\left(\boldsymbol{k}\right)\right]\right)\left(\boldsymbol{x}\right)\\
- & = & \int d\boldsymbol{y}\,\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\rho\left(\boldsymbol{y}\right).
+ & = & \indefint{\boldsymbol{y}}\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\rho\left(\boldsymbol{y}\right).
 \end{eqnarray*}
 
 \end_inset
@@ -12962,7 +12961,7 @@ For
  we get
 \begin_inset Formula 
 \[
-\phi\left(\boldsymbol{x}\right)=\int d\boldsymbol{y}\:\underset{\begin{array}{c}
+\phi\left(\boldsymbol{x}\right)=\indefint{\boldsymbol{y}}\underset{\begin{array}{c}
 \textnormal{weakly}\\
 \textnormal{inc.}
 \end{array}}{\underbrace{\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}}}e\delta\left(\boldsymbol{y}\right)=\frac{e}{\left|\boldsymbol{x}\right|}.
@@ -12987,7 +12986,7 @@ For
 
 \begin_inset Formula 
 \[
-\implies\boxed{\boldsymbol{E}\left(\boldsymbol{x}\right)=\int d\boldsymbol{y}\:\frac{\boldsymbol{x}-\boldsymbol{y}}{\left|\boldsymbol{x}-\boldsymbol{y}\right|^{3}}\rho\left(\boldsymbol{y}\right)}.
+\implies\boxed{\boldsymbol{E}\left(\boldsymbol{x}\right)=\indefint{\boldsymbol{y}}\frac{\boldsymbol{x}-\boldsymbol{y}}{\left|\boldsymbol{x}-\boldsymbol{y}\right|^{3}}\rho\left(\boldsymbol{y}\right)}.
 \]
 
 \end_inset
@@ -13467,7 +13466,7 @@ The energy of the electric field produced by
  is
 \begin_inset Formula 
 \[
-\boxed{U=\frac{1}{2}\int d\boldsymbol{x}\:d\boldsymbol{y}\:\rho\left(\boldsymbol{x}\right)\rho\left(\boldsymbol{y}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}}.
+\boxed{U=\frac{1}{2}\indefint{\boldsymbol{x}}d\boldsymbol{y}\:\rho\left(\boldsymbol{x}\right)\rho\left(\boldsymbol{y}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}}.
 \]
 
 \end_inset
@@ -13494,10 +13493,10 @@ reference "sub:ch2sec3_6Poynting's-theorem"
 \begin_inset Formula 
 \begin{eqnarray*}
 U & = & \frac{1}{8\pi}\underset{V}{\int}d\boldsymbol{x}\:\boldsymbol{E}^{2}\left(\boldsymbol{x}\right)\\
- & = & -\frac{1}{8\pi}\int d\boldsymbol{x}\:\boldsymbol{E}\cdot\nabla\phi\\
- & = & -\frac{1}{8\pi}\underset{\underset{\rightarrow0\textnormal{ as }V\rightarrow\infty}{\int d\boldsymbol{s}\cdot\boldsymbol{E}\phi}}{\underbrace{\int d\boldsymbol{x}\:\nabla\left(\boldsymbol{E}\phi\right)}}+\frac{1}{8\pi}\int d\boldsymbol{x}\:\underset{4\pi\rho}{\underbrace{\left(\nabla\cdot\boldsymbol{E}\right)}}\phi\\
- & = & \frac{1}{2}\int d\boldsymbol{x}\:\rho\left(\boldsymbol{x}\right)\phi\left(\boldsymbol{x}\right)\\
- & = & \frac{1}{2}\int d\boldsymbol{x}\:d\boldsymbol{y}\:\rho\left(\boldsymbol{x}\right)\rho\left(\boldsymbol{y}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|},
+ & = & -\frac{1}{8\pi}\indefint{\boldsymbol{x}}\boldsymbol{E}\cdot\nabla\phi\\
+ & = & -\frac{1}{8\pi}\underset{\underset{\rightarrow0\textnormal{ as }V\rightarrow\infty}{\int d\boldsymbol{s}\cdot\boldsymbol{E}\phi}}{\underbrace{\indefint{\boldsymbol{x}}\nabla\left(\boldsymbol{E}\phi\right)}}+\frac{1}{8\pi}\indefint{\boldsymbol{x}}\underset{4\pi\rho}{\underbrace{\left(\nabla\cdot\boldsymbol{E}\right)}}\phi\\
+ & = & \frac{1}{2}\indefint{\boldsymbol{x}}\rho\left(\boldsymbol{x}\right)\phi\left(\boldsymbol{x}\right)\\
+ & = & \frac{1}{2}\indefint{\boldsymbol{x}}d\boldsymbol{y}\:\rho\left(\boldsymbol{x}\right)\rho\left(\boldsymbol{y}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|},
 \end{eqnarray*}
 
 \end_inset
@@ -13542,7 +13541,7 @@ Let
 
 \begin_inset Formula 
 \begin{eqnarray*}
-\implies U & = & \frac{1}{2}\summation{\alpha,\beta}{}\int d\boldsymbol{x}\:d\boldsymbol{y}\:\rho^{\left(\alpha\right)}\left(\boldsymbol{x}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\rho^{\left(\beta\right)}\left(\boldsymbol{y}\right)\\
+\implies U & = & \frac{1}{2}\summation{\alpha,\beta}{}\indefint{\boldsymbol{x}}d\boldsymbol{y}\:\rho^{\left(\alpha\right)}\left(\boldsymbol{x}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\rho^{\left(\beta\right)}\left(\boldsymbol{y}\right)\\
  & = & \summation{\alpha}{}U^{\left(\alpha\right)}+\summation{\alpha\neq\beta}{}U^{\left(\alpha,\beta\right)},
 \end{eqnarray*}
 
@@ -13551,7 +13550,7 @@ Let
  where 
 \begin_inset Formula 
 \[
-\underline{U^{\left(\alpha\right)}:=\frac{1}{2}\int d\boldsymbol{x}\:d\boldsymbol{y}\:\rho^{\left(\alpha\right)}\left(\boldsymbol{x}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\rho^{\left(\alpha\right)}\left(\boldsymbol{y}\right)}
+\underline{U^{\left(\alpha\right)}:=\frac{1}{2}\indefint{\boldsymbol{x}}d\boldsymbol{y}\:\rho^{\left(\alpha\right)}\left(\boldsymbol{x}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\rho^{\left(\alpha\right)}\left(\boldsymbol{y}\right)}
 \]
 
 \end_inset
@@ -13567,7 +13566,7 @@ electrostatic self-energy
 , and
 \begin_inset Formula 
 \[
-\underline{U^{\left(\alpha,\beta\right)}:=\left(1-\delta_{\alpha\beta}\right)\frac{1}{2}\int d\boldsymbol{x}\:d\boldsymbol{y}\:\rho^{\left(\alpha\right)}\left(\boldsymbol{x}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\rho^{\left(\beta\right)}\left(\boldsymbol{y}\right)}
+\underline{U^{\left(\alpha,\beta\right)}:=\left(1-\delta_{\alpha\beta}\right)\frac{1}{2}\indefint{\boldsymbol{x}}d\boldsymbol{y}\:\rho^{\left(\alpha\right)}\left(\boldsymbol{x}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\rho^{\left(\beta\right)}\left(\boldsymbol{y}\right)}
 \]
 
 \end_inset
@@ -13749,7 +13748,7 @@ steady
  leads to a vector potential
 \begin_inset Formula 
 \[
-\boxed{\boldsymbol{A}=\frac{1}{c}\int d\boldsymbol{y}\:\frac{\boldsymbol{j}\left(\boldsymbol{y}\right)}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}}.
+\boxed{\boldsymbol{A}=\frac{1}{c}\indefint{\boldsymbol{y}}\frac{\boldsymbol{j}\left(\boldsymbol{y}\right)}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}}.
 \]
 
 \end_inset
@@ -13807,7 +13806,7 @@ Law of Biot & Savart
 The magnetic field generated by a static current density is
 \begin_inset Formula 
 \[
-\boxed{\boldsymbol{B}\left(\boldsymbol{x}\right)=-\frac{1}{c}\int d\boldsymbol{y}\:\frac{\left(\boldsymbol{x}-\boldsymbol{y}\right)\times\boldsymbol{j}\left(\boldsymbol{y}\right)}{\left|\boldsymbol{x}-\boldsymbol{y}\right|^{3}}}.
+\boxed{\boldsymbol{B}\left(\boldsymbol{x}\right)=-\frac{1}{c}\indefint{\boldsymbol{y}}\frac{\left(\boldsymbol{x}-\boldsymbol{y}\right)\times\boldsymbol{j}\left(\boldsymbol{y}\right)}{\left|\boldsymbol{x}-\boldsymbol{y}\right|^{3}}}.
 \]
 
 \end_inset
@@ -13880,7 +13879,7 @@ The energy of the magnetic field produced by
  is
 \begin_inset Formula 
 \[
-\boxed{U=\frac{1}{2c^{2}}\int d\boldsymbol{x}\:d\boldsymbol{y}\:\boldsymbol{j}\left(\boldsymbol{x}\right)\cdot\boldsymbol{j}\left(\boldsymbol{y}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}}.
+\boxed{U=\frac{1}{2c^{2}}\indefint{\boldsymbol{x}}d\boldsymbol{y}\:\boldsymbol{j}\left(\boldsymbol{x}\right)\cdot\boldsymbol{j}\left(\boldsymbol{y}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}}.
 \]
 
 \end_inset
@@ -13948,11 +13947,11 @@ reference "sub:ch2sec3_6Poynting's-theorem"
 \begin_inset Formula 
 \begin{eqnarray*}
 U & = & \frac{1}{8\pi}\underset{V}{\int}d\boldsymbol{x}\:\boldsymbol{B}^{2}\left(\boldsymbol{x}\right)\\
- & = & \frac{1}{8\pi}\int d\boldsymbol{x}\:\boldsymbol{B}\cdot\left(\nabla\times\boldsymbol{A}\right)\\
- & \overset{1.}{=} & \frac{1}{8\pi}\underset{\underset{\rightarrow0\textnormal{ as }V\rightarrow\infty}{\int d\boldsymbol{s}\cdot\left(\boldsymbol{A}\times\boldsymbol{B}\right)}}{\underbrace{\int d\boldsymbol{x}\:\nabla\cdot\left(\boldsymbol{A}\times\boldsymbol{B}\right)}}+\frac{1}{8\pi}\int d\boldsymbol{x}\:\underset{\frac{4\pi}{c}\boldsymbol{j}}{\boldsymbol{A}\cdot\underbrace{\left(\nabla\times\boldsymbol{B}\right)}}\\
- & = & \frac{1}{2c}\int d\boldsymbol{x}\:\boldsymbol{A}\left(\boldsymbol{x}\right)\cdot\boldsymbol{j}\left(\boldsymbol{x}\right)\\
- & \overset{2.}{=} & \frac{1}{2c}\int d\boldsymbol{x}\:\boldsymbol{j}\left(\boldsymbol{x}\right)\cdot\frac{1}{c}\int d\boldsymbol{y}\:\frac{\boldsymbol{j}\left(\boldsymbol{y}\right)}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\\
- & = & \frac{1}{2c^{2}}\int d\boldsymbol{x}\:d\boldsymbol{y}\:\frac{\boldsymbol{j}\left(\boldsymbol{x}\right)\cdot\boldsymbol{j}\left(\boldsymbol{y}\right)}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}
+ & = & \frac{1}{8\pi}\indefint{\boldsymbol{x}}\boldsymbol{B}\cdot\left(\nabla\times\boldsymbol{A}\right)\\
+ & \overset{1.}{=} & \frac{1}{8\pi}\underset{\underset{\rightarrow0\textnormal{ as }V\rightarrow\infty}{\int d\boldsymbol{s}\cdot\left(\boldsymbol{A}\times\boldsymbol{B}\right)}}{\underbrace{\indefint{\boldsymbol{x}}\nabla\cdot\left(\boldsymbol{A}\times\boldsymbol{B}\right)}}+\frac{1}{8\pi}\indefint{\boldsymbol{x}}\underset{\frac{4\pi}{c}\boldsymbol{j}}{\boldsymbol{A}\cdot\underbrace{\left(\nabla\times\boldsymbol{B}\right)}}\\
+ & = & \frac{1}{2c}\indefint{\boldsymbol{x}}\boldsymbol{A}\left(\boldsymbol{x}\right)\cdot\boldsymbol{j}\left(\boldsymbol{x}\right)\\
+ & \overset{2.}{=} & \frac{1}{2c}\indefint{\boldsymbol{x}}\boldsymbol{j}\left(\boldsymbol{x}\right)\cdot\frac{1}{c}\indefint{\boldsymbol{y}}\frac{\boldsymbol{j}\left(\boldsymbol{y}\right)}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\\
+ & = & \frac{1}{2c^{2}}\indefint{\boldsymbol{x}}d\boldsymbol{y}\:\frac{\boldsymbol{j}\left(\boldsymbol{x}\right)\cdot\boldsymbol{j}\left(\boldsymbol{y}\right)}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}
 \end{eqnarray*}
 
 \end_inset
@@ -14000,7 +13999,7 @@ Let
 
 \begin_inset Formula 
 \begin{eqnarray*}
-\implies U & = & \frac{1}{2c^{2}}\summation{\alpha,\beta}{}\int d\boldsymbol{x}\:d\boldsymbol{y}\:\boldsymbol{j}^{\left(\alpha\right)}\left(\boldsymbol{x}\right)\cdot\boldsymbol{j}^{\left(\beta\right)}\left(\boldsymbol{y}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\\
+\implies U & = & \frac{1}{2c^{2}}\summation{\alpha,\beta}{}\indefint{\boldsymbol{x}}d\boldsymbol{y}\:\boldsymbol{j}^{\left(\alpha\right)}\left(\boldsymbol{x}\right)\cdot\boldsymbol{j}^{\left(\beta\right)}\left(\boldsymbol{y}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\\
  & = & \summation{\alpha}{}U^{\left(\alpha\right)}+\summation{\alpha\neq\beta}{}U^{\left(\alpha,\beta\right)},
 \end{eqnarray*}
 
@@ -14009,7 +14008,7 @@ Let
  where 
 \begin_inset Formula 
 \[
-\underline{U^{\left(\alpha\right)}:=\frac{1}{2c^{2}}\int d\boldsymbol{x}\:d\boldsymbol{y}\:\boldsymbol{j}^{\left(\alpha\right)}\left(\boldsymbol{x}\right)\cdot\boldsymbol{j}^{\left(\alpha\right)}\left(\boldsymbol{y}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}}
+\underline{U^{\left(\alpha\right)}:=\frac{1}{2c^{2}}\indefint{\boldsymbol{x}}d\boldsymbol{y}\:\boldsymbol{j}^{\left(\alpha\right)}\left(\boldsymbol{x}\right)\cdot\boldsymbol{j}^{\left(\alpha\right)}\left(\boldsymbol{y}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}}
 \]
 
 \end_inset
@@ -14025,7 +14024,7 @@ magnetostatic self-energy
 , and
 \begin_inset Formula 
 \[
-\underline{U^{\left(\alpha,\beta\right)}:=\left(1-\delta_{\alpha\beta}\right)\frac{1}{2}\int d\boldsymbol{x}\:d\boldsymbol{y}\:\boldsymbol{j}^{\left(\alpha\right)}\left(\boldsymbol{x}\right)\cdot\boldsymbol{j}^{\left(\beta\right)}\left(\boldsymbol{y}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}}
+\underline{U^{\left(\alpha,\beta\right)}:=\left(1-\delta_{\alpha\beta}\right)\frac{1}{2}\indefint{\boldsymbol{x}}d\boldsymbol{y}\:\boldsymbol{j}^{\left(\alpha\right)}\left(\boldsymbol{x}\right)\cdot\boldsymbol{j}^{\left(\beta\right)}\left(\boldsymbol{y}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}}
 \]
 
 \end_inset
@@ -14116,8 +14115,8 @@ reference "sub:ch3sec3_3Poisson's-formula"
 ) gives
 \begin_inset Formula 
 \begin{eqnarray*}
-\phi\left(\boldsymbol{x}\right) & = & \int d\boldsymbol{y}\:\frac{\rho\left(\boldsymbol{y}\right)}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}=\int d\boldsymbol{y}\:\rho\left(\boldsymbol{y}\right)\frac{1}{r}\left[1+\frac{\boldsymbol{x}\cdot\boldsymbol{y}}{r^{2}}+O\left(\frac{1}{r^{2}}\right)\right]\\
- & = & \frac{1}{r}\int d\boldsymbol{y}\:\rho\left(\boldsymbol{y}\right)+\frac{\boldsymbol{x}}{r^{3}}\cdot\int d\boldsymbol{y}\:\boldsymbol{y}\rho\left(\boldsymbol{y}\right)+O\left(\frac{1}{r^{3}}\right)
+\phi\left(\boldsymbol{x}\right) & = & \indefint{\boldsymbol{y}}\frac{\rho\left(\boldsymbol{y}\right)}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}=\indefint{\boldsymbol{y}}\rho\left(\boldsymbol{y}\right)\frac{1}{r}\left[1+\frac{\boldsymbol{x}\cdot\boldsymbol{y}}{r^{2}}+O\left(\frac{1}{r^{2}}\right)\right]\\
+ & = & \frac{1}{r}\indefint{\boldsymbol{y}}\rho\left(\boldsymbol{y}\right)+\frac{\boldsymbol{x}}{r^{3}}\cdot\indefint{\boldsymbol{y}}\boldsymbol{y}\rho\left(\boldsymbol{y}\right)+O\left(\frac{1}{r^{3}}\right)
 \end{eqnarray*}
 
 \end_inset
@@ -14142,7 +14141,7 @@ For large distances
 \end_layout
 
 \begin_layout Proposition
-\begin_inset Formula $\underline{Q:=\int d\boldsymbol{y}\:\rho\left(\boldsymbol{y}\right)}$
+\begin_inset Formula $\underline{Q:=\indefint{\boldsymbol{y}}\rho\left(\boldsymbol{y}\right)}$
 \end_inset
 
  is the 
@@ -14153,7 +14152,7 @@ total charge
 \end_layout
 
 \begin_layout Proposition
-\begin_inset Formula $\underline{\boldsymbol{d}:=\int d\boldsymbol{y}\:\boldsymbol{y}\rho\left(\boldsymbol{y}\right)}$
+\begin_inset Formula $\underline{\boldsymbol{d}:=\indefint{\boldsymbol{y}}\boldsymbol{y}\rho\left(\boldsymbol{y}\right)}$
 \end_inset
 
  is the 
@@ -14219,8 +14218,8 @@ Then in the new coordinate system we have
 
 \begin_inset Formula 
 \begin{eqnarray*}
-\implies\underline{\boldsymbol{d}'} & = & \int d\boldsymbol{y}\:\boldsymbol{y}\rho'\left(\boldsymbol{y}\right)\\
- & = & \int d\boldsymbol{y}\:\boldsymbol{y}\rho\left(\boldsymbol{y}-\boldsymbol{a}\right)=\int d\boldsymbol{y}\:\left(\boldsymbol{y}+\boldsymbol{a}\right)\rho\left(\boldsymbol{y}\right)=\underline{\boldsymbol{d}+Q\boldsymbol{a}}
+\implies\underline{\boldsymbol{d}'} & = & \indefint{\boldsymbol{y}}\boldsymbol{y}\rho'\left(\boldsymbol{y}\right)\\
+ & = & \indefint{\boldsymbol{y}}\boldsymbol{y}\rho\left(\boldsymbol{y}-\boldsymbol{a}\right)=\indefint{\boldsymbol{y}}\left(\boldsymbol{y}+\boldsymbol{a}\right)\rho\left(\boldsymbol{y}\right)=\underline{\boldsymbol{d}+Q\boldsymbol{a}}
 \end{eqnarray*}
 
 \end_inset
@@ -14642,7 +14641,7 @@ I kind of want to see a proof of this
  where 
 \begin_inset Formula 
 \[
-\underline{f_{l}=\left(\frac{2l+1}{2}\right)\int dx\:f\left(x\right)P_{l}\left(x\right)}
+\underline{f_{l}=\left(\frac{2l+1}{2}\right)\indefint xf\left(x\right)P_{l}\left(x\right)}
 \]
 
 \end_inset
@@ -15128,7 +15127,7 @@ differential equations
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\left(\textnormal{iii}\right)\quad\int d\Omega\:Y_{lm}^{*}\left(\Omega\right)Y_{l'm'}\left(\Omega\right)=\delta_{ll'}\delta_{mm'}$
+\begin_inset Formula $\left(\textnormal{iii}\right)\quad\indefint{\Omega}Y_{lm}^{*}\left(\Omega\right)Y_{l'm'}\left(\Omega\right)=\delta_{ll'}\delta_{mm'}$
 \end_inset
 
 
@@ -15188,7 +15187,7 @@ Any piecewise-continuous and continuously differentiable function on the
  where the coefficients are given by
 \begin_inset Formula 
 \[
-\underline{f_{lm}=\int d\Omega\:f\left(\Omega\right)Y_{lm}^{*}\left(\Omega\right)}
+\underline{f_{lm}=\indefint{\Omega}f\left(\Omega\right)Y_{lm}^{*}\left(\Omega\right)}
 \]
 
 \end_inset
@@ -15398,7 +15397,7 @@ The differential equation for the function
  and
 \begin_inset Formula 
 \[
-\underline{a_{lm}\left(r\right)=\int d\Omega\:a\left(r,\theta,\varphi\right)Y_{lm}^{*}\left(\Omega\right)}\tag{\dagger}
+\underline{a_{lm}\left(r\right)=\indefint{\Omega}a\left(r,\theta,\varphi\right)Y_{lm}^{*}\left(\Omega\right)}\tag{\dagger}
 \]
 
 \end_inset
@@ -16033,7 +16032,7 @@ The electrostatic potential of a localized charge distribution
  where
 \begin_inset Formula 
 \[
-\underline{Q_{lm}:=\sqrt{\frac{4\pi}{2l+1}}\int_{0}^{\infty}dr\:r^{2}r^{l}\int d\Omega\:\rho\left(r,\Omega\right)Y_{lm}^{*}\left(\Omega\right)}
+\underline{Q_{lm}:=\sqrt{\frac{4\pi}{2l+1}}\int_{0}^{\infty}dr\:r^{2}r^{l}\indefint{\Omega}\rho\left(r,\Omega\right)Y_{lm}^{*}\left(\Omega\right)}
 \]
 
 \end_inset
@@ -16074,9 +16073,9 @@ Note that
  
 \begin_inset Formula 
 \begin{eqnarray*}
-\phi\left(\boldsymbol{x}\right) & = & \int d\boldsymbol{y}\:\frac{\rho\left(\boldsymbol{y}\right)}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\\
- & = & \int d\boldsymbol{y}\:\rho\left(\boldsymbol{y}\right)\frac{1}{r}\summation{l=0}{\infty}\left(\frac{y}{r}\right)^{l}\frac{4\pi}{2l+1}\summation{m=-l}lY_{lm}\left(\Omega_{\boldsymbol{x}}\right)Y_{lm}^{*}\left(\Omega_{\boldsymbol{y}}\right)\\
- & = & \summation{l,m}{}\frac{1}{r^{l+1}}\sqrt{\frac{4\pi}{2l+1}}Y_{lm}\left(\Omega_{\boldsymbol{x}}\right)\understuff{\sqrt{\frac{4\pi}{2l+1}}\int dy\:y^{2}y^{l}\int d\Omega\:\rho\left(y,\Omega_{\boldsymbol{y}}\right)Y_{lm}^{*}\left(\Omega_{\boldsymbol{y}}\right)}{=:Q_{lm}}
+\phi\left(\boldsymbol{x}\right) & = & \indefint{\boldsymbol{y}}\frac{\rho\left(\boldsymbol{y}\right)}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\\
+ & = & \indefint{\boldsymbol{y}}\rho\left(\boldsymbol{y}\right)\frac{1}{r}\summation{l=0}{\infty}\left(\frac{y}{r}\right)^{l}\frac{4\pi}{2l+1}\summation{m=-l}lY_{lm}\left(\Omega_{\boldsymbol{x}}\right)Y_{lm}^{*}\left(\Omega_{\boldsymbol{y}}\right)\\
+ & = & \summation{l,m}{}\frac{1}{r^{l+1}}\sqrt{\frac{4\pi}{2l+1}}Y_{lm}\left(\Omega_{\boldsymbol{x}}\right)\understuff{\sqrt{\frac{4\pi}{2l+1}}\indefint yy^{2}y^{l}\indefint{\Omega}\rho\left(y,\Omega_{\boldsymbol{y}}\right)Y_{lm}^{*}\left(\Omega_{\boldsymbol{y}}\right)}{=:Q_{lm}}
 \end{eqnarray*}
 
 \end_inset
@@ -16099,7 +16098,7 @@ For
 , the moment is
 \begin_inset Formula 
 \[
-\underline{Q_{00}}=\sqrt{4\pi}\int_{0}^{\infty}dr\:r^{2}\int d\Omega\:\rho\left(r,\Omega\right)\understuff{\frac{1}{\sqrt{4\pi}}}{Y_{00}^{*}}=\underline{Q},
+\underline{Q_{00}}=\sqrt{4\pi}\int_{0}^{\infty}dr\:r^{2}\indefint{\Omega}\rho\left(r,\Omega\right)\understuff{\frac{1}{\sqrt{4\pi}}}{Y_{00}^{*}}=\underline{Q},
 \]
 
 \end_inset
@@ -16127,7 +16126,7 @@ For
 :
 \begin_inset Formula 
 \[
-Q_{1m}=\sqrt{\frac{4\pi}{3}}\int_{0}^{\infty}dr\:r^{3}\int d\Omega\:\rho\left(r,\Omega\right)\left[\delta_{m0}\cos\theta-\delta_{m1}\frac{1}{\sqrt{2}}e^{-i\varphi}\sin\theta+\delta_{m,-1}\frac{1}{\sqrt{2}}e^{i\varphi}\sin\theta\right]\sqrt{\frac{3}{4\pi}}
+Q_{1m}=\sqrt{\frac{4\pi}{3}}\int_{0}^{\infty}dr\:r^{3}\indefint{\Omega}\rho\left(r,\Omega\right)\left[\delta_{m0}\cos\theta-\delta_{m1}\frac{1}{\sqrt{2}}e^{-i\varphi}\sin\theta+\delta_{m,-1}\frac{1}{\sqrt{2}}e^{i\varphi}\sin\theta\right]\sqrt{\frac{3}{4\pi}}
 \]
 
 \end_inset
@@ -16135,10 +16134,10 @@ Q_{1m}=\sqrt{\frac{4\pi}{3}}\int_{0}^{\infty}dr\:r^{3}\int d\Omega\:\rho\left(r,
 
 \begin_inset Formula 
 \begin{eqnarray*}
-\implies\underline{Q_{10}} & = & \int_{0}^{\infty}dr\:r^{2}\int d\Omega\:\rho\left(r,\Omega\right)r\cos\theta=\int d\boldsymbol{x}x_{3}\rho\left(\boldsymbol{x}\right)=\underline{d_{3}}\\
-\implies\underline{Q_{11}} & = & -\frac{1}{\sqrt{2}}\int_{0}^{\infty}dr\:r^{2}\int d\Omega\:\rho\left(r,\Omega\right)e^{-i\varphi}r\sin\theta\\
- & = & -\frac{1}{\sqrt{2}}\int d\boldsymbol{x}\:\rho\left(\boldsymbol{x}\right)\left[r\sin\theta\cos\varphi-ir\sin\theta\sin\varphi\right]\\
- & = & -\frac{1}{\sqrt{2}}\int d\boldsymbol{x}\:\rho\left(\boldsymbol{x}\right)\left[x_{1}-ix_{2}\right]=\underline{-\frac{1}{\sqrt{2}}\left(d_{1}-id_{2}\right)}\\
+\implies\underline{Q_{10}} & = & \int_{0}^{\infty}dr\:r^{2}\indefint{\Omega}\rho\left(r,\Omega\right)r\cos\theta=\int d\boldsymbol{x}x_{3}\rho\left(\boldsymbol{x}\right)=\underline{d_{3}}\\
+\implies\underline{Q_{11}} & = & -\frac{1}{\sqrt{2}}\int_{0}^{\infty}dr\:r^{2}\indefint{\Omega}\rho\left(r,\Omega\right)e^{-i\varphi}r\sin\theta\\
+ & = & -\frac{1}{\sqrt{2}}\indefint{\boldsymbol{x}}\rho\left(\boldsymbol{x}\right)\left[r\sin\theta\cos\varphi-ir\sin\theta\sin\varphi\right]\\
+ & = & -\frac{1}{\sqrt{2}}\indefint{\boldsymbol{x}}\rho\left(\boldsymbol{x}\right)\left[x_{1}-ix_{2}\right]=\underline{-\frac{1}{\sqrt{2}}\left(d_{1}-id_{2}\right)}\\
 \implies\underline{Q_{1,-1}} & = & \underline{\frac{1}{\sqrt{2}}\left(d_{1}+id_{2}\right)}
 \end{eqnarray*}
 
@@ -16249,7 +16248,7 @@ Does this not ignore the self-energies? RESPONSE: We set things up so we
  
 \begin_inset Formula 
 \begin{eqnarray*}
-\underline{U} & = & \frac{1}{2}\int d\boldsymbol{x}\:d\boldsymbol{y}\:\rho\left(\boldsymbol{x}\right)\rho\left(\boldsymbol{y}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\\
+\underline{U} & = & \frac{1}{2}\indefint{\boldsymbol{x}}d\boldsymbol{y}\:\rho\left(\boldsymbol{x}\right)\rho\left(\boldsymbol{y}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\\
  & = & \frac{1}{2}\underset{R_{<}}{\int}d\boldsymbol{x}\:\rho_{<}\left(\boldsymbol{x}\right)\underset{R_{>}}{\int}d\boldsymbol{y}\:\rho_{>}\left(\boldsymbol{y}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}+\frac{1}{2}\underset{R_{>}}{\int}d\boldsymbol{x}\:\rho_{>}\left(\boldsymbol{x}\right)\underset{R_{<}}{\int}d\boldsymbol{y}\:\rho_{<}\left(\boldsymbol{y}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\\
  & = & \underset{R_{<}}{\int}d\boldsymbol{x}\:\rho_{<}\left(\boldsymbol{x}\right)\underset{R_{>}}{\int}d\boldsymbol{y}\:\rho_{>}\left(\boldsymbol{y}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\\
  & = & \underline{\underset{R_{<}}{\int}d\boldsymbol{x}\:\rho_{<}\left(\boldsymbol{x}\right)\phi_{>}\left(\boldsymbol{x}\right)},
@@ -16482,8 +16481,8 @@ Define the following:
 .
 \begin_inset Formula 
 \begin{eqnarray*}
-\implies U & = & \int d\boldsymbol{x}\:\rho\left(\boldsymbol{x}\right)\phi\left(\boldsymbol{x}\right)\\
- & = & \phi_{0}\int d\boldsymbol{x}\:\rho\left(\boldsymbol{x}\right)-\boldsymbol{E}\cdot\int d\boldsymbol{x}\:\boldsymbol{x}\rho\left(\boldsymbol{x}\right)+\frac{1}{3}\phi_{ij}\frac{1}{2}\int d\boldsymbol{x}\:\rho\left(\boldsymbol{x}\right)\left(3x_{i}x_{j}-\boldsymbol{x}^{2}\delta_{ij}\right)+\dots
+\implies U & = & \indefint{\boldsymbol{x}}\rho\left(\boldsymbol{x}\right)\phi\left(\boldsymbol{x}\right)\\
+ & = & \phi_{0}\indefint{\boldsymbol{x}}\rho\left(\boldsymbol{x}\right)-\boldsymbol{E}\cdot\indefint{\boldsymbol{x}}\boldsymbol{x}\rho\left(\boldsymbol{x}\right)+\frac{1}{3}\phi_{ij}\frac{1}{2}\indefint{\boldsymbol{x}}\rho\left(\boldsymbol{x}\right)\left(3x_{i}x_{j}-\boldsymbol{x}^{2}\delta_{ij}\right)+\dots
 \end{eqnarray*}
 
 \end_inset
@@ -16612,9 +16611,9 @@ reference "sub:ch3sec4_4Expansion-of-harmonic"
  terms because they blow up at the origin.
 \begin_inset Formula 
 \begin{eqnarray*}
-\implies U & = & \int d\boldsymbol{x}\:\rho\left(\boldsymbol{x}\right)\phi\left(\boldsymbol{x}\right)\\
- & = & \int d\boldsymbol{x}\:\rho\left(\boldsymbol{x}\right)\summation{l,m}{}q_{lm}^{-}r^{l}Y_{lm}\left(\Omega\right)\\
- & = & \summation{l,m}{}q_{lm}^{-}\understuff{\int dr\:r^{2}r^{l}\int d\Omega\:\rho\left(r,\Omega\right)Y_{lm}\left(\Omega\right)}{=\sqrt{\frac{2l+1}{4\pi}}Q_{lm}^{*}}
+\implies U & = & \indefint{\boldsymbol{x}}\rho\left(\boldsymbol{x}\right)\phi\left(\boldsymbol{x}\right)\\
+ & = & \indefint{\boldsymbol{x}}\rho\left(\boldsymbol{x}\right)\summation{l,m}{}q_{lm}^{-}r^{l}Y_{lm}\left(\Omega\right)\\
+ & = & \summation{l,m}{}q_{lm}^{-}\understuff{\indefint rr^{2}r^{l}\indefint{\Omega}\rho\left(r,\Omega\right)Y_{lm}\left(\Omega\right)}{=\sqrt{\frac{2l+1}{4\pi}}Q_{lm}^{*}}
 \end{eqnarray*}
 
 \end_inset
@@ -16820,7 +16819,7 @@ reference "sub:ch3sec3_6The-law-of"
 , the Biot & Savart law gives
 \begin_inset Formula 
 \begin{eqnarray*}
-\underline{\boldsymbol{A}\left(\boldsymbol{x}\right)}=\frac{1}{c}\int d\boldsymbol{y}\:\frac{\boldsymbol{j}\left(\boldsymbol{y}\right)}{\left|\boldsymbol{x}-\boldsymbol{y}\right|} & = & \frac{1}{c}\summation{\alpha}{}\overline{\frac{e_{\alpha}\boldsymbol{v}_{\alpha}}{\left|\boldsymbol{x}-\boldsymbol{x}_{\alpha}\right|}}\\
+\underline{\boldsymbol{A}\left(\boldsymbol{x}\right)}=\frac{1}{c}\indefint{\boldsymbol{y}}\frac{\boldsymbol{j}\left(\boldsymbol{y}\right)}{\left|\boldsymbol{x}-\boldsymbol{y}\right|} & = & \frac{1}{c}\summation{\alpha}{}\overline{\frac{e_{\alpha}\boldsymbol{v}_{\alpha}}{\left|\boldsymbol{x}-\boldsymbol{x}_{\alpha}\right|}}\\
  & \overset{1.}{=} & \frac{1}{c}\summation{\alpha}{}\overline{e_{\alpha}\boldsymbol{v}_{\alpha}\frac{1}{r}\left[1+\frac{\boldsymbol{x}\cdot\boldsymbol{x}_{\alpha}}{r^{2}}+\dots\right]}\\
  & \overset{2.}{\approx} & \underline{\frac{1}{c}\frac{1}{r^{3}}\summation{\alpha}{}e_{\alpha}\overline{\boldsymbol{v}_{\alpha}\left(\boldsymbol{x}\cdot\boldsymbol{x}_{\alpha}\right)}}
 \end{eqnarray*}
@@ -18856,7 +18855,7 @@ reference "sec:ch3sec2_Digression:-Fourier-transforms"
 ), where
 \begin_inset Formula 
 \[
-\underline{\hat{f}\left(\boldsymbol{k},t\right)=\int d\boldsymbol{x}\:e^{-i\boldsymbol{k}\cdot\boldsymbol{x}}f\left(\boldsymbol{x},t\right)}
+\underline{\hat{f}\left(\boldsymbol{k},t\right)=\indefint{\boldsymbol{x}}e^{-i\boldsymbol{k}\cdot\boldsymbol{x}}f\left(\boldsymbol{x},t\right)}
 \]
 
 \end_inset
@@ -18906,7 +18905,7 @@ The generalized function concept implies this can be done for a large class
  integral:
 \begin_inset Formula 
 \begin{eqnarray*}
-\implies0 & = & \int d\boldsymbol{x}\:e^{-i\boldsymbol{k}\cdot\boldsymbol{x}}\left(\frac{1}{c^{2}}\partial_{t}^{2}-\nabla^{2}\right)f\left(\boldsymbol{x},t\right)\\
+\implies0 & = & \indefint{\boldsymbol{x}}e^{-i\boldsymbol{k}\cdot\boldsymbol{x}}\left(\frac{1}{c^{2}}\partial_{t}^{2}-\nabla^{2}\right)f\left(\boldsymbol{x},t\right)\\
  & = & \frac{1}{c^{2}}\partial_{t}^{2}\hat{f}+\boldsymbol{k}^{2}\hat{f}
 \end{eqnarray*}
 
@@ -19013,8 +19012,8 @@ Not sure I like this formatting
  
 \begin_inset Formula 
 \[
-\boxed{\begin{aligned}a{}_{\boldsymbol{k}}^{0} & := & \hat{f}\left(\boldsymbol{k},t=0\right) & = & \int d\boldsymbol{x}\:e^{-i\boldsymbol{k}\cdot\boldsymbol{x}}f\left(\boldsymbol{x},t=0\right)\\
-\overset{\bullet}{a}{}_{\boldsymbol{k}}^{0} & := & \left.\partial_{t}\hat{f}\left(\boldsymbol{k},t\right)\right|_{t=0} & = & \int d\boldsymbol{x}\:e^{-i\boldsymbol{k}\cdot\boldsymbol{x}}\left.\partial_{t}f\left(\boldsymbol{x},t\right)\right|_{t=0}
+\boxed{\begin{aligned}a{}_{\boldsymbol{k}}^{0} & := & \hat{f}\left(\boldsymbol{k},t=0\right) & = & \indefint{\boldsymbol{x}}e^{-i\boldsymbol{k}\cdot\boldsymbol{x}}f\left(\boldsymbol{x},t=0\right)\\
+\overset{\bullet}{a}{}_{\boldsymbol{k}}^{0} & := & \left.\partial_{t}\hat{f}\left(\boldsymbol{k},t\right)\right|_{t=0} & = & \indefint{\boldsymbol{x}}e^{-i\boldsymbol{k}\cdot\boldsymbol{x}}\left.\partial_{t}f\left(\boldsymbol{x},t\right)\right|_{t=0}
 \end{aligned}
 }
 \]
@@ -20209,7 +20208,7 @@ reference "sub:ch5sec2_1The-concept-of"
 
  with respect to time.
  That is, take 
-\begin_inset Formula $\int dt\:e^{i\omega t}\left(**\right)$
+\begin_inset Formula $\indefint te^{i\omega t}\left(**\right)$
 \end_inset
 
 :
@@ -20245,7 +20244,7 @@ Note that, by convention, we use
 
 \begin_inset Formula 
 \[
-\implies\delta\left(\boldsymbol{x}\right)\understuff{\int dt\:e^{i\omega t}\delta\left(t\right)}{=1\textnormal{ (Ch.3 §2.5)}}=\int dt\:e^{i\omega t}\frac{1}{c^{2}}\partial_{t}^{2}G\left(\boldsymbol{x},t\right)-\nabla^{2}\understuff{\int dt\:e^{i\omega t}G\left(\boldsymbol{x},t\right)}{\textnormal{define }=:G_{\omega}\left(\boldsymbol{x}\right)}
+\implies\delta\left(\boldsymbol{x}\right)\understuff{\indefint te^{i\omega t}\delta\left(t\right)}{=1\textnormal{ (Ch.3 §2.5)}}=\indefint te^{i\omega t}\frac{1}{c^{2}}\partial_{t}^{2}G\left(\boldsymbol{x},t\right)-\nabla^{2}\understuff{\indefint te^{i\omega t}G\left(\boldsymbol{x},t\right)}{\textnormal{define }=:G_{\omega}\left(\boldsymbol{x}\right)}
 \]
 
 \end_inset
@@ -20253,8 +20252,8 @@ Note that, by convention, we use
 
 \begin_inset Formula 
 \begin{eqnarray*}
-\implies\delta\left(\boldsymbol{x}\right)+\nabla^{2}G_{\omega}\left(\boldsymbol{x}\right) & = & \frac{1}{c^{2}}\int dt\:e^{i\omega t}\partial_{t}^{2}G\left(\boldsymbol{x},t\right)\\
- & \overset{1.}{=} & \frac{\left(i\omega\right)^{2}}{c^{2}}\understuff{\int dt\:e^{i\omega t}G\left(\boldsymbol{x},t\right)}{=G_{\omega}\left(\boldsymbol{x}\right)}
+\implies\delta\left(\boldsymbol{x}\right)+\nabla^{2}G_{\omega}\left(\boldsymbol{x}\right) & = & \frac{1}{c^{2}}\indefint te^{i\omega t}\partial_{t}^{2}G\left(\boldsymbol{x},t\right)\\
+ & \overset{1.}{=} & \frac{\left(i\omega\right)^{2}}{c^{2}}\understuff{\indefint te^{i\omega t}G\left(\boldsymbol{x},t\right)}{=G_{\omega}\left(\boldsymbol{x}\right)}
 \end{eqnarray*}
 
 \end_inset
@@ -20340,7 +20339,7 @@ We solve this by taking the spacial Fourier transforms.
  Define
 \begin_inset Formula 
 \[
-G_{\omega}\left(\boldsymbol{k}\right):=\int d\boldsymbol{x}\:e^{-i\boldsymbol{k}\cdot\boldsymbol{x}}G_{\omega}\left(\boldsymbol{x}\right).
+G_{\omega}\left(\boldsymbol{k}\right):=\indefint{\boldsymbol{x}}e^{-i\boldsymbol{k}\cdot\boldsymbol{x}}G_{\omega}\left(\boldsymbol{x}\right).
 \]
 
 \end_inset
@@ -20646,7 +20645,7 @@ reference "sub:ch5sec2_2Green's-functions-for"
 
 \begin_inset Formula 
 \[
-\implies\boxed{\phi\left(\boldsymbol{x},t\right)=\int d\boldsymbol{y}\:\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\rho\left(\boldsymbol{y},t-\frac{1}{c}\left|\boldsymbol{x}-\boldsymbol{y}\right|\right)}.\tag{\ast}
+\implies\boxed{\phi\left(\boldsymbol{x},t\right)=\indefint{\boldsymbol{y}}\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\rho\left(\boldsymbol{y},t-\frac{1}{c}\left|\boldsymbol{x}-\boldsymbol{y}\right|\right)}.\tag{\ast}
 \]
 
 \end_inset
@@ -20654,7 +20653,7 @@ reference "sub:ch5sec2_2Green's-functions-for"
  Analogously,
 \begin_inset Formula 
 \[
-\implies\boxed{\boldsymbol{A}\left(\boldsymbol{x},t\right)=\frac{1}{c}\int d\boldsymbol{y}\:\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\boldsymbol{j}\left(\boldsymbol{y},t-\frac{1}{c}\left|\boldsymbol{x}-\boldsymbol{y}\right|\right)}.\tag{\ast\ast}
+\implies\boxed{\boldsymbol{A}\left(\boldsymbol{x},t\right)=\frac{1}{c}\indefint{\boldsymbol{y}}\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\boldsymbol{j}\left(\boldsymbol{y},t-\frac{1}{c}\left|\boldsymbol{x}-\boldsymbol{y}\right|\right)}.\tag{\ast\ast}
 \]
 
 \end_inset
@@ -20841,7 +20840,7 @@ We can expand
 
 \begin_inset Formula 
 \[
-\implies\boxed{\phi\left(\boldsymbol{x},t\right)=\frac{1}{r}\int d\boldsymbol{y}\:\rho\left(\boldsymbol{y},t_{r}\right)}+O\left(\frac{1}{r^{2}}\right),
+\implies\boxed{\phi\left(\boldsymbol{x},t\right)=\frac{1}{r}\indefint{\boldsymbol{y}}\rho\left(\boldsymbol{y},t_{r}\right)}+O\left(\frac{1}{r^{2}}\right),
 \]
 
 \end_inset
@@ -20854,7 +20853,7 @@ We can expand
  Analogously,
 \begin_inset Formula 
 \[
-\implies\boxed{\boldsymbol{A}\left(\boldsymbol{x},t\right)=\frac{1}{cr}\int d\boldsymbol{y}\:\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)}+O\left(\frac{1}{r^{2}}\right).
+\implies\boxed{\boldsymbol{A}\left(\boldsymbol{x},t\right)=\frac{1}{cr}\indefint{\boldsymbol{y}}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)}+O\left(\frac{1}{r^{2}}\right).
 \]
 
 \end_inset
@@ -21107,7 +21106,7 @@ Recall
 Far from the sources, the fields are
 \begin_inset Formula 
 \[
-\boxed{\begin{alignedat}{1}\boldsymbol{B}\left(\boldsymbol{x},t\right) & =-\frac{1}{c^{2}}\frac{\hat{\boldsymbol{x}}}{r}\times\int d\boldsymbol{y}\:\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)\\
+\boxed{\begin{alignedat}{1}\boldsymbol{B}\left(\boldsymbol{x},t\right) & =-\frac{1}{c^{2}}\frac{\hat{\boldsymbol{x}}}{r}\times\indefint{\boldsymbol{y}}\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)\\
 \boldsymbol{E}\left(\boldsymbol{x},t\right) & =-\hat{\boldsymbol{x}}\times\boldsymbol{B}\left(\boldsymbol{x},t\right)
 \end{alignedat}
 }\dots+O\left(\frac{1}{r^{2}}\right).
@@ -21221,9 +21220,9 @@ reference "sub:ch5sec1_1Fields-and-potentials"
 
 \begin_inset Formula 
 \begin{eqnarray*}
-\implies B_{i} & = & \varepsilon_{ijk}\partial_{j}\frac{1}{r}\frac{1}{c}\int d\boldsymbol{y}\:j_{k}\left(\boldsymbol{y},t_{r}\right)\\
- & \overset{1.}{=} & \varepsilon_{ijk}\left(-\frac{1}{c^{2}}\right)\hat{x}_{j}\frac{1}{r}\int d\boldsymbol{y}\:\left(\partial_{t}j_{k}\left(\boldsymbol{y},t\right)\right)_{t=t_{r}}\\
-\implies\boldsymbol{B}\left(\boldsymbol{x},t\right) & = & -\frac{1}{c^{2}}\frac{\hat{\boldsymbol{x}}}{r}\times\int d\boldsymbol{y}\:\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)
+\implies B_{i} & = & \varepsilon_{ijk}\partial_{j}\frac{1}{r}\frac{1}{c}\indefint{\boldsymbol{y}}j_{k}\left(\boldsymbol{y},t_{r}\right)\\
+ & \overset{1.}{=} & \varepsilon_{ijk}\left(-\frac{1}{c^{2}}\right)\hat{x}_{j}\frac{1}{r}\indefint{\boldsymbol{y}}\left(\partial_{t}j_{k}\left(\boldsymbol{y},t\right)\right)_{t=t_{r}}\\
+\implies\boldsymbol{B}\left(\boldsymbol{x},t\right) & = & -\frac{1}{c^{2}}\frac{\hat{\boldsymbol{x}}}{r}\times\indefint{\boldsymbol{y}}\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)
 \end{eqnarray*}
 
 \end_inset
@@ -21288,11 +21287,11 @@ reference "sub:ch5sec1_1Fields-and-potentials"
 ,
 \begin_inset Formula 
 \begin{eqnarray*}
-\implies\boldsymbol{E} & = & -\nabla\frac{1}{r}\int d\boldsymbol{y}\:\rho\left(\boldsymbol{y},t_{r}\right)-\frac{1}{c}\partial_{t}\frac{1}{cr}\int d\boldsymbol{y}\:\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)\\
- & \overset{1.}{=} & \frac{1}{c}\frac{\hat{\boldsymbol{x}}}{r}\int d\boldsymbol{y}\:\partial_{t}\rho\left(\boldsymbol{y},t_{r}\right)-\frac{1}{c^{2}r}\int d\boldsymbol{y}\:\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)\\
- & \overset{2.}{=} & -\frac{1}{c}\frac{\hat{\boldsymbol{x}}}{r}\understuff{\int d\boldsymbol{y}\:\nabla_{\boldsymbol{y}}\cdot\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)}{=\int_{\mathbb{R}^{3}}d\boldsymbol{S}\cdot\boldsymbol{j}\rightarrow0}+\frac{1}{c}\frac{\hat{\boldsymbol{x}}}{r}\int d\boldsymbol{y}\:\frac{1}{c}\hat{\boldsymbol{x}}\cdot\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)-\frac{1}{c^{2}r}\int d\boldsymbol{y}\:\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)\\
- & = & \frac{1}{c^{2}r}\int d\boldsymbol{y}\:\left[\hat{\boldsymbol{x}}\left(\hat{\boldsymbol{x}}\cdot\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)\right)-\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)\right]\\
- & \overset{3.}{=} & \frac{1}{c^{2}r}\int d\boldsymbol{y}\:\hat{\boldsymbol{x}}\times\left(\hat{\boldsymbol{x}}\times\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)\right)\\
+\implies\boldsymbol{E} & = & -\nabla\frac{1}{r}\indefint{\boldsymbol{y}}\rho\left(\boldsymbol{y},t_{r}\right)-\frac{1}{c}\partial_{t}\frac{1}{cr}\indefint{\boldsymbol{y}}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)\\
+ & \overset{1.}{=} & \frac{1}{c}\frac{\hat{\boldsymbol{x}}}{r}\indefint{\boldsymbol{y}}\partial_{t}\rho\left(\boldsymbol{y},t_{r}\right)-\frac{1}{c^{2}r}\indefint{\boldsymbol{y}}\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)\\
+ & \overset{2.}{=} & -\frac{1}{c}\frac{\hat{\boldsymbol{x}}}{r}\understuff{\indefint{\boldsymbol{y}}\nabla_{\boldsymbol{y}}\cdot\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)}{=\int_{\mathbb{R}^{3}}d\boldsymbol{S}\cdot\boldsymbol{j}\rightarrow0}+\frac{1}{c}\frac{\hat{\boldsymbol{x}}}{r}\indefint{\boldsymbol{y}}\frac{1}{c}\hat{\boldsymbol{x}}\cdot\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)-\frac{1}{c^{2}r}\indefint{\boldsymbol{y}}\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)\\
+ & = & \frac{1}{c^{2}r}\indefint{\boldsymbol{y}}\left[\hat{\boldsymbol{x}}\left(\hat{\boldsymbol{x}}\cdot\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)\right)-\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)\right]\\
+ & \overset{3.}{=} & \frac{1}{c^{2}r}\indefint{\boldsymbol{y}}\hat{\boldsymbol{x}}\times\left(\hat{\boldsymbol{x}}\times\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)\right)\\
  & = & -\hat{\boldsymbol{x}}\times\boldsymbol{B}\left(\boldsymbol{x},t\right).
 \end{eqnarray*}
 
@@ -21545,8 +21544,8 @@ But
 \begin_inset Formula 
 \begin{eqnarray*}
 \implies\frac{d\mathscr{P}}{d\Omega} & = & \frac{c}{4\pi}r^{2}\boldsymbol{B}^{2}\\
- & = & \frac{c}{4\pi}\cancel{r^{2}}\left(\frac{1}{c^{2}\cancel{r}}\right)^{2}\left(\hat{\boldsymbol{x}}\times\int d\boldsymbol{y}\:\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)\right)^{2}\\
- & = & \frac{1}{4\pi c^{3}}\left(\hat{\boldsymbol{x}}\times\int d\boldsymbol{y}\:\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)\right)^{2}
+ & = & \frac{c}{4\pi}\cancel{r^{2}}\left(\frac{1}{c^{2}\cancel{r}}\right)^{2}\left(\hat{\boldsymbol{x}}\times\indefint{\boldsymbol{y}}\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)\right)^{2}\\
+ & = & \frac{1}{4\pi c^{3}}\left(\hat{\boldsymbol{x}}\times\indefint{\boldsymbol{y}}\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)\right)^{2}
 \end{eqnarray*}
 
 \end_inset
@@ -21558,7 +21557,7 @@ But
 The power radiated by the source per solid angle is
 \begin_inset Formula 
 \[
-\boxed{\frac{d\mathscr{P}}{d\Omega}=\frac{1}{4\pi c^{3}}\left(\hat{\boldsymbol{x}}\times\int d\boldsymbol{y}\:\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)\right)^{2}}.
+\boxed{\frac{d\mathscr{P}}{d\Omega}=\frac{1}{4\pi c^{3}}\left(\hat{\boldsymbol{x}}\times\indefint{\boldsymbol{y}}\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)\right)^{2}}.
 \]
 
 \end_inset
@@ -21768,8 +21767,8 @@ not sure about line 2
 
 \begin_inset Formula 
 \begin{eqnarray*}
-\underline{\int d\boldsymbol{y}\:\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)} & \approx & \int d\boldsymbol{y}\:\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{e}\right)\\
- & = & \frac{d}{dt}e\int d\boldsymbol{y}\:\boldsymbol{v}\left(t_{e}\right)\delta\left(\boldsymbol{y}-\boldsymbol{R}\left(t_{e}\right)\right)\\
+\underline{\indefint{\boldsymbol{y}}\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)} & \approx & \indefint{\boldsymbol{y}}\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{e}\right)\\
+ & = & \frac{d}{dt}e\indefint{\boldsymbol{y}}\boldsymbol{v}\left(t_{e}\right)\delta\left(\boldsymbol{y}-\boldsymbol{R}\left(t_{e}\right)\right)\\
  & = & e\left.\frac{d\boldsymbol{v}}{dt}\right|_{t=t_{e}}\\
  & = & \underline{e\dot{\boldsymbol{v}}\left(t_{e}\right)}.
 \end{eqnarray*}
@@ -21777,7 +21776,7 @@ not sure about line 2
 \end_inset
 
 Inserting into 
-\begin_inset Formula $\left(\hat{\boldsymbol{x}}\times\int d\boldsymbol{y}\:\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)\right)^{2}$
+\begin_inset Formula $\left(\hat{\boldsymbol{x}}\times\indefint{\boldsymbol{y}}\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)\right)^{2}$
 \end_inset
 
  yields (disregarding 
@@ -21863,7 +21862,7 @@ Larmor formula
 \end_layout
 
 \begin_layout Proof
-\begin_inset Formula $\int d\Omega\:\sin^{2}\theta=2\pi\int_{-1}^{1}d\eta\:\left(1-\eta^{2}\right)=\frac{8\pi}{3}$
+\begin_inset Formula $\indefint{\Omega}\sin^{2}\theta=2\pi\int_{-1}^{1}d\eta\:\left(1-\eta^{2}\right)=\frac{8\pi}{3}$
 \end_inset
 
 .
@@ -21953,7 +21952,7 @@ In this situation the radiated power per solid angle is
  is the dipole moment of the charge distribution, given by
 \begin_inset Formula 
 \[
-\boldsymbol{d}\left(t\right):=\int d\boldsymbol{y}\:\boldsymbol{y}\rho\left(\boldsymbol{y},t\right)
+\boldsymbol{d}\left(t\right):=\indefint{\boldsymbol{y}}\boldsymbol{y}\rho\left(\boldsymbol{y},t\right)
 \]
 
 \end_inset
@@ -22004,7 +22003,7 @@ For one point charge,
 
 \begin_inset Formula 
 \[
-\implies\boldsymbol{d}\left(t\right)=\int d\boldsymbol{y}\:\boldsymbol{y}e\delta\left(\boldsymbol{y}-\boldsymbol{R}\left(t\right)\right)=e\boldsymbol{R}\left(t\right)
+\implies\boldsymbol{d}\left(t\right)=\indefint{\boldsymbol{y}}\boldsymbol{y}e\delta\left(\boldsymbol{y}-\boldsymbol{R}\left(t\right)\right)=e\boldsymbol{R}\left(t\right)
 \]
 
 \end_inset
@@ -22023,7 +22022,7 @@ For one point charge,
 \begin_layout Lemma
 \begin_inset Formula 
 \[
-\underline{\frac{d}{dt}\boldsymbol{d}\left(t\right)=\int d\boldsymbol{y}\:\boldsymbol{j}\left(\boldsymbol{y},t\right)}
+\underline{\frac{d}{dt}\boldsymbol{d}\left(t\right)=\indefint{\boldsymbol{y}}\boldsymbol{j}\left(\boldsymbol{y},t\right)}
 \]
 
 \end_inset
@@ -22043,10 +22042,10 @@ Charge conservation implies
  Integrating over space,
 \begin_inset Formula 
 \begin{eqnarray*}
-\implies0 & = & \int d\boldsymbol{y}\:\boldsymbol{y}\left[\nabla_{\boldsymbol{y}}\cdot\boldsymbol{j}\left(\boldsymbol{y},t\right)+\partial_{t}\rho\left(\boldsymbol{y},t\right)\right]\\
- & \overset{1.}{=} & \int d\boldsymbol{y}\:\left[\nabla_{\boldsymbol{y}}\left(\boldsymbol{y}\cdot\boldsymbol{j}\right)-\boldsymbol{j}+\boldsymbol{y}\partial_{t}\rho\left(\boldsymbol{y},t\right)\right]\\
- & \overset{2.}{=} & -\int d\boldsymbol{y}\:\boldsymbol{j}\left(\boldsymbol{y},t\right)+\frac{d}{dt}\int d\boldsymbol{y}\:\boldsymbol{y}\rho\left(\boldsymbol{y},t\right)\\
- & = & -\int d\boldsymbol{y}\:\boldsymbol{j}\left(\boldsymbol{y},t\right)+\frac{d}{dt}\boldsymbol{d}\left(t\right).
+\implies0 & = & \indefint{\boldsymbol{y}}\boldsymbol{y}\left[\nabla_{\boldsymbol{y}}\cdot\boldsymbol{j}\left(\boldsymbol{y},t\right)+\partial_{t}\rho\left(\boldsymbol{y},t\right)\right]\\
+ & \overset{1.}{=} & \indefint{\boldsymbol{y}}\left[\nabla_{\boldsymbol{y}}\left(\boldsymbol{y}\cdot\boldsymbol{j}\right)-\boldsymbol{j}+\boldsymbol{y}\partial_{t}\rho\left(\boldsymbol{y},t\right)\right]\\
+ & \overset{2.}{=} & -\indefint{\boldsymbol{y}}\boldsymbol{j}\left(\boldsymbol{y},t\right)+\frac{d}{dt}\indefint{\boldsymbol{y}}\boldsymbol{y}\rho\left(\boldsymbol{y},t\right)\\
+ & = & -\indefint{\boldsymbol{y}}\boldsymbol{j}\left(\boldsymbol{y},t\right)+\frac{d}{dt}\boldsymbol{d}\left(t\right).
 \end{eqnarray*}
 
 \end_inset
@@ -22060,7 +22059,7 @@ Product rule
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $\int d\boldsymbol{y}\:\nabla_{\boldsymbol{y}}\left(\boldsymbol{y}\cdot\boldsymbol{j}\right)\rightarrow0$
+\begin_inset Formula $\indefint{\boldsymbol{y}}\nabla_{\boldsymbol{y}}\left(\boldsymbol{y}\cdot\boldsymbol{j}\right)\rightarrow0$
 \end_inset
 
  if 
@@ -22107,8 +22106,8 @@ reference "sub:ch5sec3_2The-radiated-power"
 , 
 \begin_inset Formula 
 \begin{eqnarray*}
-4\pi c^{3}\frac{d\mathscr{P}}{d\Omega} & \overset{1.}{\approx} & \left(\hat{\boldsymbol{x}}\times\int d\boldsymbol{y}\:\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{e}\right)\right)^{2}\\
- & = & \left(\hat{\boldsymbol{x}}\times\frac{d}{dt}\int d\boldsymbol{y}\:\boldsymbol{j}\left(\boldsymbol{y},t_{e}\right)\right)^{2}\\
+4\pi c^{3}\frac{d\mathscr{P}}{d\Omega} & \overset{1.}{\approx} & \left(\hat{\boldsymbol{x}}\times\indefint{\boldsymbol{y}}\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{e}\right)\right)^{2}\\
+ & = & \left(\hat{\boldsymbol{x}}\times\frac{d}{dt}\indefint{\boldsymbol{y}}\boldsymbol{j}\left(\boldsymbol{y},t_{e}\right)\right)^{2}\\
  & \overset{2.}{=} & \left(\hat{\boldsymbol{x}}\times\frac{d}{dt}\left(\frac{d}{dt}\boldsymbol{d}\right)\right)^{2}\\
  & = & \left(\hat{\boldsymbol{x}}\times\ddot{\boldsymbol{d}}\right)^{2}
 \end{eqnarray*}
@@ -22176,8 +22175,8 @@ reference "sub:ch5sec3_2The-radiated-power"
  we need
 \begin_inset Formula 
 \begin{eqnarray*}
-\int d\boldsymbol{y}\:\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right) & = & \int d\boldsymbol{y}\:\boldsymbol{j}\Bigl(\boldsymbol{y},\understuff{t-\frac{r}{c}}{t_{e}}+\frac{1}{c}\hat{\boldsymbol{x}}\cdot\boldsymbol{y}+\dots\Bigr)\\
- & \overset{1.}{\approx} & \int d\boldsymbol{y}\:\boldsymbol{j}\left(\boldsymbol{y},t_{e}\right)+\frac{1}{c}\int d\boldsymbol{y}\:\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{y}\right)\left.\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t\right)\right|_{t=t_{e}}\\
+\indefint{\boldsymbol{y}}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right) & = & \indefint{\boldsymbol{y}}\boldsymbol{j}\Bigl(\boldsymbol{y},\understuff{t-\frac{r}{c}}{t_{e}}+\frac{1}{c}\hat{\boldsymbol{x}}\cdot\boldsymbol{y}+\dots\Bigr)\\
+ & \overset{1.}{\approx} & \indefint{\boldsymbol{y}}\boldsymbol{j}\left(\boldsymbol{y},t_{e}\right)+\frac{1}{c}\indefint{\boldsymbol{y}}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{y}\right)\left.\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t\right)\right|_{t=t_{e}}\\
  & \begin{array}{c}
 \overset{2.}{=}\\
 \\
@@ -22185,9 +22184,9 @@ reference "sub:ch5sec3_2The-radiated-power"
 \dot{\boldsymbol{d}}\left(t_{e}\right)+\frac{1}{c}\frac{d}{dt}\Bigr|_{t_{e}}\int d\boldsymbol{y} & \Bigr[ & \frac{1}{2}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{y}\right)\boldsymbol{j} & + & \frac{1}{2}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{j}\right)\boldsymbol{y}\\
  & + & \frac{1}{2}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{y}\right)\boldsymbol{j} & - & \frac{1}{2}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{j}\right)\boldsymbol{y} & \Bigl]
 \end{array}\\
- & = & \dot{\boldsymbol{d}}\left(t_{e}\right)-\frac{1}{2c}\frac{d}{dt}\Bigr|_{t_{e}}\int d\boldsymbol{y}\:\left[\boldsymbol{y}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{j}\right)-\boldsymbol{j}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{y}\right)\right]+\left(\textnormal{other term}\right)\\
- & \overset{3.}{=} & \dot{\boldsymbol{d}}\left(t_{e}\right)-\frac{1}{2c}\frac{d}{dt}\Bigr|_{t_{e}}\int d\boldsymbol{y}\:\hat{\boldsymbol{x}}\times\left(\boldsymbol{y}\times\boldsymbol{j}\right)+\left(\textnormal{other term}\right)\\
- & = & \dot{\boldsymbol{d}}\left(t_{e}\right)-\hat{\boldsymbol{x}}\times\frac{d}{dt}\Bigr|_{t_{e}}\frac{1}{2c}\int d\boldsymbol{y}\:\boldsymbol{y}\times\boldsymbol{j}\left(\boldsymbol{y},t\right)+\left(\textnormal{other term}\right)\\
+ & = & \dot{\boldsymbol{d}}\left(t_{e}\right)-\frac{1}{2c}\frac{d}{dt}\Bigr|_{t_{e}}\indefint{\boldsymbol{y}}\left[\boldsymbol{y}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{j}\right)-\boldsymbol{j}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{y}\right)\right]+\left(\textnormal{other term}\right)\\
+ & \overset{3.}{=} & \dot{\boldsymbol{d}}\left(t_{e}\right)-\frac{1}{2c}\frac{d}{dt}\Bigr|_{t_{e}}\indefint{\boldsymbol{y}}\hat{\boldsymbol{x}}\times\left(\boldsymbol{y}\times\boldsymbol{j}\right)+\left(\textnormal{other term}\right)\\
+ & = & \dot{\boldsymbol{d}}\left(t_{e}\right)-\hat{\boldsymbol{x}}\times\frac{d}{dt}\Bigr|_{t_{e}}\frac{1}{2c}\indefint{\boldsymbol{y}}\boldsymbol{y}\times\boldsymbol{j}\left(\boldsymbol{y},t\right)+\left(\textnormal{other term}\right)\\
  & \overset{4.}{=} & \dot{\boldsymbol{d}}\left(t_{e}\right)-\hat{\boldsymbol{x}}\times\frac{d}{dt}\Bigr|_{t_{e}}\boldsymbol{m}+\left(\textnormal{other term}\right)\\
  & \overset{5.}{=} & \dot{\boldsymbol{d}}\left(t_{e}\right)-\hat{\boldsymbol{x}}\times\dot{\boldsymbol{m}}\left(t_{e}\right)+\left(\textnormal{other term}\right)
 \end{eqnarray*}
@@ -22203,7 +22202,7 @@ Taylor expanded.
 
 \begin_layout Enumerate
 Used the lemma to replace 
-\begin_inset Formula $\int d\boldsymbol{y}\:\boldsymbol{j}\left(\boldsymbol{y},t_{e}\right)$
+\begin_inset Formula $\indefint{\boldsymbol{y}}\boldsymbol{j}\left(\boldsymbol{y},t_{e}\right)$
 \end_inset
 
 , split the integrand 
@@ -22269,7 +22268,7 @@ reference "sub:ch3sec4_7The-magnetic-moment"
 \noun default
 \color inherit
 ), the magnetic dipole moment is 
-\begin_inset Formula $\boldsymbol{m}\left(t\right):=\frac{1}{2c}\int d\boldsymbol{y}\:\boldsymbol{y}\times\boldsymbol{j}\left(\boldsymbol{y},t\right)$
+\begin_inset Formula $\boldsymbol{m}\left(t\right):=\frac{1}{2c}\indefint{\boldsymbol{y}}\boldsymbol{y}\times\boldsymbol{j}\left(\boldsymbol{y},t\right)$
 \end_inset
 
 .
@@ -22444,7 +22443,7 @@ Now, what of the other term we've been ignoring?
 The other term, given by
 \begin_inset Formula 
 \[
-\dots+\frac{1}{2c}\frac{d}{dt}\Bigr|_{t_{e}}\int d\boldsymbol{y}\:\left[\boldsymbol{y}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{j}\right)+\boldsymbol{j}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{y}\right)\right]+\dots
+\dots+\frac{1}{2c}\frac{d}{dt}\Bigr|_{t_{e}}\indefint{\boldsymbol{y}}\left[\boldsymbol{y}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{j}\right)+\boldsymbol{j}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{y}\right)\right]+\dots
 \]
 
 \end_inset
@@ -22474,16 +22473,16 @@ Why are assuming
  
 \begin_inset Formula 
 \begin{eqnarray*}
-\int d\boldsymbol{y}\:\left(y_{i}j_{j}+j_{i}y_{j}\right) & \overset{1.}{=} & -\int d\boldsymbol{y}\:y_{i}y_{j}\nabla_{\boldsymbol{y}}\cdot\boldsymbol{j}\\
- & \overset{2.}{=} & \int d\boldsymbol{y}\:y_{i}y_{j}\partial_{t}\rho\\
- & = & \frac{d}{dt}\int d\boldsymbol{y}\:y_{i}y_{j}\rho\left(\boldsymbol{y},t\right)\\
+\indefint{\boldsymbol{y}}\left(y_{i}j_{j}+j_{i}y_{j}\right) & \overset{1.}{=} & -\indefint{\boldsymbol{y}}y_{i}y_{j}\nabla_{\boldsymbol{y}}\cdot\boldsymbol{j}\\
+ & \overset{2.}{=} & \indefint{\boldsymbol{y}}y_{i}y_{j}\partial_{t}\rho\\
+ & = & \frac{d}{dt}\indefint{\boldsymbol{y}}y_{i}y_{j}\rho\left(\boldsymbol{y},t\right)\\
  & = & \frac{d}{dt}Q_{ij}\left(t\right),
 \end{eqnarray*}
 
 \end_inset
 
 where 
-\begin_inset Formula $Q_{ij}\left(t\right):=\int d\boldsymbol{y}\:y_{i}y_{j}\rho\left(\boldsymbol{y},t\right)$
+\begin_inset Formula $Q_{ij}\left(t\right):=\indefint{\boldsymbol{y}}y_{i}y_{j}\rho\left(\boldsymbol{y},t\right)$
 \end_inset
 
  is the electric quadrupole moment 
