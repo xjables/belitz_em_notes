@@ -195,6 +195,30 @@ theorems-bytype
 \end_inset
 
 
+\begin_inset FormulaMacro
+\newcommand{\infinitesimal}[1]{d#1\:}
+{d#1\:}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\indefintfrac}[2]{\int\frac{d#1}{#2}\:}
+{\int\frac{d#1}{#2}\:}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\indefint}[1]{\int\infinitesimal{#1}}
+{\int\infinitesimal{#1}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\defint}[3]{\int_{#2}^{#3}\infinitesimal{#1}}
+{\int_{#2}^{#3}\infinitesimal{#1}}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Title
@@ -5015,13 +5039,13 @@ Axiom
  action 
 \begin_inset Formula 
 \[
-\boxed{S_{\textnormal{vac}}:=-\frac{1}{16\pi}\iiiint d^{4}xF_{\mu\nu}\left(x\right)F^{\mu\nu}\left(x\right)},
+\boxed{S_{\textnormal{vac}}:=-\frac{1}{16\pi}\indefint{^{4}x}F_{\mu\nu}\left(x\right)F^{\mu\nu}\left(x\right)},
 \]
 
 \end_inset
 
  where 
-\begin_inset Formula $d^{4}x:=cdtd\boldsymbol{x}$
+\begin_inset Formula $\infinitesimal{^{4}x}:=c\infinitesimal t\infinitesimal{\boldsymbol{x}}$
 \end_inset
 
 .
@@ -5152,7 +5176,7 @@ Matter is characterized (in part) by an
  by the action 
 \begin_inset Formula 
 \[
-\boxed{S_{\textnormal{interaction}}:=-\frac{1}{c}\iiiint d^{4}xJ^{\mu}\left(x\right)A_{\mu}\left(x\right)}.
+\boxed{S_{\textnormal{interaction}}:=-\frac{1}{c}\indefint{^{4}x}J^{\mu}\left(x\right)A_{\mu}\left(x\right)}.
 \]
 
 \end_inset
@@ -5391,7 +5415,7 @@ action: We varied
 :
 \begin_inset Formula 
 \[
-S=\int dtL\left(\boldsymbol{q}\left(t\right),\dot{\boldsymbol{q}}\left(t\right)\right)
+S=\indefint tL\left(\boldsymbol{q}\left(t\right),\dot{\boldsymbol{q}}\left(t\right)\right)
 \]
 
 \end_inset
@@ -5403,8 +5427,8 @@ S=\int dtL\left(\boldsymbol{q}\left(t\right),\dot{\boldsymbol{q}}\left(t\right)\
 extremals: 
 \begin_inset Formula 
 \begin{eqnarray*}
-0\overset{!}{=}\delta S & = & \int dt\underset{j}{\sum}\left[\frac{\partial L}{\partial q_{j}}\delta q_{j}+\frac{\partial L}{\partial\dot{q}_{j}}\delta\dot{q}_{j}\right]\\
- & = & \int dt\underset{j}{\sum}\left[\frac{\partial L}{\partial q_{j}}-\frac{d}{dt}\frac{\partial L}{\partial\dot{q}_{j}}\right]\delta q_{j}\\
+0\overset{!}{=}\delta S & = & \indefint t\underset{j}{\sum}\left[\frac{\partial L}{\partial q_{j}}\delta q_{j}+\frac{\partial L}{\partial\dot{q}_{j}}\delta\dot{q}_{j}\right]\\
+ & = & \indefint t\underset{j}{\sum}\left[\frac{\partial L}{\partial q_{j}}-\frac{d}{dt}\frac{\partial L}{\partial\dot{q}_{j}}\right]\delta q_{j}\\
 \delta q_{j}\textnormal{ arbitrary }\implies0 & = & \frac{\partial L}{\partial q_{j}}-\frac{d}{dt}\frac{\partial L}{\partial\dot{q}_{j}}
 \end{eqnarray*}
 
@@ -5486,13 +5510,16 @@ Lagrangian: We obtain our Lagrangian by integrating over all space, such
 status open
 
 \begin_layout Plain Layout
-I use the notation that 
-\begin_inset Formula $d^{3}x=dV$
+We use the notation 
+\begin_inset Formula $d\boldsymbol{x}$
 \end_inset
 
- (the volume element).
- Belitz uses 
-\begin_inset Formula $d\boldsymbol{x}$
+ to represent the volume element for 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ (in Cartesian coordinates, 
+\begin_inset Formula $d\boldsymbol{x}=dx\,dy\,dz$
 \end_inset
 
 .
@@ -5503,7 +5530,7 @@ I use the notation that
  
 \begin_inset Formula 
 \[
-L=\iiint d^{3}x\mathscr{L}\left(\phi\left(\boldsymbol{x},t\right),\partial^{\mu}\phi\left(\boldsymbol{x},t\right)\right).
+L=\indefint{\boldsymbol{x}}\mathscr{L}\left(\phi\left(\boldsymbol{x},t\right),\partial^{\mu}\phi\left(\boldsymbol{x},t\right)\right).
 \]
 
 \end_inset
@@ -5515,8 +5542,8 @@ L=\iiint d^{3}x\mathscr{L}\left(\phi\left(\boldsymbol{x},t\right),\partial^{\mu}
 action: 
 \begin_inset Formula 
 \begin{eqnarray*}
-S=c\int dtL & = & \int dx^{0}\iiint d^{3}x\mathscr{L}\left(\phi\left(\boldsymbol{x},t\right),\partial^{\mu}\phi\left(\boldsymbol{x},t\right)\right)\\
- & = & \iiiint d^{4}x\mathscr{L}\left(\phi\left(x\right),\partial^{\mu}\phi\left(x\right)\right)
+S=c\int dtL & = & \indefint{x^{0}}\indefint{\boldsymbol{x}}\mathscr{L}\left(\phi\left(\boldsymbol{x},t\right),\partial^{\mu}\phi\left(\boldsymbol{x},t\right)\right)\\
+ & = & \indefint{^{4}x}\mathscr{L}\left(\phi\left(x\right),\partial^{\mu}\phi\left(x\right)\right)
 \end{eqnarray*}
 
 \end_inset
@@ -5528,8 +5555,8 @@ S=c\int dtL & = & \int dx^{0}\iiint d^{3}x\mathscr{L}\left(\phi\left(\boldsymbol
 extremals: As before, we require
 \begin_inset Formula 
 \begin{eqnarray*}
-0\overset{!}{=}\delta S & = & \iiiint d^{4}x\left[\frac{\partial\mathscr{L}}{\partial\phi}\delta\phi+\frac{\partial\mathscr{L}}{\partial\left(\partial_{\mu}\phi\right)}\delta\left(\partial_{\mu}\phi\right)\right]\\
- & = & \iiiint d^{4}x\left[\frac{\partial\mathscr{L}}{\partial\phi}-\partial_{\mu}\frac{\partial\mathscr{L}}{\partial\left(\partial_{\mu}\phi\right)}\right]\delta\phi\\
+0\overset{!}{=}\delta S & = & \indefint{^{4}x}\left[\frac{\partial\mathscr{L}}{\partial\phi}\delta\phi+\frac{\partial\mathscr{L}}{\partial\left(\partial_{\mu}\phi\right)}\delta\left(\partial_{\mu}\phi\right)\right]\\
+ & = & \indefint{^{4}x}\left[\frac{\partial\mathscr{L}}{\partial\phi}-\partial_{\mu}\frac{\partial\mathscr{L}}{\partial\left(\partial_{\mu}\phi\right)}\right]\delta\phi\\
 \delta\phi\textnormal{ arbitrary }\implies0 & = & \frac{\partial\mathscr{L}}{\partial\phi}-\partial_{\mu}\frac{\partial\mathscr{L}}{\partial\left(\partial_{\mu}\phi\right)},
 \end{eqnarray*}
 
@@ -6046,7 +6073,7 @@ reference "eq:continuity_version_2"
 :
 \begin_inset Formula 
 \[
-\partial_{t}\underset{V}{\int}d^{3}x\rho\left(\boldsymbol{x},t\right)=-\underset{V}{\int}d^{3}x\nabla\cdot\boldsymbol{j}\left(\boldsymbol{x},t\right)=-\underset{\left(V\right)}{\int}d\boldsymbol{S}\cdot\boldsymbol{j}\left(\boldsymbol{x},t\right).
+\partial_{t}\defint{^{3}x}V{}\rho\left(\boldsymbol{x},t\right)=-\defint{^{3}x}V{}\nabla\cdot\boldsymbol{j}\left(\boldsymbol{x},t\right)=-\defint{\boldsymbol{S}}{\left(V\right)}{}\cdot\boldsymbol{j}\left(\boldsymbol{x},t\right).
 \]
 
 \end_inset
@@ -6054,7 +6081,7 @@ reference "eq:continuity_version_2"
  Define 
 \begin_inset Formula 
 \[
-\boxed{Q\left(t\right):=\underset{V}{\int}d^{3}x\rho\left(\boldsymbol{x},t\right)}
+\boxed{Q\left(t\right):=\defint{^{3}x}V{}\rho\left(\boldsymbol{x},t\right)}
 \]
 
 \end_inset
@@ -6071,7 +6098,7 @@ within
  Then
 \begin_inset Formula 
 \[
-\frac{dQ}{dt}=-\underset{\left(V\right)}{\int}d\boldsymbol{S}\cdot\boldsymbol{j}.
+\frac{dQ}{dt}=-\defint{\boldsymbol{S}}{\left(V\right)}{}\cdot\boldsymbol{j}.
 \]
 
 \end_inset
@@ -8383,7 +8410,7 @@ Not sure I understand this one
 By Axiom 3,
 \begin_inset Formula 
 \begin{eqnarray*}
-S_{\textnormal{int}} & = & -\frac{1}{c}\int d^{4}x\:J_{\mu}\left(x\right)A^{\mu}\left(x\right)\\
+S_{\textnormal{int}} & = & -\frac{1}{c}\indefint{^{4}x}J_{\mu}\left(x\right)A^{\mu}\left(x\right)\\
  & = & -\frac{1}{c}\int dt\:\int d^{3}x\:c\rho\left(\boldsymbol{x},t\right)\phi\left(\boldsymbol{x},t\right)+\frac{1}{c}\int dt\:\int d^{3}x\:\boldsymbol{j}\left(\boldsymbol{x},t\right)\cdot\boldsymbol{A}\left(\boldsymbol{x},t\right)\\
  & = & -e\int dt\:\phi\left(\boldsymbol{y},t\right)+\frac{e}{c}\int dt\:\boldsymbol{v}\left(t\right)\cdot\boldsymbol{A}\left(\boldsymbol{y},t\right).
 \end{eqnarray*}
@@ -20725,6 +20752,12 @@ reference "sub:ch3sec3_6The-law-of"
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:ch5sec3Radiation-by-time-dependent"
+
+\end_inset
+
 Radiation by time-dependent sources
 \end_layout
 
@@ -22529,6 +22562,184 @@ The magnetic dipole moment has an extra
 \noun off
 \color none
 §71).
+\end_layout
+
+\begin_layout Section
+Spectral distribution of radiated energy
+\end_layout
+
+\begin_layout Standard
+In 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+§
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:ch5sec3Radiation-by-time-dependent"
+
+\end_inset
+
+ we calculated the 
+\family default
+\series default
+\shape default
+\size default
+\emph on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+total
+\emph default
+ power radiated by a time-dependent source.
+\end_layout
+
+\begin_layout Description
+question: How is this energy distributed over different frequencies?
+\end_layout
+
+\begin_layout Subsection
+Retarded potentials in frequency space
+\end_layout
+
+\begin_layout Standard
+From 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+§
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:ch5sec2_3The-retarded-potentials"
+
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\phi\left(\boldsymbol{x},t\right)=\indefint{\boldsymbol{y}}\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\rho\left(\boldsymbol{y},t-\frac{\left|\boldsymbol{x}-\boldsymbol{y}\right|}{c}\right).
+\]
+
+\end_inset
+
+ Define a temporal Fourier transform (cf.
+ §
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:ch5sec2_2Green's-functions-for"
+
+\end_inset
+
+)
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+In this notation, the argument of the function indicates if it is a Fourier
+ transform or not (the same symbol 
+\begin_inset Formula $f$
+\end_inset
+
+ is used to refer to the Fourier transformed function and the original function).
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+f\left(\boldsymbol{x},\omega\right) & := & \indefint te^{i\omega t}f\left(\boldsymbol{x},t\right)\\
+\implies f\left(\boldsymbol{x},t\right) & = & \indefintfrac{\omega}{2\pi}e^{-i\omega t}f\left(\boldsymbol{x},\omega\right).
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\implies\underline{\phi\left(\boldsymbol{x},\omega\right)} & = & \indefint te^{i\omega t}\indefint{\boldsymbol{y}}\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\understuff{\indefintfrac{\omega'}{2\pi}e^{-i\omega'\left(t-\left|\boldsymbol{x}-\boldsymbol{y}\right|/c\right)}\rho\left(\boldsymbol{y},\omega'\right)}{=\rho\left(\boldsymbol{y},t-\left|\boldsymbol{x}-\boldsymbol{y}\right|/c\right)}\\
+ & = & \indefint{\boldsymbol{y}}\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\indefintfrac{\omega'}{2\pi}\rho\left(\boldsymbol{y},\omega'\right)\understuff{\indefint te^{i\left(\omega-\omega'\right)t}}{=2\pi\delta\left(\omega-\omega'\right)}e^{i\omega'\left|\boldsymbol{x}-\boldsymbol{y}\right|/c}\\
+ & = & \underline{\indefint{\boldsymbol{y}}\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}e^{i\omega\left|\boldsymbol{x}-\boldsymbol{y}\right|/c}\rho\left(\boldsymbol{y},\omega\right)}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+The retarded potentials in frequency space are
+\begin_inset Formula 
+\[
+\boxed{\phi\left(\boldsymbol{x},\omega\right)=\indefint{\boldsymbol{y}}\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}e^{i\omega\left|\boldsymbol{x}-\boldsymbol{y}\right|/c}\rho\left(\boldsymbol{y},\omega\right)}
+\]
+
+\end_inset
+
+ and, analogously,
+\begin_inset Formula 
+\[
+\boxed{\boldsymbol{A}\left(\boldsymbol{x},\omega\right)=\frac{1}{c}\indefint{\boldsymbol{y}}\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}e^{i\omega\left|\boldsymbol{x}-\boldsymbol{y}\right|/c}\boldsymbol{j}\left(\boldsymbol{y},\omega\right)},
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $\rho\left(\boldsymbol{y},\omega\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\boldsymbol{j}\left(\boldsymbol{y},\omega\right)$
+\end_inset
+
+ are the temporal Fourier transforms of 
+\begin_inset Formula $\rho\left(\boldsymbol{y},t\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\boldsymbol{j}\left(\boldsymbol{y},t\right)$
+\end_inset
+
+, respectively.
+\end_layout
+
+\begin_layout Proof
+(above)
+\end_layout
+
+\begin_layout Subsection
+Asymptotic potentials and fields
 \end_layout
 
 \begin_layout Chapter
