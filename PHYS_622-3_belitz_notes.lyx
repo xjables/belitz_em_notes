@@ -23657,6 +23657,931 @@ insert figure
 Example: radiation by a damped harmonic oscillator
 \end_layout
 
+\begin_layout Standard
+Consider a charge 
+\begin_inset Formula $e$
+\end_inset
+
+ in a harmonic potential (oscillator frequency 
+\begin_inset Formula $\omega_{0}$
+\end_inset
+
+) with damping constant 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+equation
+\begin_inset space ~
+\end_inset
+
+of
+\begin_inset space ~
+\end_inset
+
+motion: 
+\begin_inset Formula 
+\[
+\boxed{\ddot{y}=-\omega_{0}^{2}y-\gamma\dot{y}}\tag{\ast}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+We think of the damping as due to the radiation emitted.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+This is a simple model for an electron in a classical atom.
+\end_layout
+
+\begin_layout Description
+initial
+\begin_inset space ~
+\end_inset
+
+conditions: 
+\begin_inset Formula 
+\[
+y\left(t=0\right)=a,\quad\dot{y}\left(t=0\right)=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+For weak damping 
+\begin_inset Formula $\left(\gamma\ll\omega_{0}\right)$
+\end_inset
+
+, the solution of 
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ is
+\begin_inset Formula 
+\[
+\boxed{y\left(t\right)\approx a\cos\left(\omega_{0}t\right)e^{-\gamma t/2}}\quad\left(t>0\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+See Problem #53.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\implies\dot{y}\left(t\right)=-a\omega_{0}\sin\left(\omega_{0}t\right)e^{-\gamma t/2}\left[1+O\left(\gamma/\omega_{0}\right)\right]=:v\left(t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+I don't know why this is order 
+\begin_inset Formula $O\left(\gamma/\omega_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+not sure about how he gets the third line below
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\implies v\left(\omega\right) & \approx & -a\omega_{0}\defint t0{\infty}e^{i\omega t}\sin\left(\omega_{0}t\right)e^{-\gamma t/2}\\
+ & = & -\frac{a\omega_{0}}{2i}\defint t0{\infty}e^{i\omega t}\left[e^{i\omega_{0}t-\gamma t/2}-e^{-i\omega_{0}t-\gamma t/2}\right]\\
+ & = & -\frac{a\omega_{0}}{2i}\left[\frac{-1}{i\left(\omega+\omega_{0}\right)-\gamma/2}-\frac{-1}{i\left(\omega-\omega_{0}\right)-\gamma/2}\right]\\
+ & = & \frac{a\omega_{0}}{2}\left[\frac{1}{\omega-\omega_{0}+i\gamma/2}-\frac{1}{\omega+\omega_{0}+i\gamma/2}\right]
+\end{eqnarray*}
+
+\end_inset
+
+Let 
+\begin_inset Formula $\omega>0$
+\end_inset
+
+ (discussion for 
+\begin_inset Formula $\omega<0$
+\end_inset
+
+ is analogous).
+ Then 
+\begin_inset Formula $v\left(\omega\right)$
+\end_inset
+
+ is dominated by the first term when 
+\begin_inset Formula $\omega\approx\omega_{0}$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+\implies\left|v\left(\omega\right)\right|^{2}\approx\frac{a^{2}\omega_{0}^{2}}{4}\frac{1}{\left(\omega-\omega_{0}\right)^{2}+\gamma^{2}/4}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\implies\underline{\frac{dU}{d\omega}} & = & \frac{2e^{2}}{3\pi c^{3}}\left|\dot{\boldsymbol{v}}\left(\omega\right)\right|^{2}\\
+ & = & \frac{2e^{2}}{3\pi c^{3}}\frac{a^{2}\omega_{0}^{2}}{4}\frac{\omega^{2}}{\left(\omega-\omega_{0}\right)^{2}+\gamma^{2}/4}\\
+ & \approx & \underline{\frac{2e^{2}}{3\pi c^{3}}\frac{a^{2}\omega_{0}^{4}}{4}\frac{1}{\left(\omega-\omega_{0}\right)^{2}+\gamma^{2}/4}}\quad\left(\omega\approx\omega_{0}\right).
+\end{eqnarray*}
+
+\end_inset
+
+ This is sometimes called 
+\emph on
+susceptibility of oscillator
+\emph default
+.
+\end_layout
+
+\begin_layout Description
+discussion
+\begin_inset space ~
+\end_inset
+
+(1): Spectrum is a Lorentzian centered on 
+\begin_inset Formula $\omega_{0}$
+\end_inset
+
+ with width 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+insert figure
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+discussion
+\begin_inset space ~
+\end_inset
+
+(2): Total energy radiated:
+\begin_inset Formula 
+\begin{eqnarray*}
+\underline{U} & = & 2\defint{\omega}0{\infty}\frac{dU}{d\omega}\\
+ & \approx & 2\frac{e^{2}a^{2}\omega_{0}^{4}}{6\pi c^{3}}\defint{\omega}0{\infty}\frac{1}{\left(\omega-\omega_{0}\right)^{2}+\gamma^{2}/4}\\
+ & \overset{1.}{=} & \frac{e^{2}a^{2}\omega_{0}^{4}}{3\pi c^{3}}\defint{\omega}{-\omega_{0}}{\infty}\frac{1}{\omega^{2}+\gamma^{2}/4}\\
+ & \overset{2.}{=} & \frac{e^{2}a^{2}\omega_{0}^{4}}{3\pi c^{3}}\left(\frac{2}{\gamma}\right)\defint x{-\frac{2}{\gamma}\omega_{0}}{\infty}\frac{1}{x^{2}+1}\\
+ & \overset{3.}{\approx} & \frac{2e^{2}a^{2}\omega_{0}^{4}}{3\pi c^{3}\gamma}\understuff{\defint x{-\infty}{\infty}\frac{1}{x^{2}+1}}{\pi}\\
+ & = & \underline{\frac{2e^{2}a^{2}\omega_{0}^{4}}{3c^{3}\gamma}}.
+\end{eqnarray*}
+
+\end_inset
+
+ Let's compare with initial oscillator energy:
+\begin_inset Formula 
+\[
+U_{\textnormal{osc}}^{t=0}=\frac{m}{2}\omega_{0}^{2}a^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\implies U & = & \frac{U_{\textnormal{osc}}^{t=0}}{\frac{m}{2}\omega_{0}^{2}a^{2}}\frac{2e^{2}a^{2}\omega_{0}^{4}}{3c^{3}\gamma}\\
+ & = & U_{\textnormal{osc}}^{t=0}\frac{4e^{2}\omega_{0}^{2}}{3mc^{3}\gamma}.
+\end{eqnarray*}
+
+\end_inset
+
+ Now, assuming the oscillator energy has totally gone into 
+\begin_inset Formula $U$
+\end_inset
+
+, 
+\begin_inset Formula $\implies U=U_{\textnormal{osc}}^{t=0}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies\boxed{\gamma=\frac{4}{3}\frac{e^{2}\omega_{0}^{2}}{mc^{3}}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+discussion
+\begin_inset space ~
+\end_inset
+
+(3): Compare this result with Problem #47:
+\begin_inset Formula 
+\[
+\implies U_{\textnormal{osc}}=U_{\textnormal{osc}}^{t=0}e^{-t/\tau}
+\]
+
+\end_inset
+
+ where we found 
+\begin_inset Formula $\tau=2/\gamma$
+\end_inset
+
+.
+ So the two approaches are consistent.
+\end_layout
+
+\begin_layout Description
+discussion
+\begin_inset space ~
+\end_inset
+
+(4): See Problem #53 for a more thorough discussion of the approximations
+ made above.
+\end_layout
+
+\begin_layout Section
+Cherenkov radiation
+\end_layout
+
+\begin_layout Subsection
+The time-Wigner function, and the macroscopic power spectrum
+\end_layout
+
+\begin_layout Standard
+From 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+§
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:ch5sec4_3The-spectral-distribution"
+
+\end_inset
+
+, the spectral distribution of radiation from a time-dependent current density:
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{d^{2}U}{\infinitesimal{\Omega}d\omega} & = & \frac{\omega^{2}}{4\pi^{2}c^{3}}\left|\hat{\boldsymbol{x}}\times\boldsymbol{j}\left(\boldsymbol{k},\omega\right)\right|^{2}\\
+ & = & \frac{\omega^{2}}{4\pi^{2}c^{3}}\left(\hat{\boldsymbol{x}}\times\indefint te^{+i\omega t}\boldsymbol{j}\left(\boldsymbol{k},t\right)\right)\cdot\left(\hat{\boldsymbol{x}}\times\indefint{t'}e^{-i\omega t'}\boldsymbol{j}\left(\boldsymbol{k},t'\right)^{*}\right)\\
+ & = & \frac{\omega^{2}}{4\pi^{2}c^{3}}\varepsilon_{ijk}\hat{x}_{j}\varepsilon_{ilm}\hat{x}_{l}\indefint t\indefint{t'}e^{i\omega\left(t-t'\right)}j_{k}\left(\boldsymbol{k},t\right)j_{m}\left(\boldsymbol{k},t'\right)^{*}
+\end{eqnarray*}
+
+\end_inset
+
+We can rewrite the integrals using the substitutions
+\begin_inset Formula 
+\begin{eqnarray*}
+t & = & T+\frac{\tau}{2}\\
+t' & = & T-\frac{\tau}{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Maybe I'm being dumb, but i don't see how he changes the measure?
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\implies\indefint t\indefint{t'}e^{i\omega\left(t-t'\right)}j_{k}\left(\boldsymbol{k},t\right)j_{m}\left(\boldsymbol{k},t'\right)^{*} & = & \indefint T\indefint{\tau}e^{i\omega\tau}j_{k}\left(\boldsymbol{k},T+\frac{\tau}{2}\right)j_{m}\left(\boldsymbol{k},T-\frac{\tau}{2}\right)^{*}\\
+ & = & \indefint T\indefint{\tau}e^{i\omega\tau}W_{km}\left(\boldsymbol{k};T,\tau\right),
+\end{eqnarray*}
+
+\end_inset
+
+ where 
+\begin_inset Formula 
+\[
+\underline{W_{km}:=j_{k}\left(\boldsymbol{k},T+\frac{\tau}{2}\right)j_{m}\left(\boldsymbol{k},T-\frac{\tau}{2}\right)^{*}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $W_{km}$
+\end_inset
+
+ is an example of what is called a Wigner function (in our case a time-Wigner
+ function).
+ It separates the two times into 
+\emph on
+average time
+\emph default
+ (or 
+\emph on
+macroscopic time
+\emph default
+) 
+\begin_inset Formula $T$
+\end_inset
+
+ and 
+\emph on
+relative time
+\emph default
+ (or 
+\emph on
+microscopic time
+\emph default
+) 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Only relative times 
+\begin_inset Formula $\left|\tau\right|\apprle1/\omega$
+\end_inset
+
+ will appreciably contribute to the 
+\begin_inset Formula $\tau-$
+\end_inset
+
+integral, whereas all times 
+\begin_inset Formula $T$
+\end_inset
+
+ during which the source is active contribute to the 
+\begin_inset Formula $T-$
+\end_inset
+
+integral.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+This makes sense if the two time-scales are well separated.
+ E.g., a laser pulse of duration 
+\begin_inset Formula $T\gg1/\omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+The spectral distribution at time 
+\begin_inset Formula $T$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+\boxed{\frac{d^{2}\mathscr{P}\left(T\right)}{\infinitesimal{\Omega}d\omega}:=\frac{\omega^{2}}{4\pi^{2}c^{3}}\varepsilon_{ijk}\hat{x}_{j}\varepsilon_{ilm}\hat{x}_{l}\indefint{\tau}e^{i\omega\tau}W_{km}\left(\boldsymbol{k};T,\tau\right)},
+\]
+
+\end_inset
+
+called the 
+\emph on
+macroscopic power spectrum
+\emph default
+.
+\end_layout
+
+\begin_layout Remark
+We recover 
+\begin_inset Formula $\frac{d^{2}U}{\infinitesimal{\Omega}d\omega}$
+\end_inset
+
+ as 
+\begin_inset Formula $\frac{d^{2}U}{\infinitesimal{\Omega}d\omega}=\indefint T\frac{d^{2}\mathscr{P}\left(T\right)}{\infinitesimal{\Omega}d\omega}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Cherenkov radiation
+\end_layout
+
+\begin_layout Standard
+Consider a point particle as in 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+§
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:ch5sec3_3Radiation-by-an"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\boldsymbol{j}\left(\boldsymbol{y},t\right)=e\boldsymbol{v}\left(t\right)\delta\left(\boldsymbol{y}-\boldsymbol{R}\left(t\right)\right),\textnormal{ where }\boldsymbol{v}\left(t\right):=\dot{\boldsymbol{R}}\left(t\right).
+\]
+
+\end_inset
+
+ We specialize to uniform motion along a straight line:
+\begin_inset Formula 
+\[
+\boldsymbol{R}\left(t\right)=\boldsymbol{v}t,\quad\boldsymbol{v}\left(t\right)=\boldsymbol{v}=\textnormal{const.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+We know that in vacuum this does not result in radiation.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\implies\boldsymbol{j}\left(\boldsymbol{k},t\right) & = & \indefint{\boldsymbol{y}}e^{-i\boldsymbol{k}\cdot\boldsymbol{y}}e\boldsymbol{v}\delta\left(\boldsymbol{y}-\boldsymbol{v}t\right)\\
+ & = & e\boldsymbol{v}e^{-i\boldsymbol{k}\cdot\boldsymbol{v}t}\\
+ & = & e\boldsymbol{v}e^{-i\hat{\boldsymbol{x}}\cdot\boldsymbol{v}\frac{\omega}{c}t}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\implies\underline{W_{km}\left(\boldsymbol{k};T,\tau\right)} & = & j_{k}\left(\boldsymbol{k},T+\frac{\tau}{2}\right)j_{m}\left(\boldsymbol{k},T-\frac{\tau}{2}\right)^{*}\\
+ & = & e^{2}v_{k}v_{m}e^{-i\hat{\boldsymbol{x}}\cdot\boldsymbol{v}\frac{\omega}{c}\left(T+\frac{\tau}{2}\right)}e^{+i\hat{\boldsymbol{x}}\cdot\boldsymbol{v}\frac{\omega}{c}\left(T-\frac{\tau}{2}\right)}\\
+ & = & \underline{e^{2}v_{k}v_{m}e^{-i\hat{\boldsymbol{x}}\cdot\boldsymbol{v}\frac{\omega}{c}\tau}}.
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+The Wigner function is independent of 
+\begin_inset Formula $T$
+\end_inset
+
+ here, as expected from uniform motion.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\implies\underline{\frac{d^{2}\mathscr{P}\left(T\right)}{\infinitesimal{\Omega}d\omega}} & := & \frac{\omega^{2}}{4\pi^{2}c^{3}}\varepsilon_{ijk}\hat{x}_{j}\varepsilon_{ilm}\hat{x}_{l}\indefint{\tau}e^{i\omega\tau}W_{km}\left(\boldsymbol{k};T,\tau\right)\\
+ & = & \frac{\omega^{2}e^{2}}{4\pi^{2}c^{3}}\varepsilon_{ijk}\varepsilon_{ilm}\hat{x}_{j}\hat{x}_{l}v_{k}v_{m}\indefint{\tau}e^{i\omega\tau}e^{-i\hat{\boldsymbol{x}}\cdot\boldsymbol{v}\frac{\omega}{c}\tau}\\
+ & \overset{1.}{=} & \frac{\omega^{2}e^{2}}{4\pi^{2}c^{3}}v^{2}\sin^{2}\theta\indefint{\tau}e^{i\omega\left(1-\frac{v}{c}\cos\theta\right)\tau}\\
+ & \overset{2.}{=} & \frac{\omega^{2}e^{2}}{4\pi^{2}c}\left(\frac{v}{c}\right)^{2}\sin^{2}\theta\delta\left(\omega\left(1-\frac{v}{c}\cos\theta\right)\right)\\
+ & = & \underline{\frac{\left|\omega\right|e^{2}}{4\pi^{2}c}\left(\frac{v}{c}\right)^{2}\sin^{2}\theta\delta\left(1-\frac{v}{c}\cos\theta\right)}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Defining 
+\begin_inset Formula $\theta$
+\end_inset
+
+ to be the angle between 
+\begin_inset Formula $\hat{\boldsymbol{x}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\boldsymbol{v}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\varepsilon_{ijk}\varepsilon_{ilm}\hat{x}_{j}\hat{x}_{l}v_{k}v_{m} & = & \left(\delta_{jl}\delta_{km}-\delta_{jm}\delta_{kl}\right)\hat{x}_{j}\hat{x}_{l}v_{k}v_{m}\\
+ & = & \boldsymbol{v}^{2}-\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{v}\right)^{2}\\
+ & = & v^{2}\sin^{2}\theta
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\indefint{\tau}e^{i\omega\left(1-\frac{v}{c}\cos\theta\right)\tau}=\delta\left(\omega\left(1-\frac{v}{c}\cos\theta\right)\right)$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+not sure why we don't need the 2pi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+If 
+\begin_inset Formula $v/c<1$
+\end_inset
+
+, 
+\begin_inset Formula $\left|\cos\theta\right|<1\implies1+\frac{v}{c}\cos\theta>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $\implies$
+\end_inset
+
+ no radiation, in agreement with 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+§
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:ch5sec3_3Radiation-by-an"
+
+\end_inset
+
+ unless 
+\begin_inset Formula $v>c$
+\end_inset
+
+ (
+\begin_inset Quotes eld
+\end_inset
+
+tachyonic particle
+\begin_inset Quotes erd
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+In matter, 
+\begin_inset Formula $c\rightarrow c/n$
+\end_inset
+
+, with 
+\begin_inset Formula $n$
+\end_inset
+
+ the index of refraction
+\begin_inset Formula 
+\[
+\implies\frac{v}{c}\rightarrow n\frac{v}{c}\implies n\frac{v}{c}>1\textnormal{ is possible!}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Strictly speaking, this requires a theory for electromagnetic radiation
+ in matter.
+ Here we assume 
+\begin_inset Formula $c\rightarrow c/n$
+\end_inset
+
+ and 
+\begin_inset Formula $e^{2}\rightarrow e^{2}/n^{2}$
+\end_inset
+
+ suffices to catch the main effects (the charge is screened; 
+\begin_inset Formula $F_{\textnormal{coulomb}}=e^{2}/r\rightarrow e^{2}/\left(\varepsilon r\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $n=\sqrt{\varepsilon}$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Remark
+Also keep in mind we are applying a nonrelativistic approximation to a situation
+ in which 
+\begin_inset Formula $v/c$
+\end_inset
+
+ is no longer small (see Problem #54).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $n$
+\end_inset
+
+ is frequency dependent 
+\begin_inset Formula $\left(n=n\left(\omega\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula 
+\begin{eqnarray*}
+\implies\underline{\frac{d^{2}\mathscr{P}\left(T\right)}{\infinitesimal{\Omega}d\omega}} & = & \frac{\left|\omega\right|e^{2}/n^{2}}{4\pi^{2}c/n}\left(n\frac{v}{c}\right)^{2}\sin^{2}\theta\delta\left(1-n\frac{v}{c}\cos\theta\right)\\
+ & = & \underline{\frac{\left|\omega\right|e^{2}}{4\pi^{2}cn\left(\omega\right)}\left(n\left(\omega\right)\frac{v}{c}\right)^{2}\sin^{2}\theta\delta\left(1-n\left(\omega\right)\frac{v}{c}\cos\theta\right)}.
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+conclusion: a particle moving in a medium faster than the speed of light
+ in that medium emits radiation (
+\emph on
+Cherenkov radiation
+\emph default
+) on a cone with angle 
+\begin_inset Formula $\theta$
+\end_inset
+
+ where
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+insert figure
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\cos\theta=\frac{c}{vn\left(\omega\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+The total power emitted is 
+\begin_inset Formula 
+\[
+\boxed{\frac{d\mathscr{P}}{d\omega}=\left|\omega\right|\frac{e^{2}v}{2\pi c^{2}}\left(1-\frac{c^{2}}{n^{2}\left(\omega\right)v^{2}}\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{d\mathscr{P}}{d\omega} & = & \indefint{\Omega}\frac{d^{2}\mathscr{P}}{\infinitesimal{\Omega}d\omega}\\
+ & = & \frac{\left|\omega\right|e^{2}}{4\pi^{2}cn}\left(n\frac{v}{c}\right)^{2}\left(2\pi\right)\defint{\eta}{-1}1\left(1-\eta^{2}\right)\delta\left(1-n\frac{v}{c}\eta\right)\\
+ & = & \frac{\left|\omega\right|e^{2}}{2\pi cn}\left(n\frac{v}{c}\right)^{2}\frac{c}{nv}\defint{\eta}{-1}1\left(1-\eta^{2}\right)\delta\left(\eta-\frac{c}{vn}\right)\\
+ & = & \frac{\left|\omega\right|e^{2}v}{2\pi c^{2}}\left(1-\left(\frac{c}{nv}\right)^{2}\right).
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+This is nonzero only for the range of frequencies (if they exist) such that
+ 
+\begin_inset Formula $vn\left(\omega\right)>c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $\implies$
+\end_inset
+
+ total radiated power, 
+\begin_inset Formula $\mathscr{P}=\indefint{\omega}\frac{d\mathscr{P}}{d\omega}$
+\end_inset
+
+ is finite.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+This is radiated energy per time and frequency, whereas a Cherenkov radiation
+ detector observes the energy radiated per distance traveled by the particle.
+ Now,
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathscr{P}=\frac{dE}{dt} & = & \indefint{\omega}\frac{d\mathscr{P}}{d\omega}\\
+ & = & \frac{e^{2}v}{2\pi c^{2}}2\defint{\omega}0{\infty}\omega\left(1-\frac{c^{2}}{n^{2}\left(\omega\right)v^{2}}\right)\Theta\left(\frac{c^{2}}{n^{2}\left(\omega\right)v^{2}}<1\right),
+\end{eqnarray*}
+
+\end_inset
+
+ where 
+\begin_inset Formula $\Theta\left(\frac{c^{2}}{n^{2}\left(\omega\right)v^{2}}<1\right)$
+\end_inset
+
+ is the theta function.
+\begin_inset Formula 
+\[
+\implies\underline{\frac{dE}{dx}}=\frac{dE}{dt}\frac{dt}{dx}=\underline{\frac{e^{2}}{\pi c^{2}}\defint{\omega}0{\infty}\omega\left(1-\frac{c^{2}}{n^{2}\left(\omega\right)v^{2}}\right)\Theta\left(\frac{c^{2}}{n^{2}\left(\omega\right)v^{2}}<1\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Each photon has energy 
+\begin_inset Formula $E=\hbar\omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $\implies$
+\end_inset
+
+ the number of photons per distance and frequency is 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+not sure how we get this
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\underline{\frac{d^{2}N}{\infinitesimal xd\omega}} & = & \frac{e^{2}}{\hbar\pi c^{2}}\left(1-\frac{c^{2}}{n^{2}\left(\omega\right)v^{2}}\right)\Theta\left(\frac{c^{2}}{n^{2}\left(\omega\right)v^{2}}<1\right)\\
+ & = & \underline{\frac{\alpha}{\pi c}\left(1-\frac{c^{2}}{n^{2}\left(\omega\right)v^{2}}\right)\Theta\left(\frac{c^{2}}{n^{2}\left(\omega\right)v^{2}}<1\right)},
+\end{eqnarray*}
+
+\end_inset
+
+ with 
+\begin_inset Formula $\alpha:=\frac{e^{2}}{\hbar c}\approx\frac{1}{137}$
+\end_inset
+
+ the 
+\emph on
+fine structure constant.
+\end_layout
+
 \begin_layout Chapter
 \start_of_appendix
 Glossary of notation
