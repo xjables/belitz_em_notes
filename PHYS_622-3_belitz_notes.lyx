@@ -18342,6 +18342,12 @@ We can express a monochromatic plane wave as
 \end_layout
 
 \begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:ch4sec1_5rem1The-direction-of"
+
+\end_inset
+
 The direction of propagation 
 \begin_inset Formula $\hat{\boldsymbol{n}}$
 \end_inset
@@ -22739,6 +22745,181 @@ The retarded potentials in frequency space are
 
 \begin_layout Subsection
 Asymptotic potentials and fields
+\end_layout
+
+\begin_layout Standard
+For large distances 
+\begin_inset Formula $r:=\left|\boldsymbol{x}\right|$
+\end_inset
+
+ from the sources, the expansion from 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+§
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:ch5sec3_1Asymptotic-potentials-and"
+
+\end_inset
+
+ applies:
+\begin_inset Formula 
+\[
+\left|\boldsymbol{x}-\boldsymbol{y}\right|\approx r-\hat{\boldsymbol{x}}\cdot\boldsymbol{y}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\implies\phi\left(\boldsymbol{x},\omega\right) & = & \indefint{\boldsymbol{y}}\frac{1}{r}\left[1+O\left(\frac{1}{r}\right)\right]e^{i\omega\left(r-\hat{\boldsymbol{x}}\cdot\boldsymbol{y}+\dots\right)/c}\rho\left(\boldsymbol{y},\omega\right)\\
+ & \approx & \frac{1}{r}e^{i\omega r/c}\indefint{\boldsymbol{y}}e^{-i\omega\hat{\boldsymbol{x}}\cdot\boldsymbol{y}/c}\rho\left(\boldsymbol{y},\omega\right)+O\left(1/r^{2}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+definition: 
+\begin_inset Formula $\boxed{\boldsymbol{k}:=\frac{\omega}{c}\hat{\boldsymbol{x}}}$
+\end_inset
+
+ is called 
+\emph on
+wave vector
+\emph default
+.
+\end_layout
+
+\begin_layout Remark
+This is consistent with Ch.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Electromagnetic-waves-in"
+
+\end_inset
+
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+§
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:ch4sec1_5Polarization-of-electromagnetic"
+
+\end_inset
+
+ remark 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:ch4sec1_5rem1The-direction-of"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Far from the source, the wave fronts are approximately plane waves, so Ch.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Electromagnetic-waves-in"
+
+\end_inset
+
+ applies.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\implies\underline{\phi\left(\boldsymbol{x},\omega\right)} & \approx & \frac{1}{r}e^{ikr}\indefint{\boldsymbol{y}}e^{-i\boldsymbol{k}\cdot\boldsymbol{y}}\rho\left(\boldsymbol{y},\omega\right)\\
+ & = & \underline{\frac{1}{r}e^{ikr}\rho\left(\boldsymbol{k},\omega\right)},
+\end{eqnarray*}
+
+\end_inset
+
+with 
+\begin_inset Formula $\rho\left(\boldsymbol{k},\omega\right)$
+\end_inset
+
+ the spacial Fourier transform of 
+\begin_inset Formula $\rho\left(\boldsymbol{x},\omega\right)$
+\end_inset
+
+, and 
+\begin_inset Formula $k:=\left|\boldsymbol{k}\right|$
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula $\frac{1}{r}e^{ikr}$
+\end_inset
+
+ represents a spherical wave.
+ 
+\end_layout
+
+\begin_layout Standard
+Analogously,
+\begin_inset Formula 
+\[
+\underline{\boldsymbol{A}\left(\boldsymbol{x},\omega\right)}\approx\underline{\frac{1}{r}e^{ikr}\frac{1}{c}\boldsymbol{j}\left(\boldsymbol{k},\omega\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Far from the sources, the fields are
+\begin_inset Formula 
+\[
+\boxed{\boldsymbol{B}\left(\boldsymbol{x},\omega\right)\approx i\frac{\omega}{c}\frac{e^{i\omega r/c}}{r}\hat{\boldsymbol{x}}\times\frac{1}{c}\boldsymbol{j}\left(\boldsymbol{k},\omega\right)},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\boldsymbol{E}\left(\boldsymbol{x},\omega\right)\approx-\hat{\boldsymbol{x}}\times\boldsymbol{B}\left(\boldsymbol{x},\omega\right)}.
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
