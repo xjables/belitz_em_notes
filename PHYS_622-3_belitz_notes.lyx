@@ -22919,6 +22919,219 @@ Far from the sources, the fields are
 
 \end_inset
 
+ 
+\end_layout
+
+\begin_layout Remark
+The expression for 
+\begin_inset Formula $\boldsymbol{E}$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $\boldsymbol{B}$
+\end_inset
+
+ follows instantly from the proposition in 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+§
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:ch5sec3_1Asymptotic-potentials-and"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+
+\emph on
+(of proposition)
+\end_layout
+
+\begin_layout Proof
+Taking the temporal Fourier transform of 
+\begin_inset Formula $\boldsymbol{B}\left(\boldsymbol{x},t\right)=\nabla\times\boldsymbol{A}\left(\boldsymbol{x},t\right)$
+\end_inset
+
+ yields
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\boldsymbol{B}\left(\boldsymbol{x},\omega\right)=\nabla\times\boldsymbol{A}\left(\boldsymbol{x},\omega\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\implies\underline{B_{l}\left(\boldsymbol{x},\omega\right)} & = & \varepsilon_{lmn}\partial_{m}A_{n}\left(\boldsymbol{x},\omega\right)\\
+ & = & \varepsilon_{lmn}\partial_{m}\left(\frac{1}{r}e^{ikr}\right)\frac{1}{c}j_{n}\left(\boldsymbol{k},\omega\right)\\
+ & \overset{1.}{\approx} & \varepsilon_{lmn}ik\frac{e^{ikr}}{r}\hat{x}_{m}\frac{1}{c}j_{n}\left(\boldsymbol{k},\omega\right)\\
+ & = & \underline{ik\frac{e^{ikr}}{r}\left(\hat{\boldsymbol{x}}\times\frac{1}{c}\boldsymbol{j}\left(\boldsymbol{k},\omega\right)\right)_{l}}.
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The product rule yields two terms:
+\begin_inset Formula 
+\[
+\underline{\partial_{m}\frac{1}{r}}=-\frac{\hat{x}_{m}}{r^{2}}+O\left(1/r^{3}\right)=\underline{O\left(1/r^{2}\right)}\dots\textnormal{ discard this term}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\underline{\frac{1}{r}\partial_{m}e^{ikr}}=\frac{1}{r}e^{ikr}ik\partial_{m}r=\frac{e^{ikr}}{r}ik\frac{1}{2r}2x_{m}=\underline{ik\frac{e^{ikr}}{r}\hat{x}_{m}}=O\left(1/r\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+The spectral distribution of the radiated energy
+\end_layout
+
+\begin_layout Theorem
+The total radiated energy per solid angle 
+\begin_inset Formula $d\Omega$
+\end_inset
+
+ and frequency 
+\begin_inset Formula $d\omega$
+\end_inset
+
+ is
+\begin_inset Formula 
+\[
+\boxed{\frac{d^{2}U}{\infinitesimal{\Omega}d\omega}=\frac{\omega^{2}}{4\pi^{2}c^{3}}\left|\hat{\boldsymbol{x}}\times\boldsymbol{j}\left(\boldsymbol{k},\omega\right)\right|^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Check a static source: 
+\begin_inset Formula $\boldsymbol{j}\left(\boldsymbol{k},t\right)=\boldsymbol{j}\left(\boldsymbol{k}\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies\boldsymbol{j}\left(\boldsymbol{k},\omega\right)\propto\delta\left(\omega\right)
+\]
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+don't know where this is coming from?
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies\frac{d^{2}U}{\infinitesimal{\Omega}d\omega}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+
+\emph on
+(of theorem)
+\end_layout
+
+\begin_layout Proof
+The instantaneous flux of energy is given by the Poynting vector (ch.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Maxwell's-Equations"
+
+\end_inset
+
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+§
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:ch2sec3_6Poynting's-theorem"
+
+\end_inset
+
+):
+\begin_inset Formula 
+\[
+\boldsymbol{P}\left(\boldsymbol{x},t\right):=\frac{c}{4\pi}\boldsymbol{E}\left(\boldsymbol{x},t\right)\times\boldsymbol{B}\left(\boldsymbol{x},t\right).
+\]
+
+\end_inset
+
+ Then the total energy 
+\begin_inset Formula $U$
+\end_inset
+
+ radiated into a solid angle is (see §
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:ch5sec3_2The-radiated-power"
+
+\end_inset
+
+):
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{dU}{d\Omega} & = & \indefint tr^{2}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{P}\left(\boldsymbol{x},t\right)\right)\\
+ & = & r^{2}\frac{c}{4\pi}\indefint t\hat{\boldsymbol{x}}\cdot\left(\boldsymbol{E}\left(\boldsymbol{x},t\right)\times\boldsymbol{B}\left(\boldsymbol{x},t\right)\right)\\
+ & = & \frac{c}{4\pi}r^{2}\indefint t\hat{\boldsymbol{x}}\cdot\left(\boldsymbol{E}\left(\boldsymbol{x},t\right)\times\boldsymbol{B}\left(\boldsymbol{x},t\right)\right)
+\end{eqnarray*}
+
+\end_inset
+
 
 \end_layout
 
