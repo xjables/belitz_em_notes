@@ -22744,6 +22744,12 @@ The retarded potentials in frequency space are
 \end_layout
 
 \begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:ch5sec4_2Asymptotic-potentials-and"
+
+\end_inset
+
 Asymptotic potentials and fields
 \end_layout
 
@@ -22950,7 +22956,7 @@ reference "sub:ch5sec3_1Asymptotic-potentials-and"
 
 \end_inset
 
-.
+ (by taking Fourier transform).
 \end_layout
 
 \begin_layout Proof
@@ -23012,6 +23018,12 @@ The product rule yields two terms:
 
 \end_deeper
 \begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:ch5sec4_3The-spectral-distribution"
+
+\end_inset
+
 The spectral distribution of the radiated energy
 \end_layout
 
@@ -23126,13 +23138,523 @@ reference "sub:ch5sec3_2The-radiated-power"
 \begin_inset Formula 
 \begin{eqnarray*}
 \frac{dU}{d\Omega} & = & \indefint tr^{2}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{P}\left(\boldsymbol{x},t\right)\right)\\
- & = & r^{2}\frac{c}{4\pi}\indefint t\hat{\boldsymbol{x}}\cdot\left(\boldsymbol{E}\left(\boldsymbol{x},t\right)\times\boldsymbol{B}\left(\boldsymbol{x},t\right)\right)\\
- & = & \frac{c}{4\pi}r^{2}\indefint t\hat{\boldsymbol{x}}\cdot\left(\boldsymbol{E}\left(\boldsymbol{x},t\right)\times\boldsymbol{B}\left(\boldsymbol{x},t\right)\right)
+ & = & r^{2}\frac{c}{4\pi}\indefint t\hat{\boldsymbol{x}}\cdot\left[\boldsymbol{E}\left(\boldsymbol{x},t\right)\times\boldsymbol{B}\left(\boldsymbol{x},t\right)\right]\\
+ & = & \frac{cr^{2}}{4\pi}\indefint t\hat{\boldsymbol{x}}\cdot\left[\left(\indefintfrac{\omega}{2\pi}e^{-i\omega t}\boldsymbol{E}\left(\boldsymbol{x},\omega\right)\right)\times\left(\indefintfrac{\omega'}{2\pi}e^{-i\omega't}\boldsymbol{B}\left(\boldsymbol{x},\omega'\right)\right)\right]\\
+ & \overset{1.}{=} & \frac{cr^{2}}{4\pi}\indefintfrac{\omega}{2\pi}\indefintfrac{\omega'}{2\pi}\hat{\boldsymbol{x}}\cdot\left[\boldsymbol{E}\left(\boldsymbol{x},\omega\right)\times\boldsymbol{B}\left(\boldsymbol{x},\omega'\right)\right]2\pi\delta\left(\omega+\omega'\right)\\
+ & = & \frac{cr^{2}}{4\pi}\indefintfrac{\omega}{2\pi}\hat{\boldsymbol{x}}\cdot\left[\boldsymbol{E}\left(\boldsymbol{x},\omega\right)\times\boldsymbol{B}\left(\boldsymbol{x},-\omega\right)\right]\\
+ & \overset{2.}{=} & -\frac{cr^{2}}{4\pi}\indefintfrac{\omega}{2\pi}\hat{\boldsymbol{x}}\cdot\left[\left(\hat{\boldsymbol{x}}\times\boldsymbol{B}\left(\boldsymbol{x},\omega\right)\right)\times\boldsymbol{B}\left(\boldsymbol{x},\omega\right)^{*}\right]\\
+ & \overset{3.}{=} & \frac{cr^{2}}{4\pi}\indefintfrac{\omega}{2\pi}\left|\boldsymbol{B}\left(\boldsymbol{x},\omega\right)\right|^{2}\\
+ & \overset{4.}{=} & \frac{cr^{2}}{4\pi^{2}}\defint{\omega}0{\infty}\left|\boldsymbol{B}\left(\boldsymbol{x},\omega\right)\right|^{2}\\
+ & \overset{5.}{=} & \frac{1}{4\pi^{2}c^{3}}\defint{\omega}0{\infty}\omega^{2}\left|\hat{\boldsymbol{x}}\times\boldsymbol{j}\left(\boldsymbol{k},\omega\right)\right|^{2}
 \end{eqnarray*}
 
 \end_inset
 
 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\indefint te^{-i\left(\omega+\omega'\right)t}=2\pi\delta\left(\omega+\omega'\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $B_{i}\left(\boldsymbol{x},t\right)\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $\boldsymbol{B}\left(\boldsymbol{x},-\omega\right)=\boldsymbol{B}\left(\boldsymbol{x},\omega\right)^{*}$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+don't get this
+\end_layout
+
+\end_inset
+
+ Also, by 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+§
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:ch5sec4_2Asymptotic-potentials-and"
+
+\end_inset
+
+, 
+\begin_inset Formula $\boldsymbol{E}\left(\boldsymbol{x},\omega\right)\approx-\hat{\boldsymbol{x}}\times\boldsymbol{B}\left(\boldsymbol{x},\omega\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $\hat{\boldsymbol{x}}\perp\boldsymbol{B}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Since integrand is even in 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+From 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+§
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:ch5sec4_2Asymptotic-potentials-and"
+
+\end_inset
+
+ proposition, 
+\begin_inset Formula $\boldsymbol{B}\left(\boldsymbol{x},\omega\right)\approx i\frac{\omega}{c}\frac{e^{i\omega r/c}}{r}\hat{\boldsymbol{x}}\times\frac{1}{c}\boldsymbol{j}\left(\boldsymbol{k},\omega\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+\begin_inset Formula 
+\[
+\implies\frac{d^{2}U}{\infinitesimal{\Omega}d\omega}=\frac{\omega^{2}}{4\pi^{2}c^{3}}\left|\hat{\boldsymbol{x}}\times\boldsymbol{j}\left(\boldsymbol{k},\omega\right)\right|^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Spectral distribution for dipole radiation
+\end_layout
+
+\begin_layout Standard
+From 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+§
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:ch5sec4_3The-spectral-distribution"
+
+\end_inset
+
+, 
+\begin_inset Formula $\frac{d^{2}U}{\infinitesimal{\Omega}d\omega}$
+\end_inset
+
+ is given by the Fourier transform of the current density:
+\begin_inset Formula 
+\[
+\boldsymbol{j}\left(\boldsymbol{k},\omega\right)\textnormal{, where }k=\left|\boldsymbol{k}\right|=\frac{\omega}{c}=\frac{2\pi}{\lambda},
+\]
+
+\end_inset
+
+ with 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ the wavelength of the radiation.
+\end_layout
+
+\begin_layout Standard
+Consider small sources in the limit that 
+\begin_inset Formula $\left|\boldsymbol{y}\right|\ll\lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+For an atom radiating visible light, we have 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left|\boldsymbol{y}\right| & \lesssim & \textnormal{a few }\si{\angstrom}\\
+\lambda & \approx & \textnormal{thousands of }\si{\angstrom}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this limit,
+\begin_inset Formula 
+\begin{eqnarray*}
+\underline{\boldsymbol{j}\left(\boldsymbol{k},\omega\right)} & = & \indefint{\boldsymbol{y}}e^{-i\boldsymbol{k}\cdot\boldsymbol{y}}\indefint te^{i\omega t}\boldsymbol{j}\left(\boldsymbol{y},t\right)\\
+ & \overset{1.}{=} & \indefint{\boldsymbol{y}}\left[1-i\boldsymbol{k}\cdot\boldsymbol{y}+\dots\right]\indefint te^{i\omega t}\boldsymbol{j}\left(\boldsymbol{y},t\right)\\
+ & \overset{2.}{=} & \indefint te^{i\omega t}\indefint{\boldsymbol{y}}\boldsymbol{j}\left(\boldsymbol{y},t\right)+O\left(a/\lambda\right)\\
+ & \overset{3.}{=} & \indefint te^{i\omega t}\frac{d}{dt}\boldsymbol{d}\left(t\right)+O\left(a/\lambda\right)\\
+ & = & \underline{-i\omega\boldsymbol{d}\left(\omega\right)+O\left(a/\lambda\right)}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Taylor expand 
+\begin_inset Formula $e^{-i\boldsymbol{k}\cdot\boldsymbol{y}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Define 
+\begin_inset Formula $a:=\left|\boldsymbol{y}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+By 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+§
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:ch5sec3_4Dipole-radiation"
+
+\end_inset
+
+ lemma, 
+\begin_inset Formula $\frac{d}{dt}\boldsymbol{d}\left(t\right)=\indefint{\boldsymbol{y}}\boldsymbol{j}\left(\boldsymbol{y},t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+If 
+\begin_inset Formula $a$
+\end_inset
+
+ is the linear dimension of the source, and 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ the wavelength of the radiation, then to lowest order in 
+\begin_inset Formula $a/\lambda\ll1$
+\end_inset
+
+ the energy radiated per unit solid angle and unit frequency is given by
+ the 
+\emph on
+Larmor formula
+\emph default
+: 
+\begin_inset Formula 
+\[
+\boxed{\frac{d^{2}U}{\infinitesimal{\Omega}d\omega}=\frac{\omega^{2}}{4\pi^{2}c^{3}}\sin^{2}\theta\left|\dot{\boldsymbol{d}}\left(\omega\right)\right|^{2}},
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is the angle between 
+\begin_inset Formula $\boldsymbol{d}$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{\boldsymbol{x}}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\theta=\varangle\left(\boldsymbol{d},\hat{\boldsymbol{x}}\right)
+\]
+
+\end_inset
+
+ and 
+\begin_inset Formula $\dot{\boldsymbol{d}}\left(\omega\right)$
+\end_inset
+
+ is the Fourier transform of 
+\begin_inset Formula $\dot{\boldsymbol{d}}\left(t\right)$
+\end_inset
+
+.
+ That is,
+\begin_inset Formula 
+\[
+\dot{\boldsymbol{d}}\left(\omega\right):=-i\omega\boldsymbol{d}\left(\omega\right)=\mathcal{F}_{t}\left[\dot{\boldsymbol{d}}\left(t\right)\right]\left(\omega\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+In the dipole approximation, 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+why
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\boldsymbol{d}\parallel\boldsymbol{j}\implies\left|\hat{\boldsymbol{x}}\times\boldsymbol{j}\right|^{2}=\sin^{2}\theta\left|\boldsymbol{j}\right|^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Corollary
+The total energy per unit frequency is
+\begin_inset Formula 
+\[
+\boxed{\frac{dU}{d\omega}=\frac{2}{3}\frac{\omega^{2}}{\pi c^{3}}\left|\dot{\boldsymbol{d}}\left(\omega\right)\right|^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $\indefint{\Omega}\sin^{2}\theta=2\pi\defint{\eta}{-1}1\left(1-\eta^{2}\right)=4\pi\left(\frac{2}{3}\right)=\frac{8\pi}{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Consider a point charge 
+\begin_inset Formula $e$
+\end_inset
+
+ on trajectory 
+\begin_inset Formula $\boldsymbol{y}\left(t\right)$
+\end_inset
+
+ with velocity 
+\begin_inset Formula $\boldsymbol{v}\left(t\right)=\dot{\boldsymbol{y}}\left(t\right)\ll c$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\implies\boldsymbol{j}\left(\boldsymbol{x},t\right)=e\boldsymbol{v}\left(t\right)\delta\left(\boldsymbol{x}-\boldsymbol{y}\left(t\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies\dot{\boldsymbol{d}}\left(t\right)=\indefint{\boldsymbol{x}}\boldsymbol{j}\left(\boldsymbol{x},t\right)=e\boldsymbol{v}\left(t\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies\dot{\boldsymbol{d}}\left(\omega\right)=\mathcal{F}\left[e\boldsymbol{v}\left(t\right)\right]\left(\omega\right)=e\boldsymbol{v}\left(\omega\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\implies\underline{\frac{dU}{d\omega}} & = & \frac{2}{3}\frac{\omega^{2}e^{2}}{\pi c^{3}}\left|\boldsymbol{v}\left(\omega\right)\right|^{2}\\
+ & = & \underline{\frac{2}{3}\frac{e^{2}}{\pi c^{3}}\left|\dot{\boldsymbol{v}}\left(\omega\right)\right|^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula $dU/d\omega$
+\end_inset
+
+ is given by the Fourier transform of the acceleration.
+\end_layout
+
+\begin_layout Remark
+This is consistent with the Larmor formula from 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+§
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:ch5sec3_3Radiation-by-an"
+
+\end_inset
+
+ (see Problem #52).
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Consider a slowly moving charge 
+\begin_inset Formula $\left(v\ll c\right)$
+\end_inset
+
+ on a circle.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\implies\dot{\boldsymbol{v}}$
+\end_inset
+
+ is purely radial
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\implies$
+\end_inset
+
+ power is maximal in the direction perpendicular to 
+\begin_inset Formula $\dot{\boldsymbol{v}}$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\theta=\pm\frac{\pi}{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\implies$
+\end_inset
+
+ 
+\emph on
+no
+\emph default
+ radiation emitted in direction of 
+\begin_inset Formula $\dot{\boldsymbol{v}}$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\theta=0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\implies$
+\end_inset
+
+ in the orbital plane, the radiation has a butterfly shape
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+insert figure
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $\implies$
+\end_inset
+
+ in 3-D, it has the shape of a torus
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+insert figure
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example: radiation by a damped harmonic oscillator
 \end_layout
 
 \begin_layout Chapter
