@@ -14,7 +14,6 @@
 \usepackage{fancybox}
 \usepackage{calc}
 \usepackage{units}
-\usepackage{textcomp}
 \usepackage{mathrsfs}
 \usepackage{multirow}
 \usepackage{amsthm}
@@ -431,7 +430,7 @@ to $\mathbb{R}^{n}$, and by extension, to $V$.
 vectors are called \emph{contravariant vectors}.} They are one-to-one correspondent to the vector elements of $V$.
 \end{defn}
 Since the co-vectors are defined via linear forms, and rank-$n$ tensors
-are defined by $n$-linear forms,\footnote{As per §\ref{sub:ch1sec1_2Tensor-spaces}}
+are defined by $n$-linear forms,\footnote{As per \ref{sub:ch1sec1_2Tensor-spaces}}
 we can consider co-vectors as tensors of rank 1. 
 \begin{defn}
 \textbf{\emph{Natural pairing.}} The scalar $f\left(\boldsymbol{x}\right)\in\mathbb{R}$
@@ -1430,7 +1429,7 @@ equation}:
 \]
 \end{prop}
 \begin{proof}
-From §\vref{sub:ch2sec1_3The-field-equations}, Equation (\ref{eq:The_Field_equations}),
+From \vref{sub:ch2sec1_3The-field-equations}, Equation (\ref{eq:The_Field_equations}),
 \[
 \partial_{\nu}J^{\nu}=\frac{c}{4\pi}\underset{\textnormal{sym.}}{\underbrace{\partial_{\nu}\partial_{\mu}}}\underset{\textnormal{a-sym.}}{\underbrace{F_{\,}^{\mu\nu}}}=-\frac{c}{4\pi}\underset{\textnormal{relabel }\mu\leftrightarrow\nu}{\underbrace{\partial_{\mu}\partial_{\nu}F^{\nu\mu}}}=-\frac{c}{4\pi}\partial_{\nu}\partial_{\mu}F^{\mu\nu}=-\partial_{\nu}J^{\nu}
 \]
@@ -1514,7 +1513,7 @@ F^{\mu\alpha}F{}^{\nu}{}_{\alpha}=g^{\alpha\beta}F{}^{\mu}{}_{\beta}g_{\alpha\ga
 
 \textbf{(2)} $-4\pi T{}^{\mu}{}_{\mu}=F^{\mu\alpha}F_{\mu\alpha}-\frac{1}{4}\underset{\delta_{\mu}^{\mu}=4}{\underbrace{g{}^{\mu}{}_{\mu}}}F_{\alpha\beta}F^{\alpha\beta}=0$\end{proof}
 \begin{rem}
-By \chapref{Mathematical-preliminaries}, §\ref{sub:ch1sec3_4Minkowski-tensors},
+By \chapref{Mathematical-preliminaries}, \ref{sub:ch1sec3_4Minkowski-tensors},
 $T^{\mu\nu}$ can be decomposed into $T^{00}$, Euclidean vector $T^{0j}$,
 plus symmetric Euclidean tensor $T^{jk}$.
 \end{rem}
@@ -1568,7 +1567,7 @@ t^{\left(\cdots\right)\alpha\left(\cdots\right)}{}_{\alpha}{}^{\left(\cdots\righ
 For any rank-$\left(n+1\right)$ tensor field $t^{\mu\alpha_{1}\dots\alpha_{n}}\left(x\right)$,
 the continuity equation $\partial_{\mu}t^{\mu\alpha_{1}\dots\alpha_{n}}=0$
 implies a conservation law for the rank-$n$ tensor $t^{0\alpha_{1}\dots\alpha_{n}}\left(x\right)$
-by the arguments from §\ref{sub:ch2sec2_1Continuity-equation-for}.
+by the arguments from \ref{sub:ch2sec2_1Continuity-equation-for}.
 $\partial_{\mu}J^{\mu}=0$ is the case where $n=0$; the proposition
 above is the case where $n=1$.\end{rem}
 \begin{cor}
@@ -1633,7 +1632,7 @@ Lore\textbf{nz} gauge is Lore\textbf{ntz} invariant.
 \subsection{The field tensor in terms of Euclidean vector fields\label{sub:ch2sec3_1The-field-tensor}}
 
 Since $F^{\mu\nu}$ is an antisymmetric Minkowski tensor, from Chapter
-1, §\ref{sub:ch1sec3_4Minkowski-tensors} we can write it in the form\begin{eqnarray*} F_{\mu\nu} & = & 
+1, \ref{sub:ch1sec3_4Minkowski-tensors} we can write it in the form\begin{eqnarray*} F_{\mu\nu} & = & 
 \left(\begin{array}{c;{2pt/2pt}ccc}
 0      & E_{x}  & E_{y}  & E_{z}  \\\hdashline[2pt/2pt]
 -E_{x} & 0      & -B_{z} & B_{y}  \\
@@ -1698,8 +1697,8 @@ F^{\mu\nu}=g^{\mu\alpha}g^{\nu\beta}F_{\alpha\beta}=\begin{pmatrix}+\\
 \end{eqnarray*}%
 \end{minipage}
 \end{rem}
-\ From Chapter 1, §\ref{sub:ch1sec3_4Minkowski-tensors}, we can
-write $A^{\mu}$ in the form
+\ From Chapter 1, \ref{sub:ch1sec3_4Minkowski-tensors}, we can write
+$A^{\mu}$ in the form
 \[
 A^{\mu}\left(x\right)=\left(\phi\left(x\right),\boldsymbol{A}\left(x\right)\right),
 \]
@@ -1717,12 +1716,12 @@ is called \emph{vector potential}. \end{defn}
 \begin{rem}
 This is analogous to $J^{\mu}\left(x\right)=\left(c\rho\left(x\right),\boldsymbol{j}\left(x\right)\right)$,
 with $\rho$ the charge density and $\boldsymbol{j}$ the current
-density (see §\ref{sub:ch2sec2_1Continuity-equation-for}).
+density (see \ref{sub:ch2sec2_1Continuity-equation-for}).
 \end{rem}
 
 \subsection{Maxwell's equations}
 
-From §\ref{sub:ch2sec1_3The-field-equations} Equation (\ref{eq:dual_zero}),
+From \ref{sub:ch2sec1_3The-field-equations} Equation (\ref{eq:dual_zero}),
 we have 
 \[
 \partial_{\mu}\varepsilon^{\mu\nu\kappa\lambda}F_{\kappa\lambda}=0.
@@ -1765,7 +1764,7 @@ $\underline{\nu=2,3}$:$\quad$ Cyclically permute the $\nu=1$ case.\end{proof}
 These are the four homogeneous PDEs known as the first two Maxwell
 Equations.
 
-Now consider, from §\ref{sub:ch2sec1_3The-field-equations}, the Euler-Lagrange
+Now consider, from \ref{sub:ch2sec1_3The-field-equations}, the Euler-Lagrange
 equation (\ref{eq:The_Field_equations}):
 \[
 \partial_{\mu}F^{\mu\nu}=\frac{4\pi}{c}J^{\nu}.
@@ -1897,7 +1896,7 @@ The magnetic field has no sources; there are no magnetic monopoles.
 \end{rem}
 ~
 \begin{rem}
-In our Lorentz invariant formulation of §1, this comes from the asymmetry
+In our Lorentz invariant formulation of 1, this comes from the asymmetry
 of the two field equations:
 \[
 \partial_{\mu}F^{\mu\nu}=\frac{4\pi}{c}J^{\mu}\quad\textnormal{and}\quad\partial_{\mu}\tilde{F}^{\mu\nu}=0.
@@ -1974,7 +1973,7 @@ The electric and magnetic fields are related to the 4-potential by
 \]
 \end{claim}
 \begin{proof}
-From §\ref{sub:ch2sec3_1The-field-tensor},
+From \ref{sub:ch2sec3_1The-field-tensor},
 \[
 E^{j}=-F^{0j}=-\partial^{0}A^{j}+\partial^{j}A^{0}=-\partial_{0}A^{j}-\partial_{j}A^{0}=-\frac{1}{c}\partial_{t}A^{j}-\partial_{j}\phi.
 \]
@@ -2035,7 +2034,7 @@ Comparison with the above equation reveals
 \]
 
 \begin{rem}
-These are the scalar and vector potentials from PHYS611 Ch2 §1.3 Example
+These are the scalar and vector potentials from PHYS611 Ch2 1.3 Example
 1!
 \end{rem}
 ~
@@ -2054,7 +2053,7 @@ the Galilean $\mathcal{L}_{0}^{G}$ works well enough if $\left|\boldsymbol{v}\ri
 \begin{rem}
 The momentum of the particle is $\boldsymbol{p}=\frac{\partial\mathcal{L}_{0}}{\partial\boldsymbol{v}}$
 (not $\frac{\partial\mathcal{L}}{\partial\boldsymbol{v}}$; see PHYS611
-Ch2 §1.4), and Newton's 2nd Law takes the form (from PHYS611):
+Ch2 1.4), and Newton's 2nd Law takes the form (from PHYS611):
 \begin{eqnarray*}
 \frac{d}{dt}\boldsymbol{p}=\boldsymbol{F} & = & \boldsymbol{F}^{\left(1\right)}+\boldsymbol{F}^{\left(2\right)}\\
  & = & -\nabla\underset{U}{\underbrace{e\phi}}-\left(\partial_{t}-\boldsymbol{v}\times\right)\underset{\boldsymbol{V}}{\underbrace{\left(\frac{e}{c}\boldsymbol{A}\right)}}\\
@@ -2073,9 +2072,9 @@ Consider the continuity equation for the energy-momentum tensor
 \[
 \partial_{\nu}T^{\mu\nu}=-\frac{1}{c}F^{\mu\nu}J_{\nu}
 \]
- from §\ref{sub:ch2sec2_3The-continuity-equation} for $\mu=0$:\footnote{Recall that $T^{\mu\nu}:=-\frac{1}{4\pi}F^{\mu\alpha}F{}^{\nu}{}_{\alpha}+\frac{1}{16\pi}g^{\mu\nu}F_{\alpha\beta}F^{\alpha\beta}$
-from §\ref{sub:ch2sec2_2The-energy-momentum-tensor}, and $F_{\alpha\beta}F^{\alpha\beta}=2\left(\boldsymbol{E}^{2}-\boldsymbol{B}^{2}\right)$
-from Chapter 1 §\ref{sub:ch1sec3_4Minkowski-tensors}. }
+ from \ref{sub:ch2sec2_3The-continuity-equation} for $\mu=0$:\footnote{Recall that $T^{\mu\nu}:=-\frac{1}{4\pi}F^{\mu\alpha}F{}^{\nu}{}_{\alpha}+\frac{1}{16\pi}g^{\mu\nu}F_{\alpha\beta}F^{\alpha\beta}$
+from \ref{sub:ch2sec2_2The-energy-momentum-tensor}, and $F_{\alpha\beta}F^{\alpha\beta}=2\left(\boldsymbol{E}^{2}-\boldsymbol{B}^{2}\right)$
+from Chapter 1 \ref{sub:ch1sec3_4Minkowski-tensors}. }
 \[
 \underline{T^{00}}=-\frac{1}{8\pi}\left[2F^{0\alpha}F{}^{0}{}_{\alpha}-\frac{1}{2}F_{\alpha\beta}F^{\alpha\beta}\right]=-\frac{1}{8\pi}\left[2\boldsymbol{E}^{2}-\left(\boldsymbol{E}^{2}-\boldsymbol{B}^{2}\right)\right]=\underline{-\frac{1}{8\pi}\left(\boldsymbol{E}^{2}+\boldsymbol{B}^{2}\right)};
 \]
@@ -2108,12 +2107,12 @@ of the fields} $u\left(\boldsymbol{x},t\right)$ as
 Follows directly from the above discussion.\end{proof}
 \begin{rem}
 For $\boldsymbol{j}=\boldsymbol{0}$, this expresses local energy
-conservation. It is analogous to §\ref{sub:ch2sec2_1Continuity-equation-for}
+conservation. It is analogous to \ref{sub:ch2sec2_1Continuity-equation-for}
 with $\rho\rightarrow u$, $\boldsymbol{j}\rightarrow\boldsymbol{P}$.
 \end{rem}
 ~
 \begin{rem}
-Recall from §\ref{sub:ch2sec3_5Charges-in-electromagnetic} that since
+Recall from \ref{sub:ch2sec3_5Charges-in-electromagnetic} that since
 $\boldsymbol{F}=e\boldsymbol{E}+\frac{e}{c}\boldsymbol{v}\times\boldsymbol{B}$,
 the work per unit time (power) done by the fields on a charge $e$
 is $\boldsymbol{v}\cdot\boldsymbol{F}=e\boldsymbol{v}\cdot\boldsymbol{E}$.
@@ -2135,7 +2134,7 @@ We still need to show that $u\left(\boldsymbol{x},t\right)$ can be
 sensibly interpreted as the energy density of the field.
 
 Let $\boldsymbol{j}\left(\boldsymbol{x},t\right)$ be the current
-density due to just one particle, as in §\ref{sub:ch2sec3_5Charges-in-electromagnetic}
+density due to just one particle, as in \ref{sub:ch2sec3_5Charges-in-electromagnetic}
 (for many particles, we just sum over them). Integrating,
 \[
 \indefint{\boldsymbol{x}}\boldsymbol{j}\cdot\boldsymbol{E}=\indefint{\boldsymbol{x}}\left[\boldsymbol{E}\left(\boldsymbol{x},t\right)\right]\cdot\left[e\boldsymbol{v}\delta\left(\boldsymbol{x}-\boldsymbol{y}\right)\right]=e\boldsymbol{v}\cdot\boldsymbol{E}\left(\boldsymbol{y}\right),
@@ -2149,7 +2148,7 @@ E_{kin}=\frac{m}{2}\boldsymbol{v}^{2}
 \[
 \implies\frac{d}{dt}E_{kin}=m\boldsymbol{v}\cdot\frac{d\boldsymbol{v}}{dt}=\boldsymbol{v}\cdot\underset{=e\boldsymbol{E}}{\underbrace{\frac{d}{dt}\boldsymbol{p}}}=e\boldsymbol{v}\cdot\boldsymbol{E},
 \]
- where the last step follows from §\ref{sub:ch2sec3_5Charges-in-electromagnetic}.
+ where the last step follows from \ref{sub:ch2sec3_5Charges-in-electromagnetic}.
 Now, integrating Poynting's theorem over all space,
 \[
 \frac{d}{dt}\indefint{\boldsymbol{x}}u\left(\boldsymbol{x},t\right)+\underset{\underset{\left(\textnormal{since }\boldsymbol{P}\rightarrow\boldsymbol{0}\textnormal{ at }\infty\right)}{=\int d\boldsymbol{S}\cdot\boldsymbol{P}=0}}{\underbrace{\indefint{\boldsymbol{x}}\nabla\cdot\boldsymbol{P}\left(\boldsymbol{x},t\right)}}=-\indefint{\boldsymbol{x}}\boldsymbol{j}\cdot\boldsymbol{E}=-e\boldsymbol{v}\cdot\boldsymbol{E}=-\frac{d}{dt}E_{kin}.
@@ -2179,7 +2178,7 @@ current density of the field}.
 \end{rem}
 ~
 \begin{rem}
-The remaining components of the continuity equation from §\ref{sub:ch2sec2_3The-continuity-equation},
+The remaining components of the continuity equation from \ref{sub:ch2sec2_3The-continuity-equation},
 \[
 \partial_{\nu}T^{j\nu}=-\frac{1}{c}F^{j\nu}J_{\nu}
 \]
@@ -2249,7 +2248,7 @@ in $\widetilde{CS}$ is
 \[
 \tilde{F}^{\mu\nu}=D{}^{\mu}{}_{\alpha}D{}^{\nu}{}_{\beta}F^{\alpha\beta}\quad\textnormal{and}\quad\tilde{x}^{\mu}=D{}^{\mu}{}_{\nu}x^{\nu}.
 \]
- Now let $D{}^{\mu}{}_{\nu}$ be a Lorentz boost. Then, from §\ref{sub:ch2sec3_1The-field-tensor}
+ Now let $D{}^{\mu}{}_{\nu}$ be a Lorentz boost. Then, from \ref{sub:ch2sec3_1The-field-tensor}
 we have
 \begin{eqnarray*}
 \tilde{F}^{\mu\nu} & = & \left(DFD^{T}\right)^{\mu\nu}\\
@@ -2544,7 +2543,7 @@ only! For static fields, $\boldsymbol{E}$ and $\boldsymbol{B}$ decouple!
 \end{rem}
 ~
 \begin{rem}
-From Chapter \ref{chap:Maxwell's-Equations}, §\ref{sub:ch2sec3_4Relations-between-fields},
+From Chapter \ref{chap:Maxwell's-Equations}, \ref{sub:ch2sec3_4Relations-between-fields},
 a static $\boldsymbol{E}-$field is determined by $\phi$ alone:
 \[
 \boxed{\boldsymbol{E}=-\nabla\phi},
@@ -2581,7 +2580,7 @@ no extrema except at infinity; this is a theorem in analysis.
 
 \subsection{\label{sub:ch3sec1_2Magnetostatics}Magnetostatics}
 
-From Chapter \ref{chap:Maxwell's-Equations}, §\ref{sub:ch2sec3_4Relations-between-fields},
+From Chapter \ref{chap:Maxwell's-Equations}, \ref{sub:ch2sec3_4Relations-between-fields},
 $\boldsymbol{B}=\nabla\times\boldsymbol{A}$.
 \begin{rem}
 This is always true!
@@ -2619,11 +2618,11 @@ $\left(c\rho,\boldsymbol{j}\right)$ of the 4-current as the inhomogeneity.
 \label{rem:Ch3sec1_2rem4_linear}Poisson's equation is linear; thus,
 the most general solution is a particular solution plus the most general
 solution of Laplace's equation (see Chapter \ref{chap:Maxwell's-Equations}
-§\ref{sub:ch2sec5_1Real-solutions} Corollary \ref{cor:The-most-general}). 
+\ref{sub:ch2sec5_1Real-solutions} Corollary \ref{cor:The-most-general}). 
 \end{rem}
 ~
 \begin{rem}
-\label{rem:Ch3sec1_2rem5_From-=0000A7-Remark}From §\ref{sub:ch3sec1_1Electrostatics}
+\label{rem:Ch3sec1_2rem5_From-=0000A7-Remark}From \ref{sub:ch3sec1_1Electrostatics}
 Remark \ref{rem:A-harmonic-functionextrema}, the only solution of
 Laplace's equation that vanishes at infinity is the zero solution;
 in an infinite system, there is only one physical solution of Poisson's
@@ -2904,7 +2903,7 @@ falls off faster than any power. Thus, $\hat{F}^{\left(p\right)}\left(k\right)$
 is a test function.\footnote{Specifically, $\hat{F}^{\left(0\right)}\left(k\right)=\hat{F}\left(k\right)$
 is a test function, so the proposition is true.}\end{proof}
 \begin{rem}
-The inverse Fourier transform is given by the theorem in §\ref{sub:ch3sec2_2Inverse-Fourier-transforms}.\end{rem}
+The inverse Fourier transform is given by the theorem in \ref{sub:ch3sec2_2Inverse-Fourier-transforms}.\end{rem}
 \begin{prop}
 \textbf{\emph{Parseval's equation.}} Let $F_{1}\left(x\right)$ and
 $F_{2}\left(x\right)$ be test functions, and let $\hat{F}_{1}\left(k\right)$
@@ -3090,7 +3089,7 @@ The Fourier transform of $\delta\left(x\right)$ is
 \begin{proof}
 Consider the regularization $f_{n}\left(x\right)=\sqrt{\frac{n}{\pi}}e^{-nx^{2}}$.
 From Problem \#27, $\hat{f}_{n}\left(k\right)=e^{-\frac{k^{2}}{4n}}$.
-But from §\ref{sub:ch3sec2_4Generalized-functions} Example \ref{example:constant_gen_function},
+But from \ref{sub:ch3sec2_4Generalized-functions} Example \ref{example:constant_gen_function},
 this is a regularization of the generalized function that is identically
 equal to $1$.\end{proof}
 \begin{cor}
@@ -3100,7 +3099,7 @@ The $\delta-$function can be written
 \]
 \end{cor}
 \begin{proof}
-From the theorem from §\ref{sub:ch3sec2_2Inverse-Fourier-transforms},
+From the theorem from \ref{sub:ch3sec2_2Inverse-Fourier-transforms},
 \[
 \delta\left(x\right)=\int\frac{dk}{2\pi}\:e^{ikx}\hat{\delta}\left(k\right)=\int\frac{dk}{2\pi}\:e^{ikx}.
 \]
@@ -3108,7 +3107,7 @@ From the theorem from §\ref{sub:ch3sec2_2Inverse-Fourier-transforms},
 \begin{rem}
 This integral does not exist in classical analysis!\end{rem}
 \begin{prop}
-Let $\phi\left(x\right)$ be a weakly increasing function.\footnote{As per §\ref{sub:ch3sec2_3Test-functions} Definition \ref{def:Weakly-increasing-functions.}.}
+Let $\phi\left(x\right)$ be a weakly increasing function.\footnote{As per \ref{sub:ch3sec2_3Test-functions} Definition \ref{def:Weakly-increasing-functions.}.}
 Then
 \[
 \phi\left(x\right)\delta\left(x\right)=\phi\left(0\right)\delta\left(x\right).
@@ -3199,7 +3198,7 @@ determined by the inhomogeneity $\rho$ via
 \]
 \end{prop}
 \begin{proof}
-From §\ref{sub:ch3sec1_1Electrostatics},\footnote{Here and elsewhere, the symbol $\overset{\mathcal{F}}{\longrightarrow}$
+From \ref{sub:ch3sec1_1Electrostatics},\footnote{Here and elsewhere, the symbol $\overset{\mathcal{F}}{\longrightarrow}$
 is used to indicate a Fourier transform is taken.} 
 \begin{eqnarray*}
 \nabla^{2}\phi=-4\pi\rho\quad\overset{\mathcal{F}}{\longrightarrow}\quad-\boldsymbol{k}^{2}\hat{\phi}\left(\boldsymbol{k}\right) & = & -4\pi\hat{\rho}\left(\boldsymbol{k}\right)\\
@@ -3207,13 +3206,13 @@ is used to indicate a Fourier transform is taken.}
 \end{eqnarray*}
 \end{proof}
 \begin{rem}
-Thanks to the theory in §\ref{sec:ch3sec2_Digression:-Fourier-transforms},
+Thanks to the theory in \ref{sec:ch3sec2_Digression:-Fourier-transforms},
 the class of solutions that can be constructed in this way is much
 larger than before, since weakly increasing functions are allowed.
 \end{rem}
 ~
 \begin{rem}
-\label{rem:ch3sec3_1_rem2=0000A7-Remark-}§\ref{sub:ch3sec1_2Magnetostatics}
+\label{rem:ch3sec3_1_rem2=0000A7-Remark-}\ref{sub:ch3sec1_2Magnetostatics}
 Remark \ref{rem:Ch3sec1_2rem5_From-=0000A7-Remark} follows immediately:
 \begin{eqnarray*}
 \nabla^{2}\phi=0 & \iff & \boldsymbol{k}^{2}\hat{\phi}\left(\boldsymbol{k}\right)=0\\
@@ -3224,7 +3223,7 @@ Remark \ref{rem:Ch3sec1_2rem5_From-=0000A7-Remark} follows immediately:
 \end{rem}
 ~
 \begin{rem}
-All of this is consistent with §\ref{sub:ch3sec1_2Magnetostatics}
+All of this is consistent with \ref{sub:ch3sec1_2Magnetostatics}
 Remark \ref{rem:Ch3sec1_2rem4_linear}.
 \end{rem}
 
@@ -3273,7 +3272,7 @@ Fourier transform exists. Then
 \]
  This is known as \emph{Poisson's formula}.\end{prop}
 \begin{proof}
-From §\ref{sub:ch3sec3_1The-general-solution},
+From \ref{sub:ch3sec3_1The-general-solution},
 \[
 \phi\left(\boldsymbol{x}\right)=\mathcal{F}^{-1}\underset{\hat{\phi}\left(\boldsymbol{k}\right)}{\left[\underbrace{\frac{4\pi}{\boldsymbol{k}^{2}}\hat{\rho}\left(\boldsymbol{k}\right)}\right]}\left(\boldsymbol{x}\right).
 \]
@@ -3282,7 +3281,7 @@ From §\ref{sub:ch3sec3_1The-general-solution},
 \mathcal{F}^{-1}\left[\frac{4\pi}{\boldsymbol{k}^{2}}\right]\left(\boldsymbol{x}\right) & = & \frac{1}{\left|\boldsymbol{x}\right|},\\
 \mathcal{F}^{-1}\left[\hat{\rho}\left(\boldsymbol{k}\right)\right]\left(\boldsymbol{x}\right) & = & \rho\left(\boldsymbol{x}\right).
 \end{eqnarray*}
- From the convolution theorem from §\ref{sub:ch3sec2_1The-Fourier-transform},
+ From the convolution theorem from \ref{sub:ch3sec2_1The-Fourier-transform},
 \begin{eqnarray*}
 \phi\left(\boldsymbol{x}\right) & = & \left(\mathcal{F}^{-1}\left[\frac{4\pi}{\boldsymbol{k}^{2}}\right]\star\mathcal{F}^{-1}\left[\hat{\rho}\left(\boldsymbol{k}\right)\right]\right)\left(\boldsymbol{x}\right)\\
  & = & \indefint{\boldsymbol{y}}\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\rho\left(\boldsymbol{y}\right).
@@ -3315,7 +3314,7 @@ to an observer. Finding the fields are potentials is much easier if
 one starts in the frame of the charge!
 
 Let $CS'$ be the inertial frame in which the charge is at rest. From
-§\ref{sub:ch3sec3_2The-Coulomb-potential},\footnote{The primes are not derivatives!}
+\ref{sub:ch3sec3_2The-Coulomb-potential},\footnote{The primes are not derivatives!}
 \[
 \phi'\left(\boldsymbol{x}'\right)=\frac{e}{r'},
 \]
@@ -3327,7 +3326,7 @@ A'^{\mu}=\left(\phi'\left(\boldsymbol{x}'\right),0\right).
 
 Let $CS$ be the inertial frame of the observer, and let $\boldsymbol{v}=\left(v,0,0\right)$.
 Then $CS$ and $CS'$ are related by a Lorentz boost; from Chapter
-\ref{chap:Maxwell's-Equations} §\ref{sub:ch2sec4_1Physical-interpretation-of},\footnote{Recall that $\gamma:=\frac{1}{\sqrt{1-\frac{v^{2}}{c^{2}}}}$.}
+\ref{chap:Maxwell's-Equations} \ref{sub:ch2sec4_1Physical-interpretation-of},\footnote{Recall that $\gamma:=\frac{1}{\sqrt{1-\frac{v^{2}}{c^{2}}}}$.}
 \begin{eqnarray*}
 x' & = & \gamma\left(x-vt\right)\\
 y' & = & y\\
@@ -3360,7 +3359,7 @@ We calculate the fields using the same procedure. In $CS'$, we have
 \boldsymbol{E}'\left(\boldsymbol{x}'\right)=e\frac{\boldsymbol{x}'}{r'^{3}},\quad\boldsymbol{B}'\left(\boldsymbol{x}'\right)=0.
 \]
  We boost these, using the results from Chapter \ref{chap:Maxwell's-Equations}
-§\ref{sub:ch2sec4_2Transformations-of-}:
+\ref{sub:ch2sec4_2Transformations-of-}:
 \begin{eqnarray*}
 E_{x} & = & E'_{x}=\frac{ex'}{\left(r'\right)^{3}}=\frac{e}{\gamma^{2}}\frac{x-vt}{\left(R^{*}\right)^{3}}\\
 E_{y} & = & \gamma E'_{y}=\gamma\frac{ey'}{\left(r'\right)^{3}}=\frac{e}{\gamma^{2}}\frac{y}{\left(R^{*}\right)^{3}}\\
@@ -3373,7 +3372,7 @@ E_{z} & = & \frac{e}{\gamma^{2}}\frac{z}{\left(R^{*}\right)^{3}}.
  Note that $\boldsymbol{R}$ is the Galilean transformed $\boldsymbol{x}$.
 
 What about $\boldsymbol{B}$? Again, from Chapter \ref{chap:Maxwell's-Equations}
-§\ref{sub:ch2sec4_2Transformations-of-},
+\ref{sub:ch2sec4_2Transformations-of-},
 \begin{eqnarray*}
 B_{x} & = & B'_{x}=0\\
 B_{y} & = & -\gamma\frac{v}{c}E'_{z}=-\frac{v}{c}E_{z}\\
@@ -3439,7 +3438,7 @@ is
 \]
 \end{prop}
 \begin{proof}
-From Chapter \ref{chap:Maxwell's-Equations} §\ref{sub:ch2sec3_6Poynting's-theorem},
+From Chapter \ref{chap:Maxwell's-Equations} \ref{sub:ch2sec3_6Poynting's-theorem},
 \begin{eqnarray*}
 U & = & \frac{1}{8\pi}\underset{V}{\int}d\boldsymbol{x}\:\boldsymbol{E}^{2}\left(\boldsymbol{x}\right)\\
  & = & -\frac{1}{8\pi}\indefint{\boldsymbol{x}}\boldsymbol{E}\cdot\nabla\phi\\
@@ -3447,7 +3446,7 @@ U & = & \frac{1}{8\pi}\underset{V}{\int}d\boldsymbol{x}\:\boldsymbol{E}^{2}\left
  & = & \frac{1}{2}\indefint{\boldsymbol{x}}\rho\left(\boldsymbol{x}\right)\phi\left(\boldsymbol{x}\right)\\
  & = & \frac{1}{2}\indefint{\boldsymbol{x}}d\boldsymbol{y}\:\rho\left(\boldsymbol{x}\right)\rho\left(\boldsymbol{y}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|},
 \end{eqnarray*}
-where the last line follows from Poisson's formula (§\ref{sub:ch3sec3_3Poisson's-formula})\end{proof}
+where the last line follows from Poisson's formula (\ref{sub:ch3sec3_3Poisson's-formula})\end{proof}
 \begin{rem}
 Let $\rho\left(\boldsymbol{x}\right)$ be composed of $N$ localized
 charge distributions:$\rho\left(\boldsymbol{x}\right)=\summation{\alpha=1}N\rho^{\left(\alpha\right)}\left(\boldsymbol{x}\right).$
@@ -3511,11 +3510,11 @@ leads to a vector potential
 \]
 \end{prop}
 \begin{proof}
-From §\ref{sub:ch3sec1_2Magnetostatics}, each component of $\boldsymbol{A}$
+From \ref{sub:ch3sec1_2Magnetostatics}, each component of $\boldsymbol{A}$
 obeys Poisson's equation. The solution for each component is given
 by Poisson's formula. \end{proof}
 \begin{rem}
-The proof in §\ref{sub:ch3sec1_2Magnetostatics} Proposition \ref{prop:PoissonsEquationsj}
+The proof in \ref{sub:ch3sec1_2Magnetostatics} Proposition \ref{prop:PoissonsEquationsj}
 required the use of the Coulomb gauge ($\nabla\cdot\boldsymbol{A}=0$)!\end{rem}
 \begin{prop}
 \textbf{\emph{Law of Biot \& Savart}}
@@ -3539,7 +3538,7 @@ Notice the analogy between electrostatics and magnetostatics.
 \end{rem}
 ~
 \begin{rem}
-See §4.6 below for a discussion of the concept of a stationary current
+See 4.6 below for a discussion of the concept of a stationary current
 density
 \end{rem}
 
@@ -3569,7 +3568,7 @@ $\nabla\cdot\left(\boldsymbol{A}\times\boldsymbol{B}\right)=\boldsymbol{B}\cdot\
 \begin{proof}
 \emph{(Of Proposition \ref{prop:magnetostatic_interaction})}
 
-From Chapter \ref{chap:Maxwell's-Equations} §\ref{sub:ch2sec3_6Poynting's-theorem},
+From Chapter \ref{chap:Maxwell's-Equations} \ref{sub:ch2sec3_6Poynting's-theorem},
 \begin{eqnarray*}
 U & = & \frac{1}{8\pi}\underset{V}{\int}d\boldsymbol{x}\:\boldsymbol{B}^{2}\left(\boldsymbol{x}\right)\\
  & = & \frac{1}{8\pi}\indefint{\boldsymbol{x}}\boldsymbol{B}\cdot\left(\nabla\times\boldsymbol{A}\right)\\
@@ -3581,7 +3580,7 @@ U & = & \frac{1}{8\pi}\underset{V}{\int}d\boldsymbol{x}\:\boldsymbol{B}^{2}\left
 
 \begin{enumerate}
 \item From the lemma above.
-\item From §\ref{sub:ch3sec3_6The-law-of} Proposition \ref{prop:A-stationary-current}.
+\item From \ref{sub:ch3sec3_6The-law-of} Proposition \ref{prop:A-stationary-current}.
 \end{enumerate}
 \end{proof}
 \begin{rem}
@@ -3623,7 +3622,7 @@ let $\left|\boldsymbol{x}\right|=:r\gg r_{0}$.
  & = & \frac{1}{r}\left[1+\frac{\boldsymbol{x}\cdot\boldsymbol{y}}{r^{2}}+O\left(\frac{1}{r^{2}}\right)\right],
 \end{eqnarray*}
  where the last step follows from the binomial approximation. Poisson's
-formula (§\ref{sub:ch3sec3_3Poisson's-formula}) gives
+formula (\ref{sub:ch3sec3_3Poisson's-formula}) gives
 \begin{eqnarray*}
 \phi\left(\boldsymbol{x}\right) & = & \indefint{\boldsymbol{y}}\frac{\rho\left(\boldsymbol{y}\right)}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}=\indefint{\boldsymbol{y}}\rho\left(\boldsymbol{y}\right)\frac{1}{r}\left[1+\frac{\boldsymbol{x}\cdot\boldsymbol{y}}{r^{2}}+O\left(\frac{1}{r^{2}}\right)\right]\\
  & = & \frac{1}{r}\indefint{\boldsymbol{y}}\rho\left(\boldsymbol{y}\right)+\frac{\boldsymbol{x}}{r^{3}}\cdot\indefint{\boldsymbol{y}}\boldsymbol{y}\rho\left(\boldsymbol{y}\right)+O\left(\frac{1}{r^{3}}\right)
@@ -3681,7 +3680,7 @@ The field at large distances is
  where $\hat{\boldsymbol{x}}:=\frac{\boldsymbol{x}}{\left|\boldsymbol{x}\right|}$.\end{cor}
 \begin{proof}
 $\boldsymbol{E}=-\nabla\phi$ and $-\nabla\frac{Q}{r}=Q\frac{\boldsymbol{x}}{r^{3}}$
-(see §\ref{sub:ch3sec3_2The-Coulomb-potential}),
+(see \ref{sub:ch3sec3_2The-Coulomb-potential}),
 \begin{eqnarray*}
 \nabla\frac{\boldsymbol{d}\cdot\boldsymbol{x}}{r^{3}} & = & \frac{1}{r^{3}}\nabla\left(\boldsymbol{d}\cdot\boldsymbol{x}\right)+\boldsymbol{d}\cdot\boldsymbol{x}\nabla\frac{1}{r^{3}}\\
  & = & \frac{\boldsymbol{d}}{r^{3}}+\boldsymbol{d}\cdot\boldsymbol{x}\left(-\frac{3}{2}\right)\left(\frac{1}{r^{5}}\right)\left(2\boldsymbol{x}\right)\\
@@ -3888,7 +3887,7 @@ Consider the Laplace operator:
 \[
 \Lambda:=\frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\sin\theta\frac{\partial}{\partial\theta}+\frac{1}{\sin^{2}\theta}\frac{\partial^{2}}{\partial\varphi^{2}}
 \]
- from §\ref{sub:ch3sec4_2Legendre-functions-and} Remark \ref{rem:9_spherical_harmonic_propertiesThe--have}.
+ from \ref{sub:ch3sec4_2Legendre-functions-and} Remark \ref{rem:9_spherical_harmonic_propertiesThe--have}.
 \[
 \implies\nabla^{2}f\left(r,\theta,\varphi\right)=\left(\frac{1}{r}\frac{\partial^{2}}{\partial r^{2}}r+\frac{1}{r^{2}}\Lambda\right)f\left(r,\theta\varphi\right)\underset{\begin{array}{c}
 \textnormal{acts on }\\
@@ -3937,7 +3936,7 @@ This theorem is also very useful in Quantum Mechanics.\end{rem}
 \left(*\right)\implies a\left(r,\Omega\right) & = & -\frac{1}{r}\partial_{r}^{2}r\frac{1}{r}\summation{l,m}{}u_{lm}\left(r\right)Y_{lm}\left(\Omega\right)-\frac{1}{r^{2}}\frac{1}{r}\summation{l,m}{}u_{lm}\left(r\right)\understuff{\Lambda Y_{lm}\left(\Omega\right)}{-l\left(l+1\right)Y_{lm}}+V\left(r\right)\frac{1}{r}\summation{l,m}{}u_{lm}\left(r\right)Y_{lm}\left(\Omega\right)\\
  & = & \summation{l,m}{}\left[-\frac{1}{r}\partial_{r}^{2}+\frac{l\left(l+1\right)}{r^{3}}+\frac{V\left(r\right)}{r}\right]u_{lm}\left(r\right)Y_{lm}\left(\Omega\right)
 \end{eqnarray*}
- (see §\ref{sub:ch3sec4_2Legendre-functions-and}). By §\ref{sub:ch3sec4_2Legendre-functions-and}
+ (see \ref{sub:ch3sec4_2Legendre-functions-and}). By \ref{sub:ch3sec4_2Legendre-functions-and}
 Theorem \ref{thm:Completeness-of-spherical}, any reasonably well
 behaved $a\left(r,\Omega\right)$ can be expanded in spherical harmonics:
 \[
@@ -3973,7 +3972,7 @@ The most general solution of $\left(*\right)$ has the form
  with constant coefficients $q_{lm}^{\pm}$. \end{prop}
 \begin{proof}
 Since $\nabla^{2}\phi=0$, we can expand $\phi$ using the theorem
-in §\ref{sub:ch3sec4_3Separation-of-the} with $V\left(r\right)=0$,
+in \ref{sub:ch3sec4_3Separation-of-the} with $V\left(r\right)=0$,
 $a\left(\boldsymbol{x}\right)=0$.
 \[
 \implies\partial_{r}^{2}u_{lm}\left(r\right)=\frac{l\left(l+1\right)}{r^{2}}u_{lm}\left(r\right).
@@ -4005,8 +4004,8 @@ r^{l+1}
 $\phi_{lm}^{+}\left(\boldsymbol{x}\rightarrow\boldsymbol{0}\right)\rightarrow\infty\quad\forall l,\qquad\phi_{lm}^{-}\left(\boldsymbol{x}\rightarrow\infty\right)\rightarrow\infty\quad\forall l>0$.
 
 Thus, the only harmonic function that is finite at $r=0$ and $r\rightarrow\infty$
-is the constant $l=0$ contribution (see §\ref{sub:ch3sec1_2Magnetostatics}
-Remark \ref{rem:Ch3sec1_2rem5_From-=0000A7-Remark}, §\ref{sub:ch3sec3_1The-general-solution}
+is the constant $l=0$ contribution (see \ref{sub:ch3sec1_2Magnetostatics}
+Remark \ref{rem:Ch3sec1_2rem5_From-=0000A7-Remark}, \ref{sub:ch3sec3_1The-general-solution}
 Remark \ref{rem:ch3sec3_1_rem2=0000A7-Remark-}).
 \end{rem}
 
@@ -4040,20 +4039,20 @@ is, $\gamma$ is the angle between $\boldsymbol{x},\boldsymbol{x}'$).
 
 \begin{enumerate}
 \item Note that it is only possible to factor $1/r$ if $r>r'$.
-\item From Theorem \ref{thm:Completeness-of-theLegendre} in §\ref{sub:ch3sec4_2Legendre-functions-and},
+\item From Theorem \ref{thm:Completeness-of-theLegendre} in \ref{sub:ch3sec4_2Legendre-functions-and},
 we can expand the square root in terms of Legendre polynomials since
 $\cos\gamma\in\left[-1,1\right]$.
-\item From the \emph{Addition Theorem} in §\ref{sub:ch3sec4_2Legendre-functions-and}.
+\item From the \emph{Addition Theorem} in \ref{sub:ch3sec4_2Legendre-functions-and}.
 \end{enumerate}
 \textbf{Remaining question:} What is $f_{l}\left(\frac{r_{-}}{r_{+}}\right)$? 
 
-From §\ref{sub:ch3sec4_4Expansion-of-harmonic}, $\frac{1}{\left|\boldsymbol{x}-\boldsymbol{x}'\right|}$
+From \ref{sub:ch3sec4_4Expansion-of-harmonic}, $\frac{1}{\left|\boldsymbol{x}-\boldsymbol{x}'\right|}$
 is harmonic for $r>r'$ since
 \[
 \nabla_{\boldsymbol{x}}^{2}\frac{1}{\left|\boldsymbol{x}-\boldsymbol{x}'\right|}=\nabla_{\boldsymbol{x}}^{2}\frac{1}{r}=\frac{1}{r}\partial_{r}^{2}r\frac{1}{r}=0.
 \]
  Furthermore, $ $$\frac{1}{\left|\boldsymbol{x}-\boldsymbol{x}'\right|}=O\left(\frac{1}{r}\right)$
-for $r\rightarrow\infty$. By §\ref{sub:ch3sec4_4Expansion-of-harmonic},
+for $r\rightarrow\infty$. By \ref{sub:ch3sec4_4Expansion-of-harmonic},
 we know $\frac{1}{\left|\boldsymbol{x}-\boldsymbol{x}'\right|}$ has
 the form $\phi_{lm}^{+}$ since it falls off as $\frac{1}{r}$. Thus,
 \[
@@ -4084,7 +4083,7 @@ can be written, for $\left|\boldsymbol{x}\right|>r_{0}$,
 \]
  are the \emph{multipole moments} of the charge distribution.\end{prop}
 \begin{proof}
-From §\ref{sub:ch3sec3_3Poisson's-formula} and inserting the lemma,\footnote{Note that $\left|\boldsymbol{x}\right|:=r$, $\left|\boldsymbol{y}\right|:=y$.}
+From \ref{sub:ch3sec3_3Poisson's-formula} and inserting the lemma,\footnote{Note that $\left|\boldsymbol{x}\right|:=r$, $\left|\boldsymbol{y}\right|:=y$.}
 \begin{eqnarray*}
 \phi\left(\boldsymbol{x}\right) & = & \indefint{\boldsymbol{y}}\frac{\rho\left(\boldsymbol{y}\right)}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\\
  & = & \indefint{\boldsymbol{y}}\rho\left(\boldsymbol{y}\right)\frac{1}{r}\summation{l=0}{\infty}\left(\frac{y}{r}\right)^{l}\frac{4\pi}{2l+1}\summation{m=-l}lY_{lm}\left(\Omega_{\boldsymbol{x}}\right)Y_{lm}^{*}\left(\Omega_{\boldsymbol{y}}\right)\\
@@ -4127,7 +4126,7 @@ density $\rho_{>}\left(\boldsymbol{y}\right)$ confined to a region
 $R_{>}$ outside a sphere radius $R_{0}>r_{0}$.  What is the electrostatic
 interaction energy $U$ between these charge distributions?
 
-From §\ref{sub:ch3sec3_5Electrostatic-interaction}, 
+From \ref{sub:ch3sec3_5Electrostatic-interaction}, 
 \begin{eqnarray*}
 \underline{U} & = & \frac{1}{2}\indefint{\boldsymbol{x}}d\boldsymbol{y}\:\rho\left(\boldsymbol{x}\right)\rho\left(\boldsymbol{y}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\\
  & = & \frac{1}{2}\underset{R_{<}}{\int}d\boldsymbol{x}\:\rho_{<}\left(\boldsymbol{x}\right)\underset{R_{>}}{\int}d\boldsymbol{y}\:\rho_{>}\left(\boldsymbol{y}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}+\frac{1}{2}\underset{R_{>}}{\int}d\boldsymbol{x}\:\rho_{>}\left(\boldsymbol{x}\right)\underset{R_{<}}{\int}d\boldsymbol{y}\:\rho_{<}\left(\boldsymbol{y}\right)\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\\
@@ -4147,7 +4146,7 @@ vary slowly within $R_{<}$, so we can Taylor expand:
 \[
 \phi_{>}\left(\boldsymbol{x}\right)=\phi_{>}\left(\boldsymbol{x}=\boldsymbol{0}\right)+\boldsymbol{x}\cdot\left.\nabla\phi_{>}\right|_{\boldsymbol{x}=\boldsymbol{0}}+\frac{1}{2}x_{i}x_{j}\left.\frac{\partial^{2}}{\partial x_{i}\partial x_{j}}\phi_{>}\right|_{\boldsymbol{x}=\boldsymbol{0}}+\dots
 \]
- From §\ref{sub:ch3sec1_1Electrostatics}, $\phi_{>}\left(\boldsymbol{x}\right)$
+ From \ref{sub:ch3sec1_1Electrostatics}, $\phi_{>}\left(\boldsymbol{x}\right)$
 obeys Laplace's equation $\forall\boldsymbol{x}\in R_{<}$.
 \[
 \implies\delta_{ij}\left.\frac{\partial^{2}}{\partial x_{i}\partial x_{j}}\phi_{>}\right|_{\boldsymbol{x}=\boldsymbol{0}}=0
@@ -4194,7 +4193,7 @@ $\rho_{<}$.\tabularnewline
 \noalign{\vskip0.25cm}
 \end{tabular}
 \begin{rem}
-Alternatively, we can use the spherical harmonic expansion from §\ref{sub:ch3sec4_4Expansion-of-harmonic}
+Alternatively, we can use the spherical harmonic expansion from \ref{sub:ch3sec4_4Expansion-of-harmonic}
 to expand the potential:
 \[
 \phi\left(\boldsymbol{x}\right)=\summation{l,m}{}\phi_{lm}^{-}\left(\boldsymbol{x}\right)=\summation{l,m}{}q_{lm}^{-}r^{l}Y_{lm}\left(\Omega\right),
@@ -4209,7 +4208,7 @@ blow up at the origin.
 \[
 \implies\boxed{U=\summation{l,m}{}q_{lm}^{-}\sqrt{\frac{2l+1}{4\pi}}Q_{lm}^{*}},
 \]
- where, as per §\ref{sub:ch3sec4_5Multipole-expansion-of}, $Q_{lm}$
+ where, as per \ref{sub:ch3sec4_5Multipole-expansion-of}, $Q_{lm}$
 are the multipole moments of the charge density $\rho\left(\boldsymbol{x}\right):=\rho_{<}\left(\boldsymbol{x}\right)$
 and the $q_{lm}^{-}$ are the coefficients of the expansion of the
 harmonic function $\phi\left(\boldsymbol{x}\right):=\phi_{>}\left(\boldsymbol{x}\right)$
@@ -4220,7 +4219,7 @@ Which one is used depends on the symmetry of the problem.
 
 \subsection{\label{sub:ch3sec4_7The-magnetic-moment}The magnetic moment}
 
-From §\ref{sub:ch3sec3_6The-law-of}, the Biot \& Savart law gives
+From \ref{sub:ch3sec3_6The-law-of}, the Biot \& Savart law gives
 the magnetic field resulting from a stationary current density. This
 requires an interpretation, as currents are produced by moving charges
 and hence are intrinsically time dependent.
@@ -4256,7 +4255,7 @@ at large distances from a localized static current density given by
 \[
 \boldsymbol{j}\left(\boldsymbol{y}\right)=\summation{\alpha}{}\overline{e_{\alpha}\boldsymbol{v}_{\alpha}\delta\left(\boldsymbol{y}-\boldsymbol{x}_{\alpha}\right)}.
 \]
- From §\ref{sub:ch3sec3_6The-law-of}, the Biot \& Savart law gives
+ From \ref{sub:ch3sec3_6The-law-of}, the Biot \& Savart law gives
 \begin{eqnarray*}
 \underline{\boldsymbol{A}\left(\boldsymbol{x}\right)}=\frac{1}{c}\indefint{\boldsymbol{y}}\frac{\boldsymbol{j}\left(\boldsymbol{y}\right)}{\left|\boldsymbol{x}-\boldsymbol{y}\right|} & = & \frac{1}{c}\summation{\alpha}{}\overline{\frac{e_{\alpha}\boldsymbol{v}_{\alpha}}{\left|\boldsymbol{x}-\boldsymbol{x}_{\alpha}\right|}}\\
  & \overset{1.}{=} & \frac{1}{c}\summation{\alpha}{}\overline{e_{\alpha}\boldsymbol{v}_{\alpha}\frac{1}{r}\left[1+\frac{\boldsymbol{x}\cdot\boldsymbol{x}_{\alpha}}{r^{2}}+\dots\right]}\\
@@ -4265,7 +4264,7 @@ at large distances from a localized static current density given by
 
 \begin{enumerate}
 \item Expanding $1/\left|\boldsymbol{x}-\boldsymbol{x}_{\alpha}\right|$
-as per §\ref{sub:ch3sec4_1The-electric-dipole}.
+as per \ref{sub:ch3sec4_1The-electric-dipole}.
 \item The monopole contribution is zero by Remark \ref{rem:remark1_stationary_m4}:
 \[
 \summation{\alpha}{}\overline{e_{\alpha}\boldsymbol{v}_{\alpha}}=\overline{\frac{d}{dt}\summation{\alpha}{}e_{\alpha}\boldsymbol{x}_{\alpha}}=0
@@ -4314,7 +4313,7 @@ The magnetic field for large distances from the current density is
 \]
 \end{cor}
 \begin{proof}
-Analogous to §\ref{sub:ch3sec4_1The-electric-dipole}.\end{proof}
+Analogous to \ref{sub:ch3sec4_1The-electric-dipole}.\end{proof}
 \begin{prop}
 If all of the moving charges have the same charge-to-mass ratio $\frac{e_{\alpha}}{m_{\alpha}}=:\frac{e}{m}$,
 and if the motion is non-relativistic $\left(v_{\alpha}\ll c\right)$,
@@ -4363,7 +4362,7 @@ in QED.
 Consider vacuum: $J^{\mu}\left(x\right)=0$ everywhere.
 \begin{rem}
 Any solutions to Maxwell's Equations must be time-dependent since
-in Chapter \ref{chap:Static-solutions-of} §\ref{sub:ch3sec1_1Electrostatics},
+in Chapter \ref{chap:Static-solutions-of} \ref{sub:ch3sec1_1Electrostatics},
 \ref{sub:ch3sec1_2Magnetostatics}, we saw that in vacuum, static
 potentials obey Laplace's equation, which has only the trivial (zero)
 solution.\end{rem}
@@ -4375,7 +4374,7 @@ the 4-vector potential $A^{\mu}\left(x\right)$ obeys
 \]
 \end{thm}
 \begin{proof}
-From Chapter \ref{chap:Maxwell's-Equations} §\ref{sub:ch2sec1_3The-field-equations},
+From Chapter \ref{chap:Maxwell's-Equations} \ref{sub:ch2sec1_3The-field-equations},
 \begin{eqnarray*}
 \partial_{\mu}F^{\mu\nu} & = & \frac{4\pi}{c}J^{\nu}\overset{1.}{=}\underline{0}\\
  & = & \partial_{\mu}\left(\partial^{\mu}A^{\nu}-\partial^{\nu}A^{\mu}\right)\\
@@ -4418,7 +4417,7 @@ The electric and magnetic fields also obey the wave equation:
 \]
 \end{cor}
 \begin{proof}
-From Chapter \ref{chap:Maxwell's-Equations} §\ref{sub:ch2sec3_4Relations-between-fields},
+From Chapter \ref{chap:Maxwell's-Equations} \ref{sub:ch2sec3_4Relations-between-fields},
 \begin{eqnarray*}
 \underline{\square\boldsymbol{B}} & = & \square\left(\nabla\times\boldsymbol{A}\right)=\nabla\times\left(\square\boldsymbol{A}\right)=\underline{\boldsymbol{0}}\\
 \underline{\square\boldsymbol{E}} & = & \square\left(-\nabla\phi-\frac{1}{c}\partial_{t}\boldsymbol{A}\right)=-\nabla\left(\square\phi\right)-\frac{1}{c}\partial_{t}\left(\square\boldsymbol{A}\right)=\underline{\boldsymbol{0}}
@@ -4439,7 +4438,7 @@ in vacuum, one can always choose a gauge such that
 on only one spacial coordinate are called \emph{plane waves}.
 \end{defn}
 Let $f\left(x,t\right)$ be any component of $\boldsymbol{E}$ or
-$\boldsymbol{B}$ or $A^{\mu}$. From §\ref{sub:ch4sec1_1The-wave-equation}
+$\boldsymbol{B}$ or $A^{\mu}$. From \ref{sub:ch4sec1_1The-wave-equation}
 $\left(*\right)$ or $\left(**\right)$, 
 \[
 \boxed{\left(\partial_{t}^{2}-c^{2}\partial_{x}^{2}\right)f\left(x,t\right)=0}.\tag{*}
@@ -4549,7 +4548,7 @@ The Poynting vector is given by
  where $u\left(\boldsymbol{x},t\right)$ is the energy density of
 the fields.\end{cor}
 \begin{proof}
-From Chapter \ref{chap:Maxwell's-Equations} §\ref{sub:ch2sec3_6Poynting's-theorem},
+From Chapter \ref{chap:Maxwell's-Equations} \ref{sub:ch2sec3_6Poynting's-theorem},
 \begin{eqnarray*}
 \implies\underline{\boldsymbol{P}}=\frac{c}{4\pi}\boldsymbol{E}\times\boldsymbol{B} & = & \frac{c}{4\pi}\boldsymbol{E}\times\left(\hat{\boldsymbol{n}}\times\boldsymbol{E}\right)\\
  & \overset{1.}{=} & \frac{c}{4\pi}\boldsymbol{E}^{2}\hat{\boldsymbol{n}}\\
@@ -4588,7 +4587,7 @@ wave equation.
 ~
 \begin{rem}
 By the superposition principle from Chapter \ref{chap:Maxwell's-Equations}
-§\ref{sec:ch2sec5The-superposition-principle}, if $f:\mathbb{R}^{4}\rightarrow\mathbb{C}$
+\ref{sec:ch2sec5The-superposition-principle}, if $f:\mathbb{R}^{4}\rightarrow\mathbb{C}$
 is a solution, then so are $\textnormal{Re }f$, $\textnormal{Im }f$.
 \end{rem}
 What about $\boldsymbol{k}$?
@@ -4657,12 +4656,12 @@ plane wave as
  
 \begin{rem}
 \label{rem:ch4sec1_5rem1The-direction-of}The direction of propagation
-$\hat{\boldsymbol{n}}$ from §\ref{sub:ch4sec1_3Orientation-of-the}
+$\hat{\boldsymbol{n}}$ from \ref{sub:ch4sec1_3Orientation-of-the}
 is
 \[
 \hat{\boldsymbol{n}}=\hat{\boldsymbol{k}}:=\frac{\boldsymbol{k}}{\left|\boldsymbol{k}\right|}=\frac{\boldsymbol{k}}{\nicefrac{\omega}{c}}.
 \]
- From §\ref{sub:ch4sec1_3Orientation-of-the} we also have 
+ From \ref{sub:ch4sec1_3Orientation-of-the} we also have 
 \[
 \left|\boldsymbol{E}_{0}\right|=\left|\boldsymbol{B}_{0}\right|
 \]
@@ -4785,13 +4784,13 @@ frequency shift for motion perpendicular to $\boldsymbol{k}$.
 
 \subsection{The wave equation in Fourier space}
 
-From §\ref{sub:ch4sec1_1The-wave-equation}, the general wave equation
+From \ref{sub:ch4sec1_1The-wave-equation}, the general wave equation
 is 
 \[
 \boxed{\square f\left(\boldsymbol{x},t\right)=\left(\frac{1}{c^{2}}\partial_{t}^{2}-\nabla^{2}\right)f\left(\boldsymbol{x},t\right)=0}.\tag{*}
 \]
  Take a spacial Fourier transform (Chapter \ref{chap:Static-solutions-of}
-§\ref{sec:ch3sec2_Digression:-Fourier-transforms}), where
+\ref{sec:ch3sec2_Digression:-Fourier-transforms}), where
 \[
 \underline{\hat{f}\left(\boldsymbol{k},t\right)=\indefint{\boldsymbol{x}}e^{-i\boldsymbol{k}\cdot\boldsymbol{x}}f\left(\boldsymbol{x},t\right)}
 \]
@@ -4904,7 +4903,7 @@ Now we discuss
 
 \subsection{\label{sub:ch5sec1_1Fields-and-potentials}Fields and potentials}
 
-Recall in Chapter \ref{chap:Maxwell's-Equations} §\ref{sub:ch2sec3_4Relations-between-fields},
+Recall in Chapter \ref{chap:Maxwell's-Equations} \ref{sub:ch2sec3_4Relations-between-fields},
 the fields $\boldsymbol{E}$, $\boldsymbol{B}$ (which are observable)
 can be obtained from potentials (that are not observable) via
 \[
@@ -4919,17 +4918,17 @@ The homogeneous Maxwell equations are automatically fulfilled by these.
 \end{rem}
 ~
 \begin{rem}
-From Chapter \ref{chap:Maxwell's-Equations} §\ref{sub:ch2sec3_1The-field-tensor},
+From Chapter \ref{chap:Maxwell's-Equations} \ref{sub:ch2sec3_1The-field-tensor},
 $\phi$, $\boldsymbol{A}$ are the components of the 4-vector $A^{\mu}\left(x\right)=\left(\phi\left(x\right),\boldsymbol{A}\left(x\right)\right)$.\end{rem}
 \begin{prop}
 The inhomogeneous Maxwell equations (M3, M4) are equivalent to four
-PDEs, which are the equations of motion (or field equations) for $A^{\mu}\left(x\right)$:\footnote{Compare with Chapter \ref{chap:Electromagnetic-waves-in} §\ref{sub:ch4sec1_1The-wave-equation}.}
+PDEs, which are the equations of motion (or field equations) for $A^{\mu}\left(x\right)$:\footnote{Compare with Chapter \ref{chap:Electromagnetic-waves-in} \ref{sub:ch4sec1_1The-wave-equation}.}
 \[
 \boxed{\partial_{\mu}\partial^{\mu}A^{\nu}\left(x\right)-\partial^{\nu}\partial_{\mu}A^{\mu}\left(x\right)=\frac{4\pi}{c}J^{\nu}\left(x\right)}\tag{\ensuremath{\ast}}
 \]
 \end{prop}
 \begin{proof}
-From Chapter \ref{chap:Maxwell's-Equations} §\ref{sub:ch2sec1_3The-field-equations},
+From Chapter \ref{chap:Maxwell's-Equations} \ref{sub:ch2sec1_3The-field-equations},
 \begin{eqnarray*}
 \frac{4\pi}{c}J^{\nu} & = & \partial_{\mu}F^{\mu\nu}\\
  & = & \partial_{\mu}\partial^{\mu}A^{\nu}-\partial^{\nu}\partial_{\mu}A^{\mu}.
@@ -4982,7 +4981,7 @@ In vacuum and using Lorenz gauge, $\left(*\right)$ simplifies to
 
 \subsection{\label{sub:ch5sec1_2Gauge-conventions}Gauge conventions}
 
-From Chapter \ref{chap:Maxwell's-Equations} §\ref{sub:ch2sec2_4Gauge-invariance},
+From Chapter \ref{chap:Maxwell's-Equations} \ref{sub:ch2sec2_4Gauge-invariance},
 the potentials are not unique. We can choose certain constraints,
 called \emph{gauge conventions}.
 
@@ -5010,7 +5009,7 @@ This is also sometimes called \emph{radiation gauge}.
 4 potentials and 1 constraint (our choice of gauge) implies 3 potential
 fields uniquely determine the 6 fields $\boldsymbol{E}$, $\boldsymbol{B}$. \end{rem}
 \begin{prop}
-In Lorenz gauge, the field equations for the potentials \textup{§\ref{sub:ch5sec1_1Fields-and-potentials}
+In Lorenz gauge, the field equations for the potentials \textup{\ref{sub:ch5sec1_1Fields-and-potentials}
 $\left(*\right)$ becomes
 \[
 \boxed{\begin{alignedat}{2}\square\boldsymbol{A} & = & \frac{4\pi}{c}\boldsymbol{j}\\
@@ -5020,14 +5019,14 @@ $\left(*\right)$ becomes
 \]
 }\end{prop}
 \begin{proof}
-Lorenz gauge $\implies\partial_{\mu}A^{\mu}=0,$ $\therefore$ §\ref{sub:ch5sec1_1Fields-and-potentials}
+Lorenz gauge $\implies\partial_{\mu}A^{\mu}=0,$ $\therefore$ \ref{sub:ch5sec1_1Fields-and-potentials}
 $\left(*\right)$ $\implies\left(*\right)$.\end{proof}
 \begin{cor}
 Once we choose Lorenz gauge, it is maintained under time evolution.\end{cor}
 \begin{proof}
 $\square\partial_{\mu}A^{\mu}=\partial_{\mu}\square A^{\mu}=\frac{4\pi}{c}\understuff{\partial_{\mu}J^{\mu}=0}{\textnormal{continuity eq.}}.$\end{proof}
 \begin{rem}
-From Chapter \ref{chap:Maxwell's-Equations} §\ref{sub:ch2sec2_1Continuity-equation-for},
+From Chapter \ref{chap:Maxwell's-Equations} \ref{sub:ch2sec2_1Continuity-equation-for},
 $\partial_{\mu}J^{\mu}=0$ is not an independent condition; it follows
 from the field equations.\end{rem}
 \begin{prop}
@@ -5040,7 +5039,7 @@ In Coulomb gauge, the field equations become
 \]
 \end{prop}
 \begin{proof}
-§\ref{sub:ch5sec1_1Fields-and-potentials} $\left(*'\right)$ with
+\ref{sub:ch5sec1_1Fields-and-potentials} $\left(*'\right)$ with
 $\nabla\cdot\boldsymbol{A}=0\implies\left(**\right)$.\end{proof}
 \begin{cor}
 Coulomb gauge is maintained under time evolution.\end{cor}
@@ -5106,7 +5105,7 @@ is allowed if $G$ is sufficiently well behaved.
 the wave equation}
 
 To find the form of Green's functions, take the Fourier transform
-of §\ref{sub:ch5sec2_1The-concept-of} $\left(**\right)$ with respect
+of \ref{sub:ch5sec2_1The-concept-of} $\left(**\right)$ with respect
 to time. That is, take $\indefint te^{i\omega t}\left(**\right)$:\footnote{Note that, by convention, we use $+i$ instead of $-i$ here.}
 \[
 \implies\delta\left(\boldsymbol{x}\right)\understuff{\indefint te^{i\omega t}\delta\left(t\right)}{=1\textnormal{ (Ch.3 §2.5)}}=\indefint te^{i\omega t}\frac{1}{c^{2}}\partial_{t}^{2}G\left(\boldsymbol{x},t\right)-\nabla^{2}\understuff{\indefint te^{i\omega t}G\left(\boldsymbol{x},t\right)}{\textnormal{define }=:G_{\omega}\left(\boldsymbol{x}\right)}
@@ -5119,7 +5118,7 @@ to time. That is, take $\indefint te^{i\omega t}\left(**\right)$:\footnote{Note 
 \begin{enumerate}
 \item Integrating by parts twice and assuming $G\left(\boldsymbol{x},t\right)$
 falls off at $\pm\infty$, or, using Chapter \ref{chap:Static-solutions-of}
-§\ref{sub:ch3sec2_1The-Fourier-transform} Proposition \ref{prop:fourier_of_derivativeLet--be}.
+\ref{sub:ch3sec2_1The-Fourier-transform} Proposition \ref{prop:fourier_of_derivativeLet--be}.
 \end{enumerate}
 Thus, $G_{\omega}\left(\boldsymbol{x}\right)$ obeys
 \[
@@ -5159,7 +5158,7 @@ where $r_{0}=\pm\frac{c}{i\omega}$, $r=\left|\boldsymbol{x}\right|$.\end{enumera
 \end{eqnarray*}
 }\end{lyxlist}
 \begin{thm}
-The defining equation for the Green's functions (\textup{§\ref{sub:ch5sec2_1The-concept-of}
+The defining equation for the Green's functions (\textup{\ref{sub:ch5sec2_1The-concept-of}
 $\left(**\right)$) has two solutions:
 \[
 \boxed{G_{\pm}\left(\boldsymbol{x},t\right)=\frac{1}{4\pi r}\delta\left(t\mp\frac{r}{c}\right)}\textnormal{ where }r:=\left|\boldsymbol{x}\right|.
@@ -5172,8 +5171,8 @@ Consider a point-like, time-dependent source
 \[
 \underline{i\left(\boldsymbol{x},t\right)=\delta\left(\boldsymbol{x}\right)i\left(t\right)}.
 \]
- From the proposition in §\ref{sub:ch5sec2_1The-concept-of}, the
-two solutions of the wave equation with this source are
+ From the proposition in \ref{sub:ch5sec2_1The-concept-of}, the two
+solutions of the wave equation with this source are
 \begin{eqnarray*}
 \underline{f_{\pm}\left(\boldsymbol{x},t\right)} & = & \int d\boldsymbol{x}'\:dt'\:\frac{1}{4\pi\left|\boldsymbol{x}-\boldsymbol{x}'\right|}\delta\left(t-t'\mp\frac{1}{c}\left|\boldsymbol{x}-\boldsymbol{x}'\right|\right)\delta\left(\boldsymbol{x}'\right)i\left(t'\right)\\
  & = & \frac{1}{4\pi r}\int dt'\:\delta\left(t-t'\mp\frac{r}{c}\right)i\left(t'\right)\\
@@ -5206,8 +5205,8 @@ precede the action of the source.
 
 \subsection{\label{sub:ch5sec2_3The-retarded-potentials}The retarded potentials}
 
-We can obtain the potentials by applying the proposition from §\ref{sub:ch5sec2_1The-concept-of}
-and results from §\ref{sub:ch5sec2_2Green's-functions-for} to the
+We can obtain the potentials by applying the proposition from \ref{sub:ch5sec2_1The-concept-of}
+and results from \ref{sub:ch5sec2_2Green's-functions-for} to the
 wave equations for $\boldsymbol{A}$, $\phi$:
 \[
 \phi\left(\boldsymbol{x},t\right)=\int d\boldsymbol{x}'\:dt'\:\frac{1}{4\pi\left|\boldsymbol{x}-\boldsymbol{x}'\right|}\delta\left(t-t'-\frac{1}{c}\left|\boldsymbol{x}-\boldsymbol{x}'\right|\right)4\pi\rho\left(\boldsymbol{x}',t'\right)
@@ -5232,7 +5231,7 @@ to $\boldsymbol{x}$ with velocity $c$.
 ~
 \begin{rem}
 $\left(*\right)$, $\left(**\right)$ are analogous to Poisson's formula
-in the static case (cf. Chapter \ref{chap:Static-solutions-of} §\ref{sub:ch3sec3_6The-law-of}).
+in the static case (cf. Chapter \ref{chap:Static-solutions-of} \ref{sub:ch3sec3_6The-law-of}).
 The new concept from time dependence is retardation from finite speed
 of propagation.
 \end{rem}
@@ -5244,7 +5243,7 @@ sources}
 \subsection{\label{sub:ch5sec3_1Asymptotic-potentials-and}Asymptotic potentials
 and fields}
 
-Consider retarded potentials (§\ref{sub:ch5sec2_3The-retarded-potentials}
+Consider retarded potentials (\ref{sub:ch5sec2_3The-retarded-potentials}
 $\left(*\right)$, $\left(**\right)$) at large distances $r=\left|\boldsymbol{x}\right|$
 from the sources.
 
@@ -5305,7 +5304,7 @@ and $\nabla\frac{1}{r}f\left(t_{r}\right):=\nabla\left(\frac{1}{r}f\left(t_{r}\r
 \end{lem}
 \begin{proof}
 By the continuity equation (Chapter \ref{chap:Maxwell's-Equations}
-§\ref{sub:ch2sec2_1Continuity-equation-for}),
+\ref{sub:ch2sec2_1Continuity-equation-for}),
 \[
 \implies\partial_{t}\rho\left(\boldsymbol{x},t\right)=-\nabla_{\boldsymbol{x}}\cdot\boldsymbol{j}\left(\boldsymbol{x},t\right)
 \]
@@ -5352,7 +5351,7 @@ in static solutions.\end{rem}
 \begin{proof}
 \emph{(of proposition).}
 
-From §\ref{sub:ch5sec1_1Fields-and-potentials}, $\boldsymbol{B}=\nabla\times\boldsymbol{A}$,
+From \ref{sub:ch5sec1_1Fields-and-potentials}, $\boldsymbol{B}=\nabla\times\boldsymbol{A}$,
 so by the equation for asymptotic $\boldsymbol{A}$,
 \begin{eqnarray*}
 \implies B_{i} & = & \varepsilon_{ijk}\partial_{j}\frac{1}{r}\frac{1}{c}\indefint{\boldsymbol{y}}j_{k}\left(\boldsymbol{y},t_{r}\right)\\
@@ -5363,7 +5362,7 @@ so by the equation for asymptotic $\boldsymbol{A}$,
 \begin{enumerate}
 \item By lemma 1, $\partial_{j}\frac{1}{r}f\left(t_{r}\right)=-\frac{1}{c}\hat{x}_{j}\frac{1}{r}\partial_{t}f\left(t_{r}\right)$.
 \end{enumerate}
-From §\ref{sub:ch5sec1_1Fields-and-potentials}, $\boldsymbol{E}=-\nabla\phi-\frac{1}{c}\partial_{t}\boldsymbol{A}$,
+From \ref{sub:ch5sec1_1Fields-and-potentials}, $\boldsymbol{E}=-\nabla\phi-\frac{1}{c}\partial_{t}\boldsymbol{A}$,
 so by the equations for asymptotic $\phi$, $\boldsymbol{A}$,
 \begin{eqnarray*}
 \implies\boldsymbol{E} & = & -\nabla\frac{1}{r}\indefint{\boldsymbol{y}}\rho\left(\boldsymbol{y},t_{r}\right)-\frac{1}{c}\partial_{t}\frac{1}{cr}\indefint{\boldsymbol{y}}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right)\\
@@ -5410,7 +5409,7 @@ at the source.
 
 \subsection{\label{sub:ch5sec3_2The-radiated-power}The radiated power}
 
-From Chapter \ref{chap:Maxwell's-Equations} §\ref{sub:ch2sec3_6Poynting's-theorem},
+From Chapter \ref{chap:Maxwell's-Equations} \ref{sub:ch2sec3_6Poynting's-theorem},
 the energy-current density of the fields is given by the Poynting
 vector:
 \[
@@ -5483,7 +5482,7 @@ velocity $v\ll c$, on a trajectory $\boldsymbol{R}\left(t\right)$.
 \end{lyxlist}
 \begin{enumerate}
 \item $t'$ is the solution of $t'=t-\frac{1}{c}\left|\boldsymbol{x}-\boldsymbol{R}\left(t'\right)\right|$
-(from §\ref{sub:ch5sec2_3The-retarded-potentials})
+(from \ref{sub:ch5sec2_3The-retarded-potentials})
 \item $\frac{1}{c}\hat{\boldsymbol{x}}\cdot\boldsymbol{R}\left(t'\right)$
 is small of order $\frac{v}{c}$ if $v\ll c$. \end{enumerate}
 \begin{rem}
@@ -5600,7 +5599,7 @@ if $\boldsymbol{y}\cdot\boldsymbol{j}$ falls off fast enough.
 \begin{proof}
 \emph{(of proposition)}
 
-From §\ref{sub:ch5sec3_2The-radiated-power}, 
+From \ref{sub:ch5sec3_2The-radiated-power}, 
 \begin{eqnarray*}
 4\pi c^{3}\frac{d\mathscr{P}}{d\Omega} & \overset{1.}{\approx} & \left(\hat{\boldsymbol{x}}\times\indefint{\boldsymbol{y}}\partial_{t}\boldsymbol{j}\left(\boldsymbol{y},t_{e}\right)\right)^{2}\\
  & = & \left(\hat{\boldsymbol{x}}\times\frac{d}{dt}\indefint{\boldsymbol{y}}\boldsymbol{j}\left(\boldsymbol{y},t_{e}\right)\right)^{2}\\
@@ -5617,7 +5616,7 @@ From §\ref{sub:ch5sec3_2The-radiated-power},
 This contribution is called \emph{electric dipole radiation}.
 \end{rem}
 Now we keep corrections to the approximation we made ($t_{r}\approx t_{e}$).
-From §\ref{sub:ch5sec3_2The-radiated-power}, to find $\frac{d\mathscr{P}}{d\Omega}$
+From \ref{sub:ch5sec3_2The-radiated-power}, to find $\frac{d\mathscr{P}}{d\Omega}$
 we need
 \begin{eqnarray*}
 \indefint{\boldsymbol{y}}\boldsymbol{j}\left(\boldsymbol{y},t_{r}\right) & = & \indefint{\boldsymbol{y}}\boldsymbol{j}\Bigl(\boldsymbol{y},\understuff{t-\frac{r}{c}}{t_{e}}+\frac{1}{c}\hat{\boldsymbol{x}}\cdot\boldsymbol{y}+\dots\Bigr)\\
@@ -5643,7 +5642,7 @@ split the integrand $\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{y}\right)\boldsy
 into $\frac{1}{2}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{y}\right)\boldsymbol{j}+\frac{1}{2}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{y}\right)\boldsymbol{j}$,
 and added to the integrand $0=\frac{1}{2}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{j}\right)\boldsymbol{y}-\frac{1}{2}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{j}\right)\boldsymbol{y}$.
 \item Used vector identity $\boldsymbol{a}\times\left(\boldsymbol{b}\times\boldsymbol{c}\right)=\boldsymbol{b}\left(\boldsymbol{a}\cdot\boldsymbol{c}\right)-\boldsymbol{c}\left(\boldsymbol{a}\cdot\boldsymbol{b}\right)$.
-\item By definition (Ch \ref{chap:Static-solutions-of} §\ref{sub:ch3sec4_7The-magnetic-moment}),
+\item By definition (Ch \ref{chap:Static-solutions-of} \ref{sub:ch3sec4_7The-magnetic-moment}),
 the magnetic dipole moment is $\boldsymbol{m}\left(t\right):=\frac{1}{2c}\indefint{\boldsymbol{y}}\boldsymbol{y}\times\boldsymbol{j}\left(\boldsymbol{y},t\right)$.
 \item In this and the following sections, we use the notation $\frac{d}{dt}\Bigr|_{t_{e}}\boldsymbol{m}=:\dot{\boldsymbol{m}}\left(t_{e}\right)$.
 \end{enumerate}
@@ -5720,12 +5719,12 @@ $\frac{1}{c^{5}}\dddot{Q}^{2}$.
 \begin{rem}
 The magnetic dipole moment has an extra $1/c$ in its definition.
 Thus, the magnetic dipole and electric quadrupole radiation terms
-are of the same order in $v/c$ (see Landau \& Lifshitz §71).
+are of the same order in $v/c$ (see Landau \& Lifshitz 71).
 \end{rem}
 
 \section{Spectral distribution of radiated energy}
 
-In §\ref{sec:ch5sec3Radiation-by-time-dependent} we calculated the
+In \ref{sec:ch5sec3Radiation-by-time-dependent} we calculated the
 \emph{total} power radiated by a time-dependent source.
 \begin{description}
 \item [{question:}] How is this energy distributed over different frequencies?
@@ -5733,11 +5732,11 @@ In §\ref{sec:ch5sec3Radiation-by-time-dependent} we calculated the
 
 \subsection{Retarded potentials in frequency space}
 
-From §\ref{sub:ch5sec2_3The-retarded-potentials},
+From \ref{sub:ch5sec2_3The-retarded-potentials},
 \[
 \phi\left(\boldsymbol{x},t\right)=\indefint{\boldsymbol{y}}\frac{1}{\left|\boldsymbol{x}-\boldsymbol{y}\right|}\rho\left(\boldsymbol{y},t-\frac{\left|\boldsymbol{x}-\boldsymbol{y}\right|}{c}\right).
 \]
- Define a temporal Fourier transform (cf. §\ref{sub:ch5sec2_2Green's-functions-for})\footnote{In this notation, the argument of the function indicates if it is
+ Define a temporal Fourier transform (cf. \ref{sub:ch5sec2_2Green's-functions-for})\footnote{In this notation, the argument of the function indicates if it is
 a Fourier transform or not (the same symbol $f$ is used to refer
 to the Fourier transformed function and the original function).}
 \begin{eqnarray*}
@@ -5770,8 +5769,7 @@ and $\boldsymbol{j}\left(\boldsymbol{y},t\right)$, respectively.\end{prop}
 and fields}
 
 For large distances $r:=\left|\boldsymbol{x}\right|$ from the sources,
-the expansion from §\ref{sub:ch5sec3_1Asymptotic-potentials-and}
-applies:
+the expansion from \ref{sub:ch5sec3_1Asymptotic-potentials-and} applies:
 \[
 \left|\boldsymbol{x}-\boldsymbol{y}\right|\approx r-\hat{\boldsymbol{x}}\cdot\boldsymbol{y}
 \]
@@ -5784,7 +5782,7 @@ applies:
 \item [{definition:}] $\boxed{\boldsymbol{k}:=\frac{\omega}{c}\hat{\boldsymbol{x}}}$
 is called \emph{wave vector}.\end{description}
 \begin{rem}
-This is consistent with Ch. \ref{chap:Electromagnetic-waves-in} §\ref{sub:ch4sec1_5Polarization-of-electromagnetic}
+This is consistent with Ch. \ref{chap:Electromagnetic-waves-in} \ref{sub:ch4sec1_5Polarization-of-electromagnetic}
 remark \ref{rem:ch4sec1_5rem1The-direction-of}.
 \end{rem}
 ~
@@ -5816,7 +5814,7 @@ Far from the sources, the fields are
  \end{prop}
 \begin{rem}
 The expression for $\boldsymbol{E}$ in terms of $\boldsymbol{B}$
-follows instantly from the proposition in §\ref{sub:ch5sec3_1Asymptotic-potentials-and}
+follows instantly from the proposition in \ref{sub:ch5sec3_1Asymptotic-potentials-and}
 (by taking Fourier transform).\end{rem}
 \begin{proof}
 \emph{(of proposition)}
@@ -5868,11 +5866,11 @@ Check a static source: $\boldsymbol{j}\left(\boldsymbol{k},t\right)=\boldsymbol{
 \emph{(of theorem)}
 
 The instantaneous flux of energy is given by the Poynting vector (ch.
-\ref{chap:Maxwell's-Equations} §\ref{sub:ch2sec3_6Poynting's-theorem}):
+\ref{chap:Maxwell's-Equations} \ref{sub:ch2sec3_6Poynting's-theorem}):
 \[
 \boldsymbol{P}\left(\boldsymbol{x},t\right):=\frac{c}{4\pi}\boldsymbol{E}\left(\boldsymbol{x},t\right)\times\boldsymbol{B}\left(\boldsymbol{x},t\right).
 \]
- Then the total energy $U$ radiated into a solid angle is (see §\ref{sub:ch5sec3_2The-radiated-power}):
+ Then the total energy $U$ radiated into a solid angle is (see \ref{sub:ch5sec3_2The-radiated-power}):
 \begin{eqnarray*}
 \frac{dU}{d\Omega} & = & \indefint tr^{2}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{P}\left(\boldsymbol{x},t\right)\right)\\
  & = & r^{2}\frac{c}{4\pi}\indefint t\hat{\boldsymbol{x}}\cdot\left[\boldsymbol{E}\left(\boldsymbol{x},t\right)\times\boldsymbol{B}\left(\boldsymbol{x},t\right)\right]\\
@@ -5888,10 +5886,10 @@ The instantaneous flux of energy is given by the Poynting vector (ch.
 \begin{enumerate}
 \item $\indefint te^{-i\left(\omega+\omega'\right)t}=2\pi\delta\left(\omega+\omega'\right)$.
 \item Since $B_{i}\left(\boldsymbol{x},t\right)\in\mathbb{R}$, $\boldsymbol{B}\left(\boldsymbol{x},-\omega\right)=\boldsymbol{B}\left(\boldsymbol{x},\omega\right)^{*}$.
-Also, by §\ref{sub:ch5sec4_2Asymptotic-potentials-and}, $\boldsymbol{E}\left(\boldsymbol{x},\omega\right)\approx-\hat{\boldsymbol{x}}\times\boldsymbol{B}\left(\boldsymbol{x},\omega\right)$.
+Also, by \ref{sub:ch5sec4_2Asymptotic-potentials-and}, $\boldsymbol{E}\left(\boldsymbol{x},\omega\right)\approx-\hat{\boldsymbol{x}}\times\boldsymbol{B}\left(\boldsymbol{x},\omega\right)$.
 \item Since $\hat{\boldsymbol{x}}\perp\boldsymbol{B}$.
 \item Since integrand is even in $\omega$.
-\item From §\ref{sub:ch5sec4_2Asymptotic-potentials-and} proposition, $\boldsymbol{B}\left(\boldsymbol{x},\omega\right)\approx i\frac{\omega}{c}\frac{e^{i\omega r/c}}{r}\hat{\boldsymbol{x}}\times\frac{1}{c}\boldsymbol{j}\left(\boldsymbol{k},\omega\right)$.
+\item From \ref{sub:ch5sec4_2Asymptotic-potentials-and} proposition, $\boldsymbol{B}\left(\boldsymbol{x},\omega\right)\approx i\frac{\omega}{c}\frac{e^{i\omega r/c}}{r}\hat{\boldsymbol{x}}\times\frac{1}{c}\boldsymbol{j}\left(\boldsymbol{k},\omega\right)$.
 \end{enumerate}
 \[
 \implies\frac{d^{2}U}{\infinitesimal{\Omega}d\omega}=\frac{\omega^{2}}{4\pi^{2}c^{3}}\left|\hat{\boldsymbol{x}}\times\boldsymbol{j}\left(\boldsymbol{k},\omega\right)\right|^{2}.
@@ -5901,7 +5899,7 @@ Also, by §\ref{sub:ch5sec4_2Asymptotic-potentials-and}, $\boldsymbol{E}\left(\bo
 
 \subsection{Spectral distribution for dipole radiation}
 
-From §\ref{sub:ch5sec4_3The-spectral-distribution}, $\frac{d^{2}U}{\infinitesimal{\Omega}d\omega}$
+From \ref{sub:ch5sec4_3The-spectral-distribution}, $\frac{d^{2}U}{\infinitesimal{\Omega}d\omega}$
 is given by the Fourier transform of the current density:
 \[
 \boldsymbol{j}\left(\boldsymbol{k},\omega\right)\textnormal{, where }k=\left|\boldsymbol{k}\right|=\frac{\omega}{c}=\frac{2\pi}{\lambda},
@@ -5929,7 +5927,7 @@ In this limit,
 \begin{enumerate}
 \item Taylor expand $e^{-i\boldsymbol{k}\cdot\boldsymbol{y}}$.
 \item Define $a:=\left|\boldsymbol{y}\right|$.
-\item By §\ref{sub:ch5sec3_4Dipole-radiation} lemma, $\frac{d}{dt}\boldsymbol{d}\left(t\right)=\indefint{\boldsymbol{y}}\boldsymbol{j}\left(\boldsymbol{y},t\right)$.\end{enumerate}
+\item By \ref{sub:ch5sec3_4Dipole-radiation} lemma, $\frac{d}{dt}\boldsymbol{d}\left(t\right)=\indefint{\boldsymbol{y}}\boldsymbol{j}\left(\boldsymbol{y},t\right)$.\end{enumerate}
 \begin{prop}
 If $a$ is the linear dimension of the source, and $\lambda$ the
 wavelength of the radiation, then to lowest order in $a/\lambda\ll1$
@@ -5976,7 +5974,7 @@ with velocity $\boldsymbol{v}\left(t\right)=\dot{\boldsymbol{y}}\left(t\right)\l
 \end{eqnarray*}
 $dU/d\omega$ is given by the Fourier transform of the acceleration.\end{example}
 \begin{rem}
-This is consistent with the Larmor formula from §\ref{sub:ch5sec3_3Radiation-by-an}
+This is consistent with the Larmor formula from \ref{sub:ch5sec3_3Radiation-by-an}
 (see Problem \#52).
 \end{rem}
 ~
@@ -6088,8 +6086,8 @@ of the approximations made above.
 \subsection{\label{sub:ch5sec5_1The-time-Wigner-function,}The time-Wigner function,
 and the macroscopic power spectrum}
 
-From §\ref{sub:ch5sec4_3The-spectral-distribution}, the spectral
-distribution of radiation from a time-dependent current density:
+From \ref{sub:ch5sec4_3The-spectral-distribution}, the spectral distribution
+of radiation from a time-dependent current density:
 \begin{eqnarray*}
 \frac{d^{2}U}{\infinitesimal{\Omega}d\omega} & = & \frac{\omega^{2}}{4\pi^{2}c^{3}}\left|\hat{\boldsymbol{x}}\times\boldsymbol{j}\left(\boldsymbol{k},\omega\right)\right|^{2}\\
  & = & \frac{\omega^{2}}{4\pi^{2}c^{3}}\left(\hat{\boldsymbol{x}}\times\indefint te^{+i\omega t}\boldsymbol{j}\left(\boldsymbol{k},t\right)\right)\cdot\left(\hat{\boldsymbol{x}}\times\indefint{t'}e^{-i\omega t'}\boldsymbol{j}\left(\boldsymbol{k},t'\right)^{*}\right)\\
@@ -6137,7 +6135,7 @@ We recover $\frac{d^{2}U}{\infinitesimal{\Omega}d\omega}$ as $\frac{d^{2}U}{\inf
 
 \subsection{\label{sub:ch5sec5_2Cherenkov-radiation}Cherenkov radiation}
 
-Consider a point particle as in §\ref{sub:ch5sec3_3Radiation-by-an}:
+Consider a point particle as in \ref{sub:ch5sec3_3Radiation-by-an}:
 \[
 \boldsymbol{j}\left(\boldsymbol{y},t\right)=e\boldsymbol{v}\left(t\right)\delta\left(\boldsymbol{y}-\boldsymbol{R}\left(t\right)\right),\textnormal{ where }\boldsymbol{v}\left(t\right):=\dot{\boldsymbol{R}}\left(t\right).
 \]
@@ -6185,7 +6183,7 @@ and $\boldsymbol{v}$:
 \begin{rem}
 If $v/c<1$, $\left|\cos\theta\right|<1\implies1+\frac{v}{c}\cos\theta>0$
 
-$\implies$ no radiation, in agreement with §\ref{sub:ch5sec3_3Radiation-by-an}
+$\implies$ no radiation, in agreement with \ref{sub:ch5sec3_3Radiation-by-an}
 unless $v>c$ (``tachyonic particle'').
 \end{rem}
 ~
@@ -6356,14 +6354,14 @@ and initial conditions such that $\boldsymbol{y}\left(t\right)=R\left(\cos\omega
 \end{eqnarray*}
 \end{description}
 \begin{lem}
-The power spectrum from \textup{§\ref{sub:ch5sec5_1The-time-Wigner-function,}
+The power spectrum from \textup{\ref{sub:ch5sec5_1The-time-Wigner-function,}
 }\textup{\emph{can be written 
 \[
 \boxed{\frac{d^{2}\mathscr{P}\left(T\right)}{\infinitesimal{\Omega}d\omega}=\frac{\omega^{2}}{4\pi^{2}c^{3}}\indefint{\tau}e^{i\omega\tau}\left[\boldsymbol{j}\left(\boldsymbol{k},T+\frac{\tau}{2}\right)\cdot\boldsymbol{j}\left(\boldsymbol{k},T-\frac{\tau}{2}\right)^{*}-c^{2}\rho\left(\boldsymbol{k},T+\frac{\tau}{2}\right)\rho\left(\boldsymbol{k},T-\frac{\tau}{2}\right)^{*}\right]}
 \]
 }}\end{lem}
 \begin{proof}
-From §\ref{sub:ch5sec5_1The-time-Wigner-function,}, the integrand
+From \ref{sub:ch5sec5_1The-time-Wigner-function,}, the integrand
 (ignoring $e^{i\omega\tau}$ factor and coefficients) is 
 \begin{eqnarray*}
 \varepsilon_{ijk}\varepsilon_{ilm}\hat{x}_{j}\hat{x}_{l}W_{km}\left(\boldsymbol{k};T,\tau\right) & \overset{1.}{=} & \varepsilon_{ijk}\hat{x}_{j}\varepsilon_{ilm}\hat{x}_{l}j_{k}\left(\boldsymbol{k},T+\frac{\tau}{2}\right)j_{m}\left(\boldsymbol{k},T-\frac{\tau}{2}\right)^{*}\\
@@ -6372,8 +6370,8 @@ From §\ref{sub:ch5sec5_1The-time-Wigner-function,}, the integrand
 \end{eqnarray*}
 
 \begin{enumerate}
-\item By definition (see §\ref{sub:ch5sec5_1The-time-Wigner-function,}).
-\item From §\ref{sub:ch5sec5_2Cherenkov-radiation} remark \ref{rem:ch5sec5_2The-Wigner-function}. 
+\item By definition (see \ref{sub:ch5sec5_1The-time-Wigner-function,}).
+\item From \ref{sub:ch5sec5_2Cherenkov-radiation} remark \ref{rem:ch5sec5_2The-Wigner-function}. 
 \item At asymptotic distances away from source, $\hat{\boldsymbol{x}}\approx\hat{\boldsymbol{k}}$.
 Using $\left|\boldsymbol{k}\right|=\frac{\omega}{c}$ and continuity
 eq. yields

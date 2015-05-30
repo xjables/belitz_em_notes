@@ -1206,7 +1206,7 @@ Since the co-vectors are defined via linear forms, and rank-
 status open
 
 \begin_layout Plain Layout
-As per §
+As per 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch1sec1_2Tensor-spaces"
@@ -5927,7 +5927,7 @@ continuity equation
 \end_layout
 
 \begin_layout Proof
-From §
+From 
 \begin_inset CommandInset ref
 LatexCommand vref
 reference "sub:ch2sec1_3The-field-equations"
@@ -6294,7 +6294,7 @@ reference "chap:Mathematical-preliminaries"
 
 \end_inset
 
-, §
+, 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch1sec3_4Minkowski-tensors"
@@ -6496,7 +6496,7 @@ For any rank-
 \begin_inset Formula $t^{0\alpha_{1}\dots\alpha_{n}}\left(x\right)$
 \end_inset
 
- by the arguments from §
+ by the arguments from 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec2_1Continuity-equation-for"
@@ -6713,7 +6713,7 @@ Since
 \begin_inset Formula $F^{\mu\nu}$
 \end_inset
 
- is an antisymmetric Minkowski tensor, from Chapter 1, §
+ is an antisymmetric Minkowski tensor, from Chapter 1, 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch1sec3_4Minkowski-tensors"
@@ -7074,7 +7074,7 @@ end{eqnarray*}
 \begin_inset space \space{}
 \end_inset
 
-From Chapter 1, §
+From Chapter 1, 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch1sec3_4Minkowski-tensors"
@@ -7153,7 +7153,7 @@ This is analogous to
 \begin_inset Formula $\boldsymbol{j}$
 \end_inset
 
- the current density (see §
+ the current density (see 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec2_1Continuity-equation-for"
@@ -7168,7 +7168,7 @@ Maxwell's equations
 \end_layout
 
 \begin_layout Standard
-From §
+From 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec1_3The-field-equations"
@@ -7332,7 +7332,7 @@ Belitz refers to these as
 status open
 
 \begin_layout Plain Layout
-I really believe there is a sign error in §3.1! It shows up here as well.
+I really believe there is a sign error in 3.1! It shows up here as well.
  I've reproduced what Belitz has but I could not resolve the sign error,
  which predictably shows up.
 \end_layout
@@ -7370,7 +7370,7 @@ These are the four homogeneous PDEs known as the first two Maxwell Equations.
 \end_layout
 
 \begin_layout Remark
-Now consider, from §
+Now consider, from 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec1_3The-field-equations"
@@ -7995,7 +7995,7 @@ The magnetic field has no sources; there are no magnetic monopoles.
 \end_layout
 
 \begin_layout Remark
-In our Lorentz invariant formulation of §1, this comes from the asymmetry
+In our Lorentz invariant formulation of 1, this comes from the asymmetry
  of the two field equations:
 \begin_inset Formula 
 \[
@@ -8218,7 +8218,7 @@ The electric and magnetic fields are related to the 4-potential by
 \end_layout
 
 \begin_layout Proof
-From §
+From 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec3_1The-field-tensor"
@@ -8442,8 +8442,7 @@ S_{\textnormal{int}} & = & -\frac{1}{c}\indefint{^{4}x}J_{\mu}\left(x\right)A^{\
 \end_layout
 
 \begin_layout Remark
-These are the scalar and vector potentials from PHYS611 Ch2 §1.3 Example
- 1!
+These are the scalar and vector potentials from PHYS611 Ch2 1.3 Example 1!
 \end_layout
 
 \begin_layout Standard
@@ -8509,7 +8508,7 @@ The momentum of the particle is
 \begin_inset Formula $\frac{\partial\mathcal{L}}{\partial\boldsymbol{v}}$
 \end_inset
 
-; see PHYS611 Ch2 §1.4), and Newton's 2nd Law takes the form (from PHYS611):
+; see PHYS611 Ch2 1.4), and Newton's 2nd Law takes the form (from PHYS611):
 \begin_inset Formula 
 \begin{eqnarray*}
 \frac{d}{dt}\boldsymbol{p}=\boldsymbol{F} & = & \boldsymbol{F}^{\left(1\right)}+\boldsymbol{F}^{\left(2\right)}\\
@@ -8550,7 +8549,7 @@ Consider the continuity equation for the energy-momentum tensor
 
 \end_inset
 
- from §
+ from 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec2_3The-continuity-equation"
@@ -8581,7 +8580,7 @@ Recall that
 \begin_inset Formula $T^{\mu\nu}:=-\frac{1}{4\pi}F^{\mu\alpha}F{}^{\nu}{}_{\alpha}+\frac{1}{16\pi}g^{\mu\nu}F_{\alpha\beta}F^{\alpha\beta}$
 \end_inset
 
- from §
+ from 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec2_2The-energy-momentum-tensor"
@@ -8592,7 +8591,7 @@ reference "sub:ch2sec2_2The-energy-momentum-tensor"
 \begin_inset Formula $F_{\alpha\beta}F^{\alpha\beta}=2\left(\boldsymbol{E}^{2}-\boldsymbol{B}^{2}\right)$
 \end_inset
 
- from Chapter 1 §
+ from Chapter 1 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch1sec3_4Minkowski-tensors"
@@ -8703,7 +8702,7 @@ For
 \end_inset
 
 , this expresses local energy conservation.
- It is analogous to §
+ It is analogous to 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec2_1Continuity-equation-for"
@@ -8729,7 +8728,7 @@ reference "sub:ch2sec2_1Continuity-equation-for"
 \end_layout
 
 \begin_layout Remark
-Recall from §
+Recall from 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec3_5Charges-in-electromagnetic"
@@ -8795,7 +8794,7 @@ Let
 \begin_inset Formula $\boldsymbol{j}\left(\boldsymbol{x},t\right)$
 \end_inset
 
- be the current density due to just one particle, as in §
+ be the current density due to just one particle, as in 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec3_5Charges-in-electromagnetic"
@@ -8835,7 +8834,7 @@ E_{kin}=\frac{m}{2}\boldsymbol{v}^{2}
 
 \end_inset
 
- where the last step follows from §
+ where the last step follows from 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec3_5Charges-in-electromagnetic"
@@ -8929,7 +8928,7 @@ energy current density of the field
 \end_layout
 
 \begin_layout Remark
-The remaining components of the continuity equation from §
+The remaining components of the continuity equation from 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec2_3The-continuity-equation"
@@ -9163,7 +9162,7 @@ NOT the dual field tensor
 \end_inset
 
  be a Lorentz boost.
- Then, from §
+ Then, from 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec3_1The-field-tensor"
@@ -10192,7 +10191,7 @@ reference "chap:Maxwell's-Equations"
 
 \end_inset
 
-, §
+, 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec3_4Relations-between-fields"
@@ -10343,7 +10342,7 @@ reference "chap:Maxwell's-Equations"
 
 \end_inset
 
-, §
+, 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec3_4Relations-between-fields"
@@ -10481,7 +10480,7 @@ reference "chap:Maxwell's-Equations"
 
 \end_inset
 
- §
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec5_1Real-solutions"
@@ -10513,7 +10512,7 @@ name "rem:Ch3sec1_2rem5_From-§-Remark"
 
 \end_inset
 
-From §
+From 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec1_1Electrostatics"
@@ -11523,7 +11522,7 @@ Specifically,
 \end_layout
 
 \begin_layout Remark
-The inverse Fourier transform is given by the theorem in §
+The inverse Fourier transform is given by the theorem in 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec2_2Inverse-Fourier-transforms"
@@ -12237,7 +12236,7 @@ Consider the regularization
 \end_inset
 
 .
- But from §
+ But from 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec2_4Generalized-functions"
@@ -12276,7 +12275,7 @@ function can be written
 \end_layout
 
 \begin_layout Proof
-From the theorem from §
+From the theorem from 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec2_2Inverse-Fourier-transforms"
@@ -12308,7 +12307,7 @@ Let
 status open
 
 \begin_layout Plain Layout
-As per §
+As per 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec2_3Test-functions"
@@ -12639,7 +12638,7 @@ I wanna double check this equation
 \end_layout
 
 \begin_layout Proof
-From §
+From 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec1_1Electrostatics"
@@ -12673,7 +12672,7 @@ Here and elsewhere, the symbol
 \end_layout
 
 \begin_layout Remark
-Thanks to the theory in §
+Thanks to the theory in 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:ch3sec2_Digression:-Fourier-transforms"
@@ -12698,7 +12697,7 @@ name "rem:ch3sec3_1_rem2§-Remark-"
 
 \end_inset
 
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec1_2Magnetostatics"
@@ -12743,7 +12742,7 @@ Not sure I get this...
 \end_layout
 
 \begin_layout Remark
-All of this is consistent with §
+All of this is consistent with 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec1_2Magnetostatics"
@@ -12910,7 +12909,7 @@ Poisson's formula
 \end_layout
 
 \begin_layout Proof
-From §
+From 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec3_1The-general-solution"
@@ -12934,7 +12933,7 @@ reference "sub:ch3sec3_1The-general-solution"
 
 \end_inset
 
- From the convolution theorem from §
+ From the convolution theorem from 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec2_1The-Fourier-transform"
@@ -13014,7 +13013,7 @@ Let
 \end_inset
 
  be the inertial frame in which the charge is at rest.
- From §
+ From 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec3_2The-Coulomb-potential"
@@ -13075,7 +13074,7 @@ reference "chap:Maxwell's-Equations"
 
 \end_inset
 
- §
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec4_1Physical-interpretation-of"
@@ -13187,7 +13186,7 @@ reference "chap:Maxwell's-Equations"
 
 \end_inset
 
- §
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec4_2Transformations-of-"
@@ -13235,7 +13234,7 @@ reference "chap:Maxwell's-Equations"
 
 \end_inset
 
- §
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec4_2Transformations-of-"
@@ -13482,7 +13481,7 @@ reference "chap:Maxwell's-Equations"
 
 \end_inset
 
- §
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec3_6Poynting's-theorem"
@@ -13501,7 +13500,7 @@ U & = & \frac{1}{8\pi}\underset{V}{\int}d\boldsymbol{x}\:\boldsymbol{E}^{2}\left
 
 \end_inset
 
-where the last line follows from Poisson's formula (§
+where the last line follows from Poisson's formula (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec3_3Poisson's-formula"
@@ -13757,7 +13756,7 @@ steady
 \end_layout
 
 \begin_layout Proof
-From §
+From 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec1_2Magnetostatics"
@@ -13774,7 +13773,7 @@ reference "sub:ch3sec1_2Magnetostatics"
 \end_layout
 
 \begin_layout Remark
-The proof in §
+The proof in 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec1_2Magnetostatics"
@@ -13844,7 +13843,7 @@ Notice the analogy between electrostatics and magnetostatics.
 \end_layout
 
 \begin_layout Remark
-See §
+See 
 \begin_inset Note Note
 status open
 
@@ -13936,7 +13935,7 @@ reference "chap:Maxwell's-Equations"
 
 \end_inset
 
- §
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec3_6Poynting's-theorem"
@@ -13965,7 +13964,7 @@ From the lemma above.
 \end_layout
 
 \begin_layout Enumerate
-From §
+From 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec3_6The-law-of"
@@ -14105,7 +14104,7 @@ Let
 \end_inset
 
  where the last step follows from the binomial approximation.
- Poisson's formula (§
+ Poisson's formula (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec3_3Poisson's-formula"
@@ -14304,7 +14303,7 @@ The field at large distances is
 \begin_inset Formula $-\nabla\frac{Q}{r}=Q\frac{\boldsymbol{x}}{r^{3}}$
 \end_inset
 
- (see §
+ (see 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec3_2The-Coulomb-potential"
@@ -15314,7 +15313,7 @@ Consider the Laplace operator:
 
 \end_inset
 
- from §
+ from 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec4_2Legendre-functions-and"
@@ -15455,7 +15454,7 @@ ansatz:
 
 \end_inset
 
- (see §
+ (see 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec4_2Legendre-functions-and"
@@ -15463,7 +15462,7 @@ reference "sub:ch3sec4_2Legendre-functions-and"
 \end_inset
 
 ).
- By §
+ By 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec4_2Legendre-functions-and"
@@ -15604,7 +15603,7 @@ Since
 \begin_inset Formula $\phi$
 \end_inset
 
- using the theorem in §
+ using the theorem in 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec4_3Separation-of-the"
@@ -15708,7 +15707,7 @@ Thus, the only harmonic function that is finite at
 \begin_inset Formula $l=0$
 \end_inset
 
- contribution (see §
+ contribution (see 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec1_2Magnetostatics"
@@ -15722,7 +15721,7 @@ reference "rem:Ch3sec1_2rem5_From-§-Remark"
 
 \end_inset
 
-, §
+, 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec3_1The-general-solution"
@@ -15837,7 +15836,7 @@ reference "thm:Completeness-of-theLegendre"
 
 \end_inset
 
- in §
+ in 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec4_2Legendre-functions-and"
@@ -15856,7 +15855,7 @@ From the
 \emph on
 Addition Theorem
 \emph default
- in §
+ in 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec4_2Legendre-functions-and"
@@ -15880,7 +15879,7 @@ Remaining question:
 \end_layout
 
 \begin_layout Proof
-From §
+From 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec4_4Expansion-of-harmonic"
@@ -15916,7 +15915,7 @@ reference "sub:ch3sec4_4Expansion-of-harmonic"
 \end_inset
 
 .
- By §
+ By 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec4_4Expansion-of-harmonic"
@@ -16045,7 +16044,7 @@ multipole moments
 \end_layout
 
 \begin_layout Proof
-From §
+From 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec3_3Poisson's-formula"
@@ -16227,7 +16226,7 @@ I think it has to be greater, that is
 \end_layout
 
 \begin_layout Standard
-From §
+From 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec3_5Electrostatic-interaction"
@@ -16326,7 +16325,7 @@ If
 
 \end_inset
 
- From §
+ From 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec1_1Electrostatics"
@@ -16589,7 +16588,7 @@ where
 \end_layout
 
 \begin_layout Remark
-Alternatively, we can use the spherical harmonic expansion from §
+Alternatively, we can use the spherical harmonic expansion from 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec4_4Expansion-of-harmonic"
@@ -16626,7 +16625,7 @@ reference "sub:ch3sec4_4Expansion-of-harmonic"
 
 \end_inset
 
- where, as per §
+ where, as per 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec4_5Multipole-expansion-of"
@@ -16688,7 +16687,7 @@ The magnetic moment
 \end_layout
 
 \begin_layout Standard
-From §
+From 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec3_6The-law-of"
@@ -16809,7 +16808,7 @@ Now consider the time averaged vector potential
 
 \end_inset
 
- From §
+ From 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec3_6The-law-of"
@@ -16834,7 +16833,7 @@ Expanding
 \begin_inset Formula $1/\left|\boldsymbol{x}-\boldsymbol{x}_{\alpha}\right|$
 \end_inset
 
- as per §
+ as per 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec4_1The-electric-dipole"
@@ -16965,7 +16964,7 @@ The magnetic field for large distances from the current density is
 \end_layout
 
 \begin_layout Proof
-Analogous to §
+Analogous to 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec4_1The-electric-dipole"
@@ -17128,7 +17127,7 @@ reference "chap:Static-solutions-of"
 
 \end_inset
 
- §
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec1_1Electrostatics"
@@ -17177,7 +17176,7 @@ reference "chap:Maxwell's-Equations"
 
 \end_inset
 
- §
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec1_3The-field-equations"
@@ -17303,7 +17302,7 @@ reference "chap:Maxwell's-Equations"
 
 \end_inset
 
- §
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec3_4Relations-between-fields"
@@ -17384,7 +17383,7 @@ Let
 \end_inset
 
 .
- From §
+ From 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch4sec1_1The-wave-equation"
@@ -17864,7 +17863,7 @@ reference "chap:Maxwell's-Equations"
 
 \end_inset
 
- §
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec3_6Poynting's-theorem"
@@ -18012,7 +18011,7 @@ reference "chap:Maxwell's-Equations"
 
 \end_inset
 
- §
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:ch2sec5The-superposition-principle"
@@ -18352,7 +18351,7 @@ The direction of propagation
 \begin_inset Formula $\hat{\boldsymbol{n}}$
 \end_inset
 
- from §
+ from 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch4sec1_3Orientation-of-the"
@@ -18367,7 +18366,7 @@ reference "sub:ch4sec1_3Orientation-of-the"
 
 \end_inset
 
- From §
+ From 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch4sec1_3Orientation-of-the"
@@ -18829,7 +18828,7 @@ The wave equation in Fourier space
 \end_layout
 
 \begin_layout Standard
-From §
+From 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch4sec1_1The-wave-equation"
@@ -18851,7 +18850,7 @@ reference "chap:Static-solutions-of"
 
 \end_inset
 
- §
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:ch3sec2_Digression:-Fourier-transforms"
@@ -19225,7 +19224,7 @@ reference "chap:Maxwell's-Equations"
 
 \end_inset
 
- §
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec3_4Relations-between-fields"
@@ -19284,7 +19283,7 @@ reference "chap:Maxwell's-Equations"
 
 \end_inset
 
- §
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec3_1The-field-tensor"
@@ -19324,7 +19323,7 @@ reference "chap:Electromagnetic-waves-in"
 
 \end_inset
 
- §
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch4sec1_1The-wave-equation"
@@ -19355,7 +19354,7 @@ reference "chap:Maxwell's-Equations"
 
 \end_inset
 
- §
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec1_3The-field-equations"
@@ -19549,7 +19548,7 @@ reference "chap:Maxwell's-Equations"
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec2_4Gauge-invariance"
@@ -19794,7 +19793,7 @@ In Lorenz gauge, the field equations for the potentials
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec1_1Fields-and-potentials"
@@ -19840,7 +19839,7 @@ Lorenz gauge
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec1_1Fields-and-potentials"
@@ -19900,7 +19899,7 @@ reference "chap:Maxwell's-Equations"
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec2_1Continuity-equation-for"
@@ -19942,7 +19941,6 @@ In Coulomb gauge, the field equations become
 \uwave off
 \noun off
 \color none
-§
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec1_1Fields-and-potentials"
@@ -20201,7 +20199,7 @@ To find the form of Green's functions, take the Fourier transform of
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec2_1The-concept-of"
@@ -20284,30 +20282,6 @@ reference "chap:Static-solutions-of"
 \end_inset
 
  
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-§
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec2_1The-Fourier-transform"
@@ -20439,7 +20413,7 @@ The defining equation for the Green's functions (
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec2_1The-concept-of"
@@ -20486,7 +20460,7 @@ Consider a point-like, time-dependent source
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec2_1The-concept-of"
@@ -20618,14 +20592,14 @@ We can obtain the potentials by applying the proposition from
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec2_1The-concept-of"
 
 \end_inset
 
- and results from §
+ and results from 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec2_2Green's-functions-for"
@@ -20744,7 +20718,7 @@ reference "chap:Static-solutions-of"
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec3_6The-law-of"
@@ -20789,7 +20763,7 @@ Consider retarded potentials (
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec2_3The-retarded-potentials"
@@ -21040,7 +21014,7 @@ reference "chap:Maxwell's-Equations"
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec2_1Continuity-equation-for"
@@ -21184,7 +21158,7 @@ The fields fall off as
 \uwave off
 \noun off
 \color none
-From §
+From 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec1_1Fields-and-potentials"
@@ -21259,7 +21233,7 @@ By lemma 1,
 \uwave off
 \noun off
 \color none
-From §
+From 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec1_1Fields-and-potentials"
@@ -21460,7 +21434,7 @@ reference "chap:Maxwell's-Equations"
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec3_6Poynting's-theorem"
@@ -21690,7 +21664,7 @@ time:
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec2_3The-retarded-potentials"
@@ -22102,7 +22076,7 @@ From
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec3_2The-radiated-power"
@@ -22167,7 +22141,7 @@ Now we keep corrections to the approximation we made (
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec3_2The-radiated-power"
@@ -22254,7 +22228,7 @@ reference "chap:Static-solutions-of"
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch3sec4_7The-magnetic-moment"
@@ -22566,7 +22540,7 @@ The magnetic dipole moment has an extra
 \uwave off
 \noun off
 \color none
-§71).
+71).
 \end_layout
 
 \begin_layout Section
@@ -22586,7 +22560,7 @@ In
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:ch5sec3Radiation-by-time-dependent"
@@ -22631,7 +22605,7 @@ From
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec2_3The-retarded-potentials"
@@ -22647,7 +22621,7 @@ reference "sub:ch5sec2_3The-retarded-potentials"
 \end_inset
 
  Define a temporal Fourier transform (cf.
- §
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec2_2Green's-functions-for"
@@ -22770,7 +22744,7 @@ For large distances
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec3_1Asymptotic-potentials-and"
@@ -22830,7 +22804,7 @@ reference "chap:Electromagnetic-waves-in"
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch4sec1_5Polarization-of-electromagnetic"
@@ -22949,7 +22923,7 @@ The expression for
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec3_1Asymptotic-potentials-and"
@@ -23108,7 +23082,7 @@ reference "chap:Maxwell's-Equations"
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch2sec3_6Poynting's-theorem"
@@ -23127,7 +23101,7 @@ reference "sub:ch2sec3_6Poynting's-theorem"
 \begin_inset Formula $U$
 \end_inset
 
- radiated into a solid angle is (see §
+ radiated into a solid angle is (see 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec3_2The-radiated-power"
@@ -23192,7 +23166,7 @@ don't get this
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec4_2Asymptotic-potentials-and"
@@ -23235,7 +23209,7 @@ From
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec4_2Asymptotic-potentials-and"
@@ -23278,7 +23252,7 @@ From
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec4_3The-spectral-distribution"
@@ -23370,7 +23344,7 @@ By
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec3_4Dipole-radiation"
@@ -23553,7 +23527,7 @@ This is consistent with the Larmor formula from
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec3_3Radiation-by-an"
@@ -23971,7 +23945,7 @@ From
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec4_3The-spectral-distribution"
@@ -24170,7 +24144,7 @@ Consider a point particle as in
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec3_3Radiation-by-an"
@@ -24323,7 +24297,7 @@ If
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec3_3Radiation-by-an"
@@ -24881,7 +24855,7 @@ The power spectrum from
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec5_1The-time-Wigner-function,"
@@ -24923,7 +24897,7 @@ From
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec5_1The-time-Wigner-function,"
@@ -24961,7 +24935,7 @@ By definition (see
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec5_1The-time-Wigner-function,"
@@ -24984,7 +24958,7 @@ From
 \uwave off
 \noun off
 \color none
-§
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:ch5sec5_2Cherenkov-radiation"
