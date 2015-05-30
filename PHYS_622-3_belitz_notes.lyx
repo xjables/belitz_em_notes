@@ -23949,6 +23949,12 @@ Cherenkov radiation
 \end_layout
 
 \begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:ch5sec5_1The-time-Wigner-function,"
+
+\end_inset
+
 The time-Wigner function, and the macroscopic power spectrum
 \end_layout
 
@@ -24142,6 +24148,12 @@ We recover
 \end_layout
 
 \begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:ch5sec5_2Cherenkov-radiation"
+
+\end_inset
+
 Cherenkov radiation
 \end_layout
 
@@ -24212,6 +24224,12 @@ We know that in vacuum this does not result in radiation.
 \end_layout
 
 \begin_layout Remark
+\begin_inset CommandInset label
+LatexCommand label
+name "rem:ch5sec5_2The-Wigner-function"
+
+\end_inset
+
 The Wigner function is independent of 
 \begin_inset Formula $T$
 \end_inset
@@ -24580,6 +24598,652 @@ not sure how we get this
  the 
 \emph on
 fine structure constant.
+\end_layout
+
+\begin_layout Section
+Synchrotron radiation
+\end_layout
+
+\begin_layout Description
+idea: Discuss motion of charged particle in a homogeneous 
+\begin_inset Formula $B-$
+\end_inset
+
+field, as in Problem #46, but
+\end_layout
+
+\begin_layout Itemize
+do it relativistically
+\end_layout
+
+\begin_layout Itemize
+discuss the power spectrum
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:ch5sec6_1Relativistic-motion-of"
+
+\end_inset
+
+Relativistic motion of a charged particle in a 
+\begin_inset Formula $B-$
+\end_inset
+
+field
+\end_layout
+
+\begin_layout Standard
+From PHYS611,
+\begin_inset Formula 
+\[
+\boxed{\frac{d\boldsymbol{p}}{dt}=\frac{e}{c}\boldsymbol{v}\times\boldsymbol{B}},\tag{\ast}
+\]
+
+\end_inset
+
+ with 
+\begin_inset Formula $\boldsymbol{p}=\gamma m\boldsymbol{v}$
+\end_inset
+
+ the momentum 
+\begin_inset Formula $\left(\gamma:=1/\sqrt{1-\left(v/c\right)^{2}}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $\left(\ast\right)$
+\end_inset
+
+ holds for relativistic motion.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark
+Force is purely transverse 
+\begin_inset Formula $\implies$
+\end_inset
+
+ 
+\begin_inset Formula $E=\gamma mc^{2}=\textnormal{const.}$
+\end_inset
+
+, and 
+\begin_inset Formula $\boldsymbol{p}=\frac{E}{c^{2}}\boldsymbol{v}$
+\end_inset
+
+ with 
+\begin_inset Formula $E$
+\end_inset
+
+ the particle's energy.
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $\implies$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\ast\right)$
+\end_inset
+
+ can be written
+\begin_inset Formula 
+\[
+\frac{E}{c^{2}}\frac{d\boldsymbol{v}}{dt}=\frac{e}{c}\boldsymbol{v}\times\boldsymbol{B}\implies\underline{\frac{d\boldsymbol{v}}{dt}}=\frac{ec}{E}\boldsymbol{v}\times\boldsymbol{B}=\underline{-\frac{ec}{E}\boldsymbol{B}\times\boldsymbol{v}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+
+\series bold
+\emph on
+Larmor frequency.
+
+\series default
+\emph default
+ 
+\begin_inset Formula 
+\[
+\omega_{0}:=\frac{\left|e\right|cB}{E},
+\]
+
+\end_inset
+
+ is called 
+\emph on
+Larmor frequency
+\emph default
+.
+\end_layout
+
+\begin_layout Remark
+In nonrelativistic limit, 
+\begin_inset Formula $\omega_{0}\approx\frac{\left|e\right|cB}{mc^{2}}=\frac{\left|e\right|B}{mc},$
+\end_inset
+
+ called 
+\emph on
+cyclotron frequency
+\emph default
+.
+\end_layout
+
+\begin_layout Description
+initial
+\begin_inset space ~
+\end_inset
+
+condition: 
+\begin_inset Formula $\boldsymbol{v}\perp\boldsymbol{B}\implies\boldsymbol{v}\perp\boldsymbol{B}$
+\end_inset
+
+ for all times.
+\end_layout
+
+\begin_layout Description
+conclusion: particle moves on a circle perpendicular to 
+\begin_inset Formula $B-$
+\end_inset
+
+field of radius 
+\begin_inset Formula 
+\[
+\boxed{R=\frac{v}{\omega_{0}}=\frac{v}{c}\frac{E}{\left|e\right|B}},
+\]
+
+\end_inset
+
+ and the momentum is related to the radius by 
+\begin_inset Formula 
+\[
+\boxed{p=\frac{E}{c^{2}}v=\frac{1}{c}\left|e\right|BR}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+The power spectrum of synchrotron radiation
+\end_layout
+
+\begin_layout Standard
+Consider motion in the 
+\begin_inset Formula $x-y$
+\end_inset
+
+ plane with an observer at point 
+\begin_inset Formula $\boldsymbol{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $\theta=\varangle\left(\boldsymbol{x},\hat{\boldsymbol{z}}\right)$
+\end_inset
+
+.
+ Choose coordinate system such that 
+\begin_inset Formula $\boldsymbol{x}=\left(x,0,z\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies\boxed{\hat{\boldsymbol{x}}=\left(\sin\theta,0,\cos\theta\right)}.
+\]
+
+\end_inset
+
+and initial conditions such that 
+\begin_inset Formula $\boldsymbol{y}\left(t\right)=R\left(\cos\omega_{0}t,\sin\omega_{0}t,0\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies\boxed{\boldsymbol{v}\left(t\right)=v\left(-\sin\omega_{0}t,\cos\omega_{0}t,0\right)}\textnormal{ with }v=\omega_{0}R.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+current
+\begin_inset space ~
+\end_inset
+
+density: 
+\series bold
+
+\begin_inset Formula $\boldsymbol{j}\left(\boldsymbol{y},t\right)=e\boldsymbol{v}\left(t\right)\delta\left(\boldsymbol{y}-\boldsymbol{y}\left(t\right)\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\implies\underline{\boldsymbol{j}\left(\boldsymbol{k},t\right)} & = & \indefint{\boldsymbol{y}}e^{-i\boldsymbol{k}\cdot\boldsymbol{y}}e\boldsymbol{v}\left(t\right)\delta\left(\boldsymbol{y}-\boldsymbol{y}\left(t\right)\right)\\
+ & = & e\boldsymbol{v}\left(t\right)e^{-i\boldsymbol{k}\cdot\boldsymbol{y}\left(t\right)}\\
+ & = & \underline{e\boldsymbol{v}\left(t\right)e^{-i\frac{\omega}{c}\hat{\boldsymbol{x}}\cdot\boldsymbol{y}\left(t\right)}}.
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+charge
+\begin_inset space ~
+\end_inset
+
+density: 
+\begin_inset Formula $\rho\left(\boldsymbol{y},t\right)=e\delta\left(\boldsymbol{y}-\boldsymbol{y}\left(t\right)\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\implies\underline{\rho\left(\boldsymbol{k},t\right)} & = & ee^{-i\boldsymbol{k}\cdot\boldsymbol{y}\left(t\right)}\\
+ & = & \underline{ee^{-i\frac{\omega}{c}\hat{\boldsymbol{x}}\cdot\boldsymbol{y}\left(t\right)}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+The power spectrum from 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+§
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:ch5sec5_1The-time-Wigner-function,"
+
+\end_inset
+
+ 
+\family default
+\series default
+\size default
+\emph on
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+can be written 
+\begin_inset Formula 
+\[
+\boxed{\frac{d^{2}\mathscr{P}\left(T\right)}{\infinitesimal{\Omega}d\omega}=\frac{\omega^{2}}{4\pi^{2}c^{3}}\indefint{\tau}e^{i\omega\tau}\left[\boldsymbol{j}\left(\boldsymbol{k},T+\frac{\tau}{2}\right)\cdot\boldsymbol{j}\left(\boldsymbol{k},T-\frac{\tau}{2}\right)^{*}-c^{2}\rho\left(\boldsymbol{k},T+\frac{\tau}{2}\right)\rho\left(\boldsymbol{k},T-\frac{\tau}{2}\right)^{*}\right]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+From 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+§
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:ch5sec5_1The-time-Wigner-function,"
+
+\end_inset
+
+, the integrand (ignoring 
+\begin_inset Formula $e^{i\omega\tau}$
+\end_inset
+
+ factor and coefficients) is 
+\begin_inset Formula 
+\begin{eqnarray*}
+\varepsilon_{ijk}\varepsilon_{ilm}\hat{x}_{j}\hat{x}_{l}W_{km}\left(\boldsymbol{k};T,\tau\right) & \overset{1.}{=} & \varepsilon_{ijk}\hat{x}_{j}\varepsilon_{ilm}\hat{x}_{l}j_{k}\left(\boldsymbol{k},T+\frac{\tau}{2}\right)j_{m}\left(\boldsymbol{k},T-\frac{\tau}{2}\right)^{*}\\
+ & \overset{2.}{=} & \boldsymbol{j}\left(\boldsymbol{k},T+\frac{\tau}{2}\right)\cdot\boldsymbol{j}\left(\boldsymbol{k},T-\frac{\tau}{2}\right)^{*}-\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{j}\left(\boldsymbol{k},T+\frac{\tau}{2}\right)\right)\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{j}\left(\boldsymbol{k},T-\frac{\tau}{2}\right)^{*}\right)\\
+ & \overset{3.}{=} & \boldsymbol{j}\left(\boldsymbol{k},T+\frac{\tau}{2}\right)\cdot\boldsymbol{j}\left(\boldsymbol{k},T-\frac{\tau}{2}\right)^{*}-\left(c\rho\left(\boldsymbol{k},T+\frac{\tau}{2}\right)\right)\left(c\rho\left(\boldsymbol{k},T-\frac{\tau}{2}\right)^{*}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+By definition (see 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+§
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:ch5sec5_1The-time-Wigner-function,"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+From 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+§
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:ch5sec5_2Cherenkov-radiation"
+
+\end_inset
+
+ remark 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "rem:ch5sec5_2The-Wigner-function"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+At asymptotic distances away from source, 
+\begin_inset Formula $\hat{\boldsymbol{x}}\approx\hat{\boldsymbol{k}}$
+\end_inset
+
+.
+ Using 
+\begin_inset Formula $\left|\boldsymbol{k}\right|=\frac{\omega}{c}$
+\end_inset
+
+ and continuity eq.
+ yields
+\begin_inset Formula 
+\begin{eqnarray*}
+\partial_{t}\rho\left(\boldsymbol{x},t\right) & = & -\nabla\cdot\boldsymbol{j}\left(\boldsymbol{x},t\right)\\
+\overset{\mathcal{F}}{\longrightarrow}i\omega\rho\left(\boldsymbol{k},\omega\right) & = & i\frac{\omega}{c}\hat{\boldsymbol{x}}\cdot\boldsymbol{j}\left(\boldsymbol{k},\omega\right)\\
+\overset{\mathcal{F}^{-1}}{\longrightarrow}c\rho\left(\boldsymbol{k},t\right) & = & \hat{\boldsymbol{x}}\cdot\boldsymbol{j}\left(\boldsymbol{k},t\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Lemma
+\begin_inset Formula 
+\[
+\boxed{\boldsymbol{v}\left(T+\frac{\tau}{2}\right)\cdot\boldsymbol{v}\left(T-\frac{\tau}{2}\right)=v^{2}\cos\omega_{0}\tau}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{1}{v^{2}}\boldsymbol{v}\left(T+\frac{\tau}{2}\right)\cdot\boldsymbol{v}\left(T-\frac{\tau}{2}\right) & \overset{1.}{=} & \sin\left(\omega_{0}\left(T+\frac{\tau}{2}\right)\right)\sin\left(\omega_{0}\left(T-\frac{\tau}{2}\right)\right)+\cos\left(\omega_{0}\left(T+\frac{\tau}{2}\right)\right)\cos\left(\omega_{0}\left(T-\frac{\tau}{2}\right)\right)\\
+ & \overset{2.}{=} & \cos\left(\omega_{0}\left(T+\frac{\tau}{2}\right)-\omega_{0}\left(T-\frac{\tau}{2}\right)\right)\\
+ & = & \cos\omega_{0}\tau
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\frac{\boldsymbol{v}\left(t\right)}{v}=\left(-\sin\omega_{0}t,\cos\omega_{0}t,0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Angle difference formula.
+\end_layout
+
+\end_deeper
+\begin_layout Lemma
+\begin_inset Formula 
+\[
+\boxed{e^{\mp\frac{\omega}{c}\hat{\boldsymbol{x}}\cdot\boldsymbol{y}\left(T\pm\frac{\tau}{2}\right)}=\summation{m=-\infty}{\infty}\left(\mp i\right)^{m}e^{\mp im\omega_{0}\left(T\pm\frac{\tau}{2}\right)}J_{m}\left(\frac{\omega}{c}R\sin\theta\right)},
+\]
+
+\end_inset
+
+ with 
+\begin_inset Formula $J_{m}\left(x\right)$
+\end_inset
+
+ a Bessel function of the first kind.
+\end_layout
+
+\begin_layout Proof
+The Bessel functions obey 
+\begin_inset Formula 
+\[
+e^{iz\cos\varphi}=\summation{m=-\infty}{\infty}i^{m}e^{im\varphi}J_{m}\left(z\right)
+\]
+
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{\boldsymbol{x}}\cdot\boldsymbol{y}\left(t\right)=R\sin\theta\cos\omega_{0}\tau$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\implies e^{\mp i\frac{\omega}{c}\hat{\boldsymbol{x}}\cdot\boldsymbol{y}\left(t\right)} & = & e^{\mp i\frac{\omega}{c}R\sin\theta\cos\omega_{0}t}\\
+ & = & \summation{m=-\infty}{\infty}\left(\mp i\right)^{m}e^{\mp im\omega_{0}t}J_{m}\left(\frac{\omega}{c}R\sin\theta\right).
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\implies\underline{\frac{d^{2}\mathscr{P}\left(T\right)}{\infinitesimal{\Omega}d\omega}} & \overset{1.}{=} & \frac{\omega^{2}}{4\pi^{2}c^{3}}\indefint{\tau}e^{i\omega\tau}\left[\boldsymbol{j}\left(\boldsymbol{k},T+\frac{\tau}{2}\right)\cdot\boldsymbol{j}\left(\boldsymbol{k},T-\frac{\tau}{2}\right)^{*}-c^{2}\rho\left(\boldsymbol{k},T+\frac{\tau}{2}\right)\rho\left(\boldsymbol{k},T-\frac{\tau}{2}\right)^{*}\right]\\
+ & = & \frac{\omega^{2}e^{2}}{4\pi^{2}c^{3}}\indefint{\tau}e^{i\omega\tau}\left[\boldsymbol{v}\left(T+\frac{\tau}{2}\right)\cdot\boldsymbol{v}\left(T+\frac{\tau}{2}\right)-c^{2}\right]e^{-i\frac{\omega}{c}\hat{\boldsymbol{x}}\cdot\left[\boldsymbol{y}\left(T+\frac{\tau}{2}\right)-\boldsymbol{y}\left(T-\frac{\tau}{2}\right)\right]}\\
+ & \overset{2.}{=} & \frac{\omega^{2}e^{2}}{4\pi^{2}c}\indefint{\tau}e^{i\omega\tau}\left[\frac{v^{2}}{c^{2}}\cos\omega_{0}\tau-1\right]\\
+ &  & \quad\summation{m=-\infty}{\infty}\left(-i\right)^{m}e^{-im\omega_{0}\left(T+\frac{\tau}{2}\right)}J_{m}\left(\frac{\omega}{c}R\sin\theta\right)\summation{n=-\infty}{\infty}i^{n}e^{in\omega_{0}\left(T-\frac{\tau}{2}\right)}J_{n}\left(\frac{\omega}{c}R\sin\theta\right)\\
+ & = & \underline{\frac{\omega^{2}e^{2}}{4\pi^{2}c}\summation{m,n=-\infty}{\infty}i^{n-m}e^{-i\left(m-n\right)\omega_{0}T}}\\
+ &  & \quad\underline{\indefint{\tau}e^{i\omega\tau}\left[\frac{v^{2}}{c^{2}}\cos\omega_{0}\tau-1\right]e^{-i\left(m+n\right)\omega_{0}\tau/2}J_{m}\left(\frac{\omega}{c}R\sin\theta\right)J_{n}\left(\frac{\omega}{c}R\sin\theta\right)}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Lemma 1.
+\end_layout
+
+\begin_layout Enumerate
+Lemmas 2, 3.
+\end_layout
+
+\begin_layout Remark
+For the macroscopic power spectrum, we are not interested in how the emission
+ varies on the microscopic time scale given by 
+\begin_inset Formula $1/\omega_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+\begin_inset Formula $\implies$
+\end_inset
+
+ average over one oscillation period.
+\end_layout
+
+\begin_layout Lemma
+Let 
+\begin_inset Formula $\overline{f\left(T\right)}$
+\end_inset
+
+ be a time average over one oscillation period.
+ Then
+\begin_inset Formula 
+\[
+\boxed{\overline{e^{-i\left(m-n\right)T\omega_{0}}}=\delta_{mn}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{eqnarray*}
+\overline{e^{-i\left(m-n\right)T\omega_{0}}} & = & \frac{\omega_{0}}{2\pi}\defint T0{2\pi/\omega_{0}}e^{-i\left(m-n\right)\omega_{0}T}\\
+ & = & \frac{1}{2\pi}\defint x0{2\pi}e^{-i\left(m-n\right)x}\\
+ & = & \delta_{mn}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\implies\overline{\frac{d^{2}\mathscr{P}\left(T\right)}{\infinitesimal{\Omega}d\omega}} & = & \frac{\omega^{2}e^{2}}{4\pi^{2}c}\summation{m,n=-\infty}{\infty}i^{n-m}\overline{e^{-i\left(m-n\right)\omega_{0}T}}\\
+ &  & \quad\indefint{\tau}e^{i\omega\tau}\left[\frac{v^{2}}{c^{2}}\cos\omega_{0}\tau-1\right]e^{-i\left(m+n\right)\omega_{0}\tau/2}J_{m}\left(\frac{\omega}{c}R\sin\theta\right)J_{n}\left(\frac{\omega}{c}R\sin\theta\right)\\
+ & = & \frac{\omega^{2}e^{2}}{4\pi^{2}c}\summation{m=-\infty}{\infty}\indefint{\tau}e^{i\omega\tau}\left[\frac{v^{2}}{c^{2}}\frac{1}{2}\left(e^{i\omega_{0}\tau}+e^{-i\omega_{0}\tau}\right)-1\right]e^{-im\omega_{0}\tau}\left(J_{m}\left(\frac{\omega}{c}R\sin\theta\right)\right)^{2}\\
+ & = & \frac{\omega^{2}e^{2}}{2\pi c}\summation{m=-\infty}{\infty}\left[\frac{v^{2}}{2c^{2}}\left(\delta\left(\omega-\left(m-1\right)\omega_{0}\right)+\delta\left(\omega-\left(m+1\right)\omega_{0}\right)\right)-\delta\left(\omega-m\omega_{0}\right)\right]\left(J_{m}\left(\frac{\omega}{c}R\sin\theta\right)\right)^{2}\\
+ & \overset{1.}{=} & \frac{\omega^{2}e^{2}}{2\pi c}\summation{m=-\infty}{\infty}\\
+ &  & \quad\left[\frac{v^{2}}{2c^{2}}\left(\left(J_{m+1}\left(\frac{\omega}{c}R\sin\theta\right)\right)^{2}+\left(J_{m-1}\left(\frac{\omega}{c}R\sin\theta\right)\right)^{2}\right)-\left(J_{m}\left(\frac{\omega}{c}R\sin\theta\right)\right)^{2}\right]\delta\left(\omega-m\omega_{0}\right)\\
+ & \overset{2.}{=} & \frac{\omega^{2}e^{2}}{2\pi c}\left(\summation{m=1}{\infty}+\summation{m=-1}{-\infty}+\bcancel{\summation m{}\delta_{m0}}\right)\left[\cdots\right]\delta\left(\omega-m\omega_{0}\right)\\
+ & = & \underline{\frac{\omega^{2}e^{2}}{2\pi c}\summation{m=1}{\infty}}\\
+ &  & \quad\underline{\left[\frac{v^{2}}{2c^{2}}\left(\left(J_{m+1}\left(\frac{\omega}{c}R\sin\theta\right)\right)^{2}+\left(J_{m-1}\left(\frac{\omega}{c}R\sin\theta\right)\right)^{2}\right)-\left(J_{m}\left(\frac{\omega}{c}R\sin\theta\right)\right)^{2}\right]\delta\left(\omega-m\omega_{0}\right)}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\,\tag{\ast}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Distributed the 
+\begin_inset Formula $J_{m}$
+\end_inset
+
+ factor, shifted the sum indices so that 
+\begin_inset Formula $\delta\left(\omega-\left(m\pm1\right)\omega_{0}\right)\left(J_{m}\left(\frac{\omega}{c}R\sin\theta\right)\right)^{2}\rightarrow\delta\left(\omega-m\omega_{0}\right)\left(J_{m\mp1}\left(\frac{\omega}{c}R\sin\theta\right)\right)^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The summation can be split into three summations.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The 
+\begin_inset Formula $\summation m{}\delta_{m0}$
+\end_inset
+
+ term does not contribute since 
+\begin_inset Formula $\omega^{2}\delta\left(\omega\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $J_{-m}\left(x\right)=\left(-\right)^{m}J_{m}\left(x\right)$
+\end_inset
+
+, so the remaining two summations yield equivalent contributions.
+\end_layout
+
+\end_deeper
+\begin_layout Remark
+The frequencies emitted are the Larmor frequency 
+\begin_inset Formula $\left(\omega_{0}\right)$
+\end_inset
+
+ and all of its harmonics.
 \end_layout
 
 \begin_layout Chapter
