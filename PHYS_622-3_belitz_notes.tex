@@ -8,7 +8,6 @@
 \setcounter{secnumdepth}{3}
 \usepackage{babel}
 \usepackage{array}
-\usepackage{varioref}
 \usepackage{float}
 \usepackage{fancybox}
 \usepackage{calc}
@@ -578,7 +577,7 @@ is \emph{not }equal to $\delta_{k}^{j}$. However, $g_{j}^{l}=g_{jk}g^{kl}=\delta
 is always true. Only in Euclidean space is $\delta_{jk}=\delta_{k}^{j}$.
 \end{rem}
 
-\subsection{Basis transformations}
+\subsection{\label{sub:ch1sec2_2Basis-transformations}Basis transformations}
 \begin{defn}
 \textbf{\emph{Matrices.}}\textbf{~}
 
@@ -968,7 +967,7 @@ The curl of a vector field transforms as a pseudovector:
 \end{prop}
 \begin{proof}
 Let $D$ be a coordinate transformation. By \cref{prop:3_2_del_trafo}
-and \cref{cor:2_2_covar_coord_trafo}, 
+and \cref{cor:2_2_covar_coord_trafo} from \cref{sub:ch1sec2_2Basis-transformations},
 \begin{eqnarray*}
 \widetilde{\left(\nabla\times\boldsymbol{v}\right)}^{j}\left(\tilde{\boldsymbol{x}}\right) & = & \tilde{\varepsilon}^{jkl}\tilde{\partial}_{k}\tilde{v}_{l}\left(\tilde{\boldsymbol{x}}\right)\\
  & = & \tilde{\varepsilon}^{jkl}\left(D^{-1}\right){}^{m}{}_{k}\partial_{m}\left(D^{-1}\right){}^{\alpha}{}_{l}v_{\alpha}\left(\boldsymbol{x}\right)\\
@@ -994,7 +993,8 @@ The divergence of a vector field transforms as a scalar:
 \]
 \end{prop}
 \begin{proof}
-By Propositions \vref{prop:2_2_contra_trafo} and \vref{prop:3_2_del_trafo},
+By \cref{prop:3_2_del_trafo} and \cref{prop:2_2_contra_trafo} from
+\cref{sub:ch1sec2_2Basis-transformations}, 
 \begin{eqnarray*}
 \widetilde{\left(\nabla\cdot\boldsymbol{v}\right)}\left(\tilde{\boldsymbol{x}}\right) & = & \tilde{\partial}_{j}\tilde{v}^{j}\left(\tilde{\boldsymbol{x}}\right)\\
  & = & \left(D^{-1}\right){}^{l}{}_{j}\partial_{l}D{}^{j}{}_{k}v^{k}\left(\boldsymbol{x}\right)\\
@@ -1435,7 +1435,7 @@ equation}:
 \]
 \end{prop}
 \begin{proof}
-From \vref{sub:ch2sec1_3The-field-equations}, Equation (\ref{eq:The_Field_equations}),
+From \cref{sub:ch2sec1_3The-field-equations}, Equation (\ref{eq:The_Field_equations}),
 \[
 \partial_{\nu}J^{\nu}=\frac{c}{4\pi}\underset{\textnormal{sym.}}{\underbrace{\partial_{\nu}\partial_{\mu}}}\underset{\textnormal{a-sym.}}{\underbrace{F_{\,}^{\mu\nu}}}=-\frac{c}{4\pi}\underset{\textnormal{relabel }\mu\leftrightarrow\nu}{\underbrace{\partial_{\mu}\partial_{\nu}F^{\nu\mu}}}=-\frac{c}{4\pi}\partial_{\nu}\partial_{\mu}F^{\mu\nu}=-\partial_{\nu}J^{\nu}
 \]
@@ -2614,7 +2614,7 @@ $\nabla\cdot\boldsymbol{A}=0$.
 \]
 \end{proof}
 \begin{rem}
-Combining Propositions \ref{prop:PoissonEquationsRho} and \ref{prop:PoissonsEquationsj},
+Combining \cref{prop:PoissonEquationsRho, prop:PoissonsEquationsj},
 we see that the components of the static electromagnetic potential
 obey Poisson's equation with $-\frac{4\pi}{c}$ times the components
 $\left(c\rho,\boldsymbol{j}\right)$ of the 4-current as the inhomogeneity.
@@ -3210,7 +3210,7 @@ is used to indicate a Fourier transform is taken.}
 \end{eqnarray*}
 \end{proof}
 \begin{rem}
-Thanks to the theory in \ref{sec:ch3sec2_Digression:-Fourier-transforms},
+Thanks to the theory in \cref{sec:ch3sec2_Digression:-Fourier-transforms},
 the class of solutions that can be constructed in this way is much
 larger than before, since weakly increasing functions are allowed.
 \end{rem}
@@ -4591,7 +4591,7 @@ wave equation.
 ~
 \begin{rem}
 By the superposition principle from \cref{chap:Maxwell's-Equations}
-\ref{sec:ch2sec5The-superposition-principle}, if $f:\mathbb{R}^{4}\rightarrow\mathbb{C}$
+\cref{sec:ch2sec5The-superposition-principle}, if $f:\mathbb{R}^{4}\rightarrow\mathbb{C}$
 is a solution, then so are $\textnormal{Re }f$, $\textnormal{Im }f$.
 \end{rem}
 What about $\boldsymbol{k}$?
@@ -4794,7 +4794,7 @@ is
 \boxed{\square f\left(\boldsymbol{x},t\right)=\left(\frac{1}{c^{2}}\partial_{t}^{2}-\nabla^{2}\right)f\left(\boldsymbol{x},t\right)=0}.\tag{*}
 \]
  Take a spacial Fourier transform (\cref{chap:Static-solutions-of}
-\ref{sec:ch3sec2_Digression:-Fourier-transforms}), where
+\cref{sec:ch3sec2_Digression:-Fourier-transforms}), where
 \[
 \underline{\hat{f}\left(\boldsymbol{k},t\right)=\indefint{\boldsymbol{x}}e^{-i\boldsymbol{k}\cdot\boldsymbol{x}}f\left(\boldsymbol{x},t\right)}
 \]
@@ -5645,7 +5645,7 @@ split the integrand $\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{y}\right)\boldsy
 into $\frac{1}{2}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{y}\right)\boldsymbol{j}+\frac{1}{2}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{y}\right)\boldsymbol{j}$,
 and added to the integrand $0=\frac{1}{2}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{j}\right)\boldsymbol{y}-\frac{1}{2}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{j}\right)\boldsymbol{y}$.
 \item Used vector identity $\boldsymbol{a}\times\left(\boldsymbol{b}\times\boldsymbol{c}\right)=\boldsymbol{b}\left(\boldsymbol{a}\cdot\boldsymbol{c}\right)-\boldsymbol{c}\left(\boldsymbol{a}\cdot\boldsymbol{b}\right)$.
-\item By definition (Ch \ref{chap:Static-solutions-of} \cref{sub:ch3sec4_7The-magnetic-moment}),
+\item By definition (\cref{chap:Static-solutions-of} \cref{sub:ch3sec4_7The-magnetic-moment}),
 the magnetic dipole moment is $\boldsymbol{m}\left(t\right):=\frac{1}{2c}\indefint{\boldsymbol{y}}\boldsymbol{y}\times\boldsymbol{j}\left(\boldsymbol{y},t\right)$.
 \item In this and the following sections, we use the notation $\frac{d}{dt}\Bigr|_{t_{e}}\boldsymbol{m}=:\dot{\boldsymbol{m}}\left(t_{e}\right)$.
 \end{enumerate}
@@ -5727,7 +5727,7 @@ are of the same order in $v/c$ (see Landau \& Lifshitz 71).
 
 \section{Spectral distribution of radiated energy}
 
-In \ref{sec:ch5sec3Radiation-by-time-dependent} we calculated the
+In \cref{sec:ch5sec3Radiation-by-time-dependent} we calculated the
 \emph{total} power radiated by a time-dependent source.
 \begin{description}
 \item [{question:}] How is this energy distributed over different frequencies?
@@ -5786,13 +5786,13 @@ applies:
 \item [{definition:}] $\boxed{\boldsymbol{k}:=\frac{\omega}{c}\hat{\boldsymbol{x}}}$
 is called \emph{wave vector}.\end{description}
 \begin{rem}
-This is consistent with Ch. \ref{chap:Electromagnetic-waves-in} \cref{sub:ch4sec1_5Polarization-of-electromagnetic}
+This is consistent with \cref{chap:Electromagnetic-waves-in} \cref{sub:ch4sec1_5Polarization-of-electromagnetic}
 \cref{rem:ch4sec1_5rem1The-direction-of}.
 \end{rem}
 ~
 \begin{rem}
 Far from the source, the wave fronts are approximately plane waves,
-so Ch. \ref{chap:Electromagnetic-waves-in} applies.
+so \cref{chap:Electromagnetic-waves-in} applies.
 \end{rem}
 \begin{eqnarray*}
 \implies\underline{\phi\left(\boldsymbol{x},\omega\right)} & \approx & \frac{1}{r}e^{ikr}\indefint{\boldsymbol{y}}e^{-i\boldsymbol{k}\cdot\boldsymbol{y}}\rho\left(\boldsymbol{y},\omega\right)\\
@@ -5869,8 +5869,8 @@ Check a static source: $\boldsymbol{j}\left(\boldsymbol{k},t\right)=\boldsymbol{
 \begin{proof}
 \emph{(of theorem)}
 
-The instantaneous flux of energy is given by the Poynting vector (ch.
-\ref{chap:Maxwell's-Equations} \cref{sub:ch2sec3_6Poynting's-theorem}):
+The instantaneous flux of energy is given by the Poynting vector (\cref{chap:Maxwell's-Equations}
+\cref{sub:ch2sec3_6Poynting's-theorem}):
 \[
 \boldsymbol{P}\left(\boldsymbol{x},t\right):=\frac{c}{4\pi}\boldsymbol{E}\left(\boldsymbol{x},t\right)\times\boldsymbol{B}\left(\boldsymbol{x},t\right).
 \]

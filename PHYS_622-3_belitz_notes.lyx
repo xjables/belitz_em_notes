@@ -1950,6 +1950,12 @@ equal to
 \end_layout
 
 \begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:ch1sec2_2Basis-transformations"
+
+\end_inset
+
 Basis transformations
 \end_layout
 
@@ -3727,6 +3733,19 @@ cref{cor:2_2_covar_coord_trafo}
 
 \end_inset
 
+ from 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch1sec2_2Basis-transformations}
+\end_layout
+
+\end_inset
+
 , 
 \begin_inset Formula 
 \begin{eqnarray*}
@@ -3792,17 +3811,42 @@ The divergence of a vector field transforms as a scalar:
 \end_layout
 
 \begin_layout Proof
-By Propositions 
-\begin_inset CommandInset ref
-LatexCommand vref
-reference "prop:2_2_contra_trafo"
+By 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{prop:3_2_del_trafo}
+\end_layout
 
 \end_inset
 
  and 
-\begin_inset CommandInset ref
-LatexCommand vref
-reference "prop:3_2_del_trafo"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{prop:2_2_contra_trafo}
+\end_layout
+
+\end_inset
+
+ from 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch1sec2_2Basis-transformations}
+\end_layout
 
 \end_inset
 
@@ -6074,9 +6118,15 @@ continuity equation
 
 \begin_layout Proof
 From 
-\begin_inset CommandInset ref
-LatexCommand vref
-reference "sub:ch2sec1_3The-field-equations"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec1_3The-field-equations}
+\end_layout
 
 \end_inset
 
@@ -10772,17 +10822,16 @@ where
 \end_layout
 
 \begin_layout Remark
-Combining Propositions 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "prop:PoissonEquationsRho"
+Combining 
+\begin_inset ERT
+status open
 
-\end_inset
+\begin_layout Plain Layout
 
- and 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "prop:PoissonsEquationsj"
+
+\backslash
+cref{prop:PoissonEquationsRho, prop:PoissonsEquationsj}
+\end_layout
 
 \end_inset
 
@@ -13115,9 +13164,15 @@ Here and elsewhere, the symbol
 
 \begin_layout Remark
 Thanks to the theory in 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:ch3sec2_Digression:-Fourier-transforms"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sec:ch3sec2_Digression:-Fourier-transforms}
+\end_layout
 
 \end_inset
 
@@ -18831,9 +18886,15 @@ cref{chap:Maxwell's-Equations}
 \end_inset
 
  
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:ch2sec5The-superposition-principle"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sec:ch2sec5The-superposition-principle}
+\end_layout
 
 \end_inset
 
@@ -19694,9 +19755,15 @@ cref{chap:Static-solutions-of}
 \end_inset
 
  
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:ch3sec2_Digression:-Fourier-transforms"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sec:ch3sec2_Digression:-Fourier-transforms}
+\end_layout
 
 \end_inset
 
@@ -23274,13 +23341,43 @@ Used vector identity
 \end_layout
 
 \begin_layout Enumerate
-By definition (Ch 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Static-solutions-of"
+By definition (
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Static-solutions-of}
+\end_layout
 
 \end_inset
 
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
  
 \family roman
 \series medium
@@ -23619,7 +23716,7 @@ Spectral distribution of radiated energy
 \end_layout
 
 \begin_layout Standard
-In 
+In
 \family roman
 \series medium
 \shape up
@@ -23631,10 +23728,16 @@ In
 \uwave off
 \noun off
 \color none
+ 
+\begin_inset ERT
+status open
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:ch5sec3Radiation-by-time-dependent"
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sec:ch5sec3Radiation-by-time-dependent}
+\end_layout
 
 \end_inset
 
@@ -23873,14 +23976,43 @@ wave vector
 \end_layout
 
 \begin_layout Remark
-This is consistent with Ch.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Electromagnetic-waves-in"
+This is consistent with 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Electromagnetic-waves-in}
+\end_layout
 
 \end_inset
 
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
  
 \family roman
 \series medium
@@ -23930,14 +24062,43 @@ cref{rem:ch4sec1_5rem1The-direction-of}
 \end_layout
 
 \begin_layout Remark
-Far from the source, the wave fronts are approximately plane waves, so Ch.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Electromagnetic-waves-in"
+Far from the source, the wave fronts are approximately plane waves, so 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Electromagnetic-waves-in}
+\end_layout
 
 \end_inset
 
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
  applies.
 \end_layout
 
@@ -24169,14 +24330,43 @@ don't know where this is coming from?
 \end_layout
 
 \begin_layout Proof
-The instantaneous flux of energy is given by the Poynting vector (ch.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Maxwell's-Equations"
+The instantaneous flux of energy is given by the Poynting vector (
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Maxwell's-Equations}
+\end_layout
 
 \end_inset
 
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
  
 \family roman
 \series medium
