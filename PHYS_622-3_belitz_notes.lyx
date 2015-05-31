@@ -12,7 +12,28 @@
 \usepackage{refstyle}
 \usepackage{arydshln,leftidx,mathtools}
 \usepackage{siunitx}
+\usepackage{cleveref}
 
+\crefname{thm}{Theorem}{Theorems}
+\Crefname{thm}{Theorem}{Theorems}
+\crefname{lem}{Lemma}{Lemmas}
+\Crefname{lem}{Lemma}{Lemmas}
+\crefname{rem}{Remark}{Remarks}
+\Crefname{rem}{Remark}{Remarks}
+\crefname{claim}{Claim}{Claims}
+\Crefname{claim}{Claim}{Claims}
+\crefname{example}{Example}{Examples}
+\Crefname{example}{Example}{Examples}
+\crefname{cor}{Corollary}{Corollaries}
+\Crefname{cor}{Corollary}{Corollaries}
+\crefname{prop}{Proposition}{Propositions}
+\Crefname{prop}{Proposition}{Propositions}
+\crefname{chapter}{Ch.}{Chapters}
+\Crefname{chapter}{Ch.}{Chapters}
+\crefname{section}{\S}{\S\S}
+\Crefname{section}{\S}{\S\S}
+\crefname{subsection}{\S}{\S\S}
+\Crefname{subsection}{\S}{\S\S}
 
 \renewcommand*\thesection{\arabic{section}}
 
@@ -109,7 +130,7 @@ theorems-bytype
 \maintain_unincluded_children false
 \language english
 \language_package default
-\inputencoding auto
+\inputencoding utf8
 \fontencoding global
 \font_roman default
 \font_sans default
@@ -1078,10 +1099,16 @@ where
 status open
 
 \begin_layout Plain Layout
-The proof of this is analogous to that of Proposition 
-\begin_inset CommandInset ref
-LatexCommand vref
-reference "prop:1The-coordinates-completely"
+The proof of this is analogous to that of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{prop:1The-coordinates-completely}
+\end_layout
 
 \end_inset
 
@@ -1207,9 +1234,15 @@ status open
 
 \begin_layout Plain Layout
 As per 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch1sec1_2Tensor-spaces"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch1sec1_2Tensor-spaces}
+\end_layout
 
 \end_inset
 
@@ -1471,10 +1504,16 @@ I gotta expand on this or explain why this is.
 
 \end_inset
 
- The tensors of Example 
-\begin_inset CommandInset ref
-LatexCommand vref
-reference "example:1_3_kronecker"
+ The tensors of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{example:1_3_kronecker}
+\end_layout
 
 \end_inset
 
@@ -2457,10 +2496,16 @@ Here, for whatever reason, the Kronecker delta is the Euclidean one.
 \begin_inset Formula $g$
 \end_inset
 
- can be considered a real symmetric matrix; by Lemma 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "lem:symmetric_implies_diagonalizable"
+ can be considered a real symmetric matrix; by 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{lem:symmetric_implies_diagonalizable}
+\end_layout
 
 \end_inset
 
@@ -2520,10 +2565,16 @@ with
 \end_layout
 
 \begin_layout Proof
-From Corollary 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "cor:diag_metric"
+From 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{cor:diag_metric}
+\end_layout
 
 \end_inset
 
@@ -2548,10 +2599,16 @@ Normed coordinate systems.
 
 \series default
 \emph default
- Basis sets in which the metric has the form of Theorem 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "thm:diag_metric_2"
+ Basis sets in which the metric has the form of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{thm:diag_metric_2}
+\end_layout
 
 \end_inset
 
@@ -2935,10 +2992,16 @@ Let
 \end_layout
 
 \begin_layout Proof
-From Definition 
-\begin_inset CommandInset ref
-LatexCommand vref
-reference "def:2_4_normal_coord_trafo"
+From 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{def:2_4_normal_coord_trafo}
+\end_layout
 
 \end_inset
 
@@ -3095,11 +3158,16 @@ pseudo-tensor field
 \end_layout
 
 \begin_layout Example
-Is the Levi-Civita tensor a tensor or pseudo-tensor? Recall that by Example
- 
-\begin_inset CommandInset ref
-LatexCommand vref
-reference "example:def_levicivita"
+Is the Levi-Civita tensor a tensor or pseudo-tensor? Recall that by 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{example:def_levicivita}
+\end_layout
 
 \end_inset
 
@@ -3312,10 +3380,16 @@ How did
 
 \end_inset
 
-As per Definition 
-\begin_inset CommandInset ref
-LatexCommand vref
-reference "definition:3_1_tensor_field"
+As per 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{definition:3_1_tensor_field}
+\end_layout
 
 \end_inset
 
@@ -3627,17 +3701,29 @@ Let
 \end_inset
 
  be a coordinate transformation.
- By Proposition 
-\begin_inset CommandInset ref
-LatexCommand vref
-reference "prop:3_2_del_trafo"
+ By 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{prop:3_2_del_trafo}
+\end_layout
 
 \end_inset
 
- and Corollary 
-\begin_inset CommandInset ref
-LatexCommand vref
-reference "cor:2_2_covar_coord_trafo"
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{cor:2_2_covar_coord_trafo}
+\end_layout
 
 \end_inset
 
@@ -3740,8 +3826,20 @@ Tensor products and traces
 \end_layout
 
 \begin_layout Standard
-We can generalize the concepts of the tensor product defined in Chapter
- 1 and the trace of a matrix.
+We can generalize the concepts of the tensor product defined in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Mathematical-preliminaries}
+\end_layout
+
+\end_inset
+
+ and the trace of a matrix.
 \end_layout
 
 \begin_layout Definition
@@ -4484,17 +4582,29 @@ end{eqnarray*}
 \end_layout
 
 \begin_layout Proof
-See Definition 
-\begin_inset CommandInset ref
-LatexCommand vref
-reference "def:3_4-is-called"
+See 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{def:3_4-is-called}
+\end_layout
 
 \end_inset
 
- and Lemma 
-\begin_inset CommandInset ref
-LatexCommand vref
-reference "lem:3_4_Antisymmetric-Euclidean-2-tensor"
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{lem:3_4_Antisymmetric-Euclidean-2-tensor}
+\end_layout
 
 \end_inset
 
@@ -4894,16 +5004,28 @@ is the position in space, and
 
 \begin_layout Remark
 We adopt the conventions outlined in 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "chap:Mathematical-preliminaries"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Mathematical-preliminaries}
+\end_layout
 
 \end_inset
 
 , 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "sub:ch1sec3_4Minkowski-tensors"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch1sec3_4Minkowski-tensors}
+\end_layout
 
 \end_inset
 
@@ -4990,16 +5112,28 @@ electromagnetic field tensor
 
 \begin_layout Remark
 By 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "chap:Mathematical-preliminaries"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Mathematical-preliminaries}
+\end_layout
 
 \end_inset
 
 , 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "sub:ch1sec3_4Minkowski-tensors"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch1sec3_4Minkowski-tensors}
+\end_layout
 
 \end_inset
 
@@ -5111,10 +5245,16 @@ status open
 \end_layout
 
 \begin_layout Remark
-As per Example 
-\begin_inset CommandInset ref
-LatexCommand vref
-reference "example:action_scalar"
+As per 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{example:action_scalar}
+\end_layout
 
 \end_inset
 
@@ -5840,10 +5980,16 @@ reference "eq:The_Field_equations"
 
 \end_inset
 
- by Proposition 
-\begin_inset CommandInset ref
-LatexCommand vref
-reference "prop:dual_tensor_gradient"
+ by 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{prop:dual_tensor_gradient}
+\end_layout
 
 \end_inset
 
@@ -6017,10 +6163,16 @@ In terms of
 \begin_inset Formula $\boldsymbol{j}$
 \end_inset
 
-, Proposition 
-\begin_inset CommandInset ref
-LatexCommand vref
-reference "prop:The-4-current-obeys"
+, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{prop:The-4-current-obeys}
+\end_layout
 
 \end_inset
 
@@ -6288,16 +6440,28 @@ F^{\mu\alpha}F{}^{\nu}{}_{\alpha}=g^{\alpha\beta}F{}^{\mu}{}_{\beta}g_{\alpha\ga
 
 \begin_layout Remark
 By 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "chap:Mathematical-preliminaries"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Mathematical-preliminaries}
+\end_layout
 
 \end_inset
 
 , 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch1sec3_4Minkowski-tensors"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch1sec3_4Minkowski-tensors}
+\end_layout
 
 \end_inset
 
@@ -6352,10 +6516,16 @@ In the absence of matter (
 \end_layout
 
 \begin_layout Proof
-From Definition 
-\begin_inset CommandInset ref
-LatexCommand vref
-reference "def:energy-momentum-tensor-field"
+From 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{def:energy-momentum-tensor-field}
+\end_layout
 
 \end_inset
 
@@ -6497,9 +6667,15 @@ For any rank-
 \end_inset
 
  by the arguments from 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec2_1Continuity-equation-for"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec2_1Continuity-equation-for}
+\end_layout
 
 \end_inset
 
@@ -6713,10 +6889,29 @@ Since
 \begin_inset Formula $F^{\mu\nu}$
 \end_inset
 
- is an antisymmetric Minkowski tensor, from Chapter 1, 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch1sec3_4Minkowski-tensors"
+ is an antisymmetric Minkowski tensor, from 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Mathematical-preliminaries}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch1sec3_4Minkowski-tensors}
+\end_layout
 
 \end_inset
 
@@ -7074,10 +7269,29 @@ end{eqnarray*}
 \begin_inset space \space{}
 \end_inset
 
-From Chapter 1, 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch1sec3_4Minkowski-tensors"
+From 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Mathematical-preliminaries}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch1sec3_4Minkowski-tensors}
+\end_layout
 
 \end_inset
 
@@ -7154,9 +7368,15 @@ This is analogous to
 \end_inset
 
  the current density (see 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec2_1Continuity-equation-for"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec2_1Continuity-equation-for}
+\end_layout
 
 \end_inset
 
@@ -7169,9 +7389,15 @@ Maxwell's equations
 
 \begin_layout Standard
 From 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec1_3The-field-equations"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec1_3The-field-equations}
+\end_layout
 
 \end_inset
 
@@ -7371,9 +7597,15 @@ These are the four homogeneous PDEs known as the first two Maxwell Equations.
 
 \begin_layout Remark
 Now consider, from 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec1_3The-field-equations"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec1_3The-field-equations}
+\end_layout
 
 \end_inset
 
@@ -8219,9 +8451,15 @@ The electric and magnetic fields are related to the 4-potential by
 
 \begin_layout Proof
 From 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec3_1The-field-tensor"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec3_1The-field-tensor}
+\end_layout
 
 \end_inset
 
@@ -8550,9 +8788,15 @@ Consider the continuity equation for the energy-momentum tensor
 \end_inset
 
  from 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec2_3The-continuity-equation"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec2_3The-continuity-equation}
+\end_layout
 
 \end_inset
 
@@ -8581,9 +8825,15 @@ Recall that
 \end_inset
 
  from 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec2_2The-energy-momentum-tensor"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec2_2The-energy-momentum-tensor}
+\end_layout
 
 \end_inset
 
@@ -8591,10 +8841,29 @@ reference "sub:ch2sec2_2The-energy-momentum-tensor"
 \begin_inset Formula $F_{\alpha\beta}F^{\alpha\beta}=2\left(\boldsymbol{E}^{2}-\boldsymbol{B}^{2}\right)$
 \end_inset
 
- from Chapter 1 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch1sec3_4Minkowski-tensors"
+ from 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Mathematical-preliminaries}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch1sec3_4Minkowski-tensors}
+\end_layout
 
 \end_inset
 
@@ -8703,9 +8972,15 @@ For
 
 , this expresses local energy conservation.
  It is analogous to 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec2_1Continuity-equation-for"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec2_1Continuity-equation-for}
+\end_layout
 
 \end_inset
 
@@ -8729,9 +9004,15 @@ reference "sub:ch2sec2_1Continuity-equation-for"
 
 \begin_layout Remark
 Recall from 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec3_5Charges-in-electromagnetic"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec3_5Charges-in-electromagnetic}
+\end_layout
 
 \end_inset
 
@@ -8795,9 +9076,15 @@ Let
 \end_inset
 
  be the current density due to just one particle, as in 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec3_5Charges-in-electromagnetic"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec3_5Charges-in-electromagnetic}
+\end_layout
 
 \end_inset
 
@@ -8835,9 +9122,15 @@ E_{kin}=\frac{m}{2}\boldsymbol{v}^{2}
 \end_inset
 
  where the last step follows from 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec3_5Charges-in-electromagnetic"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec3_5Charges-in-electromagnetic}
+\end_layout
 
 \end_inset
 
@@ -8929,9 +9222,15 @@ energy current density of the field
 
 \begin_layout Remark
 The remaining components of the continuity equation from 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec2_3The-continuity-equation"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec2_3The-continuity-equation}
+\end_layout
 
 \end_inset
 
@@ -9163,9 +9462,15 @@ NOT the dual field tensor
 
  be a Lorentz boost.
  Then, from 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec3_1The-field-tensor"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec3_1The-field-tensor}
+\end_layout
 
 \end_inset
 
@@ -9710,10 +10015,16 @@ Let
 \end_layout
 
 \begin_layout Proof
-Generalize Proposition 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "prop:LinearSolutions"
+Generalize 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{prop:LinearSolutions}
+\end_layout
 
 \end_inset
 
@@ -9832,10 +10143,16 @@ Let
 \end_layout
 
 \begin_layout Proof
-By Proposition 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "prop:LinearSolutions"
+By 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{prop:LinearSolutions}
+\end_layout
 
 \end_inset
 
@@ -10184,17 +10501,29 @@ Consider Maxwell's equations for static fields:
 \end_layout
 
 \begin_layout Remark
-From Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Maxwell's-Equations"
+From 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Maxwell's-Equations}
+\end_layout
 
 \end_inset
 
-, 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec3_4Relations-between-fields"
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec3_4Relations-between-fields}
+\end_layout
 
 \end_inset
 
@@ -10335,17 +10664,29 @@ Magnetostatics
 \end_layout
 
 \begin_layout Standard
-From Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Maxwell's-Equations"
+From 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Maxwell's-Equations}
+\end_layout
 
 \end_inset
 
 , 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec3_4Relations-between-fields"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec3_4Relations-between-fields}
+\end_layout
 
 \end_inset
 
@@ -10472,25 +10813,42 @@ name "rem:Ch3sec1_2rem4_linear"
 \end_inset
 
 Poisson's equation is linear; thus, the most general solution is a particular
- solution plus the most general solution of Laplace's equation (see Chapter
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Maxwell's-Equations"
+ solution plus the most general solution of Laplace's equation (see 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Maxwell's-Equations}
+\end_layout
 
 \end_inset
 
  
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec5_1Real-solutions"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec5_1Real-solutions}
+\end_layout
 
 \end_inset
 
- Corollary 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "cor:The-most-general"
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{cor:The-most-general}
+\end_layout
 
 \end_inset
 
@@ -10508,21 +10866,33 @@ reference "cor:The-most-general"
 \begin_layout Remark
 \begin_inset CommandInset label
 LatexCommand label
-name "rem:Ch3sec1_2rem5_From-§-Remark"
+name "rem:Ch3sec1_2rem5_From--Remark"
 
 \end_inset
 
 From 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec1_1Electrostatics"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec1_1Electrostatics}
+\end_layout
 
 \end_inset
 
- Remark 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "rem:A-harmonic-functionextrema"
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{rem:A-harmonic-functionextrema}
+\end_layout
 
 \end_inset
 
@@ -11069,10 +11439,16 @@ I thought there was a change in sign?
 \end_layout
 
 \begin_layout Proof
-Consider Lemma 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "lem:inverse_fourier"
+Consider 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{lem:inverse_fourier}
+\end_layout
 
 \end_inset
 
@@ -11523,9 +11899,15 @@ Specifically,
 
 \begin_layout Remark
 The inverse Fourier transform is given by the theorem in 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec2_2Inverse-Fourier-transforms"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec2_2Inverse-Fourier-transforms}
+\end_layout
 
 \end_inset
 
@@ -11909,10 +12291,16 @@ Consider the ordinary function
 \end_inset
 
 .
- This function fulfills the premise of Proposition 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "prop:ordinary_generalized_functions"
+ This function fulfills the premise of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{prop:ordinary_generalized_functions}
+\end_layout
 
 \end_inset
 
@@ -12037,10 +12425,16 @@ Consider the test functions
 \begin_inset Formula $f_{n}\left(x\right)$
 \end_inset
 
- that make up a regular sequence (in the sense of Definition 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "def:Regular-sequences.-Let"
+ that make up a regular sequence (in the sense of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{def:Regular-sequences.-Let}
+\end_layout
 
 \end_inset
 
@@ -12062,10 +12456,16 @@ e class.
 \end_layout
 
 \begin_layout Proposition
-Under the conditions of Definition 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "def:distribution_limit"
+Under the conditions of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{def:distribution_limit}
+\end_layout
 
 \end_inset
 
@@ -12167,10 +12567,16 @@ First, note that
 \begin_inset Formula $f_{n}$
 \end_inset
 
- are test functions, as required by Definition 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "def:Generalized-functions,-regulariz"
+ are test functions, as required by 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{def:Generalized-functions,-regulariz}
+\end_layout
 
 \end_inset
 
@@ -12237,16 +12643,28 @@ Consider the regularization
 
 .
  But from 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec2_4Generalized-functions"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec2_4Generalized-functions}
+\end_layout
 
 \end_inset
 
- Example 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "example:constant_gen_function"
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{example:constant_gen_function}
+\end_layout
 
 \end_inset
 
@@ -12276,9 +12694,15 @@ function can be written
 
 \begin_layout Proof
 From the theorem from 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec2_2Inverse-Fourier-transforms"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec2_2Inverse-Fourier-transforms}
+\end_layout
 
 \end_inset
 
@@ -12308,16 +12732,28 @@ status open
 
 \begin_layout Plain Layout
 As per 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec2_3Test-functions"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec2_3Test-functions}
+\end_layout
 
 \end_inset
 
- Definition 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "def:Weakly-increasing-functions."
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{def:Weakly-increasing-functions.}
+\end_layout
 
 \end_inset
 
@@ -12639,9 +13075,15 @@ I wanna double check this equation
 
 \begin_layout Proof
 From 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec1_1Electrostatics"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec1_1Electrostatics}
+\end_layout
 
 \end_inset
 
@@ -12693,21 +13135,33 @@ reference "sec:ch3sec2_Digression:-Fourier-transforms"
 \begin_layout Remark
 \begin_inset CommandInset label
 LatexCommand label
-name "rem:ch3sec3_1_rem2§-Remark-"
+name "rem:ch3sec3_1_rem2-Remark-"
 
 \end_inset
 
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec1_2Magnetostatics"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec1_2Magnetostatics}
+\end_layout
 
 \end_inset
 
- Remark 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "rem:Ch3sec1_2rem5_From-§-Remark"
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{rem:Ch3sec1_2rem5_From--Remark}
+\end_layout
 
 \end_inset
 
@@ -12743,16 +13197,28 @@ Not sure I get this...
 
 \begin_layout Remark
 All of this is consistent with 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec1_2Magnetostatics"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec1_2Magnetostatics}
+\end_layout
 
 \end_inset
 
- Remark 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "rem:Ch3sec1_2rem4_linear"
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{rem:Ch3sec1_2rem4_linear}
+\end_layout
 
 \end_inset
 
@@ -12910,9 +13376,15 @@ Poisson's formula
 
 \begin_layout Proof
 From 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec3_1The-general-solution"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec3_1The-general-solution}
+\end_layout
 
 \end_inset
 
@@ -12934,9 +13406,15 @@ reference "sub:ch3sec3_1The-general-solution"
 \end_inset
 
  From the convolution theorem from 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec2_1The-Fourier-transform"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec2_1The-Fourier-transform}
+\end_layout
 
 \end_inset
 
@@ -13014,9 +13492,15 @@ Let
 
  be the inertial frame in which the charge is at rest.
  From 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec3_2The-Coulomb-potential"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec3_2The-Coulomb-potential}
+\end_layout
 
 \end_inset
 
@@ -13067,17 +13551,29 @@ Let
 \begin_inset Formula $CS'$
 \end_inset
 
- are related by a Lorentz boost; from Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Maxwell's-Equations"
+ are related by a Lorentz boost; from 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Maxwell's-Equations}
+\end_layout
 
 \end_inset
 
  
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec4_1Physical-interpretation-of"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec4_1Physical-interpretation-of}
+\end_layout
 
 \end_inset
 
@@ -13179,17 +13675,29 @@ We calculate the fields using the same procedure.
 
 \end_inset
 
- We boost these, using the results from Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Maxwell's-Equations"
+ We boost these, using the results from 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Maxwell's-Equations}
+\end_layout
 
 \end_inset
 
  
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec4_2Transformations-of-"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec4_2Transformations-of-}
+\end_layout
 
 \end_inset
 
@@ -13227,17 +13735,29 @@ What about
 \begin_inset Formula $\boldsymbol{B}$
 \end_inset
 
-? Again, from Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Maxwell's-Equations"
+? Again, from 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Maxwell's-Equations}
+\end_layout
 
 \end_inset
 
  
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec4_2Transformations-of-"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec4_2Transformations-of-}
+\end_layout
 
 \end_inset
 
@@ -13474,17 +13994,29 @@ The energy of the electric field produced by
 \end_layout
 
 \begin_layout Proof
-From Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Maxwell's-Equations"
+From 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Maxwell's-Equations}
+\end_layout
 
 \end_inset
 
  
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec3_6Poynting's-theorem"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec3_6Poynting's-theorem}
+\end_layout
 
 \end_inset
 
@@ -13501,9 +14033,15 @@ U & = & \frac{1}{8\pi}\underset{V}{\int}d\boldsymbol{x}\:\boldsymbol{E}^{2}\left
 \end_inset
 
 where the last line follows from Poisson's formula (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec3_3Poisson's-formula"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec3_3Poisson's-formula}
+\end_layout
 
 \end_inset
 
@@ -13757,9 +14295,15 @@ steady
 
 \begin_layout Proof
 From 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec1_2Magnetostatics"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec1_2Magnetostatics}
+\end_layout
 
 \end_inset
 
@@ -13774,16 +14318,28 @@ reference "sub:ch3sec1_2Magnetostatics"
 
 \begin_layout Remark
 The proof in 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec1_2Magnetostatics"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec1_2Magnetostatics}
+\end_layout
 
 \end_inset
 
- Proposition 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "prop:PoissonsEquationsj"
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{prop:PoissonsEquationsj}
+\end_layout
 
 \end_inset
 
@@ -13917,10 +14473,16 @@ The energy of the magnetic field produced by
 \begin_layout Proof
 
 \emph on
-(Of Proposition 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "prop:magnetostatic_interaction"
+(Of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{prop:magnetostatic_interaction}
+\end_layout
 
 \end_inset
 
@@ -13928,17 +14490,29 @@ reference "prop:magnetostatic_interaction"
 \end_layout
 
 \begin_layout Proof
-From Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Maxwell's-Equations"
+From 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Maxwell's-Equations}
+\end_layout
 
 \end_inset
 
  
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec3_6Poynting's-theorem"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec3_6Poynting's-theorem}
+\end_layout
 
 \end_inset
 
@@ -13965,16 +14539,28 @@ From the lemma above.
 
 \begin_layout Enumerate
 From 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec3_6The-law-of"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec3_6The-law-of}
+\end_layout
 
 \end_inset
 
- Proposition 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "prop:A-stationary-current"
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{prop:A-stationary-current}
+\end_layout
 
 \end_inset
 
@@ -14105,9 +14691,15 @@ Let
 
  where the last step follows from the binomial approximation.
  Poisson's formula (
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec3_3Poisson's-formula"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec3_3Poisson's-formula}
+\end_layout
 
 \end_inset
 
@@ -14304,9 +14896,15 @@ The field at large distances is
 \end_inset
 
  (see 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec3_2The-Coulomb-potential"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec3_2The-Coulomb-potential}
+\end_layout
 
 \end_inset
 
@@ -15314,16 +15912,28 @@ Consider the Laplace operator:
 \end_inset
 
  from 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec4_2Legendre-functions-and"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec4_2Legendre-functions-and}
+\end_layout
 
 \end_inset
 
- Remark 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "rem:9_spherical_harmonic_propertiesThe--have"
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{rem:9_spherical_harmonic_propertiesThe--have}
+\end_layout
 
 \end_inset
 
@@ -15426,10 +16036,16 @@ This theorem is also very useful in Quantum Mechanics.
 \begin_layout Proof
 
 \emph on
-(Of Theorem 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "thm:Spherical-differential-equation"
+(Of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{thm:Spherical-differential-equation}
+\end_layout
 
 \end_inset
 
@@ -15455,24 +16071,42 @@ ansatz:
 \end_inset
 
  (see 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec4_2Legendre-functions-and"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec4_2Legendre-functions-and}
+\end_layout
 
 \end_inset
 
 ).
  By 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec4_2Legendre-functions-and"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec4_2Legendre-functions-and}
+\end_layout
 
 \end_inset
 
- Theorem 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "thm:Completeness-of-spherical"
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{thm:Completeness-of-spherical}
+\end_layout
 
 \end_inset
 
@@ -15604,9 +16238,15 @@ Since
 \end_inset
 
  using the theorem in 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec4_3Separation-of-the"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec4_3Separation-of-the}
+\end_layout
 
 \end_inset
 
@@ -15708,30 +16348,54 @@ Thus, the only harmonic function that is finite at
 \end_inset
 
  contribution (see 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec1_2Magnetostatics"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec1_2Magnetostatics}
+\end_layout
 
 \end_inset
 
- Remark 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "rem:Ch3sec1_2rem5_From-§-Remark"
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{rem:Ch3sec1_2rem5_From--Remark}
+\end_layout
 
 \end_inset
 
 , 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec3_1The-general-solution"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec3_1The-general-solution}
+\end_layout
 
 \end_inset
 
- Remark 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "rem:ch3sec3_1_rem2§-Remark-"
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{rem:ch3sec3_1_rem2-Remark-}
+\end_layout
 
 \end_inset
 
@@ -15829,17 +16493,29 @@ Note that it is only possible to factor
 \end_layout
 
 \begin_layout Enumerate
-From Theorem 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "thm:Completeness-of-theLegendre"
+From 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{thm:Completeness-of-theLegendre}
+\end_layout
 
 \end_inset
 
  in 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec4_2Legendre-functions-and"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec4_2Legendre-functions-and}
+\end_layout
 
 \end_inset
 
@@ -15856,9 +16532,15 @@ From the
 Addition Theorem
 \emph default
  in 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec4_2Legendre-functions-and"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec4_2Legendre-functions-and}
+\end_layout
 
 \end_inset
 
@@ -15880,9 +16562,15 @@ Remaining question:
 
 \begin_layout Proof
 From 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec4_4Expansion-of-harmonic"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec4_4Expansion-of-harmonic}
+\end_layout
 
 \end_inset
 
@@ -15916,9 +16604,15 @@ reference "sub:ch3sec4_4Expansion-of-harmonic"
 
 .
  By 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec4_4Expansion-of-harmonic"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec4_4Expansion-of-harmonic}
+\end_layout
 
 \end_inset
 
@@ -16045,9 +16739,15 @@ multipole moments
 
 \begin_layout Proof
 From 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec3_3Poisson's-formula"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec3_3Poisson's-formula}
+\end_layout
 
 \end_inset
 
@@ -16227,9 +16927,15 @@ I think it has to be greater, that is
 
 \begin_layout Standard
 From 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec3_5Electrostatic-interaction"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec3_5Electrostatic-interaction}
+\end_layout
 
 \end_inset
 
@@ -16326,9 +17032,15 @@ If
 \end_inset
 
  From 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec1_1Electrostatics"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec1_1Electrostatics}
+\end_layout
 
 \end_inset
 
@@ -16589,9 +17301,15 @@ where
 
 \begin_layout Remark
 Alternatively, we can use the spherical harmonic expansion from 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec4_4Expansion-of-harmonic"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec4_4Expansion-of-harmonic}
+\end_layout
 
 \end_inset
 
@@ -16626,9 +17344,15 @@ reference "sub:ch3sec4_4Expansion-of-harmonic"
 \end_inset
 
  where, as per 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec4_5Multipole-expansion-of"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec4_5Multipole-expansion-of}
+\end_layout
 
 \end_inset
 
@@ -16688,9 +17412,15 @@ The magnetic moment
 
 \begin_layout Standard
 From 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec3_6The-law-of"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec3_6The-law-of}
+\end_layout
 
 \end_inset
 
@@ -16809,9 +17539,15 @@ Now consider the time averaged vector potential
 \end_inset
 
  From 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec3_6The-law-of"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec3_6The-law-of}
+\end_layout
 
 \end_inset
 
@@ -16834,9 +17570,15 @@ Expanding
 \end_inset
 
  as per 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec4_1The-electric-dipole"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec4_1The-electric-dipole}
+\end_layout
 
 \end_inset
 
@@ -16844,10 +17586,16 @@ reference "sub:ch3sec4_1The-electric-dipole"
 \end_layout
 
 \begin_layout Enumerate
-The monopole contribution is zero by Remark 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "rem:remark1_stationary_m4"
+The monopole contribution is zero by 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{rem:remark1_stationary_m4}
+\end_layout
 
 \end_inset
 
@@ -16965,9 +17713,15 @@ The magnetic field for large distances from the current density is
 
 \begin_layout Proof
 Analogous to 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec4_1The-electric-dipole"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec4_1The-electric-dipole}
+\end_layout
 
 \end_inset
 
@@ -17119,25 +17873,42 @@ Consider vacuum:
 \end_layout
 
 \begin_layout Remark
-Any solutions to Maxwell's Equations must be time-dependent since in Chapter
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Static-solutions-of"
+Any solutions to Maxwell's Equations must be time-dependent since in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Static-solutions-of}
+\end_layout
 
 \end_inset
 
  
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec1_1Electrostatics"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec1_1Electrostatics}
+\end_layout
 
 \end_inset
 
 , 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec1_2Magnetostatics"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec1_2Magnetostatics}
+\end_layout
 
 \end_inset
 
@@ -17169,17 +17940,29 @@ Wave equation.
 \end_layout
 
 \begin_layout Proof
-From Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Maxwell's-Equations"
+From 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Maxwell's-Equations}
+\end_layout
 
 \end_inset
 
  
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec1_3The-field-equations"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec1_3The-field-equations}
+\end_layout
 
 \end_inset
 
@@ -17295,17 +18078,29 @@ The electric and magnetic fields also obey the wave equation:
 \end_layout
 
 \begin_layout Proof
-From Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Maxwell's-Equations"
+From 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Maxwell's-Equations}
+\end_layout
 
 \end_inset
 
  
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec3_4Relations-between-fields"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec3_4Relations-between-fields}
+\end_layout
 
 \end_inset
 
@@ -17384,9 +18179,15 @@ Let
 
 .
  From 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch4sec1_1The-wave-equation"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch4sec1_1The-wave-equation}
+\end_layout
 
 \end_inset
 
@@ -17856,17 +18657,29 @@ The Poynting vector is given by
 \end_layout
 
 \begin_layout Proof
-From Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Maxwell's-Equations"
+From 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Maxwell's-Equations}
+\end_layout
 
 \end_inset
 
  
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec3_6Poynting's-theorem"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec3_6Poynting's-theorem}
+\end_layout
 
 \end_inset
 
@@ -18004,10 +18817,16 @@ I wanna double check this :O
 \end_layout
 
 \begin_layout Remark
-By the superposition principle from Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Maxwell's-Equations"
+By the superposition principle from 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Maxwell's-Equations}
+\end_layout
 
 \end_inset
 
@@ -18352,9 +19171,15 @@ The direction of propagation
 \end_inset
 
  from 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch4sec1_3Orientation-of-the"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch4sec1_3Orientation-of-the}
+\end_layout
 
 \end_inset
 
@@ -18367,9 +19192,15 @@ reference "sub:ch4sec1_3Orientation-of-the"
 \end_inset
 
  From 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch4sec1_3Orientation-of-the"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch4sec1_3Orientation-of-the}
+\end_layout
 
 \end_inset
 
@@ -18829,9 +19660,15 @@ The wave equation in Fourier space
 
 \begin_layout Standard
 From 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch4sec1_1The-wave-equation"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch4sec1_1The-wave-equation}
+\end_layout
 
 \end_inset
 
@@ -18843,10 +19680,16 @@ reference "sub:ch4sec1_1The-wave-equation"
 
 \end_inset
 
- Take a spacial Fourier transform (Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Static-solutions-of"
+ Take a spacial Fourier transform (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Static-solutions-of}
+\end_layout
 
 \end_inset
 
@@ -19173,10 +20016,16 @@ idea:
 \end_layout
 
 \begin_layout Itemize
-static solutions of Maxwell's equations with sources (Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Static-solutions-of"
+static solutions of Maxwell's equations with sources (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Static-solutions-of}
+\end_layout
 
 \end_inset
 
@@ -19184,10 +20033,16 @@ reference "chap:Static-solutions-of"
 \end_layout
 
 \begin_layout Itemize
-dynamic solutions of Maxwell's equations in vacuum (Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Electromagnetic-waves-in"
+dynamic solutions of Maxwell's equations in vacuum (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Electromagnetic-waves-in}
+\end_layout
 
 \end_inset
 
@@ -19217,17 +20072,29 @@ Fields and potentials
 \end_layout
 
 \begin_layout Standard
-Recall in Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Maxwell's-Equations"
+Recall in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Maxwell's-Equations}
+\end_layout
 
 \end_inset
 
  
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec3_4Relations-between-fields"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec3_4Relations-between-fields}
+\end_layout
 
 \end_inset
 
@@ -19276,17 +20143,29 @@ The homogeneous Maxwell equations are automatically fulfilled by these.
 \end_layout
 
 \begin_layout Remark
-From Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Maxwell's-Equations"
+From 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Maxwell's-Equations}
+\end_layout
 
 \end_inset
 
  
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec3_1The-field-tensor"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec3_1The-field-tensor}
+\end_layout
 
 \end_inset
 
@@ -19316,17 +20195,29 @@ The inhomogeneous Maxwell equations (M3, M4) are equivalent to four PDEs,
 status open
 
 \begin_layout Plain Layout
-Compare with Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Electromagnetic-waves-in"
+Compare with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Electromagnetic-waves-in}
+\end_layout
 
 \end_inset
 
  
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch4sec1_1The-wave-equation"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch4sec1_1The-wave-equation}
+\end_layout
 
 \end_inset
 
@@ -19347,17 +20238,29 @@ reference "sub:ch4sec1_1The-wave-equation"
 \end_layout
 
 \begin_layout Proof
-From Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Maxwell's-Equations"
+From 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Maxwell's-Equations}
+\end_layout
 
 \end_inset
 
  
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec1_3The-field-equations"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec1_3The-field-equations}
+\end_layout
 
 \end_inset
 
@@ -19529,10 +20432,16 @@ Gauge conventions
 \end_layout
 
 \begin_layout Standard
-From Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Maxwell's-Equations"
+From 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Maxwell's-Equations}
+\end_layout
 
 \end_inset
 
@@ -19549,9 +20458,15 @@ reference "chap:Maxwell's-Equations"
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec2_4Gauge-invariance"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec2_4Gauge-invariance}
+\end_layout
 
 \end_inset
 
@@ -19794,9 +20709,15 @@ In Lorenz gauge, the field equations for the potentials
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec1_1Fields-and-potentials"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec1_1Fields-and-potentials}
+\end_layout
 
 \end_inset
 
@@ -19840,9 +20761,15 @@ Lorenz gauge
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec1_1Fields-and-potentials"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec1_1Fields-and-potentials}
+\end_layout
 
 \end_inset
 
@@ -19880,10 +20807,16 @@ I really don't get this proof.
 \end_layout
 
 \begin_layout Remark
-From Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Maxwell's-Equations"
+From 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Maxwell's-Equations}
+\end_layout
 
 \end_inset
 
@@ -19900,9 +20833,15 @@ reference "chap:Maxwell's-Equations"
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec2_1Continuity-equation-for"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec2_1Continuity-equation-for}
+\end_layout
 
 \end_inset
 
@@ -19941,9 +20880,15 @@ In Coulomb gauge, the field equations become
 \uwave off
 \noun off
 \color none
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec1_1Fields-and-potentials"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec1_1Fields-and-potentials}
+\end_layout
 
 \end_inset
 
@@ -20200,9 +21145,15 @@ To find the form of Green's functions, take the Fourier transform of
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec2_1The-concept-of"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec2_1The-concept-of}
+\end_layout
 
 \end_inset
 
@@ -20274,24 +21225,42 @@ Integrating by parts twice and assuming
 \begin_inset Formula $\pm\infty$
 \end_inset
 
-, or, using Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Static-solutions-of"
+, or, using 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Static-solutions-of}
+\end_layout
 
 \end_inset
 
  
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec2_1The-Fourier-transform"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec2_1The-Fourier-transform}
+\end_layout
 
 \end_inset
 
- Proposition 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "prop:fourier_of_derivativeLet--be"
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{prop:fourier_of_derivativeLet--be}
+\end_layout
 
 \end_inset
 
@@ -20414,9 +21383,15 @@ The defining equation for the Green's functions (
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec2_1The-concept-of"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec2_1The-concept-of}
+\end_layout
 
 \end_inset
 
@@ -20461,9 +21436,15 @@ Consider a point-like, time-dependent source
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec2_1The-concept-of"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec2_1The-concept-of}
+\end_layout
 
 \end_inset
 
@@ -20593,16 +21574,28 @@ We can obtain the potentials by applying the proposition from
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec2_1The-concept-of"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec2_1The-concept-of}
+\end_layout
 
 \end_inset
 
  and results from 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec2_2Green's-functions-for"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec2_2Green's-functions-for}
+\end_layout
 
 \end_inset
 
@@ -20699,10 +21692,16 @@ The time delay
 \end_inset
 
  are analogous to Poisson's formula in the static case (cf.
- Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Static-solutions-of"
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Static-solutions-of}
+\end_layout
 
 \end_inset
 
@@ -20719,9 +21718,15 @@ reference "chap:Static-solutions-of"
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec3_6The-law-of"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec3_6The-law-of}
+\end_layout
 
 \end_inset
 
@@ -20764,9 +21769,15 @@ Consider retarded potentials (
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec2_3The-retarded-potentials"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec2_3The-retarded-potentials}
+\end_layout
 
 \end_inset
 
@@ -20995,10 +22006,16 @@ NOT SURE ABOUT THE ORDER ONE OVER R
 \end_layout
 
 \begin_layout Proof
-By the continuity equation (Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Maxwell's-Equations"
+By the continuity equation (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Maxwell's-Equations}
+\end_layout
 
 \end_inset
 
@@ -21015,9 +22032,15 @@ reference "chap:Maxwell's-Equations"
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec2_1Continuity-equation-for"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec2_1Continuity-equation-for}
+\end_layout
 
 \end_inset
 
@@ -21159,9 +22182,15 @@ The fields fall off as
 \noun off
 \color none
 From 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec1_1Fields-and-potentials"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec1_1Fields-and-potentials}
+\end_layout
 
 \end_inset
 
@@ -21234,9 +22263,15 @@ By lemma 1,
 \noun off
 \color none
 From 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec1_1Fields-and-potentials"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec1_1Fields-and-potentials}
+\end_layout
 
 \end_inset
 
@@ -21415,10 +22450,16 @@ The radiated power
 \end_layout
 
 \begin_layout Standard
-From Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Maxwell's-Equations"
+From 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Maxwell's-Equations}
+\end_layout
 
 \end_inset
 
@@ -21435,9 +22476,15 @@ reference "chap:Maxwell's-Equations"
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec3_6Poynting's-theorem"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec3_6Poynting's-theorem}
+\end_layout
 
 \end_inset
 
@@ -21665,9 +22712,15 @@ time:
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec2_3The-retarded-potentials"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec2_3The-retarded-potentials}
+\end_layout
 
 \end_inset
 
@@ -22077,9 +23130,15 @@ From
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec3_2The-radiated-power"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec3_2The-radiated-power}
+\end_layout
 
 \end_inset
 
@@ -22142,9 +23201,15 @@ Now we keep corrections to the approximation we made (
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec3_2The-radiated-power"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec3_2The-radiated-power}
+\end_layout
 
 \end_inset
 
@@ -22229,9 +23294,15 @@ reference "chap:Static-solutions-of"
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch3sec4_7The-magnetic-moment"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch3sec4_7The-magnetic-moment}
+\end_layout
 
 \end_inset
 
@@ -22606,9 +23677,15 @@ From
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec2_3The-retarded-potentials"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec2_3The-retarded-potentials}
+\end_layout
 
 \end_inset
 
@@ -22622,9 +23699,15 @@ reference "sub:ch5sec2_3The-retarded-potentials"
 
  Define a temporal Fourier transform (cf.
  
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec2_2Green's-functions-for"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec2_2Green's-functions-for}
+\end_layout
 
 \end_inset
 
@@ -22745,9 +23828,15 @@ For large distances
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec3_1Asymptotic-potentials-and"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec3_1Asymptotic-potentials-and}
+\end_layout
 
 \end_inset
 
@@ -22805,16 +23894,28 @@ reference "chap:Electromagnetic-waves-in"
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch4sec1_5Polarization-of-electromagnetic"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch4sec1_5Polarization-of-electromagnetic}
+\end_layout
 
 \end_inset
 
- remark 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "rem:ch4sec1_5rem1The-direction-of"
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{rem:ch4sec1_5rem1The-direction-of}
+\end_layout
 
 \end_inset
 
@@ -22924,9 +24025,15 @@ The expression for
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec3_1Asymptotic-potentials-and"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec3_1Asymptotic-potentials-and}
+\end_layout
 
 \end_inset
 
@@ -23083,9 +24190,15 @@ reference "chap:Maxwell's-Equations"
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch2sec3_6Poynting's-theorem"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch2sec3_6Poynting's-theorem}
+\end_layout
 
 \end_inset
 
@@ -23102,9 +24215,15 @@ reference "sub:ch2sec3_6Poynting's-theorem"
 \end_inset
 
  radiated into a solid angle is (see 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec3_2The-radiated-power"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec3_2The-radiated-power}
+\end_layout
 
 \end_inset
 
@@ -23167,9 +24286,15 @@ don't get this
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec4_2Asymptotic-potentials-and"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec4_2Asymptotic-potentials-and}
+\end_layout
 
 \end_inset
 
@@ -23210,9 +24335,15 @@ From
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec4_2Asymptotic-potentials-and"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec4_2Asymptotic-potentials-and}
+\end_layout
 
 \end_inset
 
@@ -23253,9 +24384,15 @@ From
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec4_3The-spectral-distribution"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec4_3The-spectral-distribution}
+\end_layout
 
 \end_inset
 
@@ -23345,9 +24482,15 @@ By
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec3_4Dipole-radiation"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec3_4Dipole-radiation}
+\end_layout
 
 \end_inset
 
@@ -23528,9 +24671,15 @@ This is consistent with the Larmor formula from
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec3_3Radiation-by-an"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec3_3Radiation-by-an}
+\end_layout
 
 \end_inset
 
@@ -23946,9 +25095,15 @@ From
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec4_3The-spectral-distribution"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec4_3The-spectral-distribution}
+\end_layout
 
 \end_inset
 
@@ -24145,9 +25300,15 @@ Consider a point particle as in
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec3_3Radiation-by-an"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec3_3Radiation-by-an}
+\end_layout
 
 \end_inset
 
@@ -24298,9 +25459,15 @@ If
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec3_3Radiation-by-an"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec3_3Radiation-by-an}
+\end_layout
 
 \end_inset
 
@@ -24856,9 +26023,15 @@ The power spectrum from
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec5_1The-time-Wigner-function,"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec5_1The-time-Wigner-function,}
+\end_layout
 
 \end_inset
 
@@ -24898,9 +26071,15 @@ From
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec5_1The-time-Wigner-function,"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec5_1The-time-Wigner-function,}
+\end_layout
 
 \end_inset
 
@@ -24936,9 +26115,15 @@ By definition (see
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec5_1The-time-Wigner-function,"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec5_1The-time-Wigner-function,}
+\end_layout
 
 \end_inset
 
@@ -24959,16 +26144,28 @@ From
 \noun off
 \color none
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:ch5sec5_2Cherenkov-radiation"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec5_2Cherenkov-radiation}
+\end_layout
 
 \end_inset
 
- remark 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "rem:ch5sec5_2The-Wigner-function"
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{rem:ch5sec5_2The-Wigner-function}
+\end_layout
 
 \end_inset
 
@@ -26075,10 +27272,16 @@ Let
 \end_inset
 
  be a coordinate transformation.
- By Claim 
-\begin_inset CommandInset ref
-LatexCommand vref
-reference "claim:3_2_trafo_partial"
+ By 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{claim:3_2_trafo_partial}
+\end_layout
 
 \end_inset
 
