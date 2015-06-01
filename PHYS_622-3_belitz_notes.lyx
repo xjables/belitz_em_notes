@@ -12142,7 +12142,7 @@ reference "eq:regular_limit"
 \emph on
 \begin_inset CommandInset label
 LatexCommand label
-name "def:Generalized-functions,-regulariz"
+name "def:Generalized-functions-regulariz"
 
 \end_inset
 
@@ -12624,7 +12624,7 @@ status open
 
 
 \backslash
-cref{def:Generalized-functions,-regulariz}
+cref{def:Generalized-functions-regulariz}
 \end_layout
 
 \end_inset
@@ -25264,7 +25264,7 @@ Cherenkov radiation
 \begin_layout Subsection
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:ch5sec5_1The-time-Wigner-function,"
+name "sub:ch5sec5_1The-time-Wigner-function"
 
 \end_inset
 
@@ -26220,7 +26220,7 @@ status open
 
 
 \backslash
-cref{sub:ch5sec5_1The-time-Wigner-function,}
+cref{sub:ch5sec5_1The-time-Wigner-function}
 \end_layout
 
 \end_inset
@@ -26268,7 +26268,7 @@ status open
 
 
 \backslash
-cref{sub:ch5sec5_1The-time-Wigner-function,}
+cref{sub:ch5sec5_1The-time-Wigner-function}
 \end_layout
 
 \end_inset
@@ -26312,7 +26312,7 @@ status open
 
 
 \backslash
-cref{sub:ch5sec5_1The-time-Wigner-function,}
+cref{sub:ch5sec5_1The-time-Wigner-function}
 \end_layout
 
 \end_inset
