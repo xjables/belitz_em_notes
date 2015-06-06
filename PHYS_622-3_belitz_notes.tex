@@ -85,6 +85,10 @@
 \Crefname{lem}{Lemma}{Lemmas}
 \crefname{rem}{Remark}{Remarks}
 \Crefname{rem}{Remark}{Remarks}
+\crefname{def}{Definition}{Definitions}
+\Crefname{def}{Definition}{Definitions}
+\crefname{test}{TESTING}{TESTING}
+\Crefname{test}{TESTING}{TESTING}
 \crefname{claim}{Claim}{Claims}
 \Crefname{claim}{Claim}{Claims}
 \crefname{example}{Example}{Examples}
@@ -764,8 +768,14 @@ of light in vacuum.
 \end{example}
 
 \subsection{Normal coordinate transformations}
+
+DEBUGGING
 \begin{defn}
-\label{def:2_4_normal_coord_trafo}\textbf{\emph{Normal coordinate
+\label{def:debugging}DEBUGGING
+\end{defn}
+DEBUGGING \cref{def:debugging}
+\begin{defn}
+\textbf{\emph{\label{def:2_4_normal_coord_trafo}Normal coordinate
 transformation.}} A \emph{normal coordinate transformation} is one
 that transforms a normal coordinate system into another normal coordinate
 system. That is,
@@ -834,9 +844,9 @@ let $D$ be a normal coordinate transformation (say, from coordinate
 system $CS$ to $\widetilde{CS}$). That is, transformed coordinates
 take the form $\tilde{x}^{j}=D{}^{j}{}_{k}x^{k}$.
 \begin{defn}
-\label{definition:3_1_tensor_field}\textbf{\emph{(Pseudo-)tensor
-fields.}} $\forall\boldsymbol{x}\in V$, consider assigning a rank-$N$
-tensor $t^{j_{1}\cdots j_{N}}\left(\boldsymbol{x}\right)$ to $\boldsymbol{x}$.
+\label{def:3_1_tensor_field}\textbf{\emph{(Pseudo-)tensor fields.}}
+$\forall\boldsymbol{x}\in V$, consider assigning a rank-$N$ tensor
+$t^{j_{1}\cdots j_{N}}\left(\boldsymbol{x}\right)$ to $\boldsymbol{x}$.
 The set of assigned tensors,\footnote{A tensor field $t$ can be considered a tensor-valued function with
 domain $V$. That is, $t:V\rightarrow V^{N}$.} $\left\{ t^{j_{1}\cdots j_{N}}\left(\boldsymbol{x}\right);\boldsymbol{x}\in V\right\} $,
 is called a \emph{tensor field} iff, under a coordinate transformation,
@@ -893,8 +903,8 @@ D{}^{l}{}_{1} & D{}^{l}{}_{2} & D{}^{l}{}_{3}
 \end{pmatrix}\det D=\varepsilon^{jkl}\det D\\
  & = & \varepsilon^{jkl}\frac{1}{\det D}=\tilde{\varepsilon}^{jkl}\frac{1}{\det D}.
 \end{eqnarray*}
- As per \cref{definition:3_1_tensor_field}, the Levi-Civita tensor
-constitutes a pseudo-tensor field:
+ As per \cref{def:3_1_tensor_field}, the Levi-Civita tensor constitutes
+a pseudo-tensor field:
 \[
 \boxed{\tilde{\varepsilon}^{jkl}=\left(\det D\right)D{}^{j}{}_{\alpha}D{}^{k}{}_{\beta}D{}^{l}{}_{\gamma}\varepsilon^{\alpha\beta\gamma}}
 \]
@@ -2614,7 +2624,7 @@ $\nabla\cdot\boldsymbol{A}=0$.
 \]
 \end{proof}
 \begin{rem}
-Combining \cref{prop:PoissonEquationsRho, prop:PoissonsEquationsj},
+Combining \cref{prop:PoissonEquationsRho,prop:PoissonsEquationsj},
 we see that the components of the static electromagnetic potential
 obey Poisson's equation with $-\frac{4\pi}{c}$ times the components
 $\left(c\rho,\boldsymbol{j}\right)$ of the 4-current as the inhomogeneity.
@@ -2830,31 +2840,29 @@ In order to define generalized functions, we first consider function
 spaces in addition to $\gamma^{\left(1\right)}$.
 \begin{defn}
 \textbf{\emph{Test functions.}} A function $F:\mathbb{R}\rightarrow\mathbb{C}$
-is called a \emph{test function} iff 
-
-$\left(\textnormal{i}\right)\quad F$ is differentiable arbitrarily
-many times, and 
-
-$\left(\textnormal{ii}\right)\quad F$ and all of its derivatives
-go to zero faster than any power\footnote{That is, $\lim_{x\rightarrow\infty}x^{N}F^{\left(n\right)}\left(x\right)=0$
-for all $N,n\in\mathbb{N}$.} $\left|x\right|\rightarrow\infty$.\end{defn}
+is called a \emph{test function} iff \renewcommand{\labelenumi}{(\roman{enumi})}
+\begin{enumerate}
+\item $F$ is differentiable arbitrarily many times, and 
+\item $F$ and all of its derivatives go to zero faster than any power\footnote{That is, $\lim_{x\rightarrow\infty}x^{N}F^{\left(n\right)}\left(x\right)=0$
+for all $N,n\in\mathbb{N}$.} $\left|x\right|\rightarrow\infty$.
+\end{enumerate}
+\end{defn}
 \begin{example}
 $F\left(x\right)=e^{-x^{2}}$ is a test function, So is $x^{n}e^{-mx^{2}}$
 for all $m,n\in\mathbb{N}$.\end{example}
 \begin{defn}
 \textbf{\emph{\label{def:Weakly-increasing-functions.}Weakly increasing
 functions.}} A function $\phi:\mathbb{R}\rightarrow\mathbb{C}$ is
-called a \emph{weakly increasing function} iff
-
-$\left(\textnormal{i}\right)\quad\phi$ is differentiable arbitrarily
-many times, and
-
-$\left(\textnormal{i}\right)\quad\phi$ and all its derivatives do
-not grow faster than $\left|x\right|^{N}$ for $\left|x\right|\rightarrow\infty$,
-where $N\in\mathbb{N}$ may depend on the order of the derivative.\end{defn}
+called a \emph{weakly increasing function} iff\renewcommand{\labelenumi}{(\roman{enumi})}
+\begin{enumerate}
+\item $\phi$ is differentiable arbitrarily many times, and
+\item $\phi$ and all its derivatives do not grow faster than $\left|x\right|^{N}$
+for $\left|x\right|\rightarrow\infty$, where $N\in\mathbb{N}$ may
+depend on the order of the derivative.
+\end{enumerate}
+\end{defn}
 \begin{example}
-$ $Any polynomial is a weakly increasing function, but $e^{x}$ is
-not.\end{example}
+Any polynomial is a weakly increasing function, but $e^{x}$ is not.\end{example}
 \begin{rem}
 The derivative of a test function is a test function; so is the sum
 of two test functions, as well as scalar multiples of test functions.
@@ -3036,14 +3044,14 @@ equivalence class. Then
 \]
 \end{example}
 \begin{prop}
-Under the conditions of \cref{def:distribution_limit}, we have
-
-$\left(\textnormal{i}\right)\quad\lim_{t\rightarrow c}f_{t}'\left(x\right)=f'\left(x\right)$
-
-$\left(\textnormal{ii}\right)\quad\lim_{t\rightarrow c}f_{t}\left(ax+b\right)=f\left(ax+b\right)$
-
-$\left(\textnormal{iii}\right)\quad\lim_{t\rightarrow c}\phi\left(x\right)f_{t}\left(x\right)=\phi\left(x\right)f\left(x\right)$
-for any weakly increasing function $\phi\left(x\right)$.\end{prop}
+Under the conditions of \cref{def:distribution_limit}, we have\renewcommand{\labelenumi}{(\roman{enumi})}
+\begin{enumerate}
+\item $\lim_{t\rightarrow c}f_{t}'\left(x\right)=f'\left(x\right)$
+\item $\lim_{t\rightarrow c}f_{t}\left(ax+b\right)=f\left(ax+b\right)$
+\item $\lim_{t\rightarrow c}\phi\left(x\right)f_{t}\left(x\right)=\phi\left(x\right)f\left(x\right)$
+for any weakly increasing function $\phi\left(x\right)$.
+\end{enumerate}
+\end{prop}
 \begin{proof}
 Math books.
 \end{proof}
@@ -5808,7 +5816,8 @@ Analogously,
 \]
 
 \begin{prop}
-Far from the sources, the fields are
+\label{prop:ch5sec4_2propFar-from-the}Far from the sources, the fields
+are
 \[
 \boxed{\boldsymbol{B}\left(\boldsymbol{x},\omega\right)\approx i\frac{\omega}{c}\frac{e^{i\omega r/c}}{r}\hat{\boldsymbol{x}}\times\frac{1}{c}\boldsymbol{j}\left(\boldsymbol{k},\omega\right)},
 \]
@@ -6330,7 +6339,8 @@ of radius
 
 \end{description}
 
-\subsection{The power spectrum of synchrotron radiation}
+\subsection{\label{sub:ch5sec6_2The-power-spectrum}The power spectrum of synchrotron
+radiation}
 
 Consider motion in the $x-y$ plane with an observer at point $\boldsymbol{x}$
 and $\theta=\varangle\left(\boldsymbol{x},\hat{\boldsymbol{z}}\right)$.
@@ -6480,8 +6490,261 @@ the remaining two summations yield equivalent contributions.
 \end{enumerate}
 \begin{rem}
 The frequencies emitted are the Larmor frequency $\left(\omega_{0}\right)$
-and all of its harmonics.
-\end{rem}
+and all of its harmonics.\end{rem}
+\begin{thm}
+The macroscopic power spectrum averaged over a microscopic period
+is
+\[
+\boxed{\overline{\frac{d^{2}\mathscr{P}\left(T\right)}{\infinitesimal{\Omega}d\omega}}=\summation{m=1}{\infty}\delta\left(\omega-m\omega_{0}\right)\frac{d\mathscr{P}_{m}}{d\Omega}},
+\]
+ with the power radiated to the $m^{\textnormal{th}}$ harmonic
+\[
+\boxed{\frac{d\mathscr{P}_{m}}{d\Omega}:=\frac{\omega_{0}e^{2}}{\pi R}\left(\frac{v}{c}\right)^{3}m^{2}\left[\left(J_{m}'\left(m\frac{v}{c}\sin\theta\right)\right)^{2}+\left(\frac{J_{m}\left(m\frac{v}{c}\sin\theta\right)}{\frac{v}{c}\tan\theta}\right)^{2}\right]}.
+\]
+ \end{thm}
+\begin{proof}
+From $\left(\ast\right)$, the argument of the Bessel functions is
+(applying the $\delta-$function) 
+\[
+x:=\frac{\omega R}{c}\sin\theta=m\frac{\omega_{0}R}{c}\sin\theta=m\frac{v}{c}\sin\theta
+\]
+ and the Bessel functions obey the recursion relations
+\begin{eqnarray*}
+J_{m-1}\left(x\right)-J_{m+1}\left(x\right) & = & 2J_{m}'\left(x\right)\\
+J_{m-1}\left(x\right)+J_{m+1}\left(x\right) & = & \frac{2m}{x}J_{m}\left(x\right).
+\end{eqnarray*}
+\begin{eqnarray*}
+\implies\frac{1}{2}\left(J_{m+1}^{2}+J_{m-1}^{2}\right)-\frac{c^{2}}{v^{2}}J_{m}^{2} & = & \frac{1}{2}\left[\left(\frac{m}{x}J_{m}-J_{m}'\right)^{2}+\left(\frac{m}{x}J_{m}+J_{m}'\right)^{2}\right]-\frac{m^{2}\sin^{2}\theta}{x^{2}}J_{m}^{2}\\
+ & = & \left(J_{m}'\right)^{2}+\frac{m^{2}}{x^{2}}J_{m}^{2}-\frac{m^{2}\sin^{2}\theta}{x^{2}}J_{m}^{2}\\
+ & = & \left(J_{m}'\right)^{2}+\frac{m^{2}}{x^{2}}\left(1-\sin^{2}\theta\right)J_{m}^{2}\\
+ & = & \left(J_{m}'\right)^{2}+\frac{c^{2}}{v^{2}}\understuff{\frac{1-\sin^{2}\theta}{\sin^{2}\theta}}{1/\tan^{2}\theta}J_{m}^{2}
+\end{eqnarray*}
+\end{proof}
+\begin{description}
+\item [{discussion~(1):}] Integration over $\Omega$ yields the total
+power radiated into the $m^{\textnormal{th}}$ harmonic (see Problem
+\#56):
+\[
+\indefint{\Omega}\frac{d\mathscr{P}_{m}}{d\Omega}=\boxed{\mathscr{P}_{m}=\frac{e^{2}}{R}m\omega_{0}\left[2\beta^{2}J_{2m}'\left(2m\beta\right)-\left(1-\beta^{2}\right)\defint x0{2m\beta}J_{2m}\left(x\right)\right]}.
+\]
+ An analysis (Problem \#56) shows that $\mathscr{P}_{m}$ peaks at
+\[
+m=m_{c}\approx\gamma^{3},\quad\gamma:=\frac{1}{\sqrt{1-\beta^{2}}}.
+\]
+$\implies$ For relativistic electrons, power goes into a high harmonic.\\
+$\implies$ Synchrotrons are good \emph{x-ray sources}.
+\item [{discussion~(2):}] In the orbital plane, $\theta=\pi/2$, and we
+get
+\begin{eqnarray*}
+\left.\frac{d\mathscr{P}_{m}}{2\pi d\theta}\right|_{\theta=\frac{\pi}{2}} & = & \frac{\omega_{0}e^{2}}{\pi R}\beta^{3}m^{2}\left[\left(J_{m}'\left(\beta m\right)\right)^{2}+0\right]\\
+ & \overset{\beta\approx1}{\approx} & \frac{\omega_{0}e^{2}}{\pi R}m^{2}\left(J_{m}'\left(m\right)\right)^{2}
+\end{eqnarray*}
+\begin{eqnarray*}
+\mathscr{P}_{m} & = & \frac{e^{2}}{R}m\omega_{0}2\beta^{2}J_{2m}'\left(2m\beta\right)\\
+ & \overset{\beta\approx1}{\approx} & \frac{\omega_{0}e^{2}}{R}2mJ_{2m}'\left(2m\right)
+\end{eqnarray*}
+ But $J_{m}'\left(m\right)\propto m^{-2/3}$ for $m\gg1$
+\[
+\implies\frac{d\mathscr{P}_{m}}{d\theta}\approx\mbox{\ensuremath{\mathscr{P}}}_{m}\cdot m\cdot m^{-2/3}=\mathscr{P}_{m}m^{1/3}
+\]
+\[
+\implies\frac{d\mathscr{P}_{m}}{\mathscr{P}_{m}}\approx\frac{d\theta}{m^{-1/3}}
+\]
+$\implies$ The radiation is confined to a cone about $\theta=\pi/2$
+with opening angle $\Delta\theta\propto\frac{1}{m^{1/3}}\propto\frac{1}{\gamma}$.
+\end{description}
+
+\subsection{Qualitative explanation of the main features}
+
+From \cref{sub:ch5sec6_2The-power-spectrum}, synchrotron radiation
+is characterized by
+
+\renewcommand{\labelenumi}{(\roman{enumi})}
+\begin{enumerate}
+\item a narrow angle close to the orbital plane
+\item high frequencies.
+\end{enumerate}
+For a point particle with trajectory $\boldsymbol{X}\left(t\right)$,
+we have the Liénard–Wiechert potentials (Problem \#44)
+\begin{eqnarray*}
+\boldsymbol{A}\left(\boldsymbol{x},t\right) & = & \frac{e\boldsymbol{v}\left(t_{-}\right)/c}{\left|\boldsymbol{x}-\boldsymbol{X}\left(t_{-}\right)\right|-\boldsymbol{v}\left(t_{-}\right)\cdot\left(\boldsymbol{x}-\boldsymbol{X}\left(t_{-}\right)\right)/c}\\
+ & = & \frac{e\boldsymbol{v}\left(t_{-}\right)/c}{\left|\boldsymbol{x}-\boldsymbol{X}\left(t_{-}\right)\right|}\frac{1}{1-\hat{\boldsymbol{n}}\cdot\boldsymbol{v}\left(t_{-}\right)/c}
+\end{eqnarray*}
+ where $t_{-}=t-\frac{1}{c}\left|\boldsymbol{x}-\boldsymbol{X}\left(t_{-}\right)\right|$
+and 
+\[
+\hat{\boldsymbol{n}}:=\frac{\boldsymbol{x}-\boldsymbol{X}}{\left|\boldsymbol{x}-\boldsymbol{X}\right|}.
+\]
+ Let $\varphi=\varangle\left(\boldsymbol{v},\hat{\boldsymbol{n}}\right).$
+\begin{eqnarray*}
+\implies\frac{1}{1-\hat{\boldsymbol{n}}\cdot\boldsymbol{v}/c} & = & \frac{1}{1-\beta\cos\varphi}\\
+ & \overset{1.}{\rightarrow} & \frac{1}{1-\beta\left(1-\frac{1}{2}\varphi^{2}+\dots\right)}\\
+ & \approx & \frac{1}{\frac{1}{2}\left(1+\beta\right)\left(1-\beta\right)+\frac{1}{2}\varphi^{2}}\\
+ & = & \frac{2}{1-\beta^{2}+\varphi^{2}}
+\end{eqnarray*}
+
+\begin{enumerate}
+\item Let $\beta\rightarrow1$ and consider small $\varphi$.
+\end{enumerate}
+$\implies$ $\boldsymbol{A}$ is appreciably nonzero for $\varphi\lesssim\sqrt{1-\beta^{2}}=\frac{1}{\gamma}$.
+This explains $\left(\textnormal{i}\right)$.
+
+Consider a particle in a circular orbit. The light reaches the observer
+only during a section $\Delta s$ of the orbit, where
+\[
+\frac{\Delta s}{2\pi R}\approx\frac{\varphi}{2\pi}\implies\Delta s\approx R\varphi.
+\]
+$\implies$ The observed signal is emitted only during a time interval
+\[
+\frac{\Delta t}{2\pi/\omega_{0}}\approx\frac{\Delta s}{2\pi R}\approx\frac{\varphi}{2\pi}\implies\Delta t\approx\frac{\varphi}{\omega_{0}}.
+\]
+$\implies$ The typical frequency emitted is 
+\[
+\omega_{e}\approx\frac{1}{\Delta t}\approx\frac{\omega_{0}}{\varphi}\approx\omega_{0}\gamma.\tag{\ensuremath{\ast}}
+\]
+This explains one factor of $\gamma$.
+
+This hold in a co-moving reference frame, but from the observer's
+point of view, $\Delta s$ gets Lorentz contracted by $1/\gamma$
+$\implies$ $\omega_{e}$ is larger by a factor of $\gamma$.
+
+Finally, the observer sees a Doppler shifted frequency (as discussed
+in \cref{chap:Electromagnetic-waves-in} \cref{sub:ch4sec1_6The-Doppler-effect})
+which provides the another factor of $\gamma$.
+\[
+\implies\omega_{\textnormal{observerd}}\approx\understuff{\omega_{0}\gamma}{\left(\ast\right)}\cdot\gamma\cdot\gamma=\omega_{0}\gamma^{3}
+\]
+ This explains $\left(\textnormal{ii}\right)$.
+
+
+\subsection{The polarization of synchrotron radiation}
+
+Polarization is measured via the effect of the $\boldsymbol{E}-$
+field.
+
+$\implies$ Express the power spectrum in terms of $\boldsymbol{E}$.
+
+From \cref{sub:ch5sec4_3The-spectral-distribution},
+\[
+\frac{dU}{d\Omega}=\frac{c}{4\pi}r^{2}\indefintfrac{\omega}{2\pi}\hat{\boldsymbol{x}}\cdot\left[\boldsymbol{E}\left(\boldsymbol{x},\omega\right)\times\boldsymbol{B}\left(\boldsymbol{x},-\omega\right)\right].
+\]
+ From \cref{sub:ch5sec4_2Asymptotic-potentials-and} \cref{prop:ch5sec4_2propFar-from-the},
+\[
+\boldsymbol{B}\left(\boldsymbol{x},\omega\right)\propto\hat{\boldsymbol{x}}\times\boldsymbol{j}\left(\boldsymbol{k},\omega\right),
+\]
+\[
+\boldsymbol{E}\left(\boldsymbol{x},\omega\right)\approx-\hat{\boldsymbol{x}}\times\boldsymbol{B}\left(\boldsymbol{x},\omega\right),
+\]
+\[
+\implies\boldsymbol{E}\left(\boldsymbol{x},\omega\right)\propto-\hat{\boldsymbol{x}}\times\left(\hat{\boldsymbol{x}}\times\boldsymbol{j}\left(\boldsymbol{k},\omega\right)\right).
+\]
+
+
+$\implies$ our previous expressions remain valid if we substitute
+\[
+\hat{\boldsymbol{x}}\times\boldsymbol{j}\rightarrow-\hat{\boldsymbol{x}}\times\left(\hat{\boldsymbol{x}}\times\boldsymbol{j}\right)
+\]
+
+
+Now, from \cref{sub:ch5sec5_1The-time-Wigner-function},
+\[
+\underline{\frac{d^{2}\mathscr{P}}{d\omega\,d\Omega}\left(T\right)=\frac{\omega^{2}}{4\pi^{2}c^{3}}\indefint{\tau}e^{i\omega\tau}\left[-\hat{\boldsymbol{x}}\times\left(\hat{\boldsymbol{x}}\times\boldsymbol{j}\left(\boldsymbol{k},T+\tau/2\right)\right)\right]\cdot\left[-\hat{\boldsymbol{x}}\times\left(\hat{\boldsymbol{x}}\times\boldsymbol{j}\left(\boldsymbol{k},T-\tau/2\right)\right)^{*}\right]}
+\]
+
+\begin{defn}
+Set our coordinate system as in \cref{sub:ch5sec6_2The-power-spectrum}:
+orbit in $x-y$ plane, $\hat{\boldsymbol{x}}=\left(\sin\theta,0,\cos\theta\right)$.
+
+Define \emph{parallel polarization} as $\boldsymbol{E}\parallel\hat{\boldsymbol{e}}_{\parallel}$
+where $\hat{\boldsymbol{e}}_{\parallel}=\left(0,1,0\right)$.
+
+Define \emph{perpendicular polarization} as $\boldsymbol{E}\parallel\hat{\boldsymbol{e}}_{\perp}$
+where $\hat{\boldsymbol{e}}_{\perp}=\left(-\cos\theta,0,\sin\theta\right)$.
+\end{defn}
+We can express the radiated power in terms of these polarizations.
+
+Power radiated into parallel polarization state:
+\begin{eqnarray*}
+\underline{\left(\frac{d^{2}\mathscr{P}\left(T\right)}{d\omega\,d\Omega}\right)_{\parallel}} & = & \frac{\omega^{2}}{4\pi^{2}c^{3}}\indefint{\tau}e^{i\omega\tau}\left[\cdots\right]_{y}\left[\cdots\right]_{y}\\
+ & \overset{1.}{=} & \frac{\omega^{2}}{4\pi^{2}c^{3}}\indefint{\tau}e^{i\omega\tau}j_{y}\left(\boldsymbol{k},T+\tau/2\right)j_{y}\left(\boldsymbol{k},T-\tau/2\right)\\
+ & \overset{2.}{=} & \underline{\frac{\omega^{2}e^{2}}{4\pi^{2}c^{3}}\indefint{\tau}e^{i\omega\tau}e^{ik\hat{\boldsymbol{x}}\cdot\left[\boldsymbol{y}\left(T+\tau/2\right)-\boldsymbol{y}\left(T-\tau/2\right)\right]}v_{y}\left(T+\tau/2\right)v_{y}\left(T-\tau/2\right)}
+\end{eqnarray*}
+
+\begin{enumerate}
+\item $\left[-\hat{\boldsymbol{x}}\times\left(\hat{\boldsymbol{x}}\times\boldsymbol{j}\right)\right]_{y}=\left[\boldsymbol{j}-\hat{\boldsymbol{x}}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{j}\right)\right]_{y}=j_{y}$
+since $\hat{\boldsymbol{x}}$ has no $y-$component.
+\item $\boldsymbol{j}\left(\boldsymbol{k},t\right)=e\boldsymbol{v}\left(t\right)e^{-ik\hat{\boldsymbol{x}}\cdot\boldsymbol{y}\left(t\right)}$. 
+\end{enumerate}
+But in \cref{sub:ch5sec6_2The-power-spectrum}, the power had the
+factor $\left[\boldsymbol{v}^{2}-c^{2}\right]$ where here we have
+$v_{y}v_{y}$.
+\begin{lem}
+\label{lem:vyvy}
+\[
+\boxed{v_{y}\left(T+\tau/2\right)v_{y}\left(T-\tau/2\right)=\frac{1}{2}v^{2}\left[\cos2\omega_{0}T+\cos\omega_{0}\tau\right]}
+\]
+
+\end{lem}
+~
+\begin{lem}
+\[
+\boxed{\overline{e^{ik\hat{\boldsymbol{x}}\cdot\left[\boldsymbol{y}\left(T+\tau/2\right)-\boldsymbol{y}\left(T-\tau/2\right)\right]}}=\summation{m=-\infty}{\infty}\left(J_{m}\left(kR\sin\theta\right)\right)^{2}e^{im\omega_{0}\tau}},
+\]
+ with $\overline{f\left(T\right)}$ averaged over one $T-$period.
+\end{lem}
+~
+\begin{lem}
+\[
+\boxed{\overline{\cos\left(2\omega_{0}T\right)e^{ik\hat{\boldsymbol{x}}\cdot\left[\boldsymbol{y}\left(T+\tau/2\right)-\boldsymbol{y}\left(T-\tau/2\right)\right]}}=-\summation{m=-\infty}{\infty}J_{m+1}\left(kR\sin\theta\right)J_{m-1}\left(kR\sin\theta\right)e^{im\omega_{0}\tau}}
+\]
+
+\end{lem}
+Substituting these into expression for power radiated into parallel
+polarization yields
+\begin{eqnarray*}
+\overline{\left(\frac{d^{2}\mathscr{P}\left(T\right)}{d\omega\,d\Omega}\right)_{\parallel}} & = & \frac{\omega^{2}e^{2}}{4\pi^{2}c^{3}}\indefint{\tau}e^{i\omega\tau}\overline{e^{ik\hat{\boldsymbol{x}}\cdot\left[\boldsymbol{y}\left(T+\tau/2\right)-\boldsymbol{y}\left(T-\tau/2\right)\right]}v_{y}\left(T+\tau/2\right)v_{y}\left(T-\tau/2\right)}\\
+ & \overset{1.}{=} & \frac{\omega^{2}e^{2}}{4\pi^{2}c^{3}}\indefint{\tau}e^{i\omega\tau}\frac{1}{2}v^{2}\overline{e^{ik\hat{\boldsymbol{x}}\cdot\left[\boldsymbol{y}\left(T+\tau/2\right)-\boldsymbol{y}\left(T-\tau/2\right)\right]}\left[\cos2\omega_{0}T+\cos\omega_{0}\tau\right]}\\
+ & \overset{2.}{=} & \frac{\omega^{2}e^{2}}{4\pi^{2}c^{3}}\frac{v^{2}}{2}\indefint{\tau}e^{i\omega\tau}\summation{m=-\infty}{\infty}\left[\cos\omega_{0}\tau J_{m}^{2}-J_{m+1}J_{m-1}\right]e^{im\omega_{0}\tau}\\
+ & \overset{3.}{=} & \frac{\omega^{2}e^{2}}{4\pi^{2}c^{3}}\frac{v^{2}}{2}\summation{m=-\infty}{\infty}\left[\frac{1}{2}J_{m+1}^{2}+\frac{1}{2}J_{m-1}^{2}-J_{m+1}J_{m-1}\right]\delta\left(\omega-m\omega_{0}\right)
+\end{eqnarray*}
+
+\begin{enumerate}
+\item Inserted \cref{lem:vyvy}.
+\item Inserted \cref{lem:e_to_the_stuff,lem:cos_times_e}. Arguments of
+the Bessel functions are $kR\sin\theta$.
+\item Replaced $\cos\omega_{0}\tau$ using Euler's formula.
+\end{enumerate}
+$\implies$ $\left(\frac{d\mathscr{P}_{m}}{d\Omega}\right)_{\parallel}$
+is given by the expression for $\frac{d\mathscr{P}_{m}}{d\Omega}$
+in \cref{sub:ch5sec6_2The-power-spectrum} with 
+\begin{eqnarray*}
+\frac{1}{2}\left(J_{m+1}^{2}+J_{m-1}^{2}\right)-\frac{c^{2}}{v^{2}}J_{m}^{2} & \rightarrow & \frac{1}{2}\left(J_{m+1}^{2}+J_{m-1}^{2}\right)-J_{m+1}J_{m-1}\\
+ & = & \frac{1}{2}\left(J_{m+1}-J_{m-1}\right)^{2}\\
+ & \overset{1.}{=} & \frac{1}{2}4\left(J_{m}'\right)^{2}\\
+ & = & 2\left(J_{m}'\right)^{2}
+\end{eqnarray*}
+
+\begin{enumerate}
+\item Recursion relation.\end{enumerate}
+\begin{thm}
+The power radiated into the $m^{\textnormal{th}}$ harmonic with parallel
+polarization is 
+\[
+\boxed{\left(\frac{d\mathscr{P}_{m}}{d\Omega}\right)_{\parallel}=\frac{\omega_{0}e^{2}}{\pi R}\left(\frac{v}{c}\right)^{3}m^{2}\left(J_{m}'\left(m\frac{v}{c}\sin\theta\right)\right)^{2}}.
+\]
+ This is the first of the two terms in $\frac{d\mathscr{P}_{m}}{d\Omega}$
+from \textup{\cref{sub:ch5sec6_2The-power-spectrum}.}
+\end{thm}
+~
+\begin{cor}
+The power radiated into the $m^{\textnormal{th}}$ harmonic with perpendicular
+polarization is
+\[
+\boxed{\left(\frac{d\mathscr{P}_{m}}{d\Omega}\right)_{\perp}=\frac{\omega_{0}e^{2}}{\pi R}\left(\frac{v}{c}\right)^{3}m^{2}\left(\frac{J_{m}\left(m\frac{v}{c}\sin\theta\right)}{\frac{v}{c}\tan\theta}\right)^{2}}.
+\]
+ This is the second of the two terms in $\frac{d\mathscr{P}_{m}}{d\Omega}$
+from \textup{\cref{sub:ch5sec6_2The-power-spectrum}.}
+\end{cor}
 \appendix
 
 \chapter{Glossary of notation}

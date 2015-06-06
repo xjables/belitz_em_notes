@@ -20,6 +20,10 @@
 \Crefname{lem}{Lemma}{Lemmas}
 \crefname{rem}{Remark}{Remarks}
 \Crefname{rem}{Remark}{Remarks}
+\crefname{def}{Definition}{Definitions}
+\Crefname{def}{Definition}{Definitions}
+\crefname{test}{TESTING}{TESTING}
+\Crefname{test}{TESTING}{TESTING}
 \crefname{claim}{Claim}{Claims}
 \Crefname{claim}{Claim}{Claims}
 \crefname{example}{Example}{Examples}
@@ -284,6 +288,24 @@ Vector spaces
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+BIG TO-DO LIST: 
+\end_layout
+
+\begin_layout Plain Layout
+I regret not numbering all of the equations.
+ Maybe I could do this automatically with some software?
+\end_layout
+
+\begin_layout Plain Layout
+Needs figures.
+\end_layout
+
+\end_inset
+
 Let 
 \begin_inset Formula $V$
 \end_inset
@@ -2804,16 +2826,57 @@ time
 Normal coordinate transformations
 \end_layout
 
+\begin_layout Standard
+DEBUGGING
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+DEBUGGING
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:debugging"
+
+\end_inset
+
+DEBUGGING
+\end_layout
+
+\begin_layout Standard
+DEBUGGING 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{def:debugging}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+
+\series bold
+\emph on
 \begin_inset CommandInset label
 LatexCommand label
 name "def:2_4_normal_coord_trafo"
 
 \end_inset
 
-
-\series bold
-\emph on
 Normal coordinate transformation.
 
 \series default
@@ -3071,7 +3134,7 @@ Let
 \begin_layout Definition
 \begin_inset CommandInset label
 LatexCommand label
-name "definition:3_1_tensor_field"
+name "def:3_1_tensor_field"
 
 \end_inset
 
@@ -3394,7 +3457,7 @@ status open
 
 
 \backslash
-cref{definition:3_1_tensor_field}
+cref{def:3_1_tensor_field}
 \end_layout
 
 \end_inset
@@ -10830,7 +10893,7 @@ status open
 
 
 \backslash
-cref{prop:PoissonEquationsRho, prop:PoissonsEquationsj}
+cref{prop:PoissonEquationsRho,prop:PoissonsEquationsj}
 \end_layout
 
 \end_inset
@@ -11640,17 +11703,35 @@ Test functions.
 test function
 \emph default
  iff 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+labelenumi}{(
+\backslash
+roman{enumi})}
 \end_layout
 
-\begin_layout Definition
-\begin_inset Formula $\left(\textnormal{i}\right)\quad F$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $F$
 \end_inset
 
  is differentiable arbitrarily many times, and 
 \end_layout
 
-\begin_layout Definition
-\begin_inset Formula $\left(\textnormal{ii}\right)\quad F$
+\begin_layout Enumerate
+\begin_inset Formula $F$
 \end_inset
 
  and all of its derivatives go to zero faster than any power
@@ -11678,6 +11759,7 @@ That is,
 .
 \end_layout
 
+\end_deeper
 \begin_layout Example
 \begin_inset Formula $F\left(x\right)=e^{-x^{2}}$
 \end_inset
@@ -11716,17 +11798,35 @@ Weakly increasing functions.
 weakly increasing function
 \emph default
  iff
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+labelenumi}{(
+\backslash
+roman{enumi})}
 \end_layout
 
-\begin_layout Definition
-\begin_inset Formula $\left(\textnormal{i}\right)\quad\phi$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\phi$
 \end_inset
 
  is differentiable arbitrarily many times, and
 \end_layout
 
-\begin_layout Definition
-\begin_inset Formula $\left(\textnormal{i}\right)\quad\phi$
+\begin_layout Enumerate
+\begin_inset Formula $\phi$
 \end_inset
 
  and all its derivatives do not grow faster than 
@@ -11744,10 +11844,8 @@ weakly increasing function
  may depend on the order of the derivative.
 \end_layout
 
+\end_deeper
 \begin_layout Example
-\begin_inset Formula $ $
-\end_inset
-
 Any polynomial is a weakly increasing function, but 
 \begin_inset Formula $e^{x}$
 \end_inset
@@ -12519,24 +12617,42 @@ cref{def:distribution_limit}
 \end_inset
 
 , we have
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+labelenumi}{(
+\backslash
+roman{enumi})}
 \end_layout
 
-\begin_layout Proposition
-\begin_inset Formula $\left(\textnormal{i}\right)\quad\lim_{t\rightarrow c}f_{t}'\left(x\right)=f'\left(x\right)$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Proposition
-\begin_inset Formula $\left(\textnormal{ii}\right)\quad\lim_{t\rightarrow c}f_{t}\left(ax+b\right)=f\left(ax+b\right)$
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{t\rightarrow c}f_{t}'\left(x\right)=f'\left(x\right)$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Proposition
-\begin_inset Formula $\left(\textnormal{iii}\right)\quad\lim_{t\rightarrow c}\phi\left(x\right)f_{t}\left(x\right)=\phi\left(x\right)f\left(x\right)$
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{t\rightarrow c}f_{t}\left(ax+b\right)=f\left(ax+b\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{t\rightarrow c}\phi\left(x\right)f_{t}\left(x\right)=\phi\left(x\right)f\left(x\right)$
 \end_inset
 
  for any weakly increasing function 
@@ -12546,6 +12662,7 @@ cref{def:distribution_limit}
 .
 \end_layout
 
+\end_deeper
 \begin_layout Proof
 Math books.
 \end_layout
@@ -24145,6 +24262,12 @@ Analogously,
 \end_layout
 
 \begin_layout Proposition
+\begin_inset CommandInset label
+LatexCommand label
+name "prop:ch5sec4_2propFar-from-the"
+
+\end_inset
+
 Far from the sources, the fields are
 \begin_inset Formula 
 \[
@@ -26110,6 +26233,12 @@ field of radius
 \end_layout
 
 \begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:ch5sec6_2The-power-spectrum"
+
+\end_inset
+
 The power spectrum of synchrotron radiation
 \end_layout
 
@@ -26605,6 +26734,1144 @@ The frequencies emitted are the Larmor frequency
 \end_inset
 
  and all of its harmonics.
+\end_layout
+
+\begin_layout Theorem
+The macroscopic power spectrum averaged over a microscopic period is
+\begin_inset Formula 
+\[
+\boxed{\overline{\frac{d^{2}\mathscr{P}\left(T\right)}{\infinitesimal{\Omega}d\omega}}=\summation{m=1}{\infty}\delta\left(\omega-m\omega_{0}\right)\frac{d\mathscr{P}_{m}}{d\Omega}},
+\]
+
+\end_inset
+
+ with the power radiated to the 
+\begin_inset Formula $m^{\textnormal{th}}$
+\end_inset
+
+ harmonic
+\begin_inset Formula 
+\[
+\boxed{\frac{d\mathscr{P}_{m}}{d\Omega}:=\frac{\omega_{0}e^{2}}{\pi R}\left(\frac{v}{c}\right)^{3}m^{2}\left[\left(J_{m}'\left(m\frac{v}{c}\sin\theta\right)\right)^{2}+\left(\frac{J_{m}\left(m\frac{v}{c}\sin\theta\right)}{\frac{v}{c}\tan\theta}\right)^{2}\right]}.
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+From 
+\begin_inset Formula $\left(\ast\right)$
+\end_inset
+
+, the argument of the Bessel functions is (applying the 
+\begin_inset Formula $\delta-$
+\end_inset
+
+function) 
+\begin_inset Formula 
+\[
+x:=\frac{\omega R}{c}\sin\theta=m\frac{\omega_{0}R}{c}\sin\theta=m\frac{v}{c}\sin\theta
+\]
+
+\end_inset
+
+ and the Bessel functions obey the recursion relations
+\begin_inset Formula 
+\begin{eqnarray*}
+J_{m-1}\left(x\right)-J_{m+1}\left(x\right) & = & 2J_{m}'\left(x\right)\\
+J_{m-1}\left(x\right)+J_{m+1}\left(x\right) & = & \frac{2m}{x}J_{m}\left(x\right).
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\implies\frac{1}{2}\left(J_{m+1}^{2}+J_{m-1}^{2}\right)-\frac{c^{2}}{v^{2}}J_{m}^{2} & = & \frac{1}{2}\left[\left(\frac{m}{x}J_{m}-J_{m}'\right)^{2}+\left(\frac{m}{x}J_{m}+J_{m}'\right)^{2}\right]-\frac{m^{2}\sin^{2}\theta}{x^{2}}J_{m}^{2}\\
+ & = & \left(J_{m}'\right)^{2}+\frac{m^{2}}{x^{2}}J_{m}^{2}-\frac{m^{2}\sin^{2}\theta}{x^{2}}J_{m}^{2}\\
+ & = & \left(J_{m}'\right)^{2}+\frac{m^{2}}{x^{2}}\left(1-\sin^{2}\theta\right)J_{m}^{2}\\
+ & = & \left(J_{m}'\right)^{2}+\frac{c^{2}}{v^{2}}\understuff{\frac{1-\sin^{2}\theta}{\sin^{2}\theta}}{1/\tan^{2}\theta}J_{m}^{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+discussion
+\begin_inset space ~
+\end_inset
+
+(1): Integration over 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ yields the total power radiated into the 
+\begin_inset Formula $m^{\textnormal{th}}$
+\end_inset
+
+ harmonic (see Problem #56):
+\begin_inset Formula 
+\[
+\indefint{\Omega}\frac{d\mathscr{P}_{m}}{d\Omega}=\boxed{\mathscr{P}_{m}=\frac{e^{2}}{R}m\omega_{0}\left[2\beta^{2}J_{2m}'\left(2m\beta\right)-\left(1-\beta^{2}\right)\defint x0{2m\beta}J_{2m}\left(x\right)\right]}.
+\]
+
+\end_inset
+
+ An analysis (Problem #56) shows that 
+\begin_inset Formula $\mathscr{P}_{m}$
+\end_inset
+
+ peaks at 
+\begin_inset Formula 
+\[
+m=m_{c}\approx\gamma^{3},\quad\gamma:=\frac{1}{\sqrt{1-\beta^{2}}}.
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\implies$
+\end_inset
+
+ For relativistic electrons, power goes into a high harmonic.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\implies$
+\end_inset
+
+ Synchrotrons are good 
+\emph on
+x-ray sources
+\emph default
+.
+\end_layout
+
+\begin_layout Description
+discussion
+\begin_inset space ~
+\end_inset
+
+(2): In the orbital plane, 
+\begin_inset Formula $\theta=\pi/2$
+\end_inset
+
+, and we get
+\begin_inset Formula 
+\begin{eqnarray*}
+\left.\frac{d\mathscr{P}_{m}}{2\pi d\theta}\right|_{\theta=\frac{\pi}{2}} & = & \frac{\omega_{0}e^{2}}{\pi R}\beta^{3}m^{2}\left[\left(J_{m}'\left(\beta m\right)\right)^{2}+0\right]\\
+ & \overset{\beta\approx1}{\approx} & \frac{\omega_{0}e^{2}}{\pi R}m^{2}\left(J_{m}'\left(m\right)\right)^{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathscr{P}_{m} & = & \frac{e^{2}}{R}m\omega_{0}2\beta^{2}J_{2m}'\left(2m\beta\right)\\
+ & \overset{\beta\approx1}{\approx} & \frac{\omega_{0}e^{2}}{R}2mJ_{2m}'\left(2m\right)
+\end{eqnarray*}
+
+\end_inset
+
+ But 
+\begin_inset Formula $J_{m}'\left(m\right)\propto m^{-2/3}$
+\end_inset
+
+ for 
+\begin_inset Formula $m\gg1$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies\frac{d\mathscr{P}_{m}}{d\theta}\approx\mbox{\mathscr{P}}_{m}\cdot m\cdot m^{-2/3}=\mathscr{P}_{m}m^{1/3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\implies\frac{d\mathscr{P}_{m}}{\mathscr{P}_{m}}\approx\frac{d\theta}{m^{-1/3}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\implies$
+\end_inset
+
+ The radiation is confined to a cone about 
+\begin_inset Formula $\theta=\pi/2$
+\end_inset
+
+ with opening angle 
+\begin_inset Formula $\Delta\theta\propto\frac{1}{m^{1/3}}\propto\frac{1}{\gamma}$
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Figure here
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Qualitative explanation of the main features
+\end_layout
+
+\begin_layout Standard
+From 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec6_2The-power-spectrum}
+\end_layout
+
+\end_inset
+
+, synchrotron radiation is characterized by
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+labelenumi}{(
+\backslash
+roman{enumi})}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+a narrow angle close to the orbital plane
+\end_layout
+
+\begin_layout Enumerate
+high frequencies.
+\end_layout
+
+\begin_layout Standard
+For a point particle with trajectory 
+\begin_inset Formula $\boldsymbol{X}\left(t\right)$
+\end_inset
+
+, we have the Liénard–Wiechert potentials (Problem #44)
+\begin_inset Formula 
+\begin{eqnarray*}
+\boldsymbol{A}\left(\boldsymbol{x},t\right) & = & \frac{e\boldsymbol{v}\left(t_{-}\right)/c}{\left|\boldsymbol{x}-\boldsymbol{X}\left(t_{-}\right)\right|-\boldsymbol{v}\left(t_{-}\right)\cdot\left(\boldsymbol{x}-\boldsymbol{X}\left(t_{-}\right)\right)/c}\\
+ & = & \frac{e\boldsymbol{v}\left(t_{-}\right)/c}{\left|\boldsymbol{x}-\boldsymbol{X}\left(t_{-}\right)\right|}\frac{1}{1-\hat{\boldsymbol{n}}\cdot\boldsymbol{v}\left(t_{-}\right)/c}
+\end{eqnarray*}
+
+\end_inset
+
+ where 
+\begin_inset Formula $t_{-}=t-\frac{1}{c}\left|\boldsymbol{x}-\boldsymbol{X}\left(t_{-}\right)\right|$
+\end_inset
+
+ and 
+\begin_inset Formula 
+\[
+\hat{\boldsymbol{n}}:=\frac{\boldsymbol{x}-\boldsymbol{X}}{\left|\boldsymbol{x}-\boldsymbol{X}\right|}.
+\]
+
+\end_inset
+
+ Let 
+\begin_inset Formula $\varphi=\varangle\left(\boldsymbol{v},\hat{\boldsymbol{n}}\right).$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\implies\frac{1}{1-\hat{\boldsymbol{n}}\cdot\boldsymbol{v}/c} & = & \frac{1}{1-\beta\cos\varphi}\\
+ & \overset{1.}{\rightarrow} & \frac{1}{1-\beta\left(1-\frac{1}{2}\varphi^{2}+\dots\right)}\\
+ & \approx & \frac{1}{\frac{1}{2}\left(1+\beta\right)\left(1-\beta\right)+\frac{1}{2}\varphi^{2}}\\
+ & = & \frac{2}{1-\beta^{2}+\varphi^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $\beta\rightarrow1$
+\end_inset
+
+ and consider small 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\implies$
+\end_inset
+
+ 
+\begin_inset Formula $\boldsymbol{A}$
+\end_inset
+
+ is appreciably nonzero for 
+\begin_inset Formula $\varphi\lesssim\sqrt{1-\beta^{2}}=\frac{1}{\gamma}$
+\end_inset
+
+.
+ This explains 
+\begin_inset Formula $\left(\textnormal{i}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Consider a particle in a circular orbit.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Insert figure
+\end_layout
+
+\end_inset
+
+The light reaches the observer only during a section 
+\begin_inset Formula $\Delta s$
+\end_inset
+
+ of the orbit, where
+\begin_inset Formula 
+\[
+\frac{\Delta s}{2\pi R}\approx\frac{\varphi}{2\pi}\implies\Delta s\approx R\varphi.
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\implies$
+\end_inset
+
+ The observed signal is emitted only during a time interval 
+\begin_inset Formula 
+\[
+\frac{\Delta t}{2\pi/\omega_{0}}\approx\frac{\Delta s}{2\pi R}\approx\frac{\varphi}{2\pi}\implies\Delta t\approx\frac{\varphi}{\omega_{0}}.
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\implies$
+\end_inset
+
+ The typical frequency emitted is 
+\begin_inset Formula 
+\[
+\omega_{e}\approx\frac{1}{\Delta t}\approx\frac{\omega_{0}}{\varphi}\approx\omega_{0}\gamma.\tag{\ast}
+\]
+
+\end_inset
+
+This explains one factor of 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+This hold in a co-moving reference frame, but from the observer's point
+ of view, 
+\begin_inset Formula $\Delta s$
+\end_inset
+
+ gets Lorentz contracted by 
+\begin_inset Formula $1/\gamma$
+\end_inset
+
+ 
+\begin_inset Formula $\implies$
+\end_inset
+
+ 
+\begin_inset Formula $\omega_{e}$
+\end_inset
+
+ is larger by a factor of 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Finally, the observer sees a Doppler shifted frequency (as discussed in
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{chap:Electromagnetic-waves-in}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch4sec1_6The-Doppler-effect}
+\end_layout
+
+\end_inset
+
+) which provides the another factor of 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\implies\omega_{\textnormal{observerd}}\approx\understuff{\omega_{0}\gamma}{\left(\ast\right)}\cdot\gamma\cdot\gamma=\omega_{0}\gamma^{3}
+\]
+
+\end_inset
+
+ This explains 
+\begin_inset Formula $\left(\textnormal{ii}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+The polarization of synchrotron radiation
+\end_layout
+
+\begin_layout Standard
+Polarization is measured via the effect of the 
+\begin_inset Formula $\boldsymbol{E}-$
+\end_inset
+
+ field.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\implies$
+\end_inset
+
+ Express the power spectrum in terms of 
+\begin_inset Formula $\boldsymbol{E}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+From 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec4_3The-spectral-distribution}
+\end_layout
+
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\frac{dU}{d\Omega}=\frac{c}{4\pi}r^{2}\indefintfrac{\omega}{2\pi}\hat{\boldsymbol{x}}\cdot\left[\boldsymbol{E}\left(\boldsymbol{x},\omega\right)\times\boldsymbol{B}\left(\boldsymbol{x},-\omega\right)\right].
+\]
+
+\end_inset
+
+ From 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec4_2Asymptotic-potentials-and}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{prop:ch5sec4_2propFar-from-the}
+\end_layout
+
+\end_inset
+
+,
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula 
+\[
+\boldsymbol{B}\left(\boldsymbol{x},\omega\right)\propto\hat{\boldsymbol{x}}\times\boldsymbol{j}\left(\boldsymbol{k},\omega\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boldsymbol{E}\left(\boldsymbol{x},\omega\right)\approx-\hat{\boldsymbol{x}}\times\boldsymbol{B}\left(\boldsymbol{x},\omega\right),
+\]
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula 
+\[
+\implies\boldsymbol{E}\left(\boldsymbol{x},\omega\right)\propto-\hat{\boldsymbol{x}}\times\left(\hat{\boldsymbol{x}}\times\boldsymbol{j}\left(\boldsymbol{k},\omega\right)\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\implies$
+\end_inset
+
+ our previous expressions remain valid if we substitute
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+don't get this
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\hat{\boldsymbol{x}}\times\boldsymbol{j}\rightarrow-\hat{\boldsymbol{x}}\times\left(\hat{\boldsymbol{x}}\times\boldsymbol{j}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now, from 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec5_1The-time-Wigner-function}
+\end_layout
+
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+\underline{\frac{d^{2}\mathscr{P}}{d\omega\,d\Omega}\left(T\right)=\frac{\omega^{2}}{4\pi^{2}c^{3}}\indefint{\tau}e^{i\omega\tau}\left[-\hat{\boldsymbol{x}}\times\left(\hat{\boldsymbol{x}}\times\boldsymbol{j}\left(\boldsymbol{k},T+\tau/2\right)\right)\right]\cdot\left[-\hat{\boldsymbol{x}}\times\left(\hat{\boldsymbol{x}}\times\boldsymbol{j}\left(\boldsymbol{k},T-\tau/2\right)\right)^{*}\right]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Set our coordinate system as in 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec6_2The-power-spectrum}
+\end_layout
+
+\end_inset
+
+:
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ orbit in 
+\begin_inset Formula $x-y$
+\end_inset
+
+ plane, 
+\begin_inset Formula $\hat{\boldsymbol{x}}=\left(\sin\theta,0,\cos\theta\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Define 
+\emph on
+parallel polarization
+\emph default
+ as 
+\begin_inset Formula $\boldsymbol{E}\parallel\hat{\boldsymbol{e}}_{\parallel}$
+\end_inset
+
+ where 
+\begin_inset Formula $\hat{\boldsymbol{e}}_{\parallel}=\left(0,1,0\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+Define 
+\emph on
+perpendicular polarization
+\emph default
+ as 
+\begin_inset Formula $\boldsymbol{E}\parallel\hat{\boldsymbol{e}}_{\perp}$
+\end_inset
+
+ where 
+\begin_inset Formula $\hat{\boldsymbol{e}}_{\perp}=\left(-\cos\theta,0,\sin\theta\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We can express the radiated power in terms of these polarizations.
+\end_layout
+
+\begin_layout Standard
+Power radiated into parallel polarization state:
+\begin_inset Formula 
+\begin{eqnarray*}
+\underline{\left(\frac{d^{2}\mathscr{P}\left(T\right)}{d\omega\,d\Omega}\right)_{\parallel}} & = & \frac{\omega^{2}}{4\pi^{2}c^{3}}\indefint{\tau}e^{i\omega\tau}\left[\cdots\right]_{y}\left[\cdots\right]_{y}\\
+ & \overset{1.}{=} & \frac{\omega^{2}}{4\pi^{2}c^{3}}\indefint{\tau}e^{i\omega\tau}j_{y}\left(\boldsymbol{k},T+\tau/2\right)j_{y}\left(\boldsymbol{k},T-\tau/2\right)\\
+ & \overset{2.}{=} & \underline{\frac{\omega^{2}e^{2}}{4\pi^{2}c^{3}}\indefint{\tau}e^{i\omega\tau}e^{ik\hat{\boldsymbol{x}}\cdot\left[\boldsymbol{y}\left(T+\tau/2\right)-\boldsymbol{y}\left(T-\tau/2\right)\right]}v_{y}\left(T+\tau/2\right)v_{y}\left(T-\tau/2\right)}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left[-\hat{\boldsymbol{x}}\times\left(\hat{\boldsymbol{x}}\times\boldsymbol{j}\right)\right]_{y}=\left[\boldsymbol{j}-\hat{\boldsymbol{x}}\left(\hat{\boldsymbol{x}}\cdot\boldsymbol{j}\right)\right]_{y}=j_{y}$
+\end_inset
+
+ since 
+\begin_inset Formula $\hat{\boldsymbol{x}}$
+\end_inset
+
+ has no 
+\begin_inset Formula $y-$
+\end_inset
+
+component.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\boldsymbol{j}\left(\boldsymbol{k},t\right)=e\boldsymbol{v}\left(t\right)e^{-ik\hat{\boldsymbol{x}}\cdot\boldsymbol{y}\left(t\right)}$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+I thought we were calling the particle trajectory 
+\begin_inset Formula $\boldsymbol{X}$
+\end_inset
+
+?
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+But in 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec6_2The-power-spectrum}
+\end_layout
+
+\end_inset
+
+, the power had the factor 
+\begin_inset Formula $\left[\boldsymbol{v}^{2}-c^{2}\right]$
+\end_inset
+
+ where here we have 
+\begin_inset Formula $v_{y}v_{y}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:vyvy"
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{v_{y}\left(T+\tau/2\right)v_{y}\left(T-\tau/2\right)=\frac{1}{2}v^{2}\left[\cos2\omega_{0}T+\cos\omega_{0}\tau\right]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Formula 
+\[
+\boxed{\overline{e^{ik\hat{\boldsymbol{x}}\cdot\left[\boldsymbol{y}\left(T+\tau/2\right)-\boldsymbol{y}\left(T-\tau/2\right)\right]}}=\summation{m=-\infty}{\infty}\left(J_{m}\left(kR\sin\theta\right)\right)^{2}e^{im\omega_{0}\tau}},
+\]
+
+\end_inset
+
+ with 
+\begin_inset Formula $\overline{f\left(T\right)}$
+\end_inset
+
+ averaged over one 
+\begin_inset Formula $T-$
+\end_inset
+
+period.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Formula 
+\[
+\boxed{\overline{\cos\left(2\omega_{0}T\right)e^{ik\hat{\boldsymbol{x}}\cdot\left[\boldsymbol{y}\left(T+\tau/2\right)-\boldsymbol{y}\left(T-\tau/2\right)\right]}}=-\summation{m=-\infty}{\infty}J_{m+1}\left(kR\sin\theta\right)J_{m-1}\left(kR\sin\theta\right)e^{im\omega_{0}\tau}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substituting these into expression for power radiated into parallel polarization
+ yields
+\begin_inset Formula 
+\begin{eqnarray*}
+\overline{\left(\frac{d^{2}\mathscr{P}\left(T\right)}{d\omega\,d\Omega}\right)_{\parallel}} & = & \frac{\omega^{2}e^{2}}{4\pi^{2}c^{3}}\indefint{\tau}e^{i\omega\tau}\overline{e^{ik\hat{\boldsymbol{x}}\cdot\left[\boldsymbol{y}\left(T+\tau/2\right)-\boldsymbol{y}\left(T-\tau/2\right)\right]}v_{y}\left(T+\tau/2\right)v_{y}\left(T-\tau/2\right)}\\
+ & \overset{1.}{=} & \frac{\omega^{2}e^{2}}{4\pi^{2}c^{3}}\indefint{\tau}e^{i\omega\tau}\frac{1}{2}v^{2}\overline{e^{ik\hat{\boldsymbol{x}}\cdot\left[\boldsymbol{y}\left(T+\tau/2\right)-\boldsymbol{y}\left(T-\tau/2\right)\right]}\left[\cos2\omega_{0}T+\cos\omega_{0}\tau\right]}\\
+ & \overset{2.}{=} & \frac{\omega^{2}e^{2}}{4\pi^{2}c^{3}}\frac{v^{2}}{2}\indefint{\tau}e^{i\omega\tau}\summation{m=-\infty}{\infty}\left[\cos\omega_{0}\tau J_{m}^{2}-J_{m+1}J_{m-1}\right]e^{im\omega_{0}\tau}\\
+ & \overset{3.}{=} & \frac{\omega^{2}e^{2}}{4\pi^{2}c^{3}}\frac{v^{2}}{2}\summation{m=-\infty}{\infty}\left[\frac{1}{2}J_{m+1}^{2}+\frac{1}{2}J_{m-1}^{2}-J_{m+1}J_{m-1}\right]\delta\left(\omega-m\omega_{0}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Inserted 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{lem:vyvy}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Inserted 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{lem:e_to_the_stuff,lem:cos_times_e}
+\end_layout
+
+\end_inset
+
+.
+ Arguments of the Bessel functions are 
+\begin_inset Formula $kR\sin\theta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Replaced 
+\begin_inset Formula $\cos\omega_{0}\tau$
+\end_inset
+
+ using Euler's formula.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\implies$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\frac{d\mathscr{P}_{m}}{d\Omega}\right)_{\parallel}$
+\end_inset
+
+ is given by the expression for 
+\begin_inset Formula $\frac{d\mathscr{P}_{m}}{d\Omega}$
+\end_inset
+
+ in 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec6_2The-power-spectrum}
+\end_layout
+
+\end_inset
+
+ with 
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{1}{2}\left(J_{m+1}^{2}+J_{m-1}^{2}\right)-\frac{c^{2}}{v^{2}}J_{m}^{2} & \rightarrow & \frac{1}{2}\left(J_{m+1}^{2}+J_{m-1}^{2}\right)-J_{m+1}J_{m-1}\\
+ & = & \frac{1}{2}\left(J_{m+1}-J_{m-1}\right)^{2}\\
+ & \overset{1.}{=} & \frac{1}{2}4\left(J_{m}'\right)^{2}\\
+ & = & 2\left(J_{m}'\right)^{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Recursion relation.
+\end_layout
+
+\begin_layout Theorem
+The power radiated into the 
+\begin_inset Formula $m^{\textnormal{th}}$
+\end_inset
+
+ harmonic with parallel polarization is 
+\begin_inset Formula 
+\[
+\boxed{\left(\frac{d\mathscr{P}_{m}}{d\Omega}\right)_{\parallel}=\frac{\omega_{0}e^{2}}{\pi R}\left(\frac{v}{c}\right)^{3}m^{2}\left(J_{m}'\left(m\frac{v}{c}\sin\theta\right)\right)^{2}}.
+\]
+
+\end_inset
+
+ This is the first of the two terms in 
+\begin_inset Formula $\frac{d\mathscr{P}_{m}}{d\Omega}$
+\end_inset
+
+ from 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec6_2The-power-spectrum}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+The power radiated into the 
+\begin_inset Formula $m^{\textnormal{th}}$
+\end_inset
+
+ harmonic with perpendicular polarization is
+\begin_inset Formula 
+\[
+\boxed{\left(\frac{d\mathscr{P}_{m}}{d\Omega}\right)_{\perp}=\frac{\omega_{0}e^{2}}{\pi R}\left(\frac{v}{c}\right)^{3}m^{2}\left(\frac{J_{m}\left(m\frac{v}{c}\sin\theta\right)}{\frac{v}{c}\tan\theta}\right)^{2}}.
+\]
+
+\end_inset
+
+ This is the second of the two terms in 
+\begin_inset Formula $\frac{d\mathscr{P}_{m}}{d\Omega}$
+\end_inset
+
+ from 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{sub:ch5sec6_2The-power-spectrum}
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Chapter
