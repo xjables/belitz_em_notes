@@ -2826,47 +2826,6 @@ time
 Normal coordinate transformations
 \end_layout
 
-\begin_layout Standard
-DEBUGGING
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-DEBUGGING
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Definition
-\begin_inset CommandInset label
-LatexCommand label
-name "def:debugging"
-
-\end_inset
-
-DEBUGGING
-\end_layout
-
-\begin_layout Standard
-DEBUGGING 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{def:debugging}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Definition
 
 \series bold
@@ -3061,16 +3020,10 @@ Let
 \end_layout
 
 \begin_layout Proof
-From 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{def:2_4_normal_coord_trafo}
-\end_layout
+From Definition 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:2_4_normal_coord_trafo"
 
 \end_inset
 
@@ -3449,16 +3402,10 @@ How did
 
 \end_inset
 
-As per 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{def:3_1_tensor_field}
-\end_layout
+As per Definition 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:3_1_tensor_field"
 
 \end_inset
 
@@ -4689,16 +4636,10 @@ end{eqnarray*}
 \end_layout
 
 \begin_layout Proof
-See 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{def:3_4-is-called}
-\end_layout
+See Definition 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:3_4-is-called"
 
 \end_inset
 
@@ -6629,16 +6570,10 @@ In the absence of matter (
 \end_layout
 
 \begin_layout Proof
-From 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{def:energy-momentum-tensor-field}
-\end_layout
+From Definition 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:energy-momentum-tensor-field"
 
 \end_inset
 
@@ -12572,16 +12507,10 @@ Consider the test functions
 \begin_inset Formula $f_{n}\left(x\right)$
 \end_inset
 
- that make up a regular sequence (in the sense of 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{def:Regular-sequences.-Let}
-\end_layout
+ that make up a regular sequence (in the sense of Definition 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:Regular-sequences.-Let"
 
 \end_inset
 
@@ -12603,16 +12532,10 @@ e class.
 \end_layout
 
 \begin_layout Proposition
-Under the conditions of 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{def:distribution_limit}
-\end_layout
+Under the conditions of Definition 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:distribution_limit"
 
 \end_inset
 
@@ -12733,16 +12656,10 @@ First, note that
 \begin_inset Formula $f_{n}$
 \end_inset
 
- are test functions, as required by 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{def:Generalized-functions-regulariz}
-\end_layout
+ are test functions, as required by Definition 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:Generalized-functions-regulariz"
 
 \end_inset
 
@@ -12910,16 +12827,10 @@ cref{sub:ch3sec2_3Test-functions}
 
 \end_inset
 
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-cref{def:Weakly-increasing-functions.}
-\end_layout
+ Definition 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:Weakly-increasing-functions."
 
 \end_inset
 
@@ -19583,6 +19494,12 @@ insert here
 \end_layout
 
 \begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:ch4sec1_6The-Doppler-effect"
+
+\end_inset
+
 The Doppler effect
 \end_layout
 
@@ -27599,6 +27516,13 @@ name "lem:vyvy"
 \end_layout
 
 \begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:e_to_the_stuff"
+
+\end_inset
+
+
 \begin_inset Formula 
 \[
 \boxed{\overline{e^{ik\hat{\boldsymbol{x}}\cdot\left[\boldsymbol{y}\left(T+\tau/2\right)-\boldsymbol{y}\left(T-\tau/2\right)\right]}}=\summation{m=-\infty}{\infty}\left(J_{m}\left(kR\sin\theta\right)\right)^{2}e^{im\omega_{0}\tau}},
@@ -27625,6 +27549,13 @@ period.
 \end_layout
 
 \begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:cos_times_e"
+
+\end_inset
+
+
 \begin_inset Formula 
 \[
 \boxed{\overline{\cos\left(2\omega_{0}T\right)e^{ik\hat{\boldsymbol{x}}\cdot\left[\boldsymbol{y}\left(T+\tau/2\right)-\boldsymbol{y}\left(T-\tau/2\right)\right]}}=-\summation{m=-\infty}{\infty}J_{m+1}\left(kR\sin\theta\right)J_{m-1}\left(kR\sin\theta\right)e^{im\omega_{0}\tau}}
@@ -27701,7 +27632,20 @@ status open
 
 
 \backslash
-cref{lem:e_to_the_stuff,lem:cos_times_e}
+cref{lem:e_to_the_stuff}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cref{lem:cos_times_e}
 \end_layout
 
 \end_inset

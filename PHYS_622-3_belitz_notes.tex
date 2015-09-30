@@ -22,7 +22,6 @@
 \usepackage{esint}
 \usepackage[unicode=true]
  {hyperref}
-\usepackage{breakurl}
 
 \makeatletter
 
@@ -768,12 +767,6 @@ of light in vacuum.
 \end{example}
 
 \subsection{Normal coordinate transformations}
-
-DEBUGGING
-\begin{defn}
-\label{def:debugging}DEBUGGING
-\end{defn}
-DEBUGGING \cref{def:debugging}
 \begin{defn}
 \textbf{\emph{\label{def:2_4_normal_coord_trafo}Normal coordinate
 transformation.}} A \emph{normal coordinate transformation} is one
@@ -830,7 +823,7 @@ Let $D$ be a normal coordinate transformation. Then
 \]
 \end{prop}
 \begin{proof}
-From \cref{def:2_4_normal_coord_trafo}, $\det g=\det\left(D^{T}gD\right)=\det g$$\left(\det D\right)^{2}$
+From Definition \ref{def:2_4_normal_coord_trafo}, $\det g=\det\left(D^{T}gD\right)=\det g$$\left(\det D\right)^{2}$
 $\implies\det D=\pm1$. 
 \end{proof}
 
@@ -903,8 +896,8 @@ D{}^{l}{}_{1} & D{}^{l}{}_{2} & D{}^{l}{}_{3}
 \end{pmatrix}\det D=\varepsilon^{jkl}\det D\\
  & = & \varepsilon^{jkl}\frac{1}{\det D}=\tilde{\varepsilon}^{jkl}\frac{1}{\det D}.
 \end{eqnarray*}
- As per \cref{def:3_1_tensor_field}, the Levi-Civita tensor constitutes
-a pseudo-tensor field:
+ As per Definition \ref{def:3_1_tensor_field}, the Levi-Civita tensor
+constitutes a pseudo-tensor field:
 \[
 \boxed{\tilde{\varepsilon}^{jkl}=\left(\det D\right)D{}^{j}{}_{\alpha}D{}^{k}{}_{\beta}D{}^{l}{}_{\gamma}\varepsilon^{\alpha\beta\gamma}}
 \]
@@ -1138,7 +1131,7 @@ Any antisymmetric 2-tensor in Minkowski space can be written\begin{eqnarray*} F^
 \end{eqnarray*} where $\boldsymbol{a}$ is a Euclidean vector and $\boldsymbol{v}:=\left(v^{1},v^{2},v^{3}\right)$
 is a Euclidean pseudovector.\end{prop}
 \begin{proof}
-See \cref{def:3_4-is-called} and \cref{lem:3_4_Antisymmetric-Euclidean-2-tensor}.\end{proof}
+See Definition \ref{def:3_4-is-called} and \cref{lem:3_4_Antisymmetric-Euclidean-2-tensor}.\end{proof}
 \begin{example}
 \begin{eqnarray*} F{}^{\mu}{}_{\nu}=F^{\mu\kappa}g_{\kappa\nu} & = & 
 \left(\begin{array}{c;{2pt/2pt}c}
@@ -1542,7 +1535,7 @@ In the absence of matter ($J^{\mu}=0$), $T^{\mu\nu}$ obeys
 \]
 \end{prop}
 \begin{proof}
-From \cref{def:energy-momentum-tensor-field},\footnote{In the first line, we use the notational convention that $\partial_{\nu}F{}_{\mu}{}^{\alpha}F{}^{\nu}{}_{\alpha}$
+From Definition \ref{def:energy-momentum-tensor-field},\footnote{In the first line, we use the notational convention that $\partial_{\nu}F{}_{\mu}{}^{\alpha}F{}^{\nu}{}_{\alpha}$
 implies that the partial acts on everything to the right; that is,
 $\partial_{\nu}F{}_{\mu}{}^{\alpha}F{}^{\nu}{}_{\alpha}:=\partial_{\nu}\left(F{}_{\mu}{}^{\alpha}F{}^{\nu}{}_{\alpha}\right)$.
 If we wanted the partial only acting on $F{}_{\mu}{}^{\alpha}$, we
@@ -3035,7 +3028,7 @@ See Problem \#31(c) for more.
 ~
 \begin{example}
 Consider the test functions $f_{n}\left(x\right)$ that make up a
-regular sequence (in the sense of \cref{def:Regular-sequences.-Let})
+regular sequence (in the sense of Definition \ref{def:Regular-sequences.-Let})
 to be generalized functions (math books say we can), and let $f\left(x\right)$
 be the generalized function that is defined by this sequence and its
 equivalence class. Then
@@ -3044,7 +3037,8 @@ equivalence class. Then
 \]
 \end{example}
 \begin{prop}
-Under the conditions of \cref{def:distribution_limit}, we have\renewcommand{\labelenumi}{(\roman{enumi})}
+Under the conditions of Definition \ref{def:distribution_limit},
+we have\renewcommand{\labelenumi}{(\roman{enumi})}
 \begin{enumerate}
 \item $\lim_{t\rightarrow c}f_{t}'\left(x\right)=f'\left(x\right)$
 \item $\lim_{t\rightarrow c}f_{t}\left(ax+b\right)=f\left(ax+b\right)$
@@ -3075,8 +3069,8 @@ by
 \]
  \end{prop}
 \begin{proof}
-First, note that $f_{n}$ are test functions, as required by \cref{def:Generalized-functions-regulariz}.
-Also note that
+First, note that $f_{n}$ are test functions, as required by Definition
+\ref{def:Generalized-functions-regulariz}. Also note that
 \[
 \indefint xf_{n}\left(x\right)=\sqrt{\frac{n}{\pi}}\indefint xe^{-nx^{2}}=\frac{1}{\sqrt{\pi}}\indefint xe^{-x^{2}}=1.
 \]
@@ -3119,7 +3113,7 @@ From the theorem from \cref{sub:ch3sec2_2Inverse-Fourier-transforms},
 \begin{rem}
 This integral does not exist in classical analysis!\end{rem}
 \begin{prop}
-Let $\phi\left(x\right)$ be a weakly increasing function.\footnote{As per \cref{sub:ch3sec2_3Test-functions} \cref{def:Weakly-increasing-functions.}.}
+Let $\phi\left(x\right)$ be a weakly increasing function.\footnote{As per \cref{sub:ch3sec2_3Test-functions} Definition \ref{def:Weakly-increasing-functions.}.}
 Then
 \[
 \phi\left(x\right)\delta\left(x\right)=\phi\left(0\right)\delta\left(x\right).
@@ -4721,7 +4715,7 @@ Special cases:
 Visualization:
 \end{rem}
 
-\subsection{The Doppler effect}
+\subsection{\label{sub:ch4sec1_6The-Doppler-effect}The Doppler effect}
 
 Define the 4-wavevector $k^{\mu}:=\left(\frac{\omega}{c},\boldsymbol{k}\right)=\left(k_{0},\boldsymbol{k}\right)$.
 From problem \#40, $k^{\mu}$ transforms as a Minkowski vector.
@@ -6687,6 +6681,7 @@ $v_{y}v_{y}$.
 \end{lem}
 ~
 \begin{lem}
+\label{lem:e_to_the_stuff}
 \[
 \boxed{\overline{e^{ik\hat{\boldsymbol{x}}\cdot\left[\boldsymbol{y}\left(T+\tau/2\right)-\boldsymbol{y}\left(T-\tau/2\right)\right]}}=\summation{m=-\infty}{\infty}\left(J_{m}\left(kR\sin\theta\right)\right)^{2}e^{im\omega_{0}\tau}},
 \]
@@ -6694,6 +6689,7 @@ $v_{y}v_{y}$.
 \end{lem}
 ~
 \begin{lem}
+\label{lem:cos_times_e}
 \[
 \boxed{\overline{\cos\left(2\omega_{0}T\right)e^{ik\hat{\boldsymbol{x}}\cdot\left[\boldsymbol{y}\left(T+\tau/2\right)-\boldsymbol{y}\left(T-\tau/2\right)\right]}}=-\summation{m=-\infty}{\infty}J_{m+1}\left(kR\sin\theta\right)J_{m-1}\left(kR\sin\theta\right)e^{im\omega_{0}\tau}}
 \]
@@ -6710,8 +6706,8 @@ polarization yields
 
 \begin{enumerate}
 \item Inserted \cref{lem:vyvy}.
-\item Inserted \cref{lem:e_to_the_stuff,lem:cos_times_e}. Arguments of
-the Bessel functions are $kR\sin\theta$.
+\item Inserted \cref{lem:e_to_the_stuff}, \cref{lem:cos_times_e}. Arguments
+of the Bessel functions are $kR\sin\theta$.
 \item Replaced $\cos\omega_{0}\tau$ using Euler's formula.
 \end{enumerate}
 $\implies$ $\left(\frac{d\mathscr{P}_{m}}{d\Omega}\right)_{\parallel}$
