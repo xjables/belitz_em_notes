@@ -368,7 +368,19 @@ I have adopted the notation that vectors are bold.
 
 \end_inset
 
- where the scalars 
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Jamison(4/28/18): Why are superscrips and subscripts used in the preceding
+ equation? What is the difference between the two? Maybe there should be
+ a note on notation here.
+\end_layout
+
+\end_inset
+
+where the scalars 
 \begin_inset Formula $x^{j}$
 \end_inset
 
@@ -418,6 +430,43 @@ Cartesian basis
 \[
 \left\{ \boldsymbol{e}_{1}=\left(1,0,\ldots,0\right),\boldsymbol{e}_{2}=\left(0,1,0,\ldots,0\right),\ldots,\boldsymbol{e}_{n}=\left(0,\ldots,0,1\right)\right\} .
 \]
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Jamison(4/28/18): This basis is the orthnormal standard basis for 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\backslash
+mathbb{R}
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, but is that a requirement of everything that follows that uses it? Is
+ this an inner product space?
+\end_layout
 
 \end_inset
 
@@ -698,6 +747,19 @@ components
 \end_inset
 
 .
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Jamison(4/28/18): It appears this definition takes the ideas from a general
+ general form into a specific basis.
+ Maybe make a note on this? Tjk will change as the basis we use changes,
+ but the bilinear form remains the same.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Proposition
@@ -742,6 +804,17 @@ Notice the importance of
 \end_inset
 
  obeying properties (i)-(iv) of a bilinear form.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Jamison(4/28/18): I reiterate my confusion on use of super and subscript
+ notation here.
 \end_layout
 
 \end_inset
@@ -1337,6 +1410,7 @@ status open
 
 \begin_layout Plain Layout
 This has been a huge point of confusion for me.
+ Jamison(4/28/18): Me too.
 \end_layout
 
 \end_inset
@@ -1391,6 +1465,16 @@ It can be proven that, for finite dimensional
 \end_inset
 
 .
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Jamison(4/28/18): We should prove it then.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
